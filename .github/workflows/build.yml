@@ -108,6 +108,7 @@ jobs:
           export PATH=$PATH:/c/opencv/build/bin
           export PATH=$PATH:/d/a/_temp/msys64/mingw64/bin
           export PATH=$PATH:/d/a/_temp/msys64/mingw64/include
+          export PATH=$PATH:/c/Users/runneradmin/go/bin
           go env
           go install github.com/wailsapp/wails/v2/cmd/wails@latest
           wails doctor
@@ -120,6 +121,7 @@ jobs:
           export PATH=$PATH:/c/opencv/build/bin
           export PATH=$PATH:/d/a/_temp/msys64/mingw64/bin
           export PATH=$PATH:/d/a/_temp/msys64/mingw64/include
+          export PATH=$PATH:/c/Users/runneradmin/go/bin
           wails build -v 2 --upx -s -nsis
 
       - name: Archive artifacts
