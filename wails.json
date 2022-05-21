@@ -10,5 +10,8 @@
   "author": {
     "name": "Vilsol",
     "email": "me@vil.so"
+  },
+  "postBuildHooks": {
+    "windows/amd64": "go run ./dll-copy build/bin/oshabi.exe"
   }
 }
