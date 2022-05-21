@@ -59,7 +59,7 @@ func (a *App) Calibrate() {
 }
 
 func (a *App) Read() bool {
-	config.AddListings(a.ctx, app.ReadFull(nil))
+	config.AddListings(a.ctx, app.ReadFull(a.ctx))
 	return true
 }
 
