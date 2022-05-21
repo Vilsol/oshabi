@@ -12,6 +12,6 @@
     "email": "me@vil.so"
   },
   "postBuildHooks": {
-    "windows/amd64": "go run ./dll-copy build/bin/oshabi.exe"
+    "windows/amd64": "pwd && go run ./dll-copy ${bin}"
   }
 }
