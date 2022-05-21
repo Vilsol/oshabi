@@ -12,6 +12,6 @@
     "email": "me@vil.so"
   },
   "postBuildHooks": {
-    "windows/amd64": "../../dll-copy.sh ${bin}"
+    "windows/amd64": "cmd ../../dll-copy.bat ${bin}"
   }
 }
