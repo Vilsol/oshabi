@@ -305,5 +305,3 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/jetbrains+all,node,linux,windows,macos
-
-src/wailsjs/

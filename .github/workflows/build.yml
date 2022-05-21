@@ -88,34 +88,34 @@ jobs:
         env:
           GOPATH: "C:"
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2.2.1
-        with:
-          version: 7
-          run_install: |
-            - cwd: frontend
-
-      - name: Build frontend
-        working-directory: frontend
-        run: pnpm run build
-
-      - name: Install Wails
-        run: |
-          go install github.com/wailsapp/wails/v2/cmd/wails@latest
-          wails doctor
-
-      - name: Build
-        run: |
-          export PATH=/usr/bin
-          export PATH=$PATH:/bin
-          export PATH=$PATH:/d/a/_temp/setup-msys2
-          export PATH=$PATH:/c/opencv/build/bin
-          export PATH=$PATH:/d/a/_temp/msys64/mingw64/bin
-          export PATH=$PATH:/d/a/_temp/msys64/mingw64/include
-          wails build -v 2 --upx -s -nsis
-
-      - name: Archive artifacts
-        uses: actions/upload-artifact@v3
-        with:
-          name: windows
-          path: build/bin/oshabi-amd64-installer.exe
+#      - name: Install pnpm
+#        uses: pnpm/action-setup@v2.2.1
+#        with:
+#          version: 7
+#          run_install: |
+#            - cwd: frontend
+#
+#      - name: Build frontend
+#        working-directory: frontend
+#        run: pnpm run build
+#
+#      - name: Install Wails
+#        run: |
+#          go install github.com/wailsapp/wails/v2/cmd/wails@latest
+#          wails doctor
+#
+#      - name: Build
+#        run: |
+#          export PATH=/usr/bin
+#          export PATH=$PATH:/bin
+#          export PATH=$PATH:/d/a/_temp/setup-msys2
+#          export PATH=$PATH:/c/opencv/build/bin
+#          export PATH=$PATH:/d/a/_temp/msys64/mingw64/bin
+#          export PATH=$PATH:/d/a/_temp/msys64/mingw64/include
+#          wails build -v 2 --upx -s -nsis
+#
+#      - name: Archive artifacts
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: windows
+#          path: build/bin/oshabi-amd64-installer.exe
