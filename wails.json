@@ -1,0 +1,14 @@
+{
+  "name": "oshabi",
+  "outputfilename": "oshabi",
+  "frontend:install": "pnpm install",
+  "frontend:build": "pnpm run build",
+  "frontend:dev": "",
+  "frontend:dev:watcher": "pnpm run dev",
+  "frontend:dev:serverUrl": "http://localhost:3000",
+  "wailsjsdir": "./frontend/src",
+  "author": {
+    "name": "Vilsol",
+    "email": "me@vil.so"
+  }
+}

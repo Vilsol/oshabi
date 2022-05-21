@@ -1,0 +1,1217 @@
+{
+  "Attempt to Awaken a level 20 Support Gem that can be Awakened with a 5% chance. If it does not Awaken, it is destroyed.": {
+    "type": "AttemptAwaken",
+    "message": "Awaken Level 20 Support Gem",
+    "pricing": "Awaken Level 20 Support Gem"
+  },
+  "Attempt to upgrade a Scarab, with a chance for it to become Winged": {
+    "type": "UpgradeScarab",
+    "message": "Attempt to upgrade a Scarab",
+    "pricing": ""
+  },
+  "Augment a Magic or Rare item with a new Influence modifier": {
+    "type": "AugmentInfluence",
+    "message": "Augment Influence",
+    "pricing": "Augment Influence"
+  },
+  "Augment a Magic or Rare item with a new Influence modifier with Lucky values": {
+    "type": "AugmentInfluenceLucky",
+    "message": "Augment Influence Lucky",
+    "pricing": "Augment Influence Lucky"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Attack modifier": {
+    "type": "AugmentAttack",
+    "message": "Augment Attack",
+    "pricing": "Augment Attack"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Attack modifier with Lucky values": {
+    "type": "AugmentAttackLucky",
+    "message": "Augment Attack Lucky",
+    "pricing": "Augment Attack Lucky"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Caster modifier": {
+    "type": "AugmentCaster",
+    "message": "Augment Caster",
+    "pricing": "Augment Caster"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Caster modifier with Lucky values": {
+    "type": "AugmentCasterLucky",
+    "message": "Augment Caster Lucky",
+    "pricing": "Augment Caster Lucky"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Chaos modifier": {
+    "type": "AugmentChaos",
+    "message": "Augment Chaos",
+    "pricing": "Augment Chaos"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Chaos modifier with Lucky values": {
+    "type": "AugmentChaosLucky",
+    "message": "Augment Chaos Lucky",
+    "pricing": "Augment Chaos Lucky"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Cold modifier": {
+    "type": "AugmentCold",
+    "message": "Augment Cold",
+    "pricing": "Augment Cold"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Cold modifier with Lucky values": {
+    "type": "AugmentColdLucky",
+    "message": "Augment Cold Lucky",
+    "pricing": "Augment Cold Lucky"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Critical modifier": {
+    "type": "AugmentCritical",
+    "message": "Augment Critical",
+    "pricing": "Augment Critical"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Critical modifier with lucky values": {
+    "type": "AugmentCriticalLucky",
+    "message": "Augment Critical Lucky",
+    "pricing": "Augment Critical Lucky"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Defence modifier": {
+    "type": "AugmentDefence",
+    "message": "Augment Defence",
+    "pricing": "Augment Defence"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Defence modifier with Lucky values": {
+    "type": "AugmentDefenceLucky",
+    "message": "Augment Defence Lucky",
+    "pricing": "Augment Defence Lucky"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Fire modifier": {
+    "type": "AugmentFire",
+    "message": "Augment Fire",
+    "pricing": "Augment Fire"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Fire modifier with Lucky values": {
+    "type": "AugmentFireLucky",
+    "message": "Augment Fire Lucky",
+    "pricing": "Augment Fire Lucky"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Life modifier": {
+    "type": "AugmentLife",
+    "message": "Augment Life",
+    "pricing": "Augment Life"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Life modifier with Lucky values": {
+    "type": "AugmentLifeLucky",
+    "message": "Augment Life Lucky",
+    "pricing": "Augment Life Lucky"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Lightning modifier": {
+    "type": "AugmentLightning",
+    "message": "Augment Lightning",
+    "pricing": "Augment Lightning"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Lightning modifier with Lucky values": {
+    "type": "AugmentLightningLucky",
+    "message": "Augment Lightning Lucky",
+    "pricing": "Augment Lightning Lucky"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Physical modifier": {
+    "type": "AugmentPhysical",
+    "message": "Augment Physical",
+    "pricing": "Augment Physical"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Physical modifier with Lucky values": {
+    "type": "AugmentPhysicalLucky",
+    "message": "Augment Physical Lucky",
+    "pricing": "Augment Physical Lucky"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Speed modifier": {
+    "type": "AugmentSpeed",
+    "message": "Augment Speed",
+    "pricing": "Augment Speed"
+  },
+  "Augment a non-Influenced Magic or Rare item with a new Speed modifier with Lucky values": {
+    "type": "AugmentSpeedLucky",
+    "message": "Augment Speed Lucky",
+    "pricing": "Augment Speed Lucky"
+  },
+  "Augment a non-Influenced Rare item with a new modifier, with Lucky modifier values": {
+    "type": "AugmentLucky",
+    "message": "Augment Non-Influence Lucky",
+    "pricing": "Augment Non-Influence Lucky"
+  },
+  "Change a Conqueror Fragment into another random Conqueror Fragment of that type": {
+    "type": "ChangeFragmentConqueror",
+    "message": "Change a Conqueror Fragment",
+    "pricing": ""
+  },
+  "Change a Divination Card into another random Divination Card": {
+    "type": "ChangeDivToDiv",
+    "message": "Change a Divination Card",
+    "pricing": ""
+  },
+  "Change a Gem into another Gem, carrying over experience and quality if possible": {
+    "type": "ChangeGemToGem",
+    "message": "Change a Gem into another Gem",
+    "pricing": ""
+  },
+  "Change a Harbinger Unique or Unique Piece into a random Beachhead Map": {
+    "type": "ChangeUniqueHarbinger",
+    "message": "Change a Harbinger Unique",
+    "pricing": ""
+  },
+  "Change a Map into another of the same tier, prioritising Maps that you have not yet completed": {
+    "type": "ChangeMapSameTier",
+    "message": "Change a Map",
+    "pricing": ""
+  },
+  "Change a Sacrifice or Mortal Fragment into another random Fragment of that type": {
+    "type": "ChangeFragmentSacrificeMortal",
+    "message": "Change a Sacrifice or Mortal Fragment",
+    "pricing": ""
+  },
+  "Change a Scarab to another Scarab of the same rarity": {
+    "type": "ChangeScarabSameRarity",
+    "message": "Change a Scarab",
+    "pricing": ""
+  },
+  "Change a Shaper Fragment into another random Shaper Fragment": {
+    "type": "ChangeFragmentShaper",
+    "message": "Change a Shaper Fragment",
+    "pricing": ""
+  },
+  "Change a Unique Armour into another Unique Armour of that type": {
+    "type": "ChangeUniqueArmourToArmour",
+    "message": "Change a Unique Armour into another Unique Armour",
+    "pricing": ""
+  },
+  "Change a Unique Bestiary item or item with an Aspect into Lures of the same beast family": {
+    "type": "ChangeUniqueBestiary",
+    "message": "Change a Unique Bestiary item",
+    "pricing": ""
+  },
+  "Change a Unique Jewel into another Unique Jewel": {
+    "type": "ChangeUniqueJewelToJewel",
+    "message": "Change a Unique Jewel into another Unique Jewel",
+    "pricing": ""
+  },
+  "Change a Unique Ring, Amulet or Belt into another Unique item of that type": {
+    "type": "ChangeUniqueJewelleryToJewellery",
+    "message": "Change a Unique Jewellery into another of that type",
+    "pricing": ""
+  },
+  "Change a Unique Weapon into another Unique Weapon of that weapon type": {
+    "type": "ChangeUniqueWeaponToWeapon",
+    "message": "Change a Unique Weapon into another",
+    "pricing": ""
+  },
+  "Change a Unique into a random Unique Armour": {
+    "type": "ChangeUniqueArmour",
+    "message": "Change a Unique into a random Unique Armour",
+    "pricing": ""
+  },
+  "Change a Unique into a random Unique Ring, Amulet or Belt": {
+    "type": "ChangeUniqueJewellery",
+    "message": "Change a Unique into random Jewellery",
+    "pricing": ""
+  },
+  "Change a Unique into a random Unique Weapon or Quiver": {
+    "type": "ChangeUniqueToWeaponQuiver",
+    "message": "Change a Unique into a random Unique Weapon or Quiver",
+    "pricing": ""
+  },
+  "Change a Unique item into another random Unique item": {
+    "type": "ChangeUniqueToUnique",
+    "message": "Change a Unique item into another random Unique",
+    "pricing": ""
+  },
+  "Change a modifier that grants Cold Resistance into a similar-tier modifier that grants Fire Resistance": {
+    "type": "ChangeResistColdToFire",
+    "message": "Cold to Fire Resist",
+    "pricing": "Cold to Fire Resist"
+  },
+  "Change a modifier that grants Cold Resistance into a similar-tier modifier that grants Lightning Resistance": {
+    "type": "ChangeResistColdToLightning",
+    "message": "Cold to Lightning Resist",
+    "pricing": "Cold to Lightning Resist"
+  },
+  "Change a modifier that grants Fire Resistance into a similar-tier modifier that grants Cold Resistance": {
+    "type": "ChangeResistFireToCold",
+    "message": "Fire to Cold Resist",
+    "pricing": "Fire to Cold Resist"
+  },
+  "Change a modifier that grants Fire Resistance into a similar-tier modifier that grants Lightning Resistance": {
+    "type": "ChangeResistFireToLightning",
+    "message": "Fire to Lightning Resist",
+    "pricing": "Fire to Lightning Resist"
+  },
+  "Change a modifier that grants Lightning Resistance into a similar-tier modifier that grants Cold Resistance": {
+    "type": "ChangeResistLightningToCold",
+    "message": "Lightning to Cold Resist",
+    "pricing": "Lightning to Cold Resist"
+  },
+  "Change a modifier that grants Lightning Resistance into a similar-tier modifier that grants Fire Resistance": {
+    "type": "ChangeResistLightningToFire",
+    "message": "Lightning to Fire Resist",
+    "pricing": "Lightning to Fire Resist"
+  },
+  "Change a stack of Breach Splinters or a normal, Charged, Enriched or Pure Breachstone into Splinters or a Breachstone of another type": {
+    "type": "ChangeBreach",
+    "message": "Change a stack of Breach Splinters",
+    "pricing": ""
+  },
+  "Change a stack of Catalysts into a different type of Catalyst": {
+    "type": "ChangeCatalysts",
+    "message": "Change a stack of Catalysts",
+    "pricing": ""
+  },
+  "Change a stack of Delirium Orbs into a different type of Delirium Orb": {
+    "type": "ChangeDelirium",
+    "message": "Change a stack of Delirium Orbs",
+    "pricing": ""
+  },
+  "Change a stack of Essences into a different type of the same tier": {
+    "type": "ChangeEssences",
+    "message": "Change a stack of Essences",
+    "pricing": ""
+  },
+  "Change a stack of Fossils into a different type of Fossil. The new Fossil type may have a smaller stack size.": {
+    "type": "ChangeFossils",
+    "message": "Change a stack of Fossils",
+    "pricing": ""
+  },
+  "Change a stack of Oils into a different colour of Oil": {
+    "type": "ChangeOils",
+    "message": "Change a stack of Oils",
+    "pricing": ""
+  },
+  "Change a stack of Timeless Splinters or a Timeless Emblem into Splinters or an Emblem of another type": {
+    "type": "ChangeTimeless",
+    "message": "Change a stack of Timeless Splinters",
+    "pricing": ""
+  },
+  "Change an Elder Fragment into another random Elder Fragment of that type": {
+    "type": "ChangeFragmentElder",
+    "message": "Change an Elder Fragment",
+    "pricing": ""
+  },
+  "Change an Offering to the Goddess into a Dedication to the Goddess": {
+    "type": "ChangeOfferingToDedication",
+    "message": "Change an Offering to a Dedication",
+    "pricing": ""
+  },
+  "Change an Offering to the Goddess into a Gift to the Goddess": {
+    "type": "ChangeOfferingToGift",
+    "message": "Change an Offering to a Gift",
+    "pricing": ""
+  },
+  "Change an Offering to the Goddess into a Tribute to the Goddess": {
+    "type": "ChangeOfferingToTribute",
+    "message": "Change an Offering to a Tribute",
+    "pricing": ""
+  },
+  "Corrupt an item 10 times, or until getting a corrupted implicit modifier": {
+    "type": "Corrupt10",
+    "message": "Corrupt an item 10 times",
+    "pricing": ""
+  },
+  "Enchant Body Armour. Quality does not increase its Defences, grants +1 Dexterity per 2% quality": {
+    "type": "EnchantArmourDexterity",
+    "message": "Enchant Body, Dexterity",
+    "pricing": "Enchant Body, Dexterity"
+  },
+  "Enchant Body Armour. Quality does not increase its Defences, grants +1 Intelligence per 2% quality": {
+    "type": "EnchantArmourIntelligence",
+    "message": "Enchant Body, Intelligence",
+    "pricing": "Enchant Body, Intelligence"
+  },
+  "Enchant Body Armour. Quality does not increase its Defences, grants +1 Maximum Life per 2% quality": {
+    "type": "EnchantArmourLife",
+    "message": "Enchant Body, Maximum Life",
+    "pricing": "Enchant Body, Maximum Life"
+  },
+  "Enchant Body Armour. Quality does not increase its Defences, grants +1 Maximum Mana per 2% quality": {
+    "type": "EnchantArmourMana",
+    "message": "Enchant Body, Maximum Mana",
+    "pricing": "Enchant Body, Maximum Mana"
+  },
+  "Enchant Body Armour. Quality does not increase its Defences, grants +1 Strength per 2% quality": {
+    "type": "EnchantArmourStrength",
+    "message": "Enchant Body, Strength",
+    "pricing": "Enchant Body, Strength"
+  },
+  "Enchant Body Armour. Quality does not increase its Defences, grants 1% Cold Resistance per 2% quality": {
+    "type": "EnchantArmourColdResist",
+    "message": "Enchant Body, Cold Resist",
+    "pricing": "Enchant Body, Cold Resist"
+  },
+  "Enchant Body Armour. Quality does not increase its Defences, grants 1% Fire Resistance per 2% quality": {
+    "type": "EnchantArmourFireResist",
+    "message": "Enchant Body, Fire Resist",
+    "pricing": "Enchant Body, Fire Resist"
+  },
+  "Enchant Body Armour. Quality does not increase its Defences, grants 1% Lightning Resistance per 2% quality": {
+    "type": "EnchantArmourLightningResist",
+    "message": "Enchant Body, Lightning Resist",
+    "pricing": "Enchant Body, Lightning Resist"
+  },
+  "Enchant a Flask with a modifier that grants increased Duration. The magnitude of this effect decreases with each use": {
+    "type": "EnchantFlaskDuration",
+    "message": "Enchant Flask: inc. Duration",
+    "pricing": ""
+  },
+  "Enchant a Flask with a modifier that grants increased Effect. The magnitude of this effect decreases with each use": {
+    "type": "EnchantFlaskEffect",
+    "message": "Enchant Flask: inc. Effect",
+    "pricing": ""
+  },
+  "Enchant a Flask with a modifier that grants increased Maximum Charges. The magnitude of this effect decreases with each use": {
+    "type": "EnchantFlaskMaxCharges",
+    "message": "Enchant Flask: inc. Maximum Charges",
+    "pricing": ""
+  },
+  "Enchant a Flask with a modifier that grants reduced Charges used. The magnitude of this effect decreases with each use": {
+    "type": "EnchantFlaskReducedCharges",
+    "message": "Enchant Flask: reduced Charges used",
+    "pricing": ""
+  },
+  "Enchant a Melee Weapon. Quality does not increase its Physical Damage, has +1 Weapon Range per 10% Quality": {
+    "type": "EnchantWeaponRange",
+    "message": "Enchant Weapon, Weapon Range",
+    "pricing": "Enchant Weapon, Weapon Range"
+  },
+  "Enchant a Weapon. Quality does not increase its Physical Damage, grants 1% increased Accuracy per 2% Quality": {
+    "type": "EnchantWeaponAccuracy",
+    "message": "Enchant Weapon, Accuracy",
+    "pricing": "Enchant Weapon, Accuracy"
+  },
+  "Enchant a Weapon. Quality does not increase its Physical Damage, grants 1% increased Area of Effect per 4% Quality": {
+    "type": "EnchantWeaponAoE",
+    "message": "Enchant Weapon, Area of Effect",
+    "pricing": "Enchant Weapon, Area of Effect"
+  },
+  "Enchant a Weapon. Quality does not increase its Physical Damage, grants 1% increased Elemental Damage per 2% Quality": {
+    "type": "EnchantWeaponElementalDamage",
+    "message": "Enchant Weapon, Elemental Damage",
+    "pricing": "Enchant Weapon, Elemental Damage"
+  },
+  "Enchant a Weapon. Quality does not increase its Physical Damage, has 1% increased Attack Speed per 8% Quality": {
+    "type": "EnchantWeaponAttackSpeed",
+    "message": "Enchant Weapon, Attack Speed",
+    "pricing": "Enchant Weapon, Attack Speed"
+  },
+  "Enchant a Weapon. Quality does not increase its Physical Damage, has 1% increased Critical Strike Chance per 4% Quality": {
+    "type": "EnchantWeaponCritical",
+    "message": "Enchant Weapon, Critical Strike Chance",
+    "pricing": "Enchant Weapon, Critical Strike Chance"
+  },
+  "Enchant a non-Unique Map with \"Map boss is surrounded by Tormented Spirits\"": {
+    "type": "EnchantMapSpirits",
+    "message": "Enchant Map, boss is surrounded by Tormented Spirits",
+    "pricing": ""
+  },
+  "Enchant a non-Unique Map with \"Map doesn't consume Sextant charges\"": {
+    "type": "EnchantMapSextant",
+    "message": "Enchant Map, doesn't consume Sextant",
+    "pricing": "Enchant Map, Doesn't Consume Sextant"
+  },
+  "Enchant a non-Unique Map with \"Map has a Vaal Side Area\"": {
+    "type": "EnchantMapVaal",
+    "message": "Enchant Map, Vaal Side Area",
+    "pricing": ""
+  },
+  "Enchant a non-Unique Map with \"Map has an additional random Modifier from Kirac's Crafting Bench\"": {
+    "type": "EnchantMapRandomMod",
+    "message": "Enchant Map, Kirac's Crafting Bench",
+    "pricing": ""
+  },
+  "Exchange 10 Blessed Orbs for 20 Orbs of Alteration": {
+    "type": "Exchange10BlessedToAlteration",
+    "message": "Exchange 10 Blessed Orbs for 20 Orbs of Alteration",
+    "pricing": ""
+  },
+  "Exchange 10 Cartographer's Chisels for 10 Vaal Orbs": {
+    "type": "Exchange10ChiselsToVaal",
+    "message": "Exchange 10 Cartographer's Chisels for 10 Vaal Orbs",
+    "pricing": ""
+  },
+  "Exchange 10 Chaos Orbs for an Exalted Orb": {
+    "type": "Exchange10ChaosToExalted",
+    "message": "Exchange 10 Chaos Orbs for an Exalted Orb",
+    "pricing": ""
+  },
+  "Exchange 10 Chromatic Orbs for 20 Gemcutter's Prisms": {
+    "type": "Exchange10ChromaticToGCP",
+    "message": "Exchange 10 Chromatic Orbs for 20 Gemcutter's Prisms",
+    "pricing": ""
+  },
+  "Exchange 10 Jeweller's Orbs for 20 Orbs of Fusing": {
+    "type": "Exchange10JewellerToFusing",
+    "message": "Exchange 10 Jeweller's Orbs for 20 Orbs of Fusing",
+    "pricing": ""
+  },
+  "Exchange 10 Orbs of Alchemy for 20 Cartographer's Chisels": {
+    "type": "Exchange10AlchemyToChisels",
+    "message": "Exchange 10 Orbs of Alchemy for 20 Cartographer's Chisels",
+    "pricing": ""
+  },
+  "Exchange 10 Orbs of Alteration for 10 Chaos Orbs": {
+    "type": "Exchange10AlterationToChaos",
+    "message": "Exchange 10 Orbs of Alteration for 10 Chaos Orbs",
+    "pricing": ""
+  },
+  "Exchange 10 Orbs of Augmentation for 10 Regal Orbs": {
+    "type": "Exchange10AugmentationToRegal",
+    "message": "Exchange 10 Orbs of Augmentation for 10 Regal Orbs",
+    "pricing": ""
+  },
+  "Exchange 10 Orbs of Scouring for 10 Orbs of Annulment": {
+    "type": "Exchange10ScouringToAnnulment",
+    "message": "Exchange 10 Orbs of Scouring for 10 Orbs of Annulment",
+    "pricing": ""
+  },
+  "Exchange 10 Orbs of Transmutation for 10 Orbs of Alchemy": {
+    "type": "Exchange10TransmutationToAlchemy",
+    "message": "Exchange 10 Orbs of Transmutation for 10 Orbs of Alchemy",
+    "pricing": ""
+  },
+  "Exchange 10 Prime Sextants for 10 Awakened Sextants": {
+    "type": "Exchange10PrimeToAwakened",
+    "message": "Exchange 10 Prime Sextants for 10 Awakened Sextants",
+    "pricing": ""
+  },
+  "Exchange 10 Scrolls of Wisdom for 20 Orbs of Chance": {
+    "type": "Exchange10WisdomToChance",
+    "message": "Exchange 10 Scrolls of Wisdom for 20 Orbs of Chance",
+    "pricing": ""
+  },
+  "Exchange 10 Simple Sextants for 10 Prime Sextants": {
+    "type": "Exchange10SextantsToPrime",
+    "message": "Exchange 10 Simple Sextants for 10 Prime Sextants",
+    "pricing": ""
+  },
+  "Exchange 10 Vaal Orbs for 20 Orbs of Regret": {
+    "type": "Exchange10VaalToRegret",
+    "message": "Exchange 10 Vaal Orbs for 20 Orbs of Regret",
+    "pricing": ""
+  },
+  "Exchange 3 Blessed Orbs for 6 Orbs of Alteration": {
+    "type": "ExchangeBlessedToAlteration",
+    "message": "Exchange 3 Blessed Orbs for 6 Orbs of Alteration",
+    "pricing": ""
+  },
+  "Exchange 3 Cartographer's Chisels for 3 Vaal Orbs": {
+    "type": "ExchangeChiselsToVaal",
+    "message": "Exchange 3 Cartographer's Chisels for 3 Vaal Orbs",
+    "pricing": ""
+  },
+  "Exchange 3 Chaos Orbs for a Divine Orb": {
+    "type": "ExchangeChaosToDivine",
+    "message": "Exchange 3 Chaos Orbs for a Divine Orb",
+    "pricing": ""
+  },
+  "Exchange 3 Chromatic Orbs for 6 Gemcutter's Prisms": {
+    "type": "ExchangeChromaticToGCP",
+    "message": "Exchange 3 Chromatic Orbs for 6 Gemcutter's Prisms",
+    "pricing": ""
+  },
+  "Exchange 3 Jeweller's Orbs for 6 Orbs of Fusing": {
+    "type": "ExchangeJewellerToFusing",
+    "message": "Exchange 3 Jeweller's Orbs for 6 Orbs of Fusing",
+    "pricing": ""
+  },
+  "Exchange 3 Orbs of Alchemy for 6 Cartographer's Chisels": {
+    "type": "ExchangeAlchemyToChisels",
+    "message": "Exchange 3 Orbs of Alchemy for 6 Cartographer's Chisels",
+    "pricing": ""
+  },
+  "Exchange 3 Orbs of Alteration for 3 Chaos Orbs": {
+    "type": "ExchangeAlterationToChaos",
+    "message": "Exchange 3 Orbs of Alteration for 3 Chaos Orbs",
+    "pricing": ""
+  },
+  "Exchange 3 Orbs of Augmentation for 3 Regal Orbs": {
+    "type": "ExchangeAugmentationToRegal",
+    "message": "Exchange 3 Orbs of Augmentation for 3 Regal Orbs",
+    "pricing": ""
+  },
+  "Exchange 3 Orbs of Scouring for 3 Orbs of Annulment": {
+    "type": "ExchangeScouringToAnnulment",
+    "message": "Exchange 3 Orbs of Scouring for 3 Orbs of Annulment",
+    "pricing": ""
+  },
+  "Exchange 3 Orbs of Transmutation for 3 Orbs of Alchemy": {
+    "type": "ExchangeTransmutationToAlchemy",
+    "message": "Exchange 3 Orbs of Transmutation for 3 Orbs of Alchemy",
+    "pricing": ""
+  },
+  "Exchange 3 Prime Sextants for 3 Awakened Sextants": {
+    "type": "ExchangePrimeToAwakened",
+    "message": "Exchange 3 Prime Sextants for 3 Awakened Sextants",
+    "pricing": ""
+  },
+  "Exchange 3 Scrolls of Wisdom for 6 Orbs of Chance": {
+    "type": "ExchangeWisdomToChance",
+    "message": "Exchange 10 Blessed for 20 Alteration",
+    "pricing": ""
+  },
+  "Exchange 3 Simple Sextants for 3 Prime Sextants": {
+    "type": "ExchangeSextantsToPrime",
+    "message": "Exchange 3 Simple Sextants for 3 Prime Sextants",
+    "pricing": ""
+  },
+  "Exchange 3 Vaal Orbs for 6 Orbs of Regret": {
+    "type": "ExchangeVaalToRegret",
+    "message": "Exchange 3 Vaal Orbs for 6 Orbs of Regret",
+    "pricing": ""
+  },
+  "Exchange a Resonator for a Fossil or vice versa. Rare outcomes are more likely with rare inputs": {
+    "type": "ExchangeResonatorFossil",
+    "message": "Exchange a Resonator/Fossil",
+    "pricing": ""
+  },
+  "Fracture a random Prefix on an item with at least 3 Prefixes. This can't be used on Influenced, Synthesised, or Fractured items.": {
+    "type": "FractureRandomPrefix",
+    "message": "Fracture 1/3 Prefix",
+    "pricing": "Fracture 1/3 Prefix"
+  },
+  "Fracture a random Suffix on an item with at least 3 Suffixes. This can't be used on Influenced, Synthesised, or Fractured items": {
+    "type": "FractureRandomSuffix",
+    "message": "Fracture 1/3 Suffix",
+    "pricing": "Fracture 1/3 Suffix"
+  },
+  "Fracture a random modifier on an item with at least 5 modifiers, locking it in place. This can't be used on Influenced, Synthesised, or Fractured items": {
+    "type": "FractureRandom",
+    "message": "Fracture 1/5",
+    "pricing": "Fracture 1/5"
+  },
+  "Improves the Quality of a Flask by at least 10%. Has greater effect on lower rarity flasks. The maximum quality is 20%": {
+    "type": "QualityFlask",
+    "message": "Improves the Quality of a Flask",
+    "pricing": ""
+  },
+  "Improves the Quality of a Gem by at least 10%. The maximum quality is 20%": {
+    "type": "QualityGem",
+    "message": "Improves the Quality of a Gem",
+    "pricing": ""
+  },
+  "Randomise the Influence types on an Influenced Normal, Magic or Rare Armour, as well as reforging the item with new random modifiers": {
+    "type": "RandomiseInfluenceArmour",
+    "message": "Randomise Influence Armour",
+    "pricing": "Randomise Influence Armour"
+  },
+  "Randomise the Influence types on an Influenced Normal, Magic or Rare Jewellery, as well as reforging the item with new random modifiers": {
+    "type": "RandomiseInfluenceJewellery",
+    "message": "Randomise Influence Jewellery",
+    "pricing": "Randomise Influence Jewellery"
+  },
+  "Randomise the Influence types on an Influenced Normal, Magic or Rare Weapon or Quiver, as well as reforging the item with new random modifiers": {
+    "type": "RandomiseInfluenceWeapon",
+    "message": "Randomise Influence Weapon",
+    "pricing": "Randomise Influence Weapon"
+  },
+  "Randomise the numeric values of the random Influence modifiers on a Magic or Rare item": {
+    "type": "RandomiseNumericInfluence",
+    "message": "Randomise values of Influence mods",
+    "pricing": ""
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Caster modifier": {
+    "type": "ReforgeCaster",
+    "message": "Reforge Caster",
+    "pricing": "Reforge Caster"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Caster modifier. Caster modifiers are more common": {
+    "type": "ReforgeCasterMoreCommon",
+    "message": "Reforge Caster More Common",
+    "pricing": "Reforge Caster More Common"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Chaos modifier": {
+    "type": "ReforgeChaos",
+    "message": "Reforge Chaos",
+    "pricing": "Reforge Chaos"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Chaos modifier. Chaos modifiers are more common": {
+    "type": "ReforgeChaosMoreCommon",
+    "message": "Reforge Chaos More Common",
+    "pricing": "Reforge Chaos More Common"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Cold modifier": {
+    "type": "ReforgeCold",
+    "message": "Reforge Cold",
+    "pricing": "Reforge Cold"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Cold modifier. Cold modifiers are more common": {
+    "type": "ReforgeColdMoreCommon",
+    "message": "Reforge Cold More Common",
+    "pricing": "Reforge Cold More Common"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Critical modifier": {
+    "type": "ReforgeCritical",
+    "message": "Reforge Critical",
+    "pricing": "Reforge Critical"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Critical modifier. Critical modifiers are more common": {
+    "type": "ReforgeCriticalMoreCommon",
+    "message": "Reforge Critical More Common",
+    "pricing": "Reforge Critical More Common"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Defence modifier": {
+    "type": "ReforgeDefence",
+    "message": "Reforge Defence",
+    "pricing": "Reforge Defence"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Defence modifier. Defence modifiers are more common": {
+    "type": "ReforgeDefenceMoreCommon",
+    "message": "Reforge Defence More Common",
+    "pricing": "Reforge Defence More Common"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Fire modifier": {
+    "type": "ReforgeFire",
+    "message": "Reforge Fire",
+    "pricing": "Reforge Fire"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Fire modifier. Fire modifiers are more common": {
+    "type": "ReforgeFireMoreCommon",
+    "message": "Reforge Fire More Common",
+    "pricing": "Reforge Fire More Common"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Life modifier": {
+    "type": "ReforgeLife",
+    "message": "Reforge Life",
+    "pricing": "Reforge Life"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Life modifier. Life modifiers are more common": {
+    "type": "ReforgeLifeMoreCommon",
+    "message": "Reforge Life More Common",
+    "pricing": "Reforge Life More Common"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Lightning modifier": {
+    "type": "ReforgeLightning",
+    "message": "Reforge Lightning",
+    "pricing": "Reforge Lightning"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Lightning modifier. Lightning modifiers are more common": {
+    "type": "ReforgeLightningMoreCommon",
+    "message": "Reforge Lightning More Common",
+    "pricing": "Reforge Lightning More Common"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Physical modifier": {
+    "type": "ReforgePhysical",
+    "message": "Reforge Physical",
+    "pricing": "Reforge Physical"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Physical modifier. Physical modifiers are more common": {
+    "type": "ReforgePhysicalMoreCommon",
+    "message": "Reforge Physical More Common",
+    "pricing": "Reforge Physical More Common"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Speed modifier": {
+    "type": "ReforgeSpeed",
+    "message": "Reforge Speed",
+    "pricing": "Reforge Speed"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Speed modifier. Speed modifiers are more common": {
+    "type": "ReforgeSpeedMoreCommon",
+    "message": "Reforge Speed More Common",
+    "pricing": "Reforge Speed More Common"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including an Attack modifier": {
+    "type": "ReforgeAttack",
+    "message": "Reforge Attack",
+    "pricing": "Reforge Attack"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including an Attack modifier. Attack modifiers are more common": {
+    "type": "ReforgeAttackMoreCommon",
+    "message": "Reforge Attack More Common",
+    "pricing": "Reforge Attack More Common"
+  },
+  "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including an Influence modifier. Influence modifiers are more common": {
+    "type": "ReforgeInfluence",
+    "message": "Reforge Influence More Common",
+    "pricing": "Reforge Influence More Common"
+  },
+  "Reforge a Rare item with Lucky modifier values, keeping all Prefixes": {
+    "type": "ReforgeKeepPrefixesLucky",
+    "message": "Reforge keep Prefix Lucky",
+    "pricing": "Reforge keep Prefix Lucky"
+  },
+  "Reforge a Rare item with Lucky modifier values, keeping all Suffixes": {
+    "type": "ReforgeKeepSuffixesLucky",
+    "message": "Reforge keep Suffix Lucky",
+    "pricing": "Reforge keep Suffix Lucky"
+  },
+  "Reforge a Rare item with new random modifiers 10 times, using the outcome with the highest average modifier level": {
+    "type": "ReforgeRare10",
+    "message": "Reforge a Rare 10x",
+    "pricing": ""
+  },
+  "Reforge a Rare item, being much less likely to receive the same modifier types": {
+    "type": "ReforgeLessLikely",
+    "message": "Reforge Rare Less Likely",
+    "pricing": "Reforge Rare Less Likely"
+  },
+  "Reforge a Rare item, being much more likely to receive the same modifier types": {
+    "type": "ReforgeMoreLikely",
+    "message": "Reforge Rare More Likely",
+    "pricing": "Reforge Rare More Likely"
+  },
+  "Reforge a Rare item, keeping all Prefixes": {
+    "type": "ReforgeKeepPrefixes",
+    "message": "Reforge keep Prefix",
+    "pricing": "Reforge keep Prefix"
+  },
+  "Reforge a Rare item, keeping all Suffixes": {
+    "type": "ReforgeKeepSuffixes",
+    "message": "Reforge keep Suffix",
+    "pricing": "Reforge keep Suffix"
+  },
+  "Reforge the colour of a non-Blue socket on an item, turning it Blue": {
+    "type": "ReforgeNonBlueToBlue",
+    "message": "Non-Blue into Blue Socket",
+    "pricing": "Non-Blue into Blue Socket"
+  },
+  "Reforge the colour of a non-Green socket on an item, turning it Green": {
+    "type": "ReforgeNonGreenToGreen",
+    "message": "Non-Green into Green Socket",
+    "pricing": "Non-Green into Green Socket"
+  },
+  "Reforge the colour of a non-Red socket on an item, turning it Red": {
+    "type": "ReforgeNonRedToRed",
+    "message": "Non-Red into Red Socket",
+    "pricing": "Non-Red into Red Socket"
+  },
+  "Reforge the colour of a random socket on an item, turning it White": {
+    "type": "ReforgeWhite",
+    "message": "Reforge into White Socket",
+    "pricing": "Reforge into White Socket"
+  },
+  "Reforge the colour of three random sockets on an item, turning them Red, Blue and Green": {
+    "type": "ThreeRandomRGB",
+    "message": "Reforge into Red, Blue and Green",
+    "pricing": ""
+  },
+  "Reforge the colour of two random sockets on an item, turning them Blue and Green": {
+    "type": "TwoRandomBlueGreen",
+    "message": "Reforge into Blue and Green",
+    "pricing": ""
+  },
+  "Reforge the colour of two random sockets on an item, turning them Red and Blue": {
+    "type": "TwoRandomRedBlue",
+    "message": "Reforge into Red and Blue",
+    "pricing": ""
+  },
+  "Reforge the colour of two random sockets on an item, turning them Red and Green": {
+    "type": "TwoRandomRedGreen",
+    "message": "Reforge into Red and Green",
+    "pricing": ""
+  },
+  "Reforge the colours of sockets on an item 10 times, using the outcome with the greatest number of less-common socket colours": {
+    "type": "ReforgeColors10",
+    "message": "Reforge colors 10x",
+    "pricing": ""
+  },
+  "Reforge the links between sockets on an item 10 times, using the outcome with the greatest number of linked sockets": {
+    "type": "ReforgeLinks10",
+    "message": "Reforge links 10x",
+    "pricing": ""
+  },
+  "Reforge the links between sockets on an item, linking five sockets": {
+    "type": "FiveLinks",
+    "message": "Five Links",
+    "pricing": "Five Links"
+  },
+  "Reforge the links between sockets on an item, linking four sockets": {
+    "type": "FourLinks",
+    "message": "Four Links",
+    "pricing": ""
+  },
+  "Reforge the links between sockets on an item, linking six sockets": {
+    "type": "SixLinks",
+    "message": "Six Links",
+    "pricing": "Six Links"
+  },
+  "Reforge the links between sockets on an item, linking three sockets": {
+    "type": "ThreeLinks",
+    "message": "Three Links",
+    "pricing": ""
+  },
+  "Reforge the number of sockets on an item 10 times, using the outcome with the greatest number of sockets": {
+    "type": "ReforgeSockets10",
+    "message": "Reforge sockets 10x",
+    "pricing": ""
+  },
+  "Remove a random Influence modifier from an item": {
+    "type": "RemoveInfluence",
+    "message": "Remove Influence",
+    "pricing": ""
+  },
+  "Remove a random Influence modifier from an item and add a new Influence modifier": {
+    "type": "RemoveAddInfluence",
+    "message": "Remove Influence Add Influence",
+    "pricing": ""
+  },
+  "Remove a random non-Attack modifier from a non-Influenced item and add a new Attack modifier": {
+    "type": "RemoveAddNonAttack",
+    "message": "Remove Non-Attack Add Attack",
+    "pricing": "Remove Non-Attack Add Attack"
+  },
+  "Remove a random non-Caster modifier from a non-Influenced item and add a new Caster modifier": {
+    "type": "RemoveAddNonCaster",
+    "message": "Remove Non-Caster Add Caster",
+    "pricing": "Remove Non-Caster Add Caster"
+  },
+  "Remove a random non-Chaos modifier from a non-Influenced item and add a new Chaos modifier": {
+    "type": "RemoveAddNonChaos",
+    "message": "Remove Non-Chaos Add Chaos",
+    "pricing": "Remove Non-Chaos Add Chaos"
+  },
+  "Remove a random non-Cold modifier from a non-Influenced item and add a new Cold modifier": {
+    "type": "RemoveAddNonCold",
+    "message": "Remove Non-Cold Add Cold",
+    "pricing": "Remove Non-Cold Add Cold"
+  },
+  "Remove a random non-Critical modifier from a non-Influenced item and add a new Critical modifier": {
+    "type": "RemoveAddNonCritical",
+    "message": "Remove Non-Critical Add Critical",
+    "pricing": "Remove Non-Critical Add Critical"
+  },
+  "Remove a random non-Defence modifier from a non-Influenced item and add a new Defence modifier": {
+    "type": "RemoveAddNonDefence",
+    "message": "Remove Non-Defence Add Defence",
+    "pricing": "Remove Non-Defence Add Defence"
+  },
+  "Remove a random non-Fire modifier from a non-Influenced item and add a new Fire modifier": {
+    "type": "RemoveAddNonFire",
+    "message": "Remove Non-Fire Add Fire",
+    "pricing": "Remove Non-Fire Add Fire"
+  },
+  "Remove a random non-Influence modifier from an item and add a new Influence modifier": {
+    "type": "RemoveAddNonInfluence",
+    "message": "Remove Non-Influence Add Influence",
+    "pricing": "Remove Non-Influence Add Influence"
+  },
+  "Remove a random non-Life modifier from a non-Influenced item and add a new Life modifier": {
+    "type": "RemoveAddNonLife",
+    "message": "Remove Non-Life Add Life",
+    "pricing": "Remove Non-Life Add Life"
+  },
+  "Remove a random non-Lightning modifier from a non-Influenced item and add a new Lightning modifier": {
+    "type": "RemoveAddNonLightning",
+    "message": "Remove Non-Lightning Add Lightning",
+    "pricing": "Remove Non-Lightning Add Lightning"
+  },
+  "Remove a random non-Physical modifier from a non-Influenced item and add a new Physical modifier": {
+    "type": "RemoveAddNonPhysical",
+    "message": "Remove Non-Physical Add Physical",
+    "pricing": "Remove Non-Physical Add Physical"
+  },
+  "Remove a random non-Speed modifier from a non-Influenced item and add a new Speed modifier": {
+    "type": "RemoveAddNonSpeed",
+    "message": "Remove Non-Speed Add Speed",
+    "pricing": "Remove Non-Speed Add Speed"
+  },
+  "Reroll the values of Prefix modifiers on a Magic or Rare item, with Lucky modifier values": {
+    "type": "RerollPrefixLucky",
+    "message": "Reroll Prefix Lucky",
+    "pricing": "Reroll Prefix Lucky"
+  },
+  "Reroll the values of Prefix, Suffix and Implicit modifiers on a Rare item, with Lucky modifier values": {
+    "type": "RerollPrefixSuffixImplicitLucky",
+    "message": "Reroll All Lucky",
+    "pricing": "Reroll All Lucky"
+  },
+  "Reroll the values of Suffix modifiers on a Magic or Rare item, with Lucky modifier values": {
+    "type": "RerollSuffixLucky",
+    "message": "Reroll Suffix Lucky",
+    "pricing": "Reroll Suffix Lucky"
+  },
+  "Sacrifice a Corrupted Gem to gain 20% of the gem's quality as Gemcutter's Prisms": {
+    "type": "SacrificeCorruptedQuality20",
+    "message": "Sacrifice Gem, 20% quality as GCP",
+    "pricing": ""
+  },
+  "Sacrifice a Corrupted Gem to gain 20% of the gem's total experience stored as a Facetor's Lens": {
+    "type": "SacrificeCorruptedExp20",
+    "message": "Sacrifice Gem, 20% XP as Facetor Lens",
+    "pricing": "Sacrifice Gem, 20% XP As Facetor Lens"
+  },
+  "Sacrifice a Corrupted Gem to gain 30% of the gem's quality as Gemcutter's Prisms": {
+    "type": "SacrificeCorruptedQuality30",
+    "message": "Sacrifice Gem, 30% quality as GCP",
+    "pricing": ""
+  },
+  "Sacrifice a Corrupted Gem to gain 30% of the gem's total experience stored as a Facetor's Lens": {
+    "type": "SacrificeCorruptedExp30",
+    "message": "Sacrifice Gem, 30% XP as Facetor Lens",
+    "pricing": "Sacrifice Gem, 30% XP As Facetor Lens"
+  },
+  "Sacrifice a Corrupted Gem to gain 40% of the gem's quality as Gemcutter's Prisms": {
+    "type": "SacrificeCorruptedQuality40",
+    "message": "Sacrifice Gem, 40% quality as GCP",
+    "pricing": ""
+  },
+  "Sacrifice a Corrupted Gem to gain 40% of the gem's total experience stored as a Facetor's Lens": {
+    "type": "SacrificeCorruptedExp40",
+    "message": "Sacrifice Gem, 40% XP as Facetor Lens",
+    "pricing": "Sacrifice Gem, 40% XP As Facetor Lens"
+  },
+  "Sacrifice a Corrupted Gem to gain 50% of the gem's quality as Gemcutter's Prisms": {
+    "type": "SacrificeCorruptedQuality50",
+    "message": "Sacrifice Gem, 50% quality as GCP",
+    "pricing": ""
+  },
+  "Sacrifice a Corrupted Gem to gain 50% of the gem's total experience stored as a Facetor's Lens": {
+    "type": "SacrificeCorruptedExp50",
+    "message": "Sacrifice Gem, 50% XP as Facetor Lens",
+    "pricing": "Sacrifice Gem, 50% XP As Facetor Lens"
+  },
+  "Sacrifice a Corrupted Map. Create a new Corrupted Map of the same tier and rarity.": {
+    "type": "SacrificeMapCorrupted",
+    "message": "Sacrifice Corrupted Map",
+    "pricing": ""
+  },
+  "Sacrifice a Map for multiple Maps one tier lower": {
+    "type": "SacrificeMapTierLower",
+    "message": "Sacrifice Map for multiple lower tier",
+    "pricing": ""
+  },
+  "Sacrifice a Map to create a random Scarab based on its colour": {
+    "type": "SacrificeMapScarab",
+    "message": "Sacrifice map for random Scarab",
+    "pricing": ""
+  },
+  "Sacrifice a Map to create random Map currency based on its tier": {
+    "type": "SacrificeMapCurrency",
+    "message": "Sacrifice map for random Currency",
+    "pricing": ""
+  },
+  "Sacrifice a Map to gain 1 Atlas Mission for each Master based on its colour": {
+    "type": "SacrificeMap1All",
+    "message": "Sacrifice map for 1 Atlas mission",
+    "pricing": ""
+  },
+  "Sacrifice a Map to gain 3 Alva Atlas Missions based on its colour": {
+    "type": "SacrificeMap3Alva",
+    "message": "Sacrifice map for 3 Alva missions",
+    "pricing": ""
+  },
+  "Sacrifice a Map to gain 3 Einhar Atlas Missions based on its colour": {
+    "type": "SacrificeMap3Einhar",
+    "message": "Sacrifice map for 3 Einhar missions",
+    "pricing": ""
+  },
+  "Sacrifice a Map to gain 3 Jun Atlas Missions based on its colour": {
+    "type": "SacrificeMap3Jun",
+    "message": "Sacrifice map for 3 Jun missions",
+    "pricing": ""
+  },
+  "Sacrifice a Map to gain 3 Kirac Atlas Missions based on its colour": {
+    "type": "SacrificeMap3Kirac",
+    "message": "Sacrifice map for 3 Kirac missions",
+    "pricing": ""
+  },
+  "Sacrifice a Map to gain 3 Niko Atlas Missions based on its colour": {
+    "type": "SacrificeMap3Niko",
+    "message": "Sacrifice map for 3 Niko missions",
+    "pricing": ""
+  },
+  "Sacrifice a Map. Add a free Infused Ambush craft to your Map device": {
+    "type": "SacrificeMap1Ambush",
+    "message": "Sacrifice map for Ambush craft",
+    "pricing": ""
+  },
+  "Sacrifice a Map. Add a free Infused Anarchy craft to your Map device": {
+    "type": "SacrificeMap1Anarchy",
+    "message": "Sacrifice map for Anarchy craft",
+    "pricing": ""
+  },
+  "Sacrifice a Map. Add a free Infused Bloodlines craft to your Map device": {
+    "type": "SacrificeMap1Bloodlines",
+    "message": "Sacrifice map for Bloodlines craft",
+    "pricing": ""
+  },
+  "Sacrifice a Map. Add a free Infused Domination craft to your Map device": {
+    "type": "SacrificeMap1Domination",
+    "message": "Sacrifice map for Domination craft",
+    "pricing": ""
+  },
+  "Sacrifice a Map. Add a free Infused Harbinger craft to your Map device": {
+    "type": "SacrificeMap1Harbinger",
+    "message": "Sacrifice map for Harbinger craft",
+    "pricing": ""
+  },
+  "Sacrifice a Map. Add a free Infused Nemesis craft to your Map device": {
+    "type": "SacrificeMap1Nemesis",
+    "message": "Sacrifice map for Nemesis craft",
+    "pricing": ""
+  },
+  "Sacrifice a Map. Add a free Infused Rampage craft to your Map device": {
+    "type": "SacrificeMap1Rampage",
+    "message": "Sacrifice map for Rampage craft",
+    "pricing": ""
+  },
+  "Sacrifice a Map. Add a free craft to your Map device": {
+    "type": "SacrificeMap1Craft",
+    "message": "Sacrifice map for random craft",
+    "pricing": ""
+  },
+  "Sacrifice a Red Map to create random Map Fragments based on its tier": {
+    "type": "SacrificeMapRedFragments",
+    "message": "Sacrifice Red map for Fragments",
+    "pricing": ""
+  },
+  "Sacrifice a Tier 14 Map or higher to create a random Conqueror-occupied Map": {
+    "type": "SacrificeMapConqueror",
+    "message": "Sacrifice map for Conqueror map",
+    "pricing": ""
+  },
+  "Sacrifice a Tier 14 Map or higher to create a random Elder Guardian-occupied Map": {
+    "type": "SacrificeMapElder",
+    "message": "Sacrifice map for Elder map",
+    "pricing": ""
+  },
+  "Sacrifice a Tier 14 Map or higher to create a random Shaper Guardian-occupied Map": {
+    "type": "SacrificeMapShaper",
+    "message": "Sacrifice map for Shaper map",
+    "pricing": ""
+  },
+  "Sacrifice a Tier 14 Map or higher to create a random Unique Synthesis Map": {
+    "type": "SacrificeMapSynthesis",
+    "message": "Sacrifice map for Synthesis map",
+    "pricing": ""
+  },
+  "Sacrifice a Weapon or Armour to create a Belt with similar modifiers": {
+    "type": "SacrificeForBelt",
+    "message": "Sacrifice Weapon/Armour to Belt",
+    "pricing": "Sacrifice Weapon/Armour to Belt"
+  },
+  "Sacrifice a Weapon or Armour to create a Jewel with similar modifiers": {
+    "type": "SacrificeForJewel",
+    "message": "Sacrifice Weapon/Armour to Jewel",
+    "pricing": "Sacrifice Weapon/Armour to Jewel"
+  },
+  "Sacrifice a Weapon or Armour to create a Ring with similar modifiers": {
+    "type": "SacrificeForRing",
+    "message": "Sacrifice Weapon/Armour to Ring",
+    "pricing": "Sacrifice Weapon/Armour to Ring"
+  },
+  "Sacrifice a Weapon or Armour to create an Amulet with similar modifiers": {
+    "type": "SacrificeForAmulet",
+    "message": "Sacrifice Weapon/Armour to Amulet",
+    "pricing": "Sacrifice Weapon/Armour to Amulet"
+  },
+  "Sacrifice a White or Yellow Map to create random Map Fragments based on its tier": {
+    "type": "SacrificeMapWhiteYellowFragments",
+    "message": "Sacrifice White/Yellow map for Fragments",
+    "pricing": ""
+  },
+  "Sacrifice a stack of Divination Cards for that many different Divination Cards": {
+    "type": "SacrificeDivStack",
+    "message": "Sacrifice Div cards for different ones",
+    "pricing": ""
+  },
+  "Sacrifice up to half a stack of Divination Cards to receive between 0 and twice that amount of the same Card": {
+    "type": "SacrificeDivGamble",
+    "message": "Sacrifice Divination Card 0-2x",
+    "pricing": "Sacrifice Divination Card 0-2x"
+  },
+  "Set a new Implicit modifier on a Cluster Jewel": {
+    "type": "SetImplicitCluster",
+    "message": "Set Implicit, Cluster Jewel",
+    "pricing": "Set Implicit, Cluster Jewel"
+  },
+  "Set a new Implicit modifier on a Cobalt, Crimson, Viridian or Prismatic Jewel": {
+    "type": "SetImplicitCobaltCrimsonViridianPrismatic",
+    "message": "Set Implicit, Basic Jewel",
+    "pricing": "Set Implicit, Basic Jewel"
+  },
+  "Set a new Implicit modifier on an Abyss Jewel or Timeless Jewel": {
+    "type": "SetImplicitAbyssTimeless",
+    "message": "Set Implicit, Abyss/Timeless Jewel",
+    "pricing": "Set Implicit, Abyss/Timeless Jewel"
+  },
+  "Set an item to five sockets": {
+    "type": "FiveSockets",
+    "message": "Five Sockets",
+    "pricing": ""
+  },
+  "Set an item to four sockets": {
+    "type": "FourSockets",
+    "message": "Four Sockets",
+    "pricing": ""
+  },
+  "Set an item to six sockets": {
+    "type": "SixSockets",
+    "message": "Six Sockets",
+    "pricing": ""
+  },
+  "Set an item to three sockets": {
+    "type": "ThreeSockets",
+    "message": "Three Sockets",
+    "pricing": ""
+  },
+  "Split a Scarab into two Scarabs of lower rarity": {
+    "type": "SplitScarab",
+    "message": "Split a Scarab",
+    "pricing": ""
+  },
+  "Synthesise an item, giving random Synthesised implicits. Cannot be used on Unique, Influenced, Synthesised or Fractured items": {
+    "type": "SynthesiseItem",
+    "message": "Synthesise an item",
+    "pricing": "Synthesise an item"
+  },
+  "Upgrade a Magic item to a Rare item, adding four random high-tier modifiers": {
+    "type": "UpgradeMagicFourModHigh",
+    "message": "Upgrade Magic to Rare 4 High Tier Mod",
+    "pricing": "Upgrade Magic to Rare 4 High Tier Mod"
+  },
+  "Upgrade a Magic item to a Rare item, adding four random modifiers": {
+    "type": "UpgradeMagicFourMod",
+    "message": "Upgrade Magic to Rare 4 Mod",
+    "pricing": "Upgrade Magic to Rare 4 Mod"
+  },
+  "Upgrade a Magic item to a Rare item, adding three random high-tier modifiers": {
+    "type": "UpgradeMagicThreeModHigh",
+    "message": "Upgrade Magic to Rare 3 High Tier Mod",
+    "pricing": "Upgrade Magic to Rare 3 High Tier Mod"
+  },
+  "Upgrade a Magic item to a Rare item, adding three random modifiers": {
+    "type": "UpgradeMagicThreeMod",
+    "message": "Upgrade Magic to Rare 3 Mod",
+    "pricing": "Upgrade Magic to Rare 3 Mod"
+  },
+  "Upgrade a Magic item to a Rare item, adding two random high-tier modifiers": {
+    "type": "UpgradeMagicTwoModHigh",
+    "message": "Upgrade Magic to Rare 2 High Tier Mod",
+    "pricing": "Upgrade Magic to Rare 2 High Tier Mod"
+  },
+  "Upgrade a Magic item to a Rare item, adding two random modifiers": {
+    "type": "UpgradeMagicTwoMod",
+    "message": "Upgrade Magic to Rare 2 Mod",
+    "pricing": "Upgrade Magic to Rare 2 Mod"
+  },
+  "Upgrade a Normal item to a Magic item, adding one random high-tier modifier": {
+    "type": "UpgradeNormalOneModHigh",
+    "message": "Upgrade Normal to Magic 1 High Tier Mod",
+    "pricing": "Upgrade Normal to Magic 1 High Tier Mod"
+  },
+  "Upgrade a Normal item to a Magic item, adding two random high-tier modifiers": {
+    "type": "UpgradeNormalTwoModHigh",
+    "message": "Upgrade Normal to Magic 2 High Tier Mod",
+    "pricing": "Upgrade Normal to Magic 2 High Tier Mod"
+  },
+  "Upgrade an Engineer's Orb to an Infused Engineer's Orb": {
+    "type": "UpgradeEngineers",
+    "message": "Upgrade Engineer's Orb",
+    "pricing": ""
+  },
+  "Upgrade an Oil into an Oil one tier higher": {
+    "type": "UpgradeOilTier",
+    "message": "Upgrade Oil",
+    "pricing": ""
+  },
+  "Upgrade the tier of an Essence": {
+    "type": "UpgradeEssenceTier",
+    "message": "Upgrade Essence",
+    "pricing": ""
+  },
+  "Upgrades a Normal Item to a random rarity 10 times, using the outcome with the highest rarity": {
+    "type": "UpgradeRare10",
+    "message": "Upgrade Rarity 10x",
+    "pricing": ""
+  }
+}
