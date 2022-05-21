@@ -37,7 +37,7 @@ jobs:
           wails doctor
 
       - name: Build
-        run: wails build -v 2 --upx
+        run: wails build -v 2
 
       - name: Archive artifacts
         uses: actions/upload-artifact@v3
@@ -102,6 +102,7 @@ jobs:
 
       - name: Install Wails
         run: |
+          go env
           go install github.com/wailsapp/wails/v2/cmd/wails@latest
           wails doctor
 
