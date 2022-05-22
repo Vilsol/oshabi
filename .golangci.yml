@@ -13,7 +13,7 @@ linters:
     - ineffassign
     - staticcheck
     - structcheck
-    # - typecheck
+    - typecheck
     - unused
     - varcheck
     - bidichk
@@ -28,3 +28,9 @@ linters:
     - prealloc
     - whitespace
     - wrapcheck
+
+issues:
+  exclude:
+    - "undeclared name: `gosseract`"
+    - "\"github.com/otiai10/gosseract/v2\" imported but not used"
+    - "pattern all:frontend/dist: no matching files found"
