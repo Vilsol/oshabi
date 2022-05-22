@@ -2,13 +2,103 @@ package cv
 
 import (
 	"bytes"
+	"fmt"
+	"github.com/otiai10/gosseract/v2"
+	"github.com/vilsol/oshabi/config"
 	"image"
 	"image/png"
+	"io"
+	"net/http"
+	"os"
+	"path"
 
 	"github.com/pkg/errors"
 )
 
+var client *gosseract.Client
+
+func InitOCR() error {
+	client = gosseract.NewClient()
+
+	cacheDir, err := os.UserCacheDir()
+	if err != nil {
+		return errors.Wrap(err, "failed to find cache directory")
+	}
+
+	fullCacheDir := path.Join(cacheDir, "oshabi")
+	if err := os.MkdirAll(fullCacheDir, 0777); err != nil {
+		if !os.IsExist(err) {
+			return errors.Wrap(err, "failed to create cache directory "+fullCacheDir)
+		}
+	}
+
+	if err := client.SetTessdataPrefix(fullCacheDir); err != nil {
+		return errors.Wrap(err, "failed to set tessdata prefix")
+	}
+
+	if err := client.SetLanguage("eng"); err != nil {
+		return errors.Wrap(err, "failed setting OCR language")
+	}
+
+	if err := verifyLanguage(config.Get().Language); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func verifyLanguage(language config.Language) error {
+	cacheDir, err := os.UserCacheDir()
+	if err != nil {
+		return errors.Wrap(err, "failed to find cache directory")
+	}
+
+	fullCacheDir := path.Join(cacheDir, "oshabi")
+	if err := os.MkdirAll(fullCacheDir, 0777); err != nil {
+		if !os.IsExist(err) {
+			return errors.Wrap(err, "failed to create cache directory "+fullCacheDir)
+		}
+	}
+
+	langPath := path.Join(fullCacheDir, string(language)+".traineddata")
+	_, err = os.Stat(langPath)
+	if err == nil {
+		return nil
+	}
+
+	if !os.IsNotExist(err) {
+		return errors.Wrap(err, "failed to stat language file "+langPath)
+	}
+
+	out, err := os.Create(langPath)
+	if err != nil {
+		return errors.Wrap(err, "failed creating language file "+langPath)
+	}
+	defer out.Close()
+
+	resp, err := http.Get(fmt.Sprintf("https://github.com/tesseract-ocr/tessdata/raw/main/%s.traineddata", string(language)))
+	if err != nil {
+		return errors.Wrap(err, "failed making request")
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		return fmt.Errorf("bad status: %s", resp.Status)
+	}
+
+	_, err = io.Copy(out, resp.Body)
+	if err != nil {
+		return errors.Wrap(err, "failed to read request body")
+	}
+
+	return nil
+}
+
 func ocr(img image.Image, whitelist string) (string, error) {
+	if err := verifyLanguage(config.Get().Language); err != nil {
+		return "", err
+	}
+
 	buff := new(bytes.Buffer)
 	if err := png.Encode(buff, PrepareForOCR(img)); err != nil {
 		return "", errors.Wrap(err, "failed to encode image to png")

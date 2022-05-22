@@ -1,25 +1,13 @@
 package cv
 
 import (
+	"github.com/disintegration/imaging"
+	"github.com/pkg/errors"
+	"github.com/vilsol/oshabi/data"
 	"image"
 	"image/color"
 	"image/draw"
-
-	"github.com/disintegration/imaging"
-	"github.com/otiai10/gosseract/v2"
-	"github.com/pkg/errors"
-	"github.com/vilsol/oshabi/data"
 )
-
-var client *gosseract.Client
-
-func InitOCR() error {
-	client = gosseract.NewClient()
-	if err := client.SetLanguage("eng"); err != nil {
-		return errors.Wrap(err, "failed setting OCR language")
-	}
-	return nil
-}
 
 func OCRListing(img image.Image) (string, error) {
 	return ocr(img, "1234567890abcdefghijklmnopqrstuvwxyz,.%' ")
