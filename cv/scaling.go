@@ -1,13 +1,12 @@
 package cv
 
 import (
-	"image"
-	"math"
-
 	"github.com/disintegration/imaging"
 	"github.com/pkg/errors"
 	"github.com/vilsol/oshabi/data"
 	"gocv.io/x/gocv"
+	"image"
+	"math"
 )
 
 func CalculateScaling(img image.Image) (float64, error) {
@@ -33,13 +32,18 @@ func CalculateScaling(img image.Image) (float64, error) {
 	}
 
 	if math.Max(menuButtonScaling, topRightXScaling)-math.Min(menuButtonScaling, topRightXScaling) > 0.1 {
-		return 0, errors.New("cv differentiates >1, please post a bug report with a screenshot")
+		return 0, errors.New("cv differentiates >0.1, please post a bug report with a screenshot of an opened horticrafting station")
 	}
 
 	avg := (menuButtonScaling + topRightXScaling) / 2
 
-	// Round to the nearest 0.05
-	return math.Round(avg/0.05) * 0.05, nil
+	// Round to the nearest 0.005
+	return math.Round(avg/0.005) * 0.005, nil
+}
+
+type resultTuple struct {
+	Result gocv.Mat
+	Scale  float64
 }
 
 func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, image.Point, error) {
@@ -53,12 +57,11 @@ func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, im
 
 	size := dynamic.Bounds()
 
-	bestScaling := 0.05
-	bestValue := float32(0)
-	var bestLocation image.Point
+	results := make(chan resultTuple)
+	count := 0
 
-	// TODO Goroutines
-	for i := 0.25; i < 2.01; i += 0.05 {
+	for i := 0.25; i < 2.01; i += 0.005 {
+		count++
 		scale := math.Round(i*1000) / 1000
 		width := int(float64(size.Dx()) * scale)
 		height := int(float64(size.Dy()) * scale)
@@ -77,22 +80,39 @@ func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, im
 		grayResized := gocv.NewMat()
 		gocv.CvtColor(matResized, &grayResized, gocv.ColorRGBToGray)
 
-		m := gocv.NewMat()
-		result := gocv.NewMat()
-		gocv.MatchTemplate(grayLeftCrop, grayResized, &result, gocv.TmCcoeffNormed, m)
+		go func(grayLeftCrop gocv.Mat, grayResized gocv.Mat, scale float64) {
+			m := gocv.NewMat()
+			result := gocv.NewMat()
+			gocv.MatchTemplate(grayLeftCrop, grayResized, &result, gocv.TmCcoeffNormed, m)
+			results <- resultTuple{
+				Result: result,
+				Scale:  scale,
+			}
+			_ = m.Close()
+			_ = matResized.Close()
+			_ = grayResized.Close()
+		}(grayLeftCrop, grayResized, scale)
+	}
 
-		_, maxVal, _, maxLoc := gocv.MinMaxLoc(result)
-		_ = result.Close()
-		_ = m.Close()
-		_ = matResized.Close()
-		_ = grayResized.Close()
+	bestScaling := 0.05
+	bestValue := float32(0)
+	var bestLocation image.Point
+
+	for i := 0; i < count; i++ {
+		result := <-results
+
+		_, maxVal, _, maxLoc := gocv.MinMaxLoc(result.Result)
 
 		if maxVal > bestValue {
 			bestValue = maxVal
-			bestScaling = scale
+			bestScaling = result.Scale
 			bestLocation = maxLoc
 		}
+
+		_ = result.Result.Close()
 	}
+
+	close(results)
 
 	return bestScaling, bestValue, bestLocation, nil
 }
