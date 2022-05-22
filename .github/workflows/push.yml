@@ -28,6 +28,8 @@ jobs:
   linux:
     name: Build (Linux)
     runs-on: ubuntu-20.04
+    needs:
+      - lint
     steps:
       - name: Check out code
         uses: actions/checkout@v2
@@ -72,6 +74,8 @@ jobs:
   windows:
     name: Build (Windows)
     runs-on: windows-latest
+    needs:
+      - lint
     defaults:
       run:
         shell: msys2 {0}
