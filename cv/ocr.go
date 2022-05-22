@@ -3,14 +3,15 @@ package cv
 import (
 	"bytes"
 	"fmt"
-	"github.com/otiai10/gosseract/v2"
-	"github.com/vilsol/oshabi/config"
 	"image"
 	"image/png"
 	"io"
 	"net/http"
 	"os"
 	"path"
+
+	"github.com/otiai10/gosseract/v2"
+	"github.com/vilsol/oshabi/config"
 
 	"github.com/pkg/errors"
 )

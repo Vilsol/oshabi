@@ -1,12 +1,13 @@
 package cv
 
 import (
-	"github.com/disintegration/imaging"
-	"github.com/pkg/errors"
-	"github.com/vilsol/oshabi/data"
 	"image"
 	"image/color"
 	"image/draw"
+
+	"github.com/disintegration/imaging"
+	"github.com/pkg/errors"
+	"github.com/vilsol/oshabi/data"
 )
 
 func OCRListing(img image.Image) (string, error) {
