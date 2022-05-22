@@ -44,15 +44,15 @@ type Config struct {
 	Display  int                    `json:"display"`
 }
 
-var config Config
+var Cfg Config
 
 func InitConfig() error {
 	if err := Load(); err != nil {
 		return err
 	}
 
-	if config.Version == 0 {
-		config = Config{
+	if Cfg.Version == 0 {
+		Cfg = Config{
 			Version:  1,
 			Scaling:  1,
 			Prices:   map[string]string{},
@@ -85,7 +85,7 @@ func Load() error {
 		return errors.Wrap(err, "failed reading config.json")
 	}
 
-	if err := json.Unmarshal(file, &config); err != nil {
+	if err := json.Unmarshal(file, &Cfg); err != nil {
 		return errors.Wrap(err, "failed parsing config.json")
 	}
 
@@ -93,7 +93,7 @@ func Load() error {
 }
 
 func Save() error {
-	b, err := json.MarshalIndent(config, "", "  ")
+	b, err := json.MarshalIndent(Cfg, "", "  ")
 	if err != nil {
 		return errors.Wrap(err, "failed serializing config.json")
 	}
@@ -131,15 +131,15 @@ func GetConfigDir() (string, error) {
 func AddListings(ctx context.Context, listings []types.ParsedListing) error {
 	for _, listing := range listings {
 		strType := string(listing.Type)
-		if _, ok := config.Listings[strType]; !ok {
-			config.Listings[strType] = make(map[int]int)
+		if _, ok := Cfg.Listings[strType]; !ok {
+			Cfg.Listings[strType] = make(map[int]int)
 		}
 
-		if _, ok := config.Listings[strType][listing.Level]; !ok {
-			config.Listings[strType][listing.Level] = 0
+		if _, ok := Cfg.Listings[strType][listing.Level]; !ok {
+			Cfg.Listings[strType][listing.Level] = 0
 		}
 
-		config.Listings[strType][listing.Level] += listing.Count
+		Cfg.Listings[strType][listing.Level] += listing.Count
 	}
 
 	runtime.EventsEmit(ctx, "listings_updated")
@@ -147,32 +147,32 @@ func AddListings(ctx context.Context, listings []types.ParsedListing) error {
 }
 
 func ClearListings(ctx context.Context) error {
-	config.Listings = make(map[string]map[int]int)
+	Cfg.Listings = make(map[string]map[int]int)
 	runtime.EventsEmit(ctx, "listings_updated")
 	return Save()
 }
 
 func Get() Config {
-	return config
+	return Cfg
 }
 
 func SetListing(ctx context.Context, listing string, level int, count int) error {
-	if _, ok := config.Listings[listing]; !ok {
+	if _, ok := Cfg.Listings[listing]; !ok {
 		return nil
 	}
 
-	if _, ok := config.Listings[listing][level]; !ok {
+	if _, ok := Cfg.Listings[listing][level]; !ok {
 		return nil
 	}
 
 	if count == 0 {
-		delete(config.Listings[listing], level)
+		delete(Cfg.Listings[listing], level)
 
-		if len(config.Listings[listing]) == 0 {
-			delete(config.Listings, listing)
+		if len(Cfg.Listings[listing]) == 0 {
+			delete(Cfg.Listings, listing)
 		}
 	} else {
-		config.Listings[listing][level] = count
+		Cfg.Listings[listing][level] = count
 	}
 
 	runtime.EventsEmit(ctx, "listings_updated")
@@ -180,37 +180,37 @@ func SetListing(ctx context.Context, listing string, level int, count int) error
 }
 
 func SetPrice(ctx context.Context, listing string, price string) error {
-	config.Prices[listing] = price
+	Cfg.Prices[listing] = price
 	runtime.EventsEmit(ctx, "config_updated")
 	return Save()
 }
 
 func SetLeague(ctx context.Context, league string) error {
-	config.League = League(league)
+	Cfg.League = League(league)
 	runtime.EventsEmit(ctx, "config_updated")
 	return Save()
 }
 
 func SetName(ctx context.Context, name string) error {
-	config.Name = name
+	Cfg.Name = name
 	runtime.EventsEmit(ctx, "config_updated")
 	return Save()
 }
 
 func SetStream(ctx context.Context, stream bool) error {
-	config.Stream = stream
+	Cfg.Stream = stream
 	runtime.EventsEmit(ctx, "config_updated")
 	return Save()
 }
 
 func SetScaling(ctx context.Context, scaling float64) error {
-	config.Scaling = scaling
+	Cfg.Scaling = scaling
 	runtime.EventsEmit(ctx, "config_updated")
 	return Save()
 }
 
 func SetDisplay(ctx context.Context, display int) error {
-	config.Display = display
+	Cfg.Display = display
 	runtime.EventsEmit(ctx, "config_updated")
 	return Save()
 }

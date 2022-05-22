@@ -74,7 +74,6 @@ func (a *App) Calibrate() error {
 		return err
 	}
 
-	// TODO actually use scaling
 	return config.SetScaling(a.ctx, scale)
 }
 

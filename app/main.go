@@ -110,6 +110,10 @@ func ReadScreen(offset int, limit int) ([]types.ParsedListing, error) {
 		return nil, err
 	}
 
+	return ReadImage(img, offset, limit)
+}
+
+func ReadImage(img image.Image, offset int, limit int) ([]types.ParsedListing, error) {
 	listings, err := cv.ExtractToListings(img, offset, limit)
 	if err != nil {
 		return nil, err
@@ -161,7 +165,7 @@ func ScrollTop() (bool, error) {
 		return false, err
 	}
 
-	point, pointValue, err := cv.Find(img, data.ScrollUp)
+	point, pointValue, err := cv.Find(img, cv.Scale(data.ScrollUp))
 	if err != nil {
 		return false, errors.Wrap(err, "failed to find scroll up button")
 	}
@@ -172,8 +176,8 @@ func ScrollTop() (bool, error) {
 
 	realX, realY := TranslateCoordinates(point.X, point.Y)
 
-	realX += data.ScrollUp.Bounds().Dx() / 2
-	realY += data.ScrollUp.Bounds().Dy() * 2
+	realX += cv.ScaleBounds(data.ScrollUp).Dx() / 2
+	realY += cv.ScaleBounds(data.ScrollUp).Dy() * 2
 
 	robotgo.Move(realX, realY)
 	time.Sleep(time.Millisecond * 100)
@@ -188,15 +192,15 @@ func ScrollTop() (bool, error) {
 }
 
 func ScrollDown(img image.Image) error {
-	point, _, err := cv.Find(img, data.ScrollDown)
+	point, _, err := cv.Find(img, cv.Scale(data.ScrollDown))
 	if err != nil {
 		return errors.Wrap(err, "failed to find scroll down button")
 	}
 
 	realX, realY := TranslateCoordinates(point.X, point.Y)
 
-	realX += data.ScrollDown.Bounds().Dx() / 2
-	realY += data.ScrollDown.Bounds().Dy() / 2
+	realX += cv.ScaleBounds(data.ScrollDown).Dx() / 2
+	realY += cv.ScaleBounds(data.ScrollDown).Dy() / 2
 
 	robotgo.Move(realX, realY)
 	time.Sleep(time.Millisecond * 25)

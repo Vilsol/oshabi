@@ -1,12 +1,14 @@
 package cv
 
 import (
-	"github.com/disintegration/imaging"
-	"github.com/pkg/errors"
-	"github.com/vilsol/oshabi/data"
-	"gocv.io/x/gocv"
 	"image"
 	"math"
+
+	"github.com/disintegration/imaging"
+	"github.com/pkg/errors"
+	"github.com/vilsol/oshabi/config"
+	"github.com/vilsol/oshabi/data"
+	"gocv.io/x/gocv"
 )
 
 func CalculateScaling(img image.Image) (float64, error) {
@@ -115,4 +117,29 @@ func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, im
 	close(results)
 
 	return bestScaling, bestValue, bestLocation, nil
+}
+
+func Scale(img image.Image) image.Image {
+	size := img.Bounds()
+	scale := math.Round(config.Get().Scaling*1000) / 1000
+	width := int(float64(size.Dx()) * scale)
+	height := int(float64(size.Dy()) * scale)
+	return imaging.Resize(img, width, height, imaging.NearestNeighbor)
+}
+
+func ScaleBounds(img image.Image) image.Rectangle {
+	size := img.Bounds()
+	scale := math.Round(config.Get().Scaling*1000) / 1000
+	width := int(float64(size.Dx()) * scale)
+	height := int(float64(size.Dy()) * scale)
+	return image.Rect(0, 0, width, height)
+}
+
+func ScaleN(n int) int {
+	return int(ScaleNf(float64(n)))
+}
+
+func ScaleNf(n float64) float64 {
+	scale := math.Round(config.Get().Scaling*1000) / 1000
+	return math.Round(scale * n)
 }
