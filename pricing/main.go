@@ -4,11 +4,13 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"io"
+	"net/http"
+
+	"github.com/pkg/errors"
 	"github.com/vilsol/oshabi/config"
 	"github.com/vilsol/oshabi/data"
 	"github.com/wailsapp/wails/v2/pkg/runtime"
-	"io"
-	"net/http"
 )
 
 type CraftPricing struct {
@@ -29,22 +31,22 @@ type RawData struct {
 	} `json:"data"`
 }
 
-func UpdatePricing(ctx context.Context) {
+func UpdatePricing(ctx context.Context) error {
 	league := config.Get().League
 
 	response, err := http.Get(fmt.Sprintf("https://raw.githubusercontent.com/The-Forbidden-Trove/tft-data-prices/master/%s/harvest.json", league))
 	if err != nil {
-		panic(err)
+		return errors.Wrap(err, "failed fetching harvest prices")
 	}
 
 	body, err := io.ReadAll(response.Body)
 	if err != nil {
-		panic(err)
+		return errors.Wrap(err, "failed reading harvest price body")
 	}
 
 	var raw RawData
 	if err := json.Unmarshal(body, &raw); err != nil {
-		panic(err)
+		return errors.Wrap(err, "failed parsing harvest price body to json")
 	}
 
 	resultPrices := make(map[data.HarvestType]CraftPricing)
@@ -57,13 +59,15 @@ func UpdatePricing(ctx context.Context) {
 				LowConfidence: i.LowConfidence,
 			}
 		} else {
-			fmt.Println("Did not find craft for price:", i.Name)
+			runtime.EventsEmit(ctx, "warning", "Did not find craft for price name:", i.Name)
 		}
 	}
 
 	pricing = resultPrices
 
 	runtime.EventsEmit(ctx, "config_updated")
+
+	return nil
 }
 
 func GetPrice(craft data.HarvestType) *CraftPricing {

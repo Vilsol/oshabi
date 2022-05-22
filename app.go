@@ -3,17 +3,21 @@ package main
 import (
 	"context"
 	"fmt"
+	"strconv"
+	"strings"
+	"time"
+
 	"github.com/go-vgo/robotgo/clipboard"
+	"github.com/kbinani/screenshot"
 	"github.com/olekukonko/tablewriter"
+	"github.com/pkg/errors"
 	"github.com/vilsol/oshabi/app"
 	"github.com/vilsol/oshabi/config"
 	"github.com/vilsol/oshabi/cv"
 	"github.com/vilsol/oshabi/data"
 	"github.com/vilsol/oshabi/pricing"
 	"github.com/vilsol/oshabi/types"
-	"strconv"
-	"strings"
-	"time"
+	"github.com/wailsapp/wails/v2/pkg/runtime"
 )
 
 type App struct {
@@ -27,49 +31,68 @@ func NewApp() *App {
 func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
 
-	config.InitConfig()
-	cv.InitOCR()
+	if err := data.InitData(); err != nil {
+		panic(err)
+	}
+
+	if err := config.InitConfig(); err != nil {
+		panic(err)
+	}
+
+	if err := cv.InitOCR(); err != nil {
+		panic(err)
+	}
+
 	data.InitCrafts()
 	app.InitializeApp(ctx)
 
 	// Pricing Loop
 	go func() {
-		pricing.UpdatePricing(a.ctx)
+		if err := pricing.UpdatePricing(ctx); err != nil {
+			runtime.EventsEmit(ctx, "error", err.Error())
+			return
+		}
+
 		time.Sleep(time.Hour)
 	}()
 }
 
-func (a App) domReady(ctx context.Context) {
+func (a App) domReady(_ context.Context) {
 }
 
-func (a *App) shutdown(ctx context.Context) {
+func (a *App) shutdown(_ context.Context) {
 }
 
-func (a *App) Calibrate() {
-	img := app.CaptureScreen()
+func (a *App) Calibrate() error {
+	img, err := app.CaptureScreen()
+	if err != nil {
+		return err
+	}
 
 	scale, err := cv.CalculateScaling(img)
 	if err != nil {
-		fmt.Println("Error calibrating", err)
-		return
+		return err
 	}
 
-	fmt.Println("Final scale:", scale)
 	// TODO actually use scaling
+	return config.SetScaling(a.ctx, scale)
 }
 
-func (a *App) Read() bool {
-	config.AddListings(a.ctx, app.ReadFull(a.ctx))
-	return true
+func (a *App) Read() error {
+	listings, err := app.ReadFull(a.ctx)
+	if err != nil {
+		return err
+	}
+
+	return config.AddListings(a.ctx, listings)
 }
 
-func (a *App) Clear() bool {
-	config.ClearListings(a.ctx)
-	return true
+func (a *App) Clear() error {
+	return config.ClearListings(a.ctx)
 }
 
-func (a *App) UpdatePricing() {
-	pricing.UpdatePricing(a.ctx)
+func (a *App) UpdatePricing() error {
+	return pricing.UpdatePricing(a.ctx)
 }
 
 func (a *App) GetListings() []types.ParsedListing {
@@ -94,6 +117,7 @@ type ConvertedConfig struct {
 	Messages     map[string]string `json:"messages"`
 	Name         string            `json:"name"`
 	Stream       bool              `json:"stream"`
+	Display      int               `json:"display"`
 }
 
 func (a *App) GetConfig() ConvertedConfig {
@@ -141,18 +165,19 @@ func (a *App) GetConfig() ConvertedConfig {
 		Messages:     messages,
 		Name:         config.Get().Name,
 		Stream:       config.Get().Stream,
+		Display:      config.Get().Display,
 	}
 }
 
-func (a *App) SetListingCount(listing string, level int, count int) {
-	config.SetListing(a.ctx, listing, level, count)
+func (a *App) SetListingCount(listing string, level int, count int) error {
+	return config.SetListing(a.ctx, listing, level, count)
 }
 
-func (a *App) SetPrice(listing string, price string) {
-	config.SetPrice(a.ctx, listing, price)
+func (a *App) SetPrice(listing string, price string) error {
+	return config.SetPrice(a.ctx, listing, price)
 }
 
-func (a *App) Copy() {
+func (a *App) Copy() error {
 	message := "**WTS "
 
 	switch config.Get().League {
@@ -170,8 +195,7 @@ func (a *App) Copy() {
 		message += " - IGN: **" + config.Get().Name + "**"
 	}
 
-	// TODO Add mark
-	// message += " - Oshabi"
+	message += " - Oshabi"
 
 	message += "\n"
 
@@ -226,19 +250,31 @@ func (a *App) Copy() {
 	message = strings.TrimSpace(message)
 
 	if err := clipboard.WriteAll(message); err != nil {
-		panic(err)
+		return errors.Wrap(err, "failed writing clipboard")
 	}
+
+	return nil
 }
 
-func (a *App) SetLeague(league string) {
-	config.SetLeague(a.ctx, league)
-	pricing.UpdatePricing(a.ctx)
+func (a *App) SetLeague(league string) error {
+	if err := config.SetLeague(a.ctx, league); err != nil {
+		return err
+	}
+	return pricing.UpdatePricing(a.ctx)
 }
 
-func (a *App) SetName(name string) {
-	config.SetName(a.ctx, name)
+func (a *App) SetName(name string) error {
+	return config.SetName(a.ctx, name)
 }
 
-func (a *App) SetStream(stream bool) {
-	config.SetStream(a.ctx, stream)
+func (a *App) SetStream(stream bool) error {
+	return config.SetStream(a.ctx, stream)
+}
+
+func (a *App) SetDisplay(display int) error {
+	return config.SetDisplay(a.ctx, display)
+}
+
+func (a *App) GetDisplayCount() int {
+	return screenshot.NumActiveDisplays()
 }

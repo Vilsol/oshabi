@@ -2,11 +2,12 @@ package main
 
 import (
 	"embed"
+	"log"
+
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/logger"
 	"github.com/wailsapp/wails/v2/pkg/options"
 	"github.com/wailsapp/wails/v2/pkg/options/windows"
-	"log"
 )
 
 //go:embed all:frontend/dist
@@ -17,7 +18,7 @@ func main() {
 
 	err := wails.Run(&options.App{
 		Title:             "Oshabi",
-		Width:             1280,
+		Width:             1465,
 		Height:            800,
 		MinWidth:          850,
 		MinHeight:         600,

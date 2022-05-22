@@ -3,26 +3,30 @@
 import {main} from '../models';
 import {types} from '../models';
 
-export function Calibrate():void;
+export function Calibrate():Promise<Error>;
 
-export function Clear():Promise<boolean>;
+export function GetDisplayCount():Promise<number>;
 
-export function Copy():void;
+export function Clear():Promise<Error>;
 
 export function GetConfig():Promise<main.ConvertedConfig>;
 
+export function Read():Promise<Error>;
+
+export function SetStream(arg1:boolean):Promise<Error>;
+
+export function UpdatePricing():Promise<Error>;
+
 export function GetListings():Promise<Array<types.ParsedListing>>;
 
-export function SetLeague(arg1:string):void;
+export function SetDisplay(arg1:number):Promise<Error>;
 
-export function SetName(arg1:string):void;
+export function SetPrice(arg1:string,arg2:string):Promise<Error>;
 
-export function SetPrice(arg1:string,arg2:string):void;
+export function Copy():Promise<Error>;
 
-export function SetStream(arg1:boolean):void;
+export function SetLeague(arg1:string):Promise<Error>;
 
-export function UpdatePricing():void;
+export function SetListingCount(arg1:string,arg2:number,arg3:number):Promise<Error>;
 
-export function Read():Promise<boolean>;
-
-export function SetListingCount(arg1:string,arg2:number,arg3:number):void;
+export function SetName(arg1:string):Promise<Error>;

@@ -8,6 +8,7 @@ export namespace main {
 	    messages: {[key: string]: string};
 	    name: string;
 	    stream: boolean;
+	    display: number;
 	
 	    static createFrom(source: any = {}) {
 	        return new ConvertedConfig(source);
@@ -22,6 +23,7 @@ export namespace main {
 	        this.messages = source["messages"];
 	        this.name = source["name"];
 	        this.stream = source["stream"];
+	        this.display = source["display"];
 	    }
 	}
 

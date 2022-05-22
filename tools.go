@@ -4,6 +4,7 @@ package main
 
 import (
 	"encoding/json"
+	"github.com/pkg/errors"
 	"github.com/vilsol/oshabi/data"
 	"net/http"
 	"os"
@@ -18,7 +19,7 @@ func main() {
 }
 
 // Download all harvest mods and save them to JSON
-func downloadHarvestMods() {
+func downloadHarvestMods() error {
 	existingCrafts := make(map[string]data.HarvestCraft)
 
 	existingFile, err := os.ReadFile("data/crafts.json")
@@ -28,17 +29,17 @@ func downloadHarvestMods() {
 
 	res, err := http.Get("https://poedb.tw/us/Horticrafting")
 	if err != nil {
-		panic(err)
+		return errors.Wrap(err, "failed fetching PoeDB Horticrafting page")
 	}
 	defer res.Body.Close()
 
 	if res.StatusCode != 200 {
-		panic(res.Status)
+		return errors.Wrap(err, "PoeDB returned a non-200 response")
 	}
 
 	doc, err := goquery.NewDocumentFromReader(res.Body)
 	if err != nil {
-		panic(err)
+		return errors.Wrap(err, "failed parsing page as html")
 	}
 
 	doc.Find("#HarvestHarvestSeeds tbody tr").Each(func(_ int, s *goquery.Selection) {
@@ -54,10 +55,10 @@ func downloadHarvestMods() {
 
 	jsonBytes, err := json.MarshalIndent(existingCrafts, "", "  ")
 	if err != nil {
-		panic(err)
+		return errors.Wrap(err, "failed converting crafts to json")
 	}
 
 	if err := os.WriteFile("data/crafts.json", jsonBytes, 0777); err != nil {
-		panic(err)
+		return errors.Wrap(err, "failed writing crafts.json")
 	}
 }

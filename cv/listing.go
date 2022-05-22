@@ -1,90 +1,36 @@
 package cv
 
 import (
-	"bytes"
-	"github.com/disintegration/imaging"
-	"github.com/otiai10/gosseract/v2"
-	"github.com/vilsol/oshabi/data"
 	"image"
 	"image/color"
 	"image/draw"
-	"image/png"
+
+	"github.com/disintegration/imaging"
+	"github.com/otiai10/gosseract/v2"
+	"github.com/pkg/errors"
+	"github.com/vilsol/oshabi/data"
 )
 
 var client *gosseract.Client
 
-func InitOCR() {
+func InitOCR() error {
 	client = gosseract.NewClient()
 	if err := client.SetLanguage("eng"); err != nil {
-		panic(err)
+		return errors.Wrap(err, "failed setting OCR language")
 	}
-	println("Tesseract Version", client.Version())
+	return nil
 }
 
-func OCRListing(img image.Image) string {
-	buff := new(bytes.Buffer)
-	if err := png.Encode(buff, PrepareForOCR(img)); err != nil {
-		panic(err)
-	}
-
-	if err := client.SetWhitelist("1234567890abcdefghijklmnopqrstuvwxyz,.%' "); err != nil {
-		panic(err)
-	}
-
-	if err := client.SetImageFromBytes(buff.Bytes()); err != nil {
-		panic(err)
-	}
-
-	text, err := client.Text()
-	if err != nil {
-		panic(err)
-	}
-
-	return text
+func OCRListing(img image.Image) (string, error) {
+	return ocr(img, "1234567890abcdefghijklmnopqrstuvwxyz,.%' ")
 }
 
-func OCRListingCount(img image.Image) string {
-	buff := new(bytes.Buffer)
-	if err := png.Encode(buff, PrepareForOCR(img)); err != nil {
-		panic(err)
-	}
-
-	if err := client.SetWhitelist("1234567890"); err != nil {
-		panic(err)
-	}
-
-	if err := client.SetImageFromBytes(buff.Bytes()); err != nil {
-		panic(err)
-	}
-
-	text, err := client.Text()
-	if err != nil {
-		panic(err)
-	}
-
-	return text
+func OCRListingCount(img image.Image) (string, error) {
+	return ocr(img, "1234567890")
 }
 
-func OCRListingLevel(img image.Image) string {
-	buff := new(bytes.Buffer)
-	if err := png.Encode(buff, PrepareForOCR(img)); err != nil {
-		panic(err)
-	}
-
-	if err := client.SetWhitelist("levl1234567890 "); err != nil {
-		panic(err)
-	}
-
-	if err := client.SetImageFromBytes(buff.Bytes()); err != nil {
-		panic(err)
-	}
-
-	text, err := client.Text()
-	if err != nil {
-		panic(err)
-	}
-
-	return text
+func OCRListingLevel(img image.Image) (string, error) {
+	return ocr(img, "levl1234567890 ")
 }
 
 func PrepareForOCR(img image.Image) image.Image {
@@ -99,32 +45,25 @@ type RawListing struct {
 	Level image.Image
 }
 
-func listingTrackers(img image.Image) (image.Image, image.Point, image.Image, image.Point) {
-	scrollUp, _, err := image.Decode(bytes.NewReader(data.ScrollUpPNG))
+func listingTrackers(img image.Image) (image.Point, image.Point, error) {
+	scrollLocation, _, err := Find(img, data.ScrollUp)
 	if err != nil {
-		panic(err)
+		return image.Point{}, image.Point{}, errors.Wrap(err, "failed to find scroll up button")
 	}
 
-	scrollLocation, _, err := Find(img, scrollUp)
+	infoButtonLocation, _, err := Find(img, data.InfoButton)
 	if err != nil {
-		panic(err)
+		return image.Point{}, image.Point{}, errors.Wrap(err, "failed to find info button")
 	}
 
-	infoButton, _, err := image.Decode(bytes.NewReader(data.InfoButtonPNG))
-	if err != nil {
-		panic(err)
-	}
-
-	infoButtonLocation, _, err := Find(img, infoButton)
-	if err != nil {
-		panic(err)
-	}
-
-	return scrollUp, scrollLocation, infoButton, infoButtonLocation
+	return scrollLocation, infoButtonLocation, nil
 }
 
-func ExtractToListings(img image.Image, offset int, limit int) []RawListing {
-	_, scrollLocation, infoButton, infoButtonLocation := listingTrackers(img)
+func ExtractToListings(img image.Image, offset int, limit int) ([]RawListing, error) {
+	scrollLocation, infoButtonLocation, err := listingTrackers(img)
+	if err != nil {
+		return nil, err
+	}
 
 	listings := make([]RawListing, limit)
 
@@ -132,7 +71,7 @@ func ExtractToListings(img image.Image, offset int, limit int) []RawListing {
 		pxOffset := (i+offset)*173 - 10
 
 		text := imaging.Crop(img, image.Rect(
-			infoButtonLocation.X+infoButton.Bounds().Dx()+190,
+			infoButtonLocation.X+data.InfoButton.Bounds().Dx()+190,
 			scrollLocation.Y+pxOffset,
 			scrollLocation.X-35,
 			scrollLocation.Y+pxOffset+155,
@@ -142,9 +81,9 @@ func ExtractToListings(img image.Image, offset int, limit int) []RawListing {
 		draw.Draw(text, blackRect, &image.Uniform{C: color.RGBA{A: 255}}, image.Point{}, draw.Src)
 
 		count := imaging.Crop(img, image.Rect(
-			infoButtonLocation.X+infoButton.Bounds().Dx()+20,
+			infoButtonLocation.X+data.InfoButton.Bounds().Dx()+20,
 			scrollLocation.Y+pxOffset+5,
-			infoButtonLocation.X+infoButton.Bounds().Dx()+50,
+			infoButtonLocation.X+data.InfoButton.Bounds().Dx()+50,
 			scrollLocation.Y+pxOffset+40,
 		))
 
@@ -162,30 +101,28 @@ func ExtractToListings(img image.Image, offset int, limit int) []RawListing {
 		}
 	}
 
-	return listings
+	return listings, nil
 }
 
-func CanScrollDown(img image.Image) bool {
-	_, scrollLocation, infoButton, infoButtonLocation := listingTrackers(img)
+func CanScrollDown(img image.Image) (bool, error) {
+	scrollLocation, infoButtonLocation, err := listingTrackers(img)
+	if err != nil {
+		return false, err
+	}
 
 	nextOffset := 5*173 - 10
 
 	nextCount := imaging.Crop(img, image.Rect(
-		infoButtonLocation.X+infoButton.Bounds().Dx(),
+		infoButtonLocation.X+data.InfoButton.Bounds().Dx(),
 		scrollLocation.Y+nextOffset-20,
-		infoButtonLocation.X+infoButton.Bounds().Dx()+40,
+		infoButtonLocation.X+data.InfoButton.Bounds().Dx()+40,
 		scrollLocation.Y+nextOffset+15,
 	))
 
-	countCorner, _, err := image.Decode(bytes.NewReader(data.CountCornerPNG))
+	_, cornerVal, err := Find(nextCount, data.CountCorner)
 	if err != nil {
-		panic(err)
+		return false, errors.Wrap(err, "failed to find count corner")
 	}
 
-	_, cornerVal, err := Find(nextCount, countCorner)
-	if err != nil {
-		panic(err)
-	}
-
-	return cornerVal >= 0.95
+	return cornerVal >= 0.95, nil
 }

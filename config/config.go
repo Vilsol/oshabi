@@ -3,10 +3,12 @@ package config
 import (
 	"context"
 	"encoding/json"
-	"github.com/vilsol/oshabi/types"
-	"github.com/wailsapp/wails/v2/pkg/runtime"
 	"os"
 	"path"
+
+	"github.com/pkg/errors"
+	"github.com/vilsol/oshabi/types"
+	"github.com/wailsapp/wails/v2/pkg/runtime"
 )
 
 type Language string
@@ -39,12 +41,15 @@ type Config struct {
 	Messages map[string]string      `json:"messages"`
 	Name     string                 `json:"name"`
 	Stream   bool                   `json:"stream"`
+	Display  int                    `json:"display"`
 }
 
 var config Config
 
-func InitConfig() {
-	Load()
+func InitConfig() error {
+	if err := Load(); err != nil {
+		return err
+	}
 
 	if config.Version == 0 {
 		config = Config{
@@ -55,58 +60,75 @@ func InitConfig() {
 			Language: LanguageEnglish,
 			League:   LeagueSoftcore,
 			Messages: map[string]string{},
+			Display:  0,
 		}
 
-		Save()
+		if err := Save(); err != nil {
+			return err
+		}
 	}
+
+	return nil
 }
 
-func Load() {
-	dir := GetConfigDir()
+func Load() error {
+	dir, err := GetConfigDir()
+	if err != nil {
+		return err
+	}
+
 	file, err := os.ReadFile(path.Join(dir, "config.json"))
 	if err != nil {
 		if os.IsNotExist(err) {
-			return
+			return nil
 		}
-		panic(err)
+		return errors.Wrap(err, "failed reading config.json")
 	}
+
 	if err := json.Unmarshal(file, &config); err != nil {
-		panic(err)
+		return errors.Wrap(err, "failed parsing config.json")
 	}
+
+	return nil
 }
 
-func Save() {
+func Save() error {
 	b, err := json.MarshalIndent(config, "", "  ")
 	if err != nil {
-		panic(err)
+		return errors.Wrap(err, "failed serializing config.json")
 	}
 
-	dir := GetConfigDir()
+	dir, err := GetConfigDir()
+	if err != nil {
+		return err
+	}
+
 	err = os.WriteFile(path.Join(dir, "config.json"), b, 0777)
 	if err != nil {
-		panic(err)
+		return errors.Wrap(err, "failed writing config.json")
 	}
+	return nil
 }
 
-func GetConfigDir() string {
+func GetConfigDir() (string, error) {
 	configDir, err := os.UserConfigDir()
 
 	if err != nil {
-		panic(err)
+		return "", errors.Wrap(err, "failed to find user config directory")
 	}
 
 	finalDir := path.Join(configDir, "oshabi")
 
 	if err := os.MkdirAll(finalDir, 0777); err != nil {
 		if !os.IsExist(err) {
-			panic(err)
+			return "", errors.Wrap(err, "failed making config directory")
 		}
 	}
 
-	return finalDir
+	return finalDir, nil
 }
 
-func AddListings(ctx context.Context, listings []types.ParsedListing) {
+func AddListings(ctx context.Context, listings []types.ParsedListing) error {
 	for _, listing := range listings {
 		strType := string(listing.Type)
 		if _, ok := config.Listings[strType]; !ok {
@@ -120,28 +142,27 @@ func AddListings(ctx context.Context, listings []types.ParsedListing) {
 		config.Listings[strType][listing.Level] += listing.Count
 	}
 
-	Save()
-
 	runtime.EventsEmit(ctx, "listings_updated")
+	return Save()
 }
 
-func ClearListings(ctx context.Context) {
+func ClearListings(ctx context.Context) error {
 	config.Listings = make(map[string]map[int]int)
-	Save()
 	runtime.EventsEmit(ctx, "listings_updated")
+	return Save()
 }
 
 func Get() Config {
 	return config
 }
 
-func SetListing(ctx context.Context, listing string, level int, count int) {
+func SetListing(ctx context.Context, listing string, level int, count int) error {
 	if _, ok := config.Listings[listing]; !ok {
-		return
+		return nil
 	}
 
 	if _, ok := config.Listings[listing][level]; !ok {
-		return
+		return nil
 	}
 
 	if count == 0 {
@@ -155,30 +176,41 @@ func SetListing(ctx context.Context, listing string, level int, count int) {
 	}
 
 	runtime.EventsEmit(ctx, "listings_updated")
-
-	Save()
+	return Save()
 }
 
-func SetPrice(ctx context.Context, listing string, price string) {
+func SetPrice(ctx context.Context, listing string, price string) error {
 	config.Prices[listing] = price
 	runtime.EventsEmit(ctx, "config_updated")
-	Save()
+	return Save()
 }
 
-func SetLeague(ctx context.Context, league string) {
+func SetLeague(ctx context.Context, league string) error {
 	config.League = League(league)
 	runtime.EventsEmit(ctx, "config_updated")
-	Save()
+	return Save()
 }
 
-func SetName(ctx context.Context, name string) {
+func SetName(ctx context.Context, name string) error {
 	config.Name = name
 	runtime.EventsEmit(ctx, "config_updated")
-	Save()
+	return Save()
 }
 
-func SetStream(ctx context.Context, stream bool) {
+func SetStream(ctx context.Context, stream bool) error {
 	config.Stream = stream
 	runtime.EventsEmit(ctx, "config_updated")
-	Save()
+	return Save()
+}
+
+func SetScaling(ctx context.Context, scaling float64) error {
+	config.Scaling = scaling
+	runtime.EventsEmit(ctx, "config_updated")
+	return Save()
+}
+
+func SetDisplay(ctx context.Context, display int) error {
+	config.Display = display
+	runtime.EventsEmit(ctx, "config_updated")
+	return Save()
 }

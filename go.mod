@@ -10,6 +10,7 @@ require (
 	github.com/masatana/go-textdistance v0.0.0-20191005053614-738b0edac985
 	github.com/olekukonko/tablewriter v0.0.4
 	github.com/otiai10/gosseract/v2 v2.3.1
+	github.com/pkg/errors v0.9.1
 	github.com/robotn/gohook v0.31.3
 	github.com/wailsapp/wails/v2 v2.0.0-beta.36
 	gocv.io/x/gocv v0.30.0
@@ -37,7 +38,6 @@ require (
 	github.com/mattn/go-runewidth v0.0.7 // indirect
 	github.com/otiai10/gosseract v2.2.1+incompatible // indirect
 	github.com/pkg/browser v0.0.0-20210706143420-7d21f8c997e2 // indirect
-	github.com/pkg/errors v0.9.1 // indirect
 	github.com/robotn/xgb v0.0.0-20190912153532-2cb92d044934 // indirect
 	github.com/robotn/xgbutil v0.0.0-20190912154524-c861d6f87770 // indirect
 	github.com/shirou/gopsutil v3.21.10+incompatible // indirect

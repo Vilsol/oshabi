@@ -1,9 +1,9 @@
 package data
 
 import (
-	"encoding/json"
-	"github.com/masatana/go-textdistance"
 	"strings"
+
+	"github.com/masatana/go-textdistance"
 )
 
 type HarvestType string
@@ -366,15 +366,10 @@ type CraftWithText struct {
 	Craft HarvestCraft
 }
 
-var crafts = make(map[string]HarvestCraft)
 var reverseCrafts = make(map[HarvestType]CraftWithText)
 var reversePricing = make(map[string]CraftWithText)
 
 func InitCrafts() {
-	if err := json.Unmarshal(CraftsJSON, &crafts); err != nil {
-		panic(err)
-	}
-
 	for text, craft := range crafts {
 		reverseCrafts[craft.Type] = CraftWithText{
 			Text:  text,

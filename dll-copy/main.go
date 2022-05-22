@@ -9,6 +9,8 @@ import (
 	"path"
 	"regexp"
 	"strings"
+
+	"github.com/pkg/errors"
 )
 
 var lineRegex = regexp.MustCompile(`(?m)^\s+(.+?)\s=>\s(.+?)\s\(`)
@@ -59,7 +61,7 @@ func main() {
 func copyFile(src string, dst string) (int64, error) {
 	sourceFileStat, err := os.Stat(src)
 	if err != nil {
-		return 0, err
+		return 0, errors.Wrap(err, "failed to stat source file")
 	}
 
 	if !sourceFileStat.Mode().IsRegular() {
@@ -68,15 +70,15 @@ func copyFile(src string, dst string) (int64, error) {
 
 	source, err := os.Open(src)
 	if err != nil {
-		return 0, err
+		return 0, errors.Wrap(err, "failed to open source file for reading")
 	}
 	defer source.Close()
 
 	destination, err := os.Create(dst)
 	if err != nil {
-		return 0, err
+		return 0, errors.Wrap(err, "failed to create destination file")
 	}
 	defer destination.Close()
 	nBytes, err := io.Copy(destination, source)
-	return nBytes, err
+	return nBytes, errors.Wrap(err, "failed to copy file")
 }

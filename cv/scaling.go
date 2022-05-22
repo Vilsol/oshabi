@@ -1,54 +1,36 @@
 package cv
 
 import (
-	"bytes"
-	"errors"
-	"fmt"
-	"github.com/disintegration/imaging"
-	"github.com/vilsol/oshabi/data"
-	"gocv.io/x/gocv"
 	"image"
 	"math"
+
+	"github.com/disintegration/imaging"
+	"github.com/pkg/errors"
+	"github.com/vilsol/oshabi/data"
+	"gocv.io/x/gocv"
 )
 
 func CalculateScaling(img image.Image) (float64, error) {
 	bottomLeftCrop := imaging.Crop(img, image.Rect(0, img.Bounds().Dy()/2, img.Bounds().Dx()/2, img.Bounds().Dy()))
 	topRightCrop := imaging.Crop(img, image.Rect(img.Bounds().Dx()/2, 0, img.Bounds().Dx(), img.Bounds().Dy()/2))
 
-	// Menu Button
-	menuButton, _, err := image.Decode(bytes.NewReader(data.MenuButtonPNG))
+	menuButtonScaling, menuButtonValue, _, err := ScaleAndFind(bottomLeftCrop, data.MenuButton)
 	if err != nil {
-		panic(err)
-	}
-
-	menuButtonScaling, menuButtonValue, location, err := ScaleAndFind(bottomLeftCrop, menuButton)
-	if err != nil {
-		panic(err)
+		return 0, errors.New("failed finding menu button")
 	}
 
 	if menuButtonValue < 0.8 {
 		return 0, errors.New("could not find menu button on bottom left of screen")
 	}
 
-	fmt.Println("Best Menu Button:", menuButtonScaling, menuButtonValue, location)
-
-	// Top Right X
-	topRightX, _, err := image.Decode(bytes.NewReader(data.TopRightXPNG))
+	topRightXScaling, topRightXValue, _, err := ScaleAndFind(topRightCrop, data.TopRightX)
 	if err != nil {
-		panic(err)
-	}
-
-	topRightXScaling, topRightXValue, location, err := ScaleAndFind(topRightCrop, topRightX)
-	if err != nil {
-		panic(err)
+		return 0, errors.New("failed finding top right x")
 	}
 
 	if topRightXValue < 0.8 {
-		fmt.Println("Could not find x button on top right of screen!")
 		return 0, errors.New("could not find x button on top right of screen")
 	}
-
-	fmt.Println("Best Top Right X:", topRightXScaling, topRightXValue, location)
 
 	if math.Max(menuButtonScaling, topRightXScaling)-math.Min(menuButtonScaling, topRightXScaling) > 0.1 {
 		return 0, errors.New("cv differentiates >1, please post a bug report with a screenshot")
@@ -61,11 +43,9 @@ func CalculateScaling(img image.Image) (float64, error) {
 }
 
 func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, image.Point, error) {
-	// TODO Merge into Find
-
 	matLeftCrop, err := gocv.ImageToMatRGB(static)
 	if err != nil {
-		return 0, 0, image.Point{}, err
+		return 0, 0, image.Point{}, errors.Wrap(err, "failed converting image to mat")
 	}
 
 	grayLeftCrop := gocv.NewMat()
@@ -91,7 +71,7 @@ func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, im
 
 		matResized, err := gocv.ImageToMatRGB(resized)
 		if err != nil {
-			return 0, 0, image.Point{}, err
+			return 0, 0, image.Point{}, errors.Wrap(err, "failed converting image to mat")
 		}
 
 		grayResized := gocv.NewMat()

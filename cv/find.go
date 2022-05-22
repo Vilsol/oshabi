@@ -1,14 +1,16 @@
 package cv
 
 import (
-	"gocv.io/x/gocv"
 	"image"
+
+	"github.com/pkg/errors"
+	"gocv.io/x/gocv"
 )
 
 func Find(static image.Image, dynamic image.Image) (image.Point, float32, error) {
 	matStatic, err := gocv.ImageToMatRGB(static)
 	if err != nil {
-		return image.Point{}, 0, err
+		return image.Point{}, 0, errors.Wrap(err, "failed converting image to mat")
 	}
 
 	grayStatic := gocv.NewMat()
@@ -16,7 +18,7 @@ func Find(static image.Image, dynamic image.Image) (image.Point, float32, error)
 
 	matDynamic, err := gocv.ImageToMatRGB(dynamic)
 	if err != nil {
-		return image.Point{}, 0, err
+		return image.Point{}, 0, errors.Wrap(err, "failed converting image to mat")
 	}
 
 	grayDynamic := gocv.NewMat()
