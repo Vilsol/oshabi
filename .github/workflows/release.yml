@@ -15,8 +15,6 @@ jobs:
       - name: Create PR
         uses: google-github-actions/release-please-action@v3
         id: release
-        with:
-          command: manifest
 
   linux:
     runs-on: ubuntu-20.04
@@ -73,6 +71,7 @@ jobs:
 
   windows:
     runs-on: windows-latest
+    if: ${{ needs.release-pr.outputs.release_created }}
     needs:
       - release-pr
     defaults:
