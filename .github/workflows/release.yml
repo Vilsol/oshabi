@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
     steps:
       - name: Check out code
         uses: actions/checkout@v2
@@ -180,3 +181,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           prerelease: false
+          tag_name: ${{ needs.release-pr.outputs.tag_name }}
