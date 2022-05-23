@@ -3,8 +3,8 @@
     ".": {
       "releaseType": "go",
       "packageName": "oshabi",
-      "draft": true,
-      "prerelease": false,
+      "draft": false,
+      "prerelease": true,
       "bumpMinorPreMajor": true,
       "bumpPatchForMinorPreMajor": true,
       "changelogPath": "CHANGELOG.md",
