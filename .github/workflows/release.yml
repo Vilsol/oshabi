@@ -8,6 +8,8 @@ on:
 jobs:
   release-start:
     runs-on: ubuntu-latest
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
     steps:
       - name: Check out code
         uses: actions/checkout@v2
@@ -20,6 +22,13 @@ jobs:
           package-name: oshabi
           bump-minor-pre-major: true
           bump-patch-for-minor-pre-major: true
+
+      - name: Mark as prerelease
+        uses: softprops/action-gh-release@v1
+        if: ${{ steps.release.outputs.release_created }}
+        with:
+          prerelease: true
+          tag_name: ${{ steps.release.outputs.tag_name }}
 
   linux:
     runs-on: ubuntu-20.04
