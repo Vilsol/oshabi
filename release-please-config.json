@@ -1,0 +1,14 @@
+{
+  "packages": {
+    ".": {
+      "releaseType": "go",
+      "packageName": "oshabi",
+      "draft": true,
+      "prerelease": false,
+      "bumpMinorPreMajor": true,
+      "bumpPatchForMinorPreMajor": true,
+      "changelogPath": "CHANGELOG.md",
+      "versioning": "default"
+    }
+  }
+}
