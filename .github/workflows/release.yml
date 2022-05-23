@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  release-start:
+  release-pr:
     runs-on: ubuntu-latest
     outputs:
       release_created: ${{ steps.release.outputs.release_created }}
@@ -32,9 +32,9 @@ jobs:
 
   linux:
     runs-on: ubuntu-20.04
-    if: ${{ needs.release-start.outputs.release_created }}
+    if: ${{ needs.release-pr.outputs.release_created }}
     needs:
-      - release-start
+      - release-pr
     steps:
       - name: Check out code
         uses: actions/checkout@v2
@@ -85,9 +85,9 @@ jobs:
 
   windows:
     runs-on: windows-latest
-    if: ${{ needs.release-start.outputs.release_created }}
+    if: ${{ needs.release-pr.outputs.release_created }}
     needs:
-      - release-start
+      - release-pr
     defaults:
       run:
         shell: msys2 {0}
