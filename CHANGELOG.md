@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.4](https://github.com/Vilsol/oshabi/compare/v0.0.3...v0.0.4) (2022-05-23)
+
+
+### Bug Fixes
+
+* rename release-start to release-pr ([b055179](https://github.com/Vilsol/oshabi/commit/b055179f4ade51ec7189305232a322f4c7644b54))
+
 ### [0.0.3](https://github.com/Vilsol/oshabi/compare/v0.0.2...v0.0.3) (2022-05-23)
 
 
