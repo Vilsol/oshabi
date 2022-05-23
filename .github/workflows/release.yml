@@ -21,13 +21,6 @@ jobs:
           bump-minor-pre-major: true
           bump-patch-for-minor-pre-major: true
 
-      - name: Mark as prerelease
-        uses: softprops/action-gh-release@v1
-        if: ${{ steps.release.outputs.release_created }}
-        with:
-          prerelease: true
-          tag_name: ${{ steps.release.outputs.tag_name }}
-
   linux:
     runs-on: ubuntu-20.04
     if: ${{ needs.release-start.outputs.release_created }}
