@@ -20,7 +20,6 @@ jobs:
           package-name: oshabi
           bump-minor-pre-major: true
           bump-patch-for-minor-pre-major: true
-          command: github-release
 
       - name: Mark as prerelease
         uses: softprops/action-gh-release@v1
