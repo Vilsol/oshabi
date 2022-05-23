@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.5](https://github.com/Vilsol/oshabi/compare/v0.0.4...v0.0.5) (2022-05-23)
+
+
+### Bug Fixes
+
+* output tag_name ([12e2b7c](https://github.com/Vilsol/oshabi/commit/12e2b7cf8f92a2a9c035d2cd043b6205c1414fd2))
+
 ### [0.0.4](https://github.com/Vilsol/oshabi/compare/v0.0.3...v0.0.4) (2022-05-23)
 
 
