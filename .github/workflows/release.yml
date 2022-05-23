@@ -25,6 +25,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           prerelease: true
+          tag_name: ${{ steps.release.outputs.tag_name }}
 
   linux:
     runs-on: ubuntu-20.04
