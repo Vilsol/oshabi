@@ -1,4 +1,4 @@
-name: push
+name: release
 
 on:
   push:
@@ -15,6 +15,12 @@ jobs:
       - name: Create PR
         uses: google-github-actions/release-please-action@v3
         id: release
+        with:
+          release-type: go
+          package-name: oshabi
+          command: manifest
+          bump-minor-pre-major: true
+          bump-patch-for-minor-pre-major: true
 
   linux:
     runs-on: ubuntu-20.04
