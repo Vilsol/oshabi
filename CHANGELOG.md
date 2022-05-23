@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.6](https://github.com/Vilsol/oshabi/compare/v0.0.5...v0.0.6) (2022-05-23)
+
+
+### Bug Fixes
+
+* add release-pr to needs ([2b46ce9](https://github.com/Vilsol/oshabi/commit/2b46ce90872c22bf1b0b2492ff7cedfccc944347))
+
 ### [0.0.5](https://github.com/Vilsol/oshabi/compare/v0.0.4...v0.0.5) (2022-05-23)
 
 
