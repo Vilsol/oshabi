@@ -176,6 +176,7 @@ jobs:
     needs:
       - linux
       - windows
+      - release-pr
     steps:
       - name: Publish release
         uses: softprops/action-gh-release@v1
