@@ -18,9 +18,13 @@ jobs:
         with:
           release-type: go
           package-name: oshabi
-          command: manifest
           bump-minor-pre-major: true
           bump-patch-for-minor-pre-major: true
+
+      - name: Mark as prerelease
+        uses: softprops/action-gh-release@v1
+        with:
+          prerelease: true
 
   linux:
     runs-on: ubuntu-20.04
