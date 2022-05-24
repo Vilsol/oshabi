@@ -10,35 +10,12 @@ import (
 	"github.com/go-vgo/robotgo"
 	"github.com/kbinani/screenshot"
 	"github.com/pkg/errors"
-	hook "github.com/robotn/gohook"
 	"github.com/vilsol/oshabi/config"
 	"github.com/vilsol/oshabi/cv"
 	"github.com/vilsol/oshabi/data"
 	"github.com/vilsol/oshabi/types"
 	"github.com/wailsapp/wails/v2/pkg/runtime"
 )
-
-func InitializeApp(ctx context.Context) {
-	hook.Register(hook.KeyDown, []string{"ctrl", "j"}, func(e hook.Event) {
-		listings, err := ReadFull(ctx)
-		if err != nil {
-			runtime.EventsEmit(ctx, "error", err.Error())
-			return
-		}
-
-		if err := config.AddListings(ctx, listings); err != nil {
-			runtime.EventsEmit(ctx, "error", err.Error())
-			return
-		}
-	})
-
-	go func() {
-		s := hook.Start()
-		<-hook.Process(s)
-
-		hook.Start()
-	}()
-}
 
 func ReadFull(ctx context.Context) ([]types.ParsedListing, error) {
 	runtime.EventsEmit(ctx, "reading_listings")

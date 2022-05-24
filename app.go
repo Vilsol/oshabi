@@ -7,6 +7,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/vilsol/oshabi/hooks"
+
 	"github.com/go-vgo/robotgo/clipboard"
 	"github.com/kbinani/screenshot"
 	"github.com/olekukonko/tablewriter"
@@ -44,7 +46,7 @@ func (a *App) startup(ctx context.Context) {
 	}
 
 	data.InitCrafts()
-	app.InitializeApp(ctx)
+	hooks.InitializeHooks(ctx)
 
 	// Pricing Loop
 	go func() {
