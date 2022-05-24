@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.0.10](https://github.com/Vilsol/oshabi/compare/v0.0.9...v0.0.10) (2022-05-24)
+
+
+### Bug Fixes
+
+* support all languages ([d9cd76b](https://github.com/Vilsol/oshabi/commit/d9cd76b5179b641139aeb4f8d1aac29d2b2fa8e5))
+* write tesseract word files ([d9cd76b](https://github.com/Vilsol/oshabi/commit/d9cd76b5179b641139aeb4f8d1aac29d2b2fa8e5))
+
 ### [0.0.9](https://github.com/Vilsol/oshabi/compare/v0.0.8...v0.0.9) (2022-05-24)
 
 
