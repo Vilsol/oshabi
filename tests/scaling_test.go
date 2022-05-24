@@ -1,4 +1,4 @@
-package main
+package tests
 
 import (
 	"image/png"
@@ -30,7 +30,7 @@ func init() {
 }
 
 func TestScalingHorticrafting(t *testing.T) {
-	runScalingTest(t, "testdata/horticrafting", []types.ParsedListing{
+	runScalingTest(t, "../testdata/horticrafting", []types.ParsedListing{
 		{Type: "FiveSockets", Count: 1, Level: 77},
 		{Type: "ChangeGemToGem", Count: 1, Level: 77},
 		{Type: "EnchantArmourLife", Count: 1, Level: 77},
@@ -40,7 +40,7 @@ func TestScalingHorticrafting(t *testing.T) {
 }
 
 func TestScalingGrove(t *testing.T) {
-	runScalingTest(t, "testdata/grove", []types.ParsedListing{
+	runScalingTest(t, "../testdata/grove", []types.ParsedListing{
 		{Type: "SacrificeMap1Anarchy", Count: 1, Level: 72},
 		{Type: "ReforgeCaster", Count: 1, Level: 72},
 		{Type: "ReforgeCasterMoreCommon", Count: 1, Level: 72},
