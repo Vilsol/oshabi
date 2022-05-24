@@ -193,4 +193,3 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/go,jetbrains+all,linux,windows,macos
 
 /build/bin/
-/testdata

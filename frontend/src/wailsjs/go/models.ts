@@ -9,6 +9,7 @@ export namespace main {
 	    name: string;
 	    stream: boolean;
 	    display: number;
+	    scaling: number;
 	
 	    static createFrom(source: any = {}) {
 	        return new ConvertedConfig(source);
@@ -24,6 +25,7 @@ export namespace main {
 	        this.name = source["name"];
 	        this.stream = source["stream"];
 	        this.display = source["display"];
+	        this.scaling = source["scaling"];
 	    }
 	}
 

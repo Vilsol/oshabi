@@ -1,6 +1,7 @@
 package data
 
 import (
+	"math"
 	"strings"
 
 	"github.com/masatana/go-textdistance"
@@ -405,12 +406,12 @@ func GetCraftByPricing(pricing string) *CraftWithText {
 func FindCraft(text string) string {
 	clean := strings.Replace(text, "\n", " ", -1)
 
-	closestDistance := float64(0)
+	closestDistance := math.MaxInt
 	closestString := ""
 
 	for s := range crafts {
-		dist := textdistance.JaroWinklerDistance(clean, s)
-		if dist > closestDistance {
+		dist := textdistance.DamerauLevenshteinDistance(clean, s)
+		if dist < closestDistance {
 			closestString = s
 			closestDistance = dist
 		}

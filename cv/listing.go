@@ -5,27 +5,23 @@ import (
 	"image/color"
 	"image/draw"
 
+	"github.com/otiai10/gosseract/v2"
+
 	"github.com/disintegration/imaging"
 	"github.com/pkg/errors"
 	"github.com/vilsol/oshabi/data"
 )
 
 func OCRListing(img image.Image) (string, error) {
-	return ocr(img, "1234567890abcdefghijklmnopqrstuvwxyz,.%' ")
+	return ocr(img, "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,.%' ", gosseract.PSM_AUTO)
 }
 
 func OCRListingCount(img image.Image) (string, error) {
-	return ocr(img, "1234567890")
+	return ocr(img, "1234567890", gosseract.PSM_SINGLE_CHAR)
 }
 
 func OCRListingLevel(img image.Image) (string, error) {
-	return ocr(img, "levl1234567890 ")
-}
-
-func PrepareForOCR(img image.Image) image.Image {
-	src := imaging.Grayscale(img)
-	src = imaging.Invert(src)
-	return imaging.Sharpen(src, 4)
+	return ocr(img, "Levl1234567890 ", gosseract.PSM_SINGLE_LINE)
 }
 
 type RawListing struct {
@@ -35,34 +31,42 @@ type RawListing struct {
 }
 
 const (
-	listingHeight = float64(170.5)
-	textHeight    = listingHeight - 12
+	listingHeight = float64(174)
 
-	scrollHorizontalOffset = 35
-	scrollVerticalOffset   = -10
+	infoListingHorizontalOffset = 55
+	infoListingVerticalOffset   = 170
+
+	listingTextOffset = 170
+	listingTextWidth  = 870
+	listingTextHeight = 165
 
 	levelWidth  = 180
-	levelHeight = 40
+	levelHeight = 45
 
-	infoHorizontalOffset = 185
+	countWidth            = 39
+	countHeight           = 49
+	countHorizontalOffset = 7
+	countVerticalOffset   = 6
+
+	groveOffset = -32
 )
 
-func listingTrackers(img image.Image) (image.Point, image.Point, error) {
-	scrollLocation, _, err := Find(img, Scale(data.ScrollUp))
+func listingTrackers(img image.Image) (bool, image.Point, error) {
+	_, hortValue, err := Find(img, Scale(data.Horticrafting))
 	if err != nil {
-		return image.Point{}, image.Point{}, errors.Wrap(err, "failed to find scroll up button")
+		return false, image.Point{}, errors.Wrap(err, "failed to find horticrafting label")
 	}
 
 	infoButtonLocation, _, err := Find(img, Scale(data.InfoButton))
 	if err != nil {
-		return image.Point{}, image.Point{}, errors.Wrap(err, "failed to find info button")
+		return false, image.Point{}, errors.Wrap(err, "failed to find info button")
 	}
 
-	return scrollLocation, infoButtonLocation, nil
+	return hortValue < 0.8, infoButtonLocation, nil
 }
 
 func ExtractToListings(img image.Image, offset int, limit int) ([]RawListing, error) {
-	scrollLocation, infoButtonLocation, err := listingTrackers(img)
+	inGrove, infoButtonLocation, err := listingTrackers(img)
 	if err != nil {
 		return nil, err
 	}
@@ -70,31 +74,41 @@ func ExtractToListings(img image.Image, offset int, limit int) ([]RawListing, er
 	listings := make([]RawListing, limit)
 
 	for i := 0; i < limit; i++ {
-		pxOffset := int(float64(i+offset)*ScaleNf(listingHeight) + float64(ScaleN(scrollVerticalOffset)))
+		pxOffset := int(float64(i+offset)*ScaleNf(listingHeight) + float64(ScaleN(infoListingVerticalOffset)))
 
-		infoButtonBounds := ScaleBounds(data.InfoButton)
+		if inGrove {
+			pxOffset += ScaleN(groveOffset)
+		}
+
+		listingLeft := infoButtonLocation.X + ScaleN(infoListingHorizontalOffset)
+		listingTop := infoButtonLocation.Y + pxOffset
+
+		listingTextLeft := listingLeft + ScaleN(listingTextOffset)
+		listingTextRight := listingTextLeft + ScaleN(listingTextWidth)
+		listingTextBottom := listingTop + ScaleN(listingTextHeight)
+
 		text := imaging.Crop(img, image.Rect(
-			infoButtonLocation.X+infoButtonBounds.Dx()+ScaleN(infoHorizontalOffset),
-			scrollLocation.Y+pxOffset,
-			scrollLocation.X-ScaleN(scrollHorizontalOffset),
-			scrollLocation.Y+pxOffset+int(ScaleNf(textHeight)),
+			listingTextLeft,
+			listingTop,
+			listingTextRight,
+			listingTextBottom,
 		))
 
 		blackRect := image.Rect(text.Bounds().Dx()-ScaleN(levelWidth), text.Bounds().Dy()-ScaleN(levelHeight), text.Bounds().Dx(), text.Bounds().Dy())
 		draw.Draw(text, blackRect, &image.Uniform{C: color.RGBA{A: 255}}, image.Point{}, draw.Src)
 
 		count := imaging.Crop(img, image.Rect(
-			infoButtonLocation.X+infoButtonBounds.Dx()+ScaleN(20),
-			scrollLocation.Y+pxOffset+ScaleN(5),
-			infoButtonLocation.X+infoButtonBounds.Dx()+ScaleN(50),
-			scrollLocation.Y+pxOffset+ScaleN(45),
+			listingLeft+ScaleN(countHorizontalOffset),
+			listingTop+ScaleN(countVerticalOffset),
+			listingLeft+ScaleN(countWidth)+ScaleN(countHorizontalOffset),
+			listingTop+ScaleN(countHeight)+ScaleN(countVerticalOffset),
 		))
 
 		level := imaging.Crop(img, image.Rect(
-			scrollLocation.X-ScaleN(levelWidth),
-			scrollLocation.Y+pxOffset+(int(ScaleNf(textHeight))-ScaleN(levelHeight)),
-			scrollLocation.X-ScaleN(scrollHorizontalOffset),
-			scrollLocation.Y+pxOffset+int(ScaleNf(textHeight)),
+			listingTextRight-ScaleN(levelWidth),
+			listingTextBottom-ScaleN(levelHeight),
+			listingTextRight,
+			listingTextBottom,
 		))
 
 		listings[i] = RawListing{
@@ -108,19 +122,21 @@ func ExtractToListings(img image.Image, offset int, limit int) ([]RawListing, er
 }
 
 func CanScrollDown(img image.Image) (bool, error) {
-	scrollLocation, infoButtonLocation, err := listingTrackers(img)
+	_, infoButtonLocation, err := listingTrackers(img)
 	if err != nil {
 		return false, err
 	}
 
-	nextOffset := int(5*listingHeight - ScaleNf(scrollVerticalOffset))
+	pxOffset := int(5*ScaleNf(listingHeight) + float64(ScaleN(infoListingVerticalOffset)))
 
-	infoButtonBounds := ScaleBounds(data.InfoButton)
+	listingLeft := infoButtonLocation.X + ScaleN(infoListingHorizontalOffset)
+	listingTop := infoButtonLocation.Y + pxOffset
+
 	nextCount := imaging.Crop(img, image.Rect(
-		infoButtonLocation.X+infoButtonBounds.Dx(),
-		scrollLocation.Y+nextOffset-ScaleN(20),
-		infoButtonLocation.X+infoButtonBounds.Dx()+ScaleN(40),
-		scrollLocation.Y+nextOffset+ScaleN(15),
+		listingLeft-ScaleN(20),
+		listingTop-ScaleN(20),
+		listingLeft+ScaleN(30),
+		listingTop+ScaleN(30),
 	))
 
 	_, cornerVal, err := Find(nextCount, Scale(data.CountCorner))
@@ -128,5 +144,5 @@ func CanScrollDown(img image.Image) (bool, error) {
 		return false, errors.Wrap(err, "failed to find count corner")
 	}
 
-	return cornerVal >= 0.95, nil
+	return cornerVal >= 0.9, nil
 }

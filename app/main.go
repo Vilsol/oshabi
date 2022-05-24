@@ -3,7 +3,6 @@ package app
 import (
 	"context"
 	"image"
-	"math"
 	"strconv"
 	"strings"
 	"time"
@@ -56,9 +55,10 @@ func ReadFull(ctx context.Context) ([]types.ParsedListing, error) {
 
 	allListings := make([]types.ParsedListing, 0)
 
+	totalScrollCount := 0
 	offset := 0
 	limit := 5
-	for limit > 0 {
+	for limit > 0 && totalScrollCount < 20 {
 		listings, err := ReadScreen(offset, limit)
 		if err != nil {
 			return nil, err
@@ -90,6 +90,7 @@ func ReadFull(ctx context.Context) ([]types.ParsedListing, error) {
 
 		offset = 5 - scrollCount
 		limit = scrollCount
+		totalScrollCount += scrollCount
 	}
 
 	return allListings, nil
@@ -165,9 +166,9 @@ func ScrollTop() (bool, error) {
 		return false, err
 	}
 
-	point, pointValue, err := cv.Find(img, cv.Scale(data.ScrollUp))
+	point, pointValue, err := cv.Find(img, cv.Scale(data.InfoButton))
 	if err != nil {
-		return false, errors.Wrap(err, "failed to find scroll up button")
+		return false, errors.Wrap(err, "failed to find info button")
 	}
 
 	if pointValue < 0.9 {
@@ -176,60 +177,38 @@ func ScrollTop() (bool, error) {
 
 	realX, realY := TranslateCoordinates(point.X, point.Y)
 
-	realX += cv.ScaleBounds(data.ScrollUp).Dx() / 2
-	realY += cv.ScaleBounds(data.ScrollUp).Dy() * 2
-
 	robotgo.Move(realX, realY)
 	time.Sleep(time.Millisecond * 100)
 	robotgo.Click()
 	time.Sleep(time.Millisecond * 100)
-	robotgo.Click()
+	robotgo.Move(realX+cv.ScaleN(100), realY+cv.ScaleN(250))
 	time.Sleep(time.Millisecond * 100)
-	robotgo.Move(realX+100, realY)
+	robotgo.Scroll(0, 20)
+	time.Sleep(time.Millisecond * 100)
+	robotgo.Move(realX+cv.ScaleN(100), realY)
 	time.Sleep(time.Millisecond * 100)
 
 	return true, nil
 }
 
 func ScrollDown(img image.Image) error {
-	point, _, err := cv.Find(img, cv.Scale(data.ScrollDown))
+	point, _, err := cv.Find(img, cv.Scale(data.InfoButton))
 	if err != nil {
-		return errors.Wrap(err, "failed to find scroll down button")
+		return errors.Wrap(err, "failed to find info button")
 	}
 
 	realX, realY := TranslateCoordinates(point.X, point.Y)
 
-	realX += cv.ScaleBounds(data.ScrollDown).Dx() / 2
-	realY += cv.ScaleBounds(data.ScrollDown).Dy() / 2
-
 	robotgo.Move(realX, realY)
-	time.Sleep(time.Millisecond * 25)
+	time.Sleep(time.Millisecond * 100)
 	robotgo.Click()
-	time.Sleep(time.Millisecond * 25)
-	robotgo.Move(realX+100, realY)
-	time.Sleep(time.Millisecond * 25)
+	time.Sleep(time.Millisecond * 100)
+	robotgo.Move(realX+cv.ScaleN(100), realY+cv.ScaleN(250))
+	time.Sleep(time.Millisecond * 100)
+	robotgo.Scroll(0, -1)
+	time.Sleep(time.Millisecond * 100)
+	robotgo.Move(realX+cv.ScaleN(100), realY)
+	time.Sleep(time.Millisecond * 100)
 
 	return nil
-}
-
-func TranslateCoordinates(x int, y int) (int, int) {
-	bounds := screenshot.GetDisplayBounds(config.Get().Display)
-
-	leftMost := bounds.Min.X
-	topMost := bounds.Min.Y
-	for i := 0; i < screenshot.NumActiveDisplays(); i++ {
-		b := screenshot.GetDisplayBounds(i)
-		if b.Min.X < leftMost {
-			leftMost = b.Min.X
-		}
-
-		if b.Min.Y < topMost {
-			topMost = b.Min.Y
-		}
-	}
-
-	realX := int(math.Abs(float64(leftMost))) + x
-	realY := int(math.Abs(float64(topMost))) + y
-
-	return realX, realY
 }

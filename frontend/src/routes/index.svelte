@@ -22,6 +22,7 @@
 	const { addNotification } = getNotificationsContext();
 
 	let reading = false;
+	let calibrating = false;
 
 	let listings: types.ParsedListing[] = [];
 	let config: main.ConvertedConfig;
@@ -82,7 +83,7 @@
 	};
 
 	const loadConfig = () => {
-		GetConfig().then(c => config = c);
+		return GetConfig().then(c => config = c);
 	};
 
 	const read = () => {
@@ -90,8 +91,22 @@
 		handle(Read());
 	};
 
+	const calibrate = () => {
+		calibrating = true;
+		handle(Calibrate().then(() => loadConfig()).then(() => {
+			addNotification({
+				text: 'Calibrated to: ' + config.scaling,
+				position: 'bottom-center',
+				type: 'success',
+				removeAfter: 5000
+			});
+		})).then(() => {
+			calibrating = false;
+		})
+	}
+
 	const handle = (potentialError: Promise<Error> | Error) => {
-		Promise.resolve(potentialError).catch(err => err).then(err => {
+		return Promise.resolve(potentialError).catch(err => err).then(err => {
 			if (err) {
 				console.error(err);
 				addNotification({
@@ -137,7 +152,7 @@
 						<option value={i}>Display {i}</option>
 					{/each}
 				</select>
-				<button on:click={() => handle(Calibrate())} class='bg-yellow-700'>
+				<button on:click={() => calibrate()} class='bg-yellow-700 disabled:bg-yellow-900' disabled={calibrating}>
 					Calibrate
 				</button>
 			</div>

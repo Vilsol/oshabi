@@ -10,6 +10,8 @@ import (
 	"os"
 	"path"
 
+	"github.com/disintegration/imaging"
+
 	"github.com/otiai10/gosseract/v2"
 	"github.com/vilsol/oshabi/config"
 
@@ -20,6 +22,10 @@ var client *gosseract.Client
 
 func InitOCR() error {
 	client = gosseract.NewClient()
+
+	if err := client.DisableOutput(); err != nil {
+		return errors.Wrap(err, "failed to disable tesseract output")
+	}
 
 	cacheDir, err := os.UserCacheDir()
 	if err != nil {
@@ -95,7 +101,7 @@ func verifyLanguage(language config.Language) error {
 	return nil
 }
 
-func ocr(img image.Image, whitelist string) (string, error) {
+func ocr(img image.Image, whitelist string, mode gosseract.PageSegMode) (string, error) {
 	if err := verifyLanguage(config.Get().Language); err != nil {
 		return "", err
 	}
@@ -109,6 +115,10 @@ func ocr(img image.Image, whitelist string) (string, error) {
 		return "", errors.Wrap(err, "failed to set ocr whitelist")
 	}
 
+	if err := client.SetPageSegMode(mode); err != nil {
+		return "", errors.Wrap(err, "failed to set page segmentation mode")
+	}
+
 	if err := client.SetImageFromBytes(buff.Bytes()); err != nil {
 		return "", errors.Wrap(err, "failed to update ocr buffer")
 	}
@@ -119,4 +129,11 @@ func ocr(img image.Image, whitelist string) (string, error) {
 	}
 
 	return text, nil
+}
+
+func PrepareForOCR(img image.Image) image.Image {
+	src := imaging.Grayscale(img)
+	src = imaging.Invert(src)
+	src = imaging.AdjustContrast(src, 30)
+	return imaging.Sharpen(src, 1)
 }

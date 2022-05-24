@@ -3,12 +3,21 @@ package cv
 import (
 	"image"
 	"math"
+	"runtime"
 
 	"github.com/disintegration/imaging"
 	"github.com/pkg/errors"
 	"github.com/vilsol/oshabi/config"
 	"github.com/vilsol/oshabi/data"
 	"gocv.io/x/gocv"
+)
+
+const (
+	minSearch   = 0.25
+	maxSearch   = 2.01
+	searchStep  = 0.001
+	searchCount = (maxSearch-minSearch)/searchStep + 1
+	scaleRound  = (1 / searchStep) * 10
 )
 
 func CalculateScaling(img image.Image) (float64, error) {
@@ -24,7 +33,7 @@ func CalculateScaling(img image.Image) (float64, error) {
 		return 0, errors.New("could not find menu button on bottom left of screen")
 	}
 
-	topRightXScaling, topRightXValue, _, err := ScaleAndFind(topRightCrop, data.TopRightX)
+	topRightXScaling, topRightXValue, _, err := ScaleAndFind(topRightCrop, data.Inventory)
 	if err != nil {
 		return 0, errors.New("failed finding top right x")
 	}
@@ -40,12 +49,32 @@ func CalculateScaling(img image.Image) (float64, error) {
 	avg := (menuButtonScaling + topRightXScaling) / 2
 
 	// Round to the nearest 0.005
-	return math.Round(avg/0.005) * 0.005, nil
+	return math.Round(avg/searchStep) * searchStep, nil
+}
+
+type jobTuple struct {
+	GrayLeftCrop gocv.Mat
+	GrayResized  gocv.Mat
+	Scale        float64
 }
 
 type resultTuple struct {
 	Result gocv.Mat
 	Scale  float64
+}
+
+func finder(jobs <-chan jobTuple, results chan<- resultTuple) {
+	for j := range jobs {
+		m := gocv.NewMat()
+		result := gocv.NewMat()
+		gocv.MatchTemplate(j.GrayLeftCrop, j.GrayResized, &result, gocv.TmCcoeffNormed, m)
+		results <- resultTuple{
+			Result: result,
+			Scale:  j.Scale,
+		}
+		_ = m.Close()
+		_ = j.GrayResized.Close()
+	}
 }
 
 func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, image.Point, error) {
@@ -59,18 +88,24 @@ func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, im
 
 	size := dynamic.Bounds()
 
+	jobs := make(chan jobTuple, searchCount)
 	results := make(chan resultTuple)
-	count := 0
 
-	for i := 0.25; i < 2.01; i += 0.005 {
-		count++
-		scale := math.Round(i*1000) / 1000
+	for i := 0; i < int(math.Ceil(float64(runtime.NumCPU())/2)); i++ {
+		go finder(jobs, results)
+	}
+
+	count := 0
+	for i := 0.25; i < 2.01; i += 0.001 {
+		scale := math.Round(i*scaleRound) / scaleRound
 		width := int(float64(size.Dx()) * scale)
 		height := int(float64(size.Dy()) * scale)
 
 		if width > static.Bounds().Dx() || height > static.Bounds().Dy() {
 			continue
 		}
+
+		count++
 
 		resized := imaging.Resize(dynamic, width, height, imaging.NearestNeighbor)
 
@@ -81,19 +116,13 @@ func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, im
 
 		grayResized := gocv.NewMat()
 		gocv.CvtColor(matResized, &grayResized, gocv.ColorRGBToGray)
+		_ = matResized.Close()
 
-		go func(grayLeftCrop gocv.Mat, grayResized gocv.Mat, scale float64) {
-			m := gocv.NewMat()
-			result := gocv.NewMat()
-			gocv.MatchTemplate(grayLeftCrop, grayResized, &result, gocv.TmCcoeffNormed, m)
-			results <- resultTuple{
-				Result: result,
-				Scale:  scale,
-			}
-			_ = m.Close()
-			_ = matResized.Close()
-			_ = grayResized.Close()
-		}(grayLeftCrop, grayResized, scale)
+		jobs <- jobTuple{
+			GrayLeftCrop: grayLeftCrop,
+			GrayResized:  grayResized,
+			Scale:        scale,
+		}
 	}
 
 	bestScaling := 0.05
@@ -114,6 +143,7 @@ func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, im
 		_ = result.Result.Close()
 	}
 
+	close(jobs)
 	close(results)
 
 	return bestScaling, bestValue, bestLocation, nil
@@ -121,18 +151,9 @@ func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, im
 
 func Scale(img image.Image) image.Image {
 	size := img.Bounds()
-	scale := math.Round(config.Get().Scaling*1000) / 1000
-	width := int(float64(size.Dx()) * scale)
-	height := int(float64(size.Dy()) * scale)
+	width := int(float64(size.Dx()) * config.Get().Scaling)
+	height := int(float64(size.Dy()) * config.Get().Scaling)
 	return imaging.Resize(img, width, height, imaging.NearestNeighbor)
-}
-
-func ScaleBounds(img image.Image) image.Rectangle {
-	size := img.Bounds()
-	scale := math.Round(config.Get().Scaling*1000) / 1000
-	width := int(float64(size.Dx()) * scale)
-	height := int(float64(size.Dy()) * scale)
-	return image.Rect(0, 0, width, height)
 }
 
 func ScaleN(n int) int {
@@ -140,6 +161,5 @@ func ScaleN(n int) int {
 }
 
 func ScaleNf(n float64) float64 {
-	scale := math.Round(config.Get().Scaling*1000) / 1000
-	return math.Round(scale * n)
+	return math.Floor(config.Get().Scaling * n)
 }

@@ -117,6 +117,7 @@ type ConvertedConfig struct {
 	Name         string            `json:"name"`
 	Stream       bool              `json:"stream"`
 	Display      int               `json:"display"`
+	Scaling      float64           `json:"scaling"`
 }
 
 func (a *App) GetConfig() ConvertedConfig {
@@ -165,6 +166,7 @@ func (a *App) GetConfig() ConvertedConfig {
 		Name:         config.Get().Name,
 		Stream:       config.Get().Stream,
 		Display:      config.Get().Display,
+		Scaling:      config.Get().Scaling,
 	}
 }
 
