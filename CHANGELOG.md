@@ -1,5 +1,14 @@
 # Changelog
 
+### [0.0.9](https://github.com/Vilsol/oshabi/compare/v0.0.8...v0.0.9) (2022-05-24)
+
+
+### Bug Fixes
+
+* adjust image ocr preparation ([0435a34](https://github.com/Vilsol/oshabi/commit/0435a3424b8f77e1dde529e9f7961615a6b5ae11))
+* optimize scaling calibration ([0435a34](https://github.com/Vilsol/oshabi/commit/0435a3424b8f77e1dde529e9f7961615a6b5ae11))
+* show loading icon when processing ([0435a34](https://github.com/Vilsol/oshabi/commit/0435a3424b8f77e1dde529e9f7961615a6b5ae11))
+
 ### [0.0.8](https://github.com/Vilsol/oshabi/compare/v0.0.7...v0.0.8) (2022-05-24)
 
 
