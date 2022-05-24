@@ -1,5 +1,14 @@
 # Changelog
 
+### [0.0.7](https://github.com/Vilsol/oshabi/compare/v0.0.6...v0.0.7) (2022-05-24)
+
+
+### Bug Fixes
+
+* correct mouse positioning on windows ([533f718](https://github.com/Vilsol/oshabi/commit/533f718d1b5440b6a548d97be03b493fe839d370))
+* properly scale to all display sizes ([533f718](https://github.com/Vilsol/oshabi/commit/533f718d1b5440b6a548d97be03b493fe839d370))
+* scroll instead of click scrollbar ([533f718](https://github.com/Vilsol/oshabi/commit/533f718d1b5440b6a548d97be03b493fe839d370))
+
 ### [0.0.6](https://github.com/Vilsol/oshabi/compare/v0.0.5...v0.0.6) (2022-05-23)
 
 
