@@ -129,7 +129,7 @@ func ReadImage(img image.Image, offset int, limit int) ([]types.ParsedListing, e
 		craft := data.FindCraft(listingText)
 
 		realListings = append(realListings, types.ParsedListing{
-			Type:  data.GetCraftByText(craft).Type,
+			Type:  data.GetCraft(craft).Type,
 			Count: int(countInt),
 			Level: int(levelInt),
 		})

@@ -1,9 +1,9 @@
 package types
 
-import "github.com/vilsol/oshabi/data"
+type HarvestType string
 
 type ParsedListing struct {
-	Type  data.HarvestType `json:"type"`
-	Count int              `json:"count"`
-	Level int              `json:"level"`
+	Type  HarvestType `json:"type"`
+	Count int         `json:"count"`
+	Level int         `json:"level"`
 }

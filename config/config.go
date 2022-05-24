@@ -21,6 +21,9 @@ const (
 	LanguageFrench     = Language("fra")
 	LanguageGerman     = Language("deu")
 	LanguageSpanish    = Language("spa")
+	LanguageChinese    = Language("chi_sim")
+	LanguageKorean     = Language("kor")
+	LanguageJapanese   = Language("jpn")
 )
 
 type League string
@@ -211,6 +214,12 @@ func SetScaling(ctx context.Context, scaling float64) error {
 
 func SetDisplay(ctx context.Context, display int) error {
 	Cfg.Display = display
+	runtime.EventsEmit(ctx, "config_updated")
+	return Save()
+}
+
+func SetLanguage(ctx context.Context, language string) error {
+	Cfg.Language = Language(language)
 	runtime.EventsEmit(ctx, "config_updated")
 	return Save()
 }

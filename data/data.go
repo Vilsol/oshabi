@@ -6,12 +6,14 @@ import (
 	"encoding/json"
 	"image"
 
+	"github.com/vilsol/oshabi/types"
+
 	"github.com/pkg/errors"
 )
 
 //go:embed crafts.json
 var craftsJSON []byte
-var crafts map[string]HarvestCraft
+var crafts map[types.HarvestType]HarvestCraft
 
 //go:embed menu_button.png
 var menuButtonPNG []byte

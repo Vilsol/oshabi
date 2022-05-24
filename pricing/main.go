@@ -7,6 +7,8 @@ import (
 	"io"
 	"net/http"
 
+	"github.com/vilsol/oshabi/types"
+
 	"github.com/pkg/errors"
 	"github.com/vilsol/oshabi/config"
 	"github.com/vilsol/oshabi/data"
@@ -19,7 +21,7 @@ type CraftPricing struct {
 	LowConfidence bool    `json:"lowConfidence"`
 }
 
-var pricing = make(map[data.HarvestType]CraftPricing)
+var pricing = make(map[types.HarvestType]CraftPricing)
 
 type RawData struct {
 	Timestamp int64 `json:"timestamp"`
@@ -49,11 +51,11 @@ func UpdatePricing(ctx context.Context) error {
 		return errors.Wrap(err, "failed parsing harvest price body to json")
 	}
 
-	resultPrices := make(map[data.HarvestType]CraftPricing)
+	resultPrices := make(map[types.HarvestType]CraftPricing)
 	for _, i := range raw.Data {
 		craft := data.GetCraftByPricing(i.Name)
 		if craft != nil {
-			resultPrices[craft.Craft.Type] = CraftPricing{
+			resultPrices[craft.Type] = CraftPricing{
 				Exalt:         i.Exalt,
 				Chaos:         i.Chaos,
 				LowConfidence: i.LowConfidence,
@@ -70,13 +72,13 @@ func UpdatePricing(ctx context.Context) error {
 	return nil
 }
 
-func GetPrice(craft data.HarvestType) *CraftPricing {
+func GetPrice(craft types.HarvestType) *CraftPricing {
 	if price, ok := pricing[craft]; ok {
 		return &price
 	}
 	return nil
 }
 
-func Get() map[data.HarvestType]CraftPricing {
+func Get() map[types.HarvestType]CraftPricing {
 	return pricing
 }

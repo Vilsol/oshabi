@@ -10,6 +10,10 @@ import (
 	"net/http"
 	"os"
 	"path"
+	"regexp"
+	"strings"
+
+	"github.com/vilsol/oshabi/data"
 
 	"github.com/disintegration/imaging"
 
@@ -44,18 +48,26 @@ func InitOCR() error {
 		return errors.Wrap(err, "failed to set tessdata prefix")
 	}
 
-	if err := client.SetLanguage("eng"); err != nil {
-		return errors.Wrap(err, "failed setting OCR language")
+	language := config.Get().Language
+	if err := verifyLanguage(language); err != nil {
+		return err
 	}
 
-	if err := verifyLanguage(config.Get().Language); err != nil {
-		return err
+	wordsPath := path.Join(fullCacheDir, string(language)+".words")
+	if err := client.SetVariable("user_words_file", wordsPath); err != nil {
+		return errors.Wrap(err, "failed to set tessdata prefix")
 	}
 
 	return nil
 }
 
+var cleanRegex = regexp.MustCompile(`[",.%\d+]`)
+
 func verifyLanguage(language config.Language) error {
+	if err := client.SetLanguage(string(config.Get().Language)); err != nil {
+		return errors.Wrap(err, "failed setting OCR language")
+	}
+
 	cacheDir, err := os.UserCacheDir()
 	if err != nil {
 		return errors.Wrap(err, "failed to find cache directory")
@@ -70,33 +82,59 @@ func verifyLanguage(language config.Language) error {
 
 	langPath := path.Join(fullCacheDir, string(language)+".traineddata")
 	_, err = os.Stat(langPath)
-	if err == nil {
-		return nil
-	}
-
-	if !os.IsNotExist(err) {
-		return errors.Wrap(err, "failed to stat language file "+langPath)
-	}
-
-	out, err := os.Create(langPath)
 	if err != nil {
-		return errors.Wrap(err, "failed creating language file "+langPath)
-	}
-	defer out.Close()
+		if !os.IsNotExist(err) {
+			return errors.Wrap(err, "failed to stat language file "+langPath)
+		}
 
-	resp, err := http.Get(fmt.Sprintf("https://github.com/tesseract-ocr/tessdata/raw/main/%s.traineddata", string(language)))
+		out, err := os.Create(langPath)
+		if err != nil {
+			return errors.Wrap(err, "failed creating language file "+langPath)
+		}
+		defer out.Close()
+
+		resp, err := http.Get(fmt.Sprintf("https://github.com/tesseract-ocr/tessdata/raw/main/%s.traineddata", string(language)))
+		if err != nil {
+			return errors.Wrap(err, "failed making request")
+		}
+		defer resp.Body.Close()
+
+		if resp.StatusCode != http.StatusOK {
+			return fmt.Errorf("bad status: %s", resp.Status)
+		}
+
+		_, err = io.Copy(out, resp.Body)
+		if err != nil {
+			return errors.Wrap(err, "failed to read request body")
+		}
+	}
+
+	wordsPath := path.Join(fullCacheDir, string(language)+".words")
+	_, err = os.Stat(wordsPath)
 	if err != nil {
-		return errors.Wrap(err, "failed making request")
-	}
-	defer resp.Body.Close()
+		if !os.IsNotExist(err) {
+			return errors.Wrap(err, "failed to stat word file "+wordsPath)
+		}
 
-	if resp.StatusCode != http.StatusOK {
-		return fmt.Errorf("bad status: %s", resp.Status)
-	}
+		wordMap := make(map[string]bool)
+		for _, craft := range data.AllCrafts() {
+			text := craft.Translations[config.Get().Language]
+			clean := cleanRegex.ReplaceAllString(text, " ")
+			for _, s := range strings.Split(clean, " ") {
+				if s != "" {
+					wordMap[s] = true
+				}
+			}
+		}
 
-	_, err = io.Copy(out, resp.Body)
-	if err != nil {
-		return errors.Wrap(err, "failed to read request body")
+		serialized := ""
+		for s := range wordMap {
+			serialized += s + "\n"
+		}
+
+		if err := os.WriteFile(wordsPath, []byte(serialized), 0777); err != nil {
+			return errors.Wrap(err, "failed to write word file")
+		}
 	}
 
 	return nil

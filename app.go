@@ -101,7 +101,7 @@ func (a *App) GetListings() []types.ParsedListing {
 	for harvestType, listing := range config.Get().Listings {
 		for level, count := range listing {
 			converted = append(converted, types.ParsedListing{
-				Type:  data.HarvestType(harvestType),
+				Type:  types.HarvestType(harvestType),
 				Count: count,
 				Level: level,
 			})
@@ -220,7 +220,7 @@ func (a *App) Copy() error {
 	configMessages := config.Get().Messages
 	configPrices := config.Get().Prices
 	for listingType, listing := range config.Get().Listings {
-		name := data.GetCraftByType(data.HarvestType(listingType)).Craft.Message
+		name := data.GetCraft(types.HarvestType(listingType)).Message
 
 		if msg, ok := configMessages[listingType]; ok {
 			name = msg
@@ -229,7 +229,7 @@ func (a *App) Copy() error {
 		price := "1ex"
 		if p, ok := configPrices[listingType]; ok {
 			price = p
-		} else if p, ok := pricing.Get()[data.HarvestType(listingType)]; ok {
+		} else if p, ok := pricing.Get()[types.HarvestType(listingType)]; ok {
 			if p.Exalt > 1 {
 				price = fmt.Sprintf("%fex", p.Exalt)
 			} else {
@@ -280,4 +280,23 @@ func (a *App) SetDisplay(display int) error {
 
 func (a *App) GetDisplayCount() int {
 	return screenshot.NumActiveDisplays()
+}
+
+func (a *App) GetLanguages() map[string]string {
+	return map[string]string{
+		string(config.LanguageEnglish):    "English",
+		string(config.LanguagePortuguese): "Português",
+		string(config.LanguageRussian):    "Русский",
+		string(config.LanguageThai):       "ภาษาไทย",
+		string(config.LanguageFrench):     "Français",
+		string(config.LanguageGerman):     "Deutsch",
+		string(config.LanguageSpanish):    "Español",
+		string(config.LanguageChinese):    "简体中文",
+		string(config.LanguageKorean):     "한국어",
+		string(config.LanguageJapanese):   "日本語",
+	}
+}
+
+func (a *App) SetLanguage(language string) error {
+	return config.SetLanguage(a.ctx, language)
 }
