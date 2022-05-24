@@ -54,7 +54,10 @@ jobs:
         run: go mod tidy -compat=1.17
 
       - name: Test
-        run: go test -v ./...
+        run: |
+          mkdir -p frontend/dist/
+          touch frontend/dist/hello
+          go test -v ./...
 
   linux:
     name: Build (Linux)
