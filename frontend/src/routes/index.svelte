@@ -18,6 +18,7 @@
 	import { onMount } from 'svelte';
 	import { EventsOn } from '../wailsjs/runtime';
 	import { getNotificationsContext } from 'svelte-notifications';
+	import Icon from '@iconify/svelte';
 
 	const { addNotification } = getNotificationsContext();
 
@@ -122,10 +123,14 @@
 
 {#if config && displayCount}
 	<div class='p-3 flex flex-col gap-3 w-full h-screen'>
-		<div class='flex flex-row flex-wrap justify-between'>
-			<div class='flex flex-row gap-2'>
+		<div class='flex flex-row flex-wrap gap-2 justify-between'>
+			<div class='flex flex-row flex-wrap gap-2'>
 				<button on:click={read} class='bg-green-700 disabled:bg-green-900' disabled={reading}>
-					Scan
+					{#if reading}
+						<Icon icon="eos-icons:loading" />
+					{:else}
+						Scan
+					{/if}
 				</button>
 				<button on:click={() => handle(Clear())} class='bg-red-700'>
 					Clear
@@ -134,10 +139,10 @@
 					Copy
 				</button>
 			</div>
-			<div class='flex flex-row gap-2'>
+			<div class='flex flex-row flex-wrap gap-2'>
 				<div class='flex flex-col text-center'>
 					<label for='stream'>Stream</label>
-					<input type='checkbox' value={config.stream} class='w-4 h-4 m-auto' id='stream'
+					<input type='checkbox' checked={config.stream} class='w-4 h-4 m-auto' id='stream'
 								 on:change={() => handle(SetStream(!config.stream))}>
 				</div>
 				<input type='text' value={config.name} placeholder='Name' class='text-lg p-3 rounded'
@@ -153,12 +158,16 @@
 					{/each}
 				</select>
 				<button on:click={() => calibrate()} class='bg-yellow-700 disabled:bg-yellow-900' disabled={calibrating}>
-					Calibrate
+					{#if calibrating}
+						<Icon icon="eos-icons:loading" />
+					{:else}
+						Calibrate
+					{/if}
 				</button>
 			</div>
 		</div>
 		{#if listings.length > 0}
-			<div class='grid grid-flow-row gap-2'>
+			<div class='grid grid-flow-row gap-2 overflow-auto'>
 				{#each listings as listing}
 					<div class='flex flex-row gap-3'>
 						<div class='flex flex-row w-2/12 gap-2'>

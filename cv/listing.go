@@ -41,12 +41,12 @@ const (
 	listingTextHeight = 165
 
 	levelWidth  = 180
-	levelHeight = 45
+	levelHeight = 48
 
-	countWidth            = 39
-	countHeight           = 49
-	countHorizontalOffset = 7
-	countVerticalOffset   = 6
+	countWidth            = 38
+	countHeight           = 45
+	countHorizontalOffset = 8
+	countVerticalOffset   = 5
 
 	groveOffset = -32
 )

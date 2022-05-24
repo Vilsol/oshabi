@@ -2,6 +2,7 @@ package app
 
 import (
 	"context"
+	"fmt"
 	"image"
 	"strconv"
 	"strings"
@@ -148,8 +149,8 @@ func ScrollTop() (bool, error) {
 		return false, errors.Wrap(err, "failed to find info button")
 	}
 
-	if pointValue < 0.9 {
-		return false, nil
+	if pointValue < 0.8 {
+		return false, fmt.Errorf("info button not found: %f", pointValue)
 	}
 
 	realX, realY := TranslateCoordinates(point.X, point.Y)

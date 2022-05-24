@@ -6,6 +6,7 @@ import (
 	"image"
 	"image/png"
 	"io"
+	"math"
 	"net/http"
 	"os"
 	"path"
@@ -132,8 +133,20 @@ func ocr(img image.Image, whitelist string, mode gosseract.PageSegMode) (string,
 }
 
 func PrepareForOCR(img image.Image) image.Image {
-	src := imaging.Grayscale(img)
+	src := img
+
+	size := src.Bounds().Dx() * src.Bounds().Dy()
+	if size < 10000 {
+		scale := math.Max(2, (10000/float64(size))/4)
+		width := int(float64(src.Bounds().Dx()) * scale)
+		height := int(float64(src.Bounds().Dy()) * scale)
+		src = imaging.Resize(src, width, height, imaging.Linear)
+	}
+
+	src = imaging.Grayscale(src)
 	src = imaging.Invert(src)
 	src = imaging.AdjustContrast(src, 30)
-	return imaging.Sharpen(src, 1)
+	src = imaging.Sharpen(src, 1)
+
+	return src
 }

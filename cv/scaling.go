@@ -15,9 +15,8 @@ import (
 const (
 	minSearch   = 0.25
 	maxSearch   = 2.01
-	searchStep  = 0.001
-	searchCount = (maxSearch-minSearch)/searchStep + 1
-	scaleRound  = (1 / searchStep) * 10
+	searchStep  = 0.00005
+	searchLoops = 4
 )
 
 func CalculateScaling(img image.Image) (float64, error) {
@@ -35,11 +34,11 @@ func CalculateScaling(img image.Image) (float64, error) {
 
 	topRightXScaling, topRightXValue, _, err := ScaleAndFind(topRightCrop, data.Inventory)
 	if err != nil {
-		return 0, errors.New("failed finding top right x")
+		return 0, errors.New("failed finding inventory label")
 	}
 
 	if topRightXValue < 0.8 {
-		return 0, errors.New("could not find x button on top right of screen")
+		return 0, errors.New("could not find inventory label on top right of screen")
 	}
 
 	if math.Max(menuButtonScaling, topRightXScaling)-math.Min(menuButtonScaling, topRightXScaling) > 0.1 {
@@ -48,14 +47,14 @@ func CalculateScaling(img image.Image) (float64, error) {
 
 	avg := (menuButtonScaling + topRightXScaling) / 2
 
-	// Round to the nearest 0.005
+	// Round to the nearest search step size
 	return math.Round(avg/searchStep) * searchStep, nil
 }
 
 type jobTuple struct {
-	GrayLeftCrop gocv.Mat
-	GrayResized  gocv.Mat
-	Scale        float64
+	Image    gocv.Mat
+	Template gocv.Mat
+	Scale    float64
 }
 
 type resultTuple struct {
@@ -67,28 +66,54 @@ func finder(jobs <-chan jobTuple, results chan<- resultTuple) {
 	for j := range jobs {
 		m := gocv.NewMat()
 		result := gocv.NewMat()
-		gocv.MatchTemplate(j.GrayLeftCrop, j.GrayResized, &result, gocv.TmCcoeffNormed, m)
+		gocv.MatchTemplate(j.Image, j.Template, &result, gocv.TmCcoeffNormed, m)
 		results <- resultTuple{
 			Result: result,
 			Scale:  j.Scale,
 		}
 		_ = m.Close()
-		_ = j.GrayResized.Close()
+		_ = j.Template.Close()
 	}
 }
 
 func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, image.Point, error) {
-	matLeftCrop, err := gocv.ImageToMatRGB(static)
+	min := minSearch
+	max := maxSearch
+	stepSize := searchStep * (math.Pow10(searchLoops - 1))
+
+	lastScale := 1.0
+	lastValue := float32(0)
+	lastLocation := image.Point{}
+	for i := 0; i < searchLoops; i++ {
+		newScale, newValue, newLocation, err := scaleFind(static, dynamic, min, max, stepSize)
+		if err != nil {
+			return 0, 0, image.Point{}, err
+		}
+
+		lastScale = newScale
+		lastValue = newValue
+		lastLocation = newLocation
+
+		min = newScale - stepSize*2
+		max = newScale + stepSize*2
+		stepSize = stepSize / 10
+	}
+
+	return lastScale, lastValue, lastLocation, nil
+}
+
+func scaleFind(static image.Image, dynamic image.Image, min float64, max float64, step float64) (float64, float32, image.Point, error) {
+	staticMat, err := gocv.ImageToMatRGB(static)
 	if err != nil {
 		return 0, 0, image.Point{}, errors.Wrap(err, "failed converting image to mat")
 	}
 
-	grayLeftCrop := gocv.NewMat()
-	gocv.CvtColor(matLeftCrop, &grayLeftCrop, gocv.ColorRGBToGray)
-
 	size := dynamic.Bounds()
 
-	jobs := make(chan jobTuple, searchCount)
+	searchCount := (max-min)/step + 1
+	scaleRound := (1 / step) * 10
+
+	jobs := make(chan jobTuple, int(searchCount))
 	results := make(chan resultTuple)
 
 	for i := 0; i < int(math.Ceil(float64(runtime.NumCPU())/2)); i++ {
@@ -96,7 +121,7 @@ func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, im
 	}
 
 	count := 0
-	for i := 0.25; i < 2.01; i += 0.001 {
+	for i := min; i < max; i += step {
 		scale := math.Round(i*scaleRound) / scaleRound
 		width := int(float64(size.Dx()) * scale)
 		height := int(float64(size.Dy()) * scale)
@@ -114,14 +139,10 @@ func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, im
 			return 0, 0, image.Point{}, errors.Wrap(err, "failed converting image to mat")
 		}
 
-		grayResized := gocv.NewMat()
-		gocv.CvtColor(matResized, &grayResized, gocv.ColorRGBToGray)
-		_ = matResized.Close()
-
 		jobs <- jobTuple{
-			GrayLeftCrop: grayLeftCrop,
-			GrayResized:  grayResized,
-			Scale:        scale,
+			Image:    staticMat,
+			Template: matResized,
+			Scale:    scale,
 		}
 	}
 
@@ -146,6 +167,8 @@ func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, im
 	close(jobs)
 	close(results)
 
+	_ = staticMat.Close()
+
 	return bestScaling, bestValue, bestLocation, nil
 }
 
@@ -161,5 +184,5 @@ func ScaleN(n int) int {
 }
 
 func ScaleNf(n float64) float64 {
-	return math.Floor(config.Get().Scaling * n)
+	return math.Round(config.Get().Scaling * n)
 }
