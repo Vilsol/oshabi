@@ -156,6 +156,7 @@ jobs:
         run: |
           ls -lah /c/opencv
           ls -lah /c/opencv/build
+          ls -lah /c/opencv/build/install
 
       - name: Install OpenCV
         run: cd .github && ./build_windows.cmd
@@ -164,6 +165,7 @@ jobs:
         run: |
           ls -lah /c/opencv
           ls -lah /c/opencv/build
+          ls -lah /c/opencv/build/install
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.2.1
