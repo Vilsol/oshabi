@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.12](https://github.com/Vilsol/oshabi/compare/v0.0.11...v0.0.12) (2022-05-25)
+
+
+### Bug Fixes
+
+* reduce required accuracy for corners ([c3f32ca](https://github.com/Vilsol/oshabi/commit/c3f32cab742663cf997758623ab25c6c04970c34))
+
 ### [0.0.11](https://github.com/Vilsol/oshabi/compare/v0.0.10...v0.0.11) (2022-05-25)
 
 
