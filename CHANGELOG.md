@@ -1,5 +1,16 @@
 # Changelog
 
+### [0.0.11](https://github.com/Vilsol/oshabi/compare/v0.0.10...v0.0.11) (2022-05-25)
+
+
+### Bug Fixes
+
+* add sound when scan is done ([9a74c5a](https://github.com/Vilsol/oshabi/commit/9a74c5a4f62cbf04450bfcafee88791df9d56b15))
+* general optimizations ([9a74c5a](https://github.com/Vilsol/oshabi/commit/9a74c5a4f62cbf04450bfcafee88791df9d56b15))
+* label columns ([9a74c5a](https://github.com/Vilsol/oshabi/commit/9a74c5a4f62cbf04450bfcafee88791df9d56b15))
+* make shortcut changeable ([9a74c5a](https://github.com/Vilsol/oshabi/commit/9a74c5a4f62cbf04450bfcafee88791df9d56b15))
+* replace icon ([021e46f](https://github.com/Vilsol/oshabi/commit/021e46fe577575e99a662bc0f91ce969464c7904))
+
 ### [0.0.10](https://github.com/Vilsol/oshabi/compare/v0.0.9...v0.0.10) (2022-05-24)
 
 
