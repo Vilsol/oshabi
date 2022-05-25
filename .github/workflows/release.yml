@@ -57,11 +57,15 @@ jobs:
           run_install: |
             - cwd: frontend
 
-      - name: Clone GoCV
-        run: git clone https://github.com/hybridgroup/gocv.git
+      - name: Cache OpenCV
+        id: cache-opencv
+        uses: actions/cache@v3
+        with:
+          path: /tmp/opencv
+          key: ${{ runner.os }}-opencv
 
       - name: Install OpenCV
-        run: cd gocv && make install
+        run: cd .github && ./build_ubuntu.sh
 
       - name: Install Wails
         run: |
@@ -125,7 +129,7 @@ jobs:
           key: ${{ runner.os }}-opencv
 
       - name: Install OpenCV
-        run: cd gocv && ./win_build_opencv.cmd
+        run: cd .github && ./build_windows.cmd
         env:
           GOPATH: "C:"
 
