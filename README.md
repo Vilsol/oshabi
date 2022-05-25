@@ -28,7 +28,7 @@ sudo apt install -y libtesseract5 liblept5
 Then you need to clone and build OpenCV:
 
 ```shell
-sudo apt install -y unzip wget build-essential cmake curl git libgtk2.0-dev libgtk-3-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-dev
+sudo apt install -y unzip wget build-essential cmake curl git libgtk2.0-dev libgtk-3-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-dev libasound2-dev
 rm -rf /tmp/opencv && mkdir /tmp/opencv && cd /tmp/opencv
 curl -Lo opencv.zip https://github.com/opencv/opencv/archive/4.5.5.zip
 unzip -q opencv.zip
