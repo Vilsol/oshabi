@@ -1,13 +1,14 @@
 package tests
 
 import (
+	"github.com/pkg/errors"
+	"github.com/vilsol/oshabi/app"
 	"image/png"
 	"os"
 	"path"
 	"testing"
 
 	"github.com/MarvinJWendt/testza"
-	"github.com/vilsol/oshabi/app"
 	"github.com/vilsol/oshabi/types"
 
 	"github.com/vilsol/oshabi/config"
@@ -93,6 +94,25 @@ func runScalingTest(t *testing.T, dirPath string, expected []types.ParsedListing
 				}
 
 				testza.AssertEqual(t, expected, listings)
+
+				infoButtonLocation, infoButtonValue, err := cv.Find(img, cv.Scale(data.InfoButton))
+				if err != nil {
+					t.Error(err)
+					return
+				}
+
+				if infoButtonValue < 0.7 {
+					t.Error(errors.New("info button not found"))
+					return
+				}
+
+				canScrollDown, err := cv.CanScrollDown(infoButtonLocation)
+				if err != nil {
+					t.Error(err)
+					return
+				}
+
+				testza.AssertTrue(t, canScrollDown)
 			})
 		}
 	}

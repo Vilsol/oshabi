@@ -148,5 +148,5 @@ func CanScrollDown(infoButtonLocation image.Point) (bool, error) {
 		return false, errors.Wrap(err, "failed to find count corner")
 	}
 
-	return cornerVal >= 0.9, nil
+	return cornerVal >= 0.8, nil
 }
