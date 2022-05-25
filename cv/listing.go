@@ -124,29 +124,41 @@ func ExtractToListings(img image.Image, offset int, limit int) ([]RawListing, er
 	return listings, nil
 }
 
-func CanScrollDown(infoButtonLocation image.Point) (bool, error) {
+func CanScrollDown(infoButtonLocation image.Point, inGrove bool, img image.Image) (bool, error) {
 	bounds := screenshot.GetDisplayBounds(config.Get().Display)
 
 	pxOffset := int(5*ScaleNf(listingHeight) + float64(ScaleN(infoListingVerticalOffset)))
 
+	if inGrove {
+		pxOffset += ScaleN(groveOffset)
+	}
+
 	listingLeft := infoButtonLocation.X + ScaleN(infoListingHorizontalOffset)
 	listingTop := infoButtonLocation.Y + pxOffset
 
-	nextCount, err := screenshot.CaptureRect(image.Rect(
+	newRect := image.Rect(
 		bounds.Min.X+listingLeft-ScaleN(20),
 		bounds.Min.Y+listingTop-ScaleN(20),
-		bounds.Max.X+listingLeft+ScaleN(30),
-		bounds.Max.Y+listingTop+ScaleN(30),
-	))
+		bounds.Min.X+listingLeft+ScaleN(30),
+		bounds.Min.Y+listingTop+ScaleN(30),
+	)
 
-	if err != nil {
-		return false, errors.Wrap(err, "failed capturing screen")
+	if img == nil {
+		nextCount, err := screenshot.CaptureRect(newRect)
+
+		if err != nil {
+			return false, errors.Wrap(err, "failed capturing screen")
+		}
+
+		img = nextCount
+	} else {
+		img = imaging.Crop(img, newRect)
 	}
 
-	_, cornerVal, err := Find(nextCount, Scale(data.CountCorner))
+	_, cornerVal, err := Find(img, Scale(data.CountCorner))
 	if err != nil {
 		return false, errors.Wrap(err, "failed to find count corner")
 	}
 
-	return cornerVal >= 0.8, nil
+	return cornerVal >= 0.7, nil
 }

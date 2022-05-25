@@ -2,7 +2,6 @@ package app
 
 import (
 	"context"
-	"fmt"
 	"image"
 	"strconv"
 	"strings"
@@ -27,13 +26,9 @@ func ReadFull(ctx context.Context) ([]types.ParsedListing, error) {
 		return nil, err
 	}
 
-	infoButtonLocation, infoButtonValue, err := cv.Find(img, cv.Scale(data.InfoButton))
+	inGrove, infoButtonLocation, err := cv.ListingTrackers(img)
 	if err != nil {
-		return nil, errors.Wrap(err, "failed to find info button")
-	}
-
-	if infoButtonValue < 0.7 {
-		return nil, fmt.Errorf("info button not found: %f", infoButtonValue)
+		return nil, err
 	}
 
 	canScroll, err := ScrollTop(infoButtonLocation)
@@ -70,7 +65,7 @@ func ReadFull(ctx context.Context) ([]types.ParsedListing, error) {
 
 		scrollCount := 0
 		for i := 0; i < 5; i++ {
-			canScrollDown, err := cv.CanScrollDown(infoButtonLocation)
+			canScrollDown, err := cv.CanScrollDown(infoButtonLocation, inGrove, nil)
 			if err != nil {
 				return nil, err
 			}

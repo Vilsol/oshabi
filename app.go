@@ -64,15 +64,19 @@ func (a *App) startup(ctx context.Context) {
 		time.Sleep(time.Hour)
 	}()
 
-	runtime.EventsOn(ctx, "listings_read", func(_ ...interface{}) {
-		alertSound, format, err := mp3.Decode(io.NopCloser(bytes.NewReader(data.AlertMP3)))
-		if err != nil {
-			runtime.EventsEmit(ctx, "error", errors.Wrap(err, "failed to play sound"))
-			return
-		}
+	_, format, err := mp3.Decode(io.NopCloser(bytes.NewReader(data.AlertMP3)))
+	if err != nil {
+		panic(errors.Wrap(err, "failed to load alert sound"))
+	}
 
-		if err := speaker.Init(format.SampleRate, format.SampleRate.N(time.Second/10)); err != nil {
-			runtime.EventsEmit(ctx, "error", errors.Wrap(err, "failed to play sound"))
+	if err := speaker.Init(format.SampleRate, format.SampleRate.N(time.Second/10)); err != nil {
+		panic(errors.Wrap(err, "failed to initialize speaker").Error())
+	}
+
+	runtime.EventsOn(ctx, "listings_read", func(_ ...interface{}) {
+		alertSound, _, err := mp3.Decode(io.NopCloser(bytes.NewReader(data.AlertMP3)))
+		if err != nil {
+			runtime.EventsEmit(ctx, "error", errors.Wrap(err, "failed to load alert sound").Error())
 			return
 		}
 

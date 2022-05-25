@@ -130,8 +130,6 @@ jobs:
 
       - name: Install OpenCV
         run: cd .github && ./build_windows.cmd
-        env:
-          GOPATH: "C:"
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.2.1

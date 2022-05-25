@@ -176,7 +176,7 @@ func Scale(img image.Image) image.Image {
 	size := img.Bounds()
 	width := int(float64(size.Dx()) * config.Get().Scaling)
 	height := int(float64(size.Dy()) * config.Get().Scaling)
-	return imaging.Resize(img, width, height, imaging.NearestNeighbor)
+	return imaging.Resize(img, width, height, imaging.Linear)
 }
 
 func ScaleN(n int) int {

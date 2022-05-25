@@ -142,6 +142,9 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
+      - name: Check OpenCV
+        run: ls -lah /c/opencv
+
       - name: Cache OpenCV
         id: cache-opencv
         uses: actions/cache@v3
@@ -149,10 +152,14 @@ jobs:
           path: C:/opencv
           key: ${{ runner.os }}-opencv
 
+      - name: Check OpenCV
+        run: ls -lah /c/opencv
+
       - name: Install OpenCV
         run: cd .github && ./build_windows.cmd
-        env:
-          GOPATH: "C:"
+
+      - name: Check OpenCV
+        run: ls -lah /c/opencv
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.2.1

@@ -106,7 +106,7 @@ func runScalingTest(t *testing.T, dirPath string, expected []types.ParsedListing
 					return
 				}
 
-				canScrollDown, err := cv.CanScrollDown(infoButtonLocation)
+				canScrollDown, err := cv.CanScrollDown(infoButtonLocation, false, img)
 				if err != nil {
 					t.Error(err)
 					return

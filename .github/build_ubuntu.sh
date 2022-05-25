@@ -4,8 +4,7 @@ set -ex
 
 sudo apt install -y unzip wget build-essential cmake curl git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-22-dev
 
-rm -rf /tmp/opencv
-mkdir /tmp/opencv
+mkdir -p /tmp/opencv
 pushd /tmp/opencv
 curl -Lo opencv.zip https://github.com/opencv/opencv/archive/4.5.5.zip
 unzip -q opencv.zip
