@@ -153,13 +153,17 @@ jobs:
           key: ${{ runner.os }}-opencv
 
       - name: Check OpenCV
-        run: ls -lah /c/opencv
+        run: |
+          ls -lah /c/opencv
+          ls -lah /c/opencv/build
 
       - name: Install OpenCV
         run: cd .github && ./build_windows.cmd
 
       - name: Check OpenCV
-        run: ls -lah /c/opencv
+        run: |
+          ls -lah /c/opencv
+          ls -lah /c/opencv/build
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.2.1
