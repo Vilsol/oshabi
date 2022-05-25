@@ -7,9 +7,9 @@ sudo apt install -y unzip wget build-essential cmake curl git libgtk2.0-dev pkg-
 mkdir -p /tmp/opencv
 pushd /tmp/opencv
 curl -Lo opencv.zip https://github.com/opencv/opencv/archive/4.5.5.zip
-unzip -q opencv.zip
+unzip -q -u opencv.zip
 curl -Lo opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.5.5.zip
-unzip -q opencv_contrib.zip
+unzip -q -u opencv_contrib.zip
 rm opencv.zip opencv_contrib.zip
 popd
 
