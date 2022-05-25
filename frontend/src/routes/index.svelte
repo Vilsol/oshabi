@@ -14,7 +14,8 @@
 		GetDisplayCount,
 		SetDisplay,
 		GetLanguages,
-		SetLanguage
+		SetLanguage,
+		SetShortcut
 	} from '../wailsjs/go/main/App';
 	import type { types, main } from '../wailsjs/go/models';
 	import { onMount } from 'svelte';
@@ -125,7 +126,42 @@
 			}
 		});
 	};
+
+	let changingShortcut = false;
+
+	const changeShortcut = () => {
+		changingShortcut = !changingShortcut;
+	}
+
+	const modKeys = [
+		'Control',
+		'Alt',
+		'Shift',
+		'Meta'
+	];
+
+	const keyDown = (event: KeyboardEvent) => {
+		if (changingShortcut) {
+			if (modKeys.indexOf(event.key) < 0) {
+				changingShortcut = false;
+				const combination = [];
+				if (event.ctrlKey) {
+					combination.push('ctrl');
+				}
+				if (event.shiftKey) {
+					combination.push('shift');
+				}
+				if (event.altKey || event.metaKey) {
+					combination.push('alt');
+				}
+				combination.push(event.key);
+				handle(SetShortcut(combination))
+			}
+		}
+	}
 </script>
+
+<svelte:window on:keydown={keyDown}></svelte:window>
 
 {#if config && displayCount && languages}
 	<div class='p-3 flex flex-col gap-3 w-full h-screen'>
@@ -169,6 +205,13 @@
 		{#if !settings}
 			{#if listings.length > 0}
 				<div class='grid grid-flow-row gap-2 overflow-auto'>
+					<div class='flex flex-row gap-3'>
+						<span class='w-2/12'>Count</span>
+						<span class='w-7/12'>Name</span>
+						<span class='w-1/12 text-center'>Market</span>
+						<span class='w-2/12'>Price</span>
+					</div>
+
 					{#each listings as listing}
 						<div class='flex flex-row gap-3'>
 							<div class='flex flex-row w-2/12 gap-2'>
@@ -197,54 +240,69 @@
 				</div>
 			{/if}
 		{:else}
-			<div class='flex flex-col gap-4' style='width: fit-content'>
-				<div class='flex flex-col gap-2'>
-					<label class='text-lg' for='language'>Language</label>
-					<select value={config.language} id='language'
-									on:change={(event) => handle(SetLanguage(event.target.value))}>
-						{#each Object.keys(languages) as lang}
-							<option value={lang}>{lang}: {languages[lang]}</option>
-						{/each}
-					</select>
-				</div>
+			<div class='flex flex-row gap-4 w-full'>
+				<div class='flex flex-col gap-4 overflow-auto w-1/3'>
+					<div class='flex flex-col gap-2'>
+						<label class='text-lg' for='language'>Language</label>
+						<select value={config.language} id='language'
+										on:change={(event) => handle(SetLanguage(event.target.value))}>
+							{#each Object.keys(languages) as lang}
+								<option value={lang}>{languages[lang]}</option>
+							{/each}
+						</select>
+					</div>
 
-				<div class='flex flex-row gap-2'>
-					<label class='text-lg' for='stream'>Can Stream</label>
-					<input type='checkbox' checked={config.stream} class='w-4 h-4 self-center' id='stream'
-								 on:change={() => handle(SetStream(!config.stream))}>
+					<div class='flex flex-col gap-2'>
+						<label class='text-lg' for='display'>Display</label>
+						<select value={config.display} id='display'
+										on:change={(event) => handle(SetDisplay(parseInt(event.target.value, 10)))}>
+							{#each Array(displayCount) as _, i}
+								<option value={i}>Display {i}</option>
+							{/each}
+						</select>
+						<button on:click={() => calibrate()} class='bg-yellow-700 disabled:bg-yellow-900 text-center' disabled={calibrating}>
+							{#if calibrating}
+								<Icon icon='eos-icons:loading' class='inline-block' />
+							{:else}
+								Calibrate
+							{/if}
+						</button>
+					</div>
 				</div>
+				<div class='flex flex-col gap-4 overflow-auto w-1/3'>
+					<div class='flex flex-row gap-2'>
+						<label class='text-lg' for='stream'>Can Stream</label>
+						<input type='checkbox' checked={config.stream} class='w-4 h-4 self-center' id='stream'
+									 on:change={() => handle(SetStream(!config.stream))}>
+					</div>
 
-				<div class='flex flex-col gap-2'>
-					<label class='text-lg' for='name'>Character Name</label>
-					<input type='text' value={config.name} id='name' placeholder='Character Name' class='text-lg p-3 rounded'
-								 on:blur={(event) => handle(SetName(event.target.value))}>
+					<div class='flex flex-col gap-2'>
+						<label class='text-lg' for='name'>Character Name</label>
+						<input type='text' value={config.name} id='name' placeholder='Character Name' class='text-lg p-3 rounded'
+									 on:blur={(event) => handle(SetName(event.target.value))}>
+					</div>
+
+					<div class='flex flex-col gap-2'>
+						<label class='text-lg' for='league'>League</label>
+						<select value={config.league} id='league'
+										on:change={(event) => handle(SetLeague(event.target.value))}>
+							<option value='std'>Standard</option>
+							<option value='lsc'>League Softcore</option>
+							<option value='lhc'>League Hardcore</option>
+						</select>
+					</div>
 				</div>
-
-				<div class='flex flex-col gap-2'>
-					<label class='text-lg' for='league'>League</label>
-					<select value={config.league} id='league'
-									on:change={(event) => handle(SetLeague(event.target.value))}>
-						<option value='std'>Standard</option>
-						<option value='lsc'>League Softcore</option>
-						<option value='lhc'>League Hardcore</option>
-					</select>
-				</div>
-
-				<div class='flex flex-col gap-2'>
-					<label class='text-lg' for='display'>Display</label>
-					<select value={config.display} id='display'
-									on:change={(event) => handle(SetDisplay(parseInt(event.target.value, 10)))}>
-						{#each Array(displayCount) as _, i}
-							<option value={i}>Display {i}</option>
-						{/each}
-					</select>
-					<button on:click={() => calibrate()} class='bg-yellow-700 disabled:bg-yellow-900' disabled={calibrating}>
-						{#if calibrating}
-							<Icon icon='eos-icons:loading' />
-						{:else}
-							Calibrate
-						{/if}
-					</button>
+				<div class='flex flex-col gap-4 overflow-auto w-1/3'>
+					<div class='flex flex-col gap-2'>
+						<label class='text-lg'>Shortcut (<code class='uppercase'>{config.shortcut.join(' + ')}</code>)</label>
+						<button on:click={() => changeShortcut()} class='bg-yellow-700 text-center'>
+							{#if changingShortcut}
+								<Icon icon='eos-icons:loading' class='inline-block' />
+							{:else}
+								Change Shortcut
+							{/if}
+						</button>
+					</div>
 				</div>
 			</div>
 		{/if}

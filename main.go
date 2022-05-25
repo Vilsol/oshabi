@@ -19,7 +19,7 @@ func main() {
 	err := wails.Run(&options.App{
 		Title:             "Oshabi",
 		Width:             1150,
-		Height:            600,
+		Height:            650,
 		MinWidth:          850,
 		MinHeight:         600,
 		DisableResize:     false,

@@ -1,11 +1,17 @@
 package main
 
 import (
+	"bytes"
 	"context"
 	"fmt"
+	"io"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/faiface/beep/effects"
+	"github.com/faiface/beep/mp3"
+	"github.com/faiface/beep/speaker"
 
 	"github.com/vilsol/oshabi/hooks"
 
@@ -57,6 +63,27 @@ func (a *App) startup(ctx context.Context) {
 
 		time.Sleep(time.Hour)
 	}()
+
+	runtime.EventsOn(ctx, "listings_read", func(_ ...interface{}) {
+		alertSound, format, err := mp3.Decode(io.NopCloser(bytes.NewReader(data.AlertMP3)))
+		if err != nil {
+			runtime.EventsEmit(ctx, "error", errors.Wrap(err, "failed to play sound"))
+			return
+		}
+
+		if err := speaker.Init(format.SampleRate, format.SampleRate.N(time.Second/10)); err != nil {
+			runtime.EventsEmit(ctx, "error", errors.Wrap(err, "failed to play sound"))
+			return
+		}
+
+		volume := &effects.Volume{
+			Streamer: alertSound,
+			Base:     10,
+			Volume:   -1,
+		}
+
+		speaker.Play(volume)
+	})
 }
 
 func (a App) domReady(_ context.Context) {
@@ -120,6 +147,7 @@ type ConvertedConfig struct {
 	Stream       bool              `json:"stream"`
 	Display      int               `json:"display"`
 	Scaling      float64           `json:"scaling"`
+	Shortcut     []string          `json:"shortcut"`
 }
 
 func (a *App) GetConfig() ConvertedConfig {
@@ -169,6 +197,7 @@ func (a *App) GetConfig() ConvertedConfig {
 		Stream:       config.Get().Stream,
 		Display:      config.Get().Display,
 		Scaling:      config.Get().Scaling,
+		Shortcut:     config.Get().Shortcut,
 	}
 }
 
@@ -299,4 +328,13 @@ func (a *App) GetLanguages() map[string]string {
 
 func (a *App) SetLanguage(language string) error {
 	return config.SetLanguage(a.ctx, language)
+}
+
+func (a *App) SetShortcut(shortcut []string) error {
+	err := config.SetShortcut(a.ctx, shortcut)
+	if err != nil {
+		return err
+	}
+	hooks.UpdateShortcut(a.ctx)
+	return nil
 }

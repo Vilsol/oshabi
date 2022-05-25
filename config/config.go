@@ -45,6 +45,7 @@ type Config struct {
 	Name     string                 `json:"name"`
 	Stream   bool                   `json:"stream"`
 	Display  int                    `json:"display"`
+	Shortcut []string               `json:"shortcut"`
 }
 
 var Cfg Config
@@ -69,6 +70,10 @@ func InitConfig() error {
 		if err := Save(); err != nil {
 			return err
 		}
+	}
+
+	if len(Cfg.Shortcut) == 0 {
+		Cfg.Shortcut = []string{"ctrl", "j"}
 	}
 
 	return nil
@@ -220,6 +225,12 @@ func SetDisplay(ctx context.Context, display int) error {
 
 func SetLanguage(ctx context.Context, language string) error {
 	Cfg.Language = Language(language)
+	runtime.EventsEmit(ctx, "config_updated")
+	return Save()
+}
+
+func SetShortcut(ctx context.Context, shortcut []string) error {
+	Cfg.Shortcut = shortcut
 	runtime.EventsEmit(ctx, "config_updated")
 	return Save()
 }

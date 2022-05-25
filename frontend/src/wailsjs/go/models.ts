@@ -10,6 +10,7 @@ export namespace main {
 	    stream: boolean;
 	    display: number;
 	    scaling: number;
+	    shortcut: string[];
 	
 	    static createFrom(source: any = {}) {
 	        return new ConvertedConfig(source);
@@ -26,6 +27,7 @@ export namespace main {
 	        this.stream = source["stream"];
 	        this.display = source["display"];
 	        this.scaling = source["scaling"];
+	        this.shortcut = source["shortcut"];
 	    }
 	}
 

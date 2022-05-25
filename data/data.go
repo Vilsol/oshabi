@@ -35,6 +35,9 @@ var Horticrafting image.Image
 var inventoryPNG []byte
 var Inventory image.Image
 
+//go:embed alert.mp3
+var AlertMP3 []byte
+
 func InitData() error {
 	var err error
 	if err = json.Unmarshal(craftsJSON, &crafts); err != nil {

@@ -5,6 +5,9 @@ import (
 	"image/color"
 	"image/draw"
 
+	"github.com/kbinani/screenshot"
+	"github.com/vilsol/oshabi/config"
+
 	"github.com/otiai10/gosseract/v2"
 
 	"github.com/disintegration/imaging"
@@ -51,7 +54,7 @@ const (
 	groveOffset = -32
 )
 
-func listingTrackers(img image.Image) (bool, image.Point, error) {
+func ListingTrackers(img image.Image) (bool, image.Point, error) {
 	_, hortValue, err := Find(img, Scale(data.Horticrafting))
 	if err != nil {
 		return false, image.Point{}, errors.Wrap(err, "failed to find horticrafting label")
@@ -66,7 +69,7 @@ func listingTrackers(img image.Image) (bool, image.Point, error) {
 }
 
 func ExtractToListings(img image.Image, offset int, limit int) ([]RawListing, error) {
-	inGrove, infoButtonLocation, err := listingTrackers(img)
+	inGrove, infoButtonLocation, err := ListingTrackers(img)
 	if err != nil {
 		return nil, err
 	}
@@ -121,23 +124,24 @@ func ExtractToListings(img image.Image, offset int, limit int) ([]RawListing, er
 	return listings, nil
 }
 
-func CanScrollDown(img image.Image) (bool, error) {
-	_, infoButtonLocation, err := listingTrackers(img)
-	if err != nil {
-		return false, err
-	}
+func CanScrollDown(infoButtonLocation image.Point) (bool, error) {
+	bounds := screenshot.GetDisplayBounds(config.Get().Display)
 
 	pxOffset := int(5*ScaleNf(listingHeight) + float64(ScaleN(infoListingVerticalOffset)))
 
 	listingLeft := infoButtonLocation.X + ScaleN(infoListingHorizontalOffset)
 	listingTop := infoButtonLocation.Y + pxOffset
 
-	nextCount := imaging.Crop(img, image.Rect(
-		listingLeft-ScaleN(20),
-		listingTop-ScaleN(20),
-		listingLeft+ScaleN(30),
-		listingTop+ScaleN(30),
+	nextCount, err := screenshot.CaptureRect(image.Rect(
+		bounds.Min.X+listingLeft-ScaleN(20),
+		bounds.Min.Y+listingTop-ScaleN(20),
+		bounds.Max.X+listingLeft+ScaleN(30),
+		bounds.Max.Y+listingTop+ScaleN(30),
 	))
+
+	if err != nil {
+		return false, errors.Wrap(err, "failed capturing screen")
+	}
 
 	_, cornerVal, err := Find(nextCount, Scale(data.CountCorner))
 	if err != nil {

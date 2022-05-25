@@ -6,6 +6,7 @@ require (
 	github.com/MarvinJWendt/testza v0.4.2
 	github.com/PuerkitoBio/goquery v1.8.0
 	github.com/disintegration/imaging v1.6.2
+	github.com/faiface/beep v1.1.0
 	github.com/go-vgo/robotgo v0.100.10
 	github.com/kbinani/screenshot v0.0.0-20210720154843-7d3a670d8329
 	github.com/masatana/go-textdistance v0.0.0-20191005053614-738b0edac985
@@ -27,6 +28,8 @@ require (
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/google/uuid v1.1.2 // indirect
 	github.com/gookit/color v1.5.0 // indirect
+	github.com/hajimehoshi/go-mp3 v0.3.0 // indirect
+	github.com/hajimehoshi/oto v0.7.1 // indirect
 	github.com/imdario/mergo v0.3.12 // indirect
 	github.com/jchv/go-winloader v0.0.0-20210711035445-715c2860da7e // indirect
 	github.com/jezek/xgb v0.0.0-20210312150743-0e0f116e1240 // indirect
@@ -62,7 +65,9 @@ require (
 	github.com/wailsapp/mimetype v1.4.1 // indirect
 	github.com/xo/terminfo v0.0.0-20210125001918-ca9a967f8778 // indirect
 	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4 // indirect
+	golang.org/x/exp v0.0.0-20190306152737-a1d7652674e8 // indirect
 	golang.org/x/image v0.0.0-20211028202545-6944b10bf410 // indirect
+	golang.org/x/mobile v0.0.0-20190415191353-3e0bab5405d6 // indirect
 	golang.org/x/net v0.0.0-20220412020605-290c469a71a5 // indirect
 	golang.org/x/sys v0.0.0-20220412211240-33da011f77ad // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
