@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.15](https://github.com/Vilsol/oshabi/compare/v0.0.14...v0.0.15) (2022-05-26)
+
+
+### Bug Fixes
+
+* package non-nested tar ([3e932fb](https://github.com/Vilsol/oshabi/commit/3e932fb36b28c2b18f8d69cc26a4217610b25bcd))
+
 ### [0.0.14](https://github.com/Vilsol/oshabi/compare/v0.0.13...v0.0.14) (2022-05-26)
 
 
