@@ -78,8 +78,8 @@ jobs:
       - name: Compress into tar
         working-directory: build/bin
         run: |
-          mkdir oshabi-linux-amd64
-          mv oshabi ./oshabi-linux-amd64-${{ needs.release-pr.outputs.tag_name }}
+          mkdir oshabi-linux-amd64-${{ needs.release-pr.outputs.tag_name }}
+          mv oshabi ./oshabi-linux-amd64-${{ needs.release-pr.outputs.tag_name }}/
           tar -czvf oshabi-linux-amd64.tar.gz ./oshabi-linux-amd64-${{ needs.release-pr.outputs.tag_name }}
 
       - name: Upload artifacts
