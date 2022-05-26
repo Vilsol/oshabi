@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.14](https://github.com/Vilsol/oshabi/compare/v0.0.13...v0.0.14) (2022-05-26)
+
+
+### Bug Fixes
+
+* correctly package linux release ([9b923b7](https://github.com/Vilsol/oshabi/commit/9b923b76d624d41f05880ae1bc7ed861e0730265))
+
 ### [0.0.13](https://github.com/Vilsol/oshabi/compare/v0.0.12...v0.0.13) (2022-05-26)
 
 
