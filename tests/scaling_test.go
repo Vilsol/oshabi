@@ -1,12 +1,12 @@
 package tests
 
 import (
-	"github.com/pkg/errors"
-	"github.com/vilsol/oshabi/app"
 	"image/png"
 	"os"
 	"path"
 	"testing"
+
+	"github.com/pkg/errors"
 
 	"github.com/MarvinJWendt/testza"
 	"github.com/vilsol/oshabi/types"
@@ -31,7 +31,7 @@ func init() {
 }
 
 func TestScalingHorticrafting(t *testing.T) {
-	runScalingTest(t, "../testdata/horticrafting", []types.ParsedListing{
+	runScalingTest(t, "../testdata/horticrafting", true, []types.ParsedListing{
 		{Type: "FiveSockets", Count: 1, Level: 77},
 		{Type: "ChangeGemToGem", Count: 1, Level: 77},
 		{Type: "EnchantArmourLife", Count: 1, Level: 77},
@@ -41,7 +41,7 @@ func TestScalingHorticrafting(t *testing.T) {
 }
 
 func TestScalingGrove(t *testing.T) {
-	runScalingTest(t, "../testdata/grove", []types.ParsedListing{
+	runScalingTest(t, "../testdata/grove", false, []types.ParsedListing{
 		{Type: "SacrificeMap1Anarchy", Count: 1, Level: 72},
 		{Type: "ReforgeCaster", Count: 1, Level: 72},
 		{Type: "ReforgeCasterMoreCommon", Count: 1, Level: 72},
@@ -50,7 +50,7 @@ func TestScalingGrove(t *testing.T) {
 	})
 }
 
-func runScalingTest(t *testing.T, dirPath string, expected []types.ParsedListing) {
+func runScalingTest(t *testing.T, dirPath string, shouldScrollDown bool, expected []types.ParsedListing) {
 	dir, err := os.ReadDir(dirPath)
 	if err != nil {
 		t.Error(err)
@@ -87,7 +87,7 @@ func runScalingTest(t *testing.T, dirPath string, expected []types.ParsedListing
 
 				config.Cfg.Scaling = scaling
 
-				listings, err := app.ReadImage(img, 0, 5)
+				listings, err := cv.ReadImage(img, 0, 5)
 				if err != nil {
 					t.Error(err)
 					return
@@ -112,7 +112,7 @@ func runScalingTest(t *testing.T, dirPath string, expected []types.ParsedListing
 					return
 				}
 
-				testza.AssertTrue(t, canScrollDown)
+				testza.AssertEqual(t, shouldScrollDown, canScrollDown)
 			})
 		}
 	}

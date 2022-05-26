@@ -4,6 +4,10 @@ import (
 	"image"
 	"image/color"
 	"image/draw"
+	"strconv"
+	"strings"
+
+	"github.com/vilsol/oshabi/types"
 
 	"github.com/kbinani/screenshot"
 	"github.com/vilsol/oshabi/config"
@@ -161,4 +165,50 @@ func CanScrollDown(infoButtonLocation image.Point, inGrove bool, img image.Image
 	}
 
 	return cornerVal >= 0.7, nil
+}
+
+func ReadImage(img image.Image, offset int, limit int) ([]types.ParsedListing, error) {
+	listings, err := ExtractToListings(img, offset, limit)
+	if err != nil {
+		return nil, err
+	}
+
+	realListings := make([]types.ParsedListing, 0)
+	for _, listing := range listings {
+		count, err := OCRListingCount(listing.Count)
+		if err != nil {
+			return nil, err
+		}
+
+		countInt, err := strconv.ParseInt(count, 10, 32)
+		if err != nil || countInt <= 0 {
+			continue
+		}
+
+		level, err := OCRListingLevel(listing.Level)
+		if err != nil {
+			return nil, err
+		}
+
+		splitLevel := strings.Split(level, " ")
+		levelInt, err := strconv.ParseInt(splitLevel[len(splitLevel)-1], 10, 32)
+		if err != nil {
+			continue
+		}
+
+		listingText, err := OCRListing(listing.Text)
+		if err != nil {
+			return nil, err
+		}
+
+		craft := data.FindCraft(listingText)
+
+		realListings = append(realListings, types.ParsedListing{
+			Type:  data.GetCraft(craft).Type,
+			Count: int(countInt),
+			Level: int(levelInt),
+		})
+	}
+
+	return realListings, nil
 }

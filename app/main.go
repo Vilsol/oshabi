@@ -3,8 +3,6 @@ package app
 import (
 	"context"
 	"image"
-	"strconv"
-	"strings"
 	"time"
 
 	"github.com/go-vgo/robotgo"
@@ -12,7 +10,6 @@ import (
 	"github.com/pkg/errors"
 	"github.com/vilsol/oshabi/config"
 	"github.com/vilsol/oshabi/cv"
-	"github.com/vilsol/oshabi/data"
 	"github.com/vilsol/oshabi/types"
 	"github.com/wailsapp/wails/v2/pkg/runtime"
 )
@@ -56,7 +53,7 @@ func ReadFull(ctx context.Context) ([]types.ParsedListing, error) {
 			err      error
 		})
 		go func(img image.Image, offset int, limit int) {
-			listings, err := ReadImage(img, offset, limit)
+			listings, err := cv.ReadImage(img, offset, limit)
 			listingChan <- struct {
 				listings []types.ParsedListing
 				err      error
@@ -104,52 +101,6 @@ func CaptureScreen() (image.Image, error) {
 		return nil, errors.Wrap(err, "failed capturing screen")
 	}
 	return img, nil
-}
-
-func ReadImage(img image.Image, offset int, limit int) ([]types.ParsedListing, error) {
-	listings, err := cv.ExtractToListings(img, offset, limit)
-	if err != nil {
-		return nil, err
-	}
-
-	realListings := make([]types.ParsedListing, 0)
-	for _, listing := range listings {
-		count, err := cv.OCRListingCount(listing.Count)
-		if err != nil {
-			return nil, err
-		}
-
-		countInt, err := strconv.ParseInt(count, 10, 32)
-		if err != nil || countInt <= 0 {
-			continue
-		}
-
-		level, err := cv.OCRListingLevel(listing.Level)
-		if err != nil {
-			return nil, err
-		}
-
-		splitLevel := strings.Split(level, " ")
-		levelInt, err := strconv.ParseInt(splitLevel[len(splitLevel)-1], 10, 32)
-		if err != nil {
-			continue
-		}
-
-		listingText, err := cv.OCRListing(listing.Text)
-		if err != nil {
-			return nil, err
-		}
-
-		craft := data.FindCraft(listingText)
-
-		realListings = append(realListings, types.ParsedListing{
-			Type:  data.GetCraft(craft).Type,
-			Count: int(countInt),
-			Level: int(levelInt),
-		})
-	}
-
-	return realListings, nil
 }
 
 func ScrollTop(infoButtonLocation image.Point) (bool, error) {
