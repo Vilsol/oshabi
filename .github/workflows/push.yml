@@ -142,21 +142,12 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: Check OpenCV
-        run: ls -lah /c/
-
       - name: Cache OpenCV
         id: cache-opencv
         uses: actions/cache@v3
         with:
           path: C:/opencv
           key: ${{ runner.os }}-opencv-1
-
-      - name: Check OpenCV
-        run: |
-          ls -lah /c/opencv
-          ls -lah /c/opencv/build
-          ls -lah /c/opencv/build/install
 
       - name: Install OpenCV
         if: steps.cache-opencv.outputs.cache-hit != 'true'
@@ -165,12 +156,6 @@ jobs:
       - name: Install OpenCV
         if: steps.cache-opencv.outputs.cache-hit == 'true'
         run: cd .github && ./install_windows.cmd
-
-      - name: Check OpenCV
-        run: |
-          ls -lah /c/opencv
-          ls -lah /c/opencv/build
-          ls -lah /c/opencv/build/install
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2.2.1
