@@ -80,7 +80,7 @@ jobs:
         run: |
           mkdir oshabi-linux-amd64-${{ needs.release-pr.outputs.tag_name }}
           mv oshabi ./oshabi-linux-amd64-${{ needs.release-pr.outputs.tag_name }}/
-          tar -czvf oshabi-linux-amd64.tar.gz ./oshabi-linux-amd64-${{ needs.release-pr.outputs.tag_name }}
+          tar -czvf oshabi-linux-amd64.tar.gz oshabi-linux-amd64-${{ needs.release-pr.outputs.tag_name }}/*
 
       - name: Upload artifacts
         uses: softprops/action-gh-release@v1
