@@ -1,5 +1,14 @@
 # Changelog
 
+### [0.0.13](https://github.com/Vilsol/oshabi/compare/v0.0.12...v0.0.13) (2022-05-26)
+
+
+### Bug Fixes
+
+* add missing dependency ([3d30a7e](https://github.com/Vilsol/oshabi/commit/3d30a7e66cafc81a629c76a6c6af36f016521d2b))
+* correctly detect whether can scroll down ([cf85cdc](https://github.com/Vilsol/oshabi/commit/cf85cdc0701f1bd7f80e1f5c0eefa70adb2fbb60))
+* do not re-initialize speaker every time ([cf85cdc](https://github.com/Vilsol/oshabi/commit/cf85cdc0701f1bd7f80e1f5c0eefa70adb2fbb60))
+
 ### [0.0.12](https://github.com/Vilsol/oshabi/compare/v0.0.11...v0.0.12) (2022-05-25)
 
 
