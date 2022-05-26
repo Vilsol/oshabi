@@ -164,7 +164,7 @@ func CanScrollDown(infoButtonLocation image.Point, inGrove bool, img image.Image
 		return false, errors.Wrap(err, "failed to find count corner")
 	}
 
-	return cornerVal >= 0.7, nil
+	return cornerVal >= 0.6, nil
 }
 
 func ReadImage(img image.Image, offset int, limit int) ([]types.ParsedListing, error) {
