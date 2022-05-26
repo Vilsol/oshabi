@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.16](https://github.com/Vilsol/oshabi/compare/v0.0.15...v0.0.16) (2022-05-26)
+
+
+### Bug Fixes
+
+* lower scroll threshold ([d3d23fb](https://github.com/Vilsol/oshabi/commit/d3d23fbdb9d7fb352db4a7570090554faf9278e3))
+
 ### [0.0.15](https://github.com/Vilsol/oshabi/compare/v0.0.14...v0.0.15) (2022-05-26)
 
 
