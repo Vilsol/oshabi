@@ -1,6 +1,6 @@
 # oshabi
 
-A scanner for Path of Exile harvest horticrafting stations and seeds.
+A scanner for Path of Exile harvest horticrafting stations and sacred grove.
 
 ## Installation
 
