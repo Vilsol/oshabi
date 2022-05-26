@@ -13,7 +13,7 @@ Download the latest installer from [here](https://github.com/Vilsol/oshabi/relea
 #### Arch
 
 ```shell
-pacman -Ss oshabi-bin
+yay -S oshabi-bin
 ```
 
 #### Ubuntu (and derivatives)
