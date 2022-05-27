@@ -7,6 +7,8 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/rs/zerolog/log"
+
 	"github.com/vilsol/oshabi/types"
 
 	"github.com/kbinani/screenshot"
@@ -164,7 +166,9 @@ func CanScrollDown(infoButtonLocation image.Point, inGrove bool, img image.Image
 		return false, errors.Wrap(err, "failed to find count corner")
 	}
 
-	return cornerVal >= 0.6, nil
+	log.Debug().Float32("value", cornerVal).Msg("found corner with value")
+
+	return cornerVal >= 0.65, nil
 }
 
 func ReadImage(img image.Image, offset int, limit int) ([]types.ParsedListing, error) {

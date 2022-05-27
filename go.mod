@@ -14,6 +14,7 @@ require (
 	github.com/otiai10/gosseract/v2 v2.3.1
 	github.com/pkg/errors v0.9.1
 	github.com/robotn/gohook v0.31.3
+	github.com/rs/zerolog v1.26.1
 	github.com/wailsapp/wails/v2 v2.0.0-beta.36
 	gocv.io/x/gocv v0.30.0
 )

@@ -2,8 +2,12 @@ package main
 
 import (
 	"embed"
-	"log"
+	"os"
+	"path"
+	"time"
 
+	"github.com/rs/zerolog"
+	"github.com/rs/zerolog/log"
 	"github.com/wailsapp/wails/v2"
 	"github.com/wailsapp/wails/v2/pkg/logger"
 	"github.com/wailsapp/wails/v2/pkg/options"
@@ -13,10 +17,61 @@ import (
 //go:embed all:frontend/dist
 var assets embed.FS
 
+var _ logger.Logger = (*wrappedLogger)(nil)
+
+type wrappedLogger struct {
+}
+
+func (w wrappedLogger) Print(message string) {
+	log.Print(message)
+}
+
+func (w wrappedLogger) Trace(message string) {
+	log.Trace().Msg(message)
+}
+
+func (w wrappedLogger) Debug(message string) {
+	log.Debug().Msg(message)
+}
+
+func (w wrappedLogger) Info(message string) {
+	log.Info().Msg(message)
+}
+
+func (w wrappedLogger) Warning(message string) {
+	log.Warn().Msg(message)
+}
+
+func (w wrappedLogger) Error(message string) {
+	log.Error().Msg(message)
+}
+
+func (w wrappedLogger) Fatal(message string) {
+	log.Fatal().Msg(message)
+}
+
 func main() {
+	zerolog.TimeFieldFormat = zerolog.TimeFormatUnix
+	zerolog.SetGlobalLevel(zerolog.DebugLevel)
+
+	configDir, err := os.UserConfigDir()
+	if err != nil {
+		panic(err)
+	}
+
+	f, err := os.OpenFile(path.Join(configDir, "oshabi", "log.log"), os.O_WRONLY|os.O_CREATE, 0777)
+	if err != nil {
+		panic(err)
+	}
+
+	defer f.Close()
+
+	output := zerolog.ConsoleWriter{Out: f, TimeFormat: time.RFC3339}
+	log.Logger = zerolog.New(output).With().Timestamp().Logger()
+
 	app := NewApp()
 
-	err := wails.Run(&options.App{
+	err = wails.Run(&options.App{
 		Title:             "Oshabi",
 		Width:             1150,
 		Height:            650,
@@ -30,6 +85,7 @@ func main() {
 		RGBA:              &options.RGBA{R: 255, G: 255, B: 255, A: 255},
 		Assets:            assets,
 		LogLevel:          logger.DEBUG,
+		Logger:            wrappedLogger{},
 		OnStartup:         app.startup,
 		OnDomReady:        app.domReady,
 		OnShutdown:        app.shutdown,
@@ -45,6 +101,6 @@ func main() {
 	})
 
 	if err != nil {
-		log.Fatal(err)
+		log.Fatal().Err(err).Send()
 	}
 }
