@@ -23,7 +23,7 @@ func ReadFull(ctx context.Context) ([]types.ParsedListing, error) {
 		return nil, err
 	}
 
-	inGrove, infoButtonLocation, err := cv.ListingTrackers(img)
+	infoButtonLocation, err := cv.FindInfoButton(img)
 	if err != nil {
 		return nil, err
 	}
@@ -35,6 +35,11 @@ func ReadFull(ctx context.Context) ([]types.ParsedListing, error) {
 
 	if !canScroll {
 		return nil, errors.New("cannot scroll up")
+	}
+
+	inGrove, err := cv.IsInGrove(img)
+	if err != nil {
+		return nil, err
 	}
 
 	allListings := make([]types.ParsedListing, 0)

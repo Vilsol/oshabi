@@ -4,12 +4,8 @@ import (
 	"image"
 	"image/color"
 	"image/draw"
-	"os"
-	"path"
 	"strconv"
 	"strings"
-
-	"github.com/rs/zerolog/log"
 
 	"github.com/vilsol/oshabi/types"
 
@@ -62,22 +58,29 @@ const (
 	groveOffset = -32
 )
 
-func ListingTrackers(img image.Image) (bool, image.Point, error) {
-	_, hortValue, err := Find(img, Scale(data.Horticrafting))
-	if err != nil {
-		return false, image.Point{}, errors.Wrap(err, "failed to find horticrafting label")
-	}
-
+func FindInfoButton(img image.Image) (image.Point, error) {
 	infoButtonLocation, _, err := Find(img, Scale(data.InfoButton))
 	if err != nil {
-		return false, image.Point{}, errors.Wrap(err, "failed to find info button")
+		return image.Point{}, errors.Wrap(err, "failed to find info button")
 	}
+	return infoButtonLocation, err
+}
 
-	return hortValue < 0.8, infoButtonLocation, nil
+func IsInGrove(img image.Image) (bool, error) {
+	_, hortValue, err := Find(img, Scale(data.Horticrafting))
+	if err != nil {
+		return false, errors.Wrap(err, "failed to find horticrafting label")
+	}
+	return hortValue < 0.8, nil
 }
 
 func ExtractToListings(img image.Image, offset int, limit int) ([]RawListing, error) {
-	inGrove, infoButtonLocation, err := ListingTrackers(img)
+	infoButtonLocation, err := FindInfoButton(img)
+	if err != nil {
+		return nil, err
+	}
+
+	inGrove, err := IsInGrove(img)
 	if err != nil {
 		return nil, err
 	}
@@ -168,16 +171,7 @@ func CanScrollDown(infoButtonLocation image.Point, inGrove bool, img image.Image
 		return false, errors.Wrap(err, "failed to find count corner")
 	}
 
-	log.Debug().Float32("value", cornerVal).Msg("found corner with value")
-
-	dir, err := os.UserConfigDir()
-	if err != nil {
-		return false, errors.Wrap(err, "failed to find config directory")
-	}
-
-	imaging.Save(img, path.Join(dir, "oshabi", "corner.png"))
-
-	return cornerVal >= 0.65, nil
+	return cornerVal >= 0.7, nil
 }
 
 func ReadImage(img image.Image, offset int, limit int) ([]types.ParsedListing, error) {
