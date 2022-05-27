@@ -132,10 +132,6 @@ jobs:
         if: steps.cache-opencv.outputs.cache-hit != 'true'
         run: cd .github && ./build_windows.cmd
 
-      - name: Install OpenCV
-        if: steps.cache-opencv.outputs.cache-hit == 'true'
-        run: cd .github && ./install_windows.cmd
-
       - name: Install pnpm
         uses: pnpm/action-setup@v2.2.1
         with:
