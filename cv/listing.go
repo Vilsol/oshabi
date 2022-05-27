@@ -4,6 +4,8 @@ import (
 	"image"
 	"image/color"
 	"image/draw"
+	"os"
+	"path"
 	"strconv"
 	"strings"
 
@@ -167,6 +169,13 @@ func CanScrollDown(infoButtonLocation image.Point, inGrove bool, img image.Image
 	}
 
 	log.Debug().Float32("value", cornerVal).Msg("found corner with value")
+
+	dir, err := os.UserConfigDir()
+	if err != nil {
+		return false, errors.Wrap(err, "failed to find config directory")
+	}
+
+	imaging.Save(img, path.Join(dir, "oshabi", "corner.png"))
 
 	return cornerVal >= 0.65, nil
 }
