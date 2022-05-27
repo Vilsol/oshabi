@@ -149,6 +149,9 @@ jobs:
           path: C:/opencv
           key: ${{ runner.os }}-opencv-1
 
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+
       - name: Install OpenCV
         if: steps.cache-opencv.outputs.cache-hit != 'true'
         run: cd .github && ./build_windows.cmd
