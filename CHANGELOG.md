@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.0.18](https://github.com/Vilsol/oshabi/compare/v0.0.17...v0.0.18) (2022-05-27)
+
+
+### Bug Fixes
+
+* remove cache-success-install step ([ac46956](https://github.com/Vilsol/oshabi/commit/ac469564b787031a9c2992f882fbd79d49f0d61d))
+
 ### [0.0.17](https://github.com/Vilsol/oshabi/compare/v0.0.16...v0.0.17) (2022-05-27)
 
 
