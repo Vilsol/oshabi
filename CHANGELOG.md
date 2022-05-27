@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.0.17](https://github.com/Vilsol/oshabi/compare/v0.0.16...v0.0.17) (2022-05-27)
+
+
+### Bug Fixes
+
+* add logging ([8209a14](https://github.com/Vilsol/oshabi/commit/8209a14adb152e44f1dcd99c88b25c7b66a56ffb))
+* focus window and then do grove test ([1ac4459](https://github.com/Vilsol/oshabi/commit/1ac4459aa86c283ed6b26b32ad96364931ec5419))
+
 ### [0.0.16](https://github.com/Vilsol/oshabi/compare/v0.0.15...v0.0.16) (2022-05-26)
 
 
