@@ -45,3 +45,16 @@ sudo make install
 sudo ldconfig
 cd ~/ && rm -rf /tmp/opencv
 ```
+
+## List of things that could be done
+
+* UI Localization
+* Manual screenshot support
+* Display current value of an Exalted Orb
+* Manually modifiable craft list
+* Configurable ignore-list of crafts
+* Configurable chat message
+* macOS Release
+* AppImage
+* deb package
+* rpm package
