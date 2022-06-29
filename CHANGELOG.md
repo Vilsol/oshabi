@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.20](https://github.com/Vilsol/oshabi/compare/v0.0.19...v0.0.20) (2022-06-29)
+
+
+### Bug Fixes
+
+* force re-release due to gh actions failure ([24b1aa1](https://github.com/Vilsol/oshabi/commit/24b1aa187dbafed6ff9e1b6e0237f8f7e638e073))
+
 ## [0.0.19](https://github.com/Vilsol/oshabi/compare/v0.0.18...v0.0.19) (2022-06-29)
 
 
