@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.22](https://github.com/Vilsol/oshabi/compare/v0.0.21...v0.0.22) (2022-06-29)
+
+
+### Bug Fixes
+
+* generate dynamic whitelist ([a25e03c](https://github.com/Vilsol/oshabi/commit/a25e03cb2e00b80d9fb011e3ecbb4b6c31c0ce7f))
+* reduce size of scanned images ([a25e03c](https://github.com/Vilsol/oshabi/commit/a25e03cb2e00b80d9fb011e3ecbb4b6c31c0ce7f))
+
 ## [0.0.21](https://github.com/Vilsol/oshabi/compare/v0.0.20...v0.0.21) (2022-06-29)
 
 
