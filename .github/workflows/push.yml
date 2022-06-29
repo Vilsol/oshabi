@@ -102,7 +102,7 @@ jobs:
 
       - name: Install Wails
         run: |
-          go install github.com/wailsapp/wails/v2/cmd/wails@latest
+          go install github.com/wailsapp/wails/v2/cmd/wails@v2.0.0-beta.37
           wails doctor
 
       - name: Build
@@ -175,7 +175,7 @@ jobs:
           export PATH=$PATH:/d/a/_temp/msys64/mingw64/include
           export PATH=$PATH:/c/Users/runneradmin/go/bin
           go env
-          go install github.com/wailsapp/wails/v2/cmd/wails@latest
+          go install github.com/wailsapp/wails/v2/cmd/wails@v2.0.0-beta.37
           wails doctor
 
       - name: Build
@@ -194,3 +194,42 @@ jobs:
         with:
           name: windows
           path: build/bin/oshabi-amd64-installer.exe
+
+  darwin:
+    name: Build (  darwin)
+    runs-on: macos-12
+    needs:
+      - lint
+      - test
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: 1.18
+
+      - name: Install Dependencies
+        run: brew install opencv tesseract
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.1
+        with:
+          version: 7
+          run_install: |
+            - cwd: frontend
+
+      - name: Install Wails
+        run: |
+          go install github.com/wailsapp/wails/v2/cmd/wails@v2.0.0-beta.37
+          wails doctor
+
+      - name: Build
+        run: wails build -v 2 -debug
+
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: darwin
+          path: build/bin/oshabi
