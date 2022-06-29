@@ -62,7 +62,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: /tmp/opencv
-          key: ${{ runner.os }}-opencv-1
+          key: ${{ runner.os }}-opencv-4.6.0
 
       - name: Install OpenCV
         run: cd .github && ./build_ubuntu.sh
@@ -126,7 +126,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: C:/opencv
-          key: ${{ runner.os }}-opencv-1
+          key: ${{ runner.os }}-opencv-4.6.0
 
       - name: Install OpenCV
         if: steps.cache-opencv.outputs.cache-hit != 'true'
