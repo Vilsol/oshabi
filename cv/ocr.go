@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"fmt"
 	"image"
+	"image/color"
 	"image/png"
 	"io"
 	"math"
@@ -11,16 +12,16 @@ import (
 	"os"
 	"path"
 	"regexp"
+	"sort"
 	"strings"
 
+	"github.com/vilsol/oshabi/config"
 	"github.com/vilsol/oshabi/data"
 
 	"github.com/disintegration/imaging"
-
 	"github.com/otiai10/gosseract/v2"
-	"github.com/vilsol/oshabi/config"
-
 	"github.com/pkg/errors"
+	"github.com/rs/zerolog/log"
 )
 
 var client *gosseract.Client
@@ -64,7 +65,7 @@ func InitOCR() error {
 var cleanRegex = regexp.MustCompile(`[",.%\d+]`)
 
 func verifyLanguage(language config.Language) error {
-	if err := client.SetLanguage(string(config.Get().Language)); err != nil {
+	if err := client.SetLanguage(string(language)); err != nil {
 		return errors.Wrap(err, "failed setting OCR language")
 	}
 
@@ -118,7 +119,7 @@ func verifyLanguage(language config.Language) error {
 
 		wordMap := make(map[string]bool)
 		for _, craft := range data.AllCrafts() {
-			text := craft.Translations[config.Get().Language]
+			text := craft.Translations[language]
 			clean := cleanRegex.ReplaceAllString(text, " ")
 			for _, s := range strings.Split(clean, " ") {
 				if s != "" {
@@ -146,7 +147,7 @@ func ocr(img image.Image, whitelist string, mode gosseract.PageSegMode) (string,
 	}
 
 	buff := new(bytes.Buffer)
-	if err := png.Encode(buff, PrepareForOCR(img)); err != nil {
+	if err := png.Encode(buff, PrepareForOCR(img, whitelist == GetWhitelist())); err != nil {
 		return "", errors.Wrap(err, "failed to encode image to png")
 	}
 
@@ -167,10 +168,12 @@ func ocr(img image.Image, whitelist string, mode gosseract.PageSegMode) (string,
 		return "", errors.Wrap(err, "failed to ocr the image")
 	}
 
+	log.Debug().Str("text", text).Str("whitelist", whitelist).Msg("ocr")
+
 	return text, nil
 }
 
-func PrepareForOCR(img image.Image) image.Image {
+func PrepareForOCR(img image.Image, crop bool) image.Image {
 	src := img
 
 	size := src.Bounds().Dx() * src.Bounds().Dy()
@@ -181,10 +184,68 @@ func PrepareForOCR(img image.Image) image.Image {
 		src = imaging.Resize(src, width, height, imaging.Linear)
 	}
 
-	src = imaging.Grayscale(src)
-	src = imaging.Invert(src)
-	src = imaging.AdjustContrast(src, 30)
-	src = imaging.Sharpen(src, 1)
+	out := imaging.Grayscale(src)
+	out = imaging.Invert(out)
+	out = imaging.AdjustContrast(out, 30)
+	out = imaging.Sharpen(out, 1)
 
-	return src
+	if crop {
+		rightPixel := out.Bounds().Dx()
+		bottomPixel := 0
+
+		found := false
+		for x := out.Bounds().Dx() - 1; x > 0; x-- {
+			for y := out.Bounds().Dy() - 1; y > 0; y-- {
+				if out.NRGBAAt(x, y).R < 150 {
+					if !found {
+						rightPixel = x
+						found = true
+					}
+
+					if y > bottomPixel {
+						bottomPixel = y
+					}
+
+					out.Set(x, y, color.Black)
+				}
+			}
+		}
+
+		rightPixel += ScaleN(15)
+		bottomPixel += ScaleN(10)
+
+		out = imaging.Crop(out, image.Rect(0, 0, rightPixel, bottomPixel))
+	}
+
+	return out
+}
+
+var whitelistCache = make(map[config.Language]string)
+
+func GetWhitelist() string {
+	if whitelist, ok := whitelistCache[config.Get().Language]; ok {
+		return whitelist
+	}
+
+	characterMap := make(map[rune]bool)
+	for _, craft := range data.AllCrafts() {
+		text := craft.Translations[config.Get().Language]
+		for _, s := range text {
+			characterMap[s] = true
+		}
+	}
+
+	var result strings.Builder
+	for r := range characterMap {
+		result.WriteRune(r)
+	}
+
+	s := []rune(result.String())
+	sort.Slice(s, func(i int, j int) bool {
+		return s[i] < s[j]
+	})
+
+	whitelistCache[config.Get().Language] = string(s)
+
+	return string(s)
 }
