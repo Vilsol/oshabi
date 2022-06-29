@@ -10,19 +10,20 @@ require (
 	github.com/go-vgo/robotgo v0.100.10
 	github.com/kbinani/screenshot v0.0.0-20210720154843-7d3a670d8329
 	github.com/masatana/go-textdistance v0.0.0-20191005053614-738b0edac985
-	github.com/olekukonko/tablewriter v0.0.4
+	github.com/olekukonko/tablewriter v0.0.5
 	github.com/otiai10/gosseract/v2 v2.3.1
 	github.com/pkg/errors v0.9.1
-	github.com/robotn/gohook v0.31.3
-	github.com/rs/zerolog v1.26.1
-	github.com/wailsapp/wails/v2 v2.0.0-beta.36
-	gocv.io/x/gocv v0.30.0
+	github.com/robotn/gohook v0.40.0
+	github.com/rs/zerolog v1.27.0
+	github.com/wailsapp/wails/v2 v2.0.0-beta.38
+	gocv.io/x/gocv v0.31.0
 )
 
 require (
 	github.com/StackExchange/wmi v1.2.1 // indirect
 	github.com/andybalholm/cascadia v1.3.1 // indirect
 	github.com/atomicgo/cursor v0.0.1 // indirect
+	github.com/bep/debounce v1.2.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/deckarep/golang-set v1.8.0 // indirect
 	github.com/gen2brain/shm v0.0.0-20200228170931-49f9650110c5 // indirect
@@ -38,7 +39,6 @@ require (
 	github.com/labstack/echo/v4 v4.7.2 // indirect
 	github.com/labstack/gommon v0.3.1 // indirect
 	github.com/leaanthony/go-ansi-parser v1.0.1 // indirect
-	github.com/leaanthony/go-common-file-dialog v1.0.3 // indirect
 	github.com/leaanthony/gosod v1.0.3 // indirect
 	github.com/leaanthony/slicer v1.5.0 // indirect
 	github.com/lxn/win v0.0.0-20210218163916-a377121e959e // indirect
@@ -75,5 +75,3 @@ require (
 	golang.org/x/text v0.3.7 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
-
-// replace github.com/wailsapp/wails/v2 v2.0.0-beta.36 => /home/vilsol/go/pkg/mod/github.com/wailsapp/wails/v2@v2.0.0-beta.36
