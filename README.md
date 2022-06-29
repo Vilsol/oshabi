@@ -1,4 +1,4 @@
-# oshabi
+# oshabi [![push](https://github.com/Vilsol/oshabi/actions/workflows/push.yml/badge.svg)](https://github.com/Vilsol/oshabi/actions/workflows/push.yaml) ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/vilsol/oshabi) ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/vilsol/oshabi) [![GitHub license](https://img.shields.io/github/license/Vilsol/oshabi)](https://github.com/Vilsol/oshabi/blob/master/LICENSE) ![GitHub all releases](https://img.shields.io/github/downloads/vilsol/oshabi/total)
 
 ![screenshot of oshabi home view](./.github/screenshots/home.png)
 
