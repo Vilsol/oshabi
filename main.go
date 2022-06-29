@@ -4,6 +4,7 @@ import (
 	"embed"
 	"os"
 	"path"
+	"path/filepath"
 	"time"
 
 	"github.com/rs/zerolog"
@@ -59,7 +60,14 @@ func main() {
 		panic(err)
 	}
 
-	f, err := os.OpenFile(path.Join(configDir, "oshabi", "log.log"), os.O_WRONLY|os.O_CREATE, 0777)
+	appLogPath := path.Join(configDir, "oshabi", "log.log")
+	if err := os.MkdirAll(filepath.Dir(appLogPath), 0777); err != nil {
+		if !os.IsExist(err) {
+			panic(err)
+		}
+	}
+
+	f, err := os.OpenFile(appLogPath, os.O_WRONLY|os.O_CREATE, 0777)
 	if err != nil {
 		panic(err)
 	}
