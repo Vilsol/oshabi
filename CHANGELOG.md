@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.21](https://github.com/Vilsol/oshabi/compare/v0.0.20...v0.0.21) (2022-06-29)
+
+
+### Bug Fixes
+
+* add darwin mouse translation file ([89b0f12](https://github.com/Vilsol/oshabi/commit/89b0f12ed09b98555c829c50021443f2b2eabb97))
+* create log directory before writing the log ([95549a5](https://github.com/Vilsol/oshabi/commit/95549a5e65e809979f4d2dda79c39541d3745b31))
+
 ## [0.0.20](https://github.com/Vilsol/oshabi/compare/v0.0.19...v0.0.20) (2022-06-29)
 
 
