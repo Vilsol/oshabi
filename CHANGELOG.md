@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.19](https://github.com/Vilsol/oshabi/compare/v0.0.18...v0.0.19) (2022-06-29)
+
+
+### Bug Fixes
+
+* upgrade opencv to 4.6.0 ([0edb7b6](https://github.com/Vilsol/oshabi/commit/0edb7b61b1004a97e296b200e62cc3647961db06))
+
 ### [0.0.18](https://github.com/Vilsol/oshabi/compare/v0.0.17...v0.0.18) (2022-05-27)
 
 
