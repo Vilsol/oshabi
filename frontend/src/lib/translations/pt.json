@@ -1,0 +1,20 @@
+{
+  "colorMapping": {
+    "red": "Vermelho",
+    "blue": "Azul",
+    "green": "Verde",
+    "physical": "Físicos;Físico",
+    "caster": "Conjuração;Conjurador",
+    "fire": "Fogo",
+    "cold": "Gelo",
+    "lightning": "Raio",
+    "attack": "Ataque",
+    "life": "Vida",
+    "speed": "Velocidade",
+    "defence": "Defesa",
+    "chaos": "Caos",
+    "unique": "Único;Única",
+    "critical": "Crítico",
+    "magicItem": "Item Mágico"
+  }
+}

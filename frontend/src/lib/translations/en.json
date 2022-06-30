@@ -1,0 +1,53 @@
+{
+  "name": "Oshabi",
+  "toggle": {
+    "settings": "Settings",
+    "listings": "Listings"
+  },
+  "home": {
+    "scan": "Scan",
+    "clear": "Clear",
+    "copy": "Copy",
+    "table": {
+      "count": "Count",
+      "name": "Name",
+      "market": "Market",
+      "price": "Price"
+    },
+    "scanMessage": "Press&nbsp;<span class='scan-message'>Scan</span>&nbsp;to add listings"
+  },
+  "settings": {
+    "language": "Language",
+    "display": "Display",
+    "calibrate": "Calibrate",
+    "canStream": "Can Stream",
+    "characterName": "Character Name",
+    "league": "League",
+    "leagues": {
+      "standard": "Standard",
+      "softcore": "Softcore",
+      "hardcore": "Hardcore"
+    },
+    "shortcut": "Shortcut",
+    "changeShortcut": "Change Shortcut"
+  },
+  "loading": "Loading...",
+  "colorMapping": {
+    "red": "Red",
+    "blue": "Blue",
+    "green": "Green",
+    "physical": "Physical",
+    "caster": "Caster",
+    "fire": "Fire",
+    "cold": "Cold",
+    "lightning": "Lightning",
+    "attack": "Attack",
+    "life": "Life",
+    "speed": "Speed",
+    "defence": "Defence",
+    "chaos": "Chaos",
+    "unique": "Unique",
+    "critical": "Critical",
+    "magicItem": "Magic item"
+  }
+}

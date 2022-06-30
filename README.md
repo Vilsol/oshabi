@@ -4,6 +4,15 @@
 
 A scanner for Path of Exile harvest horticrafting stations and sacred grove.
 
+## Features
+
+* Fully automated scanning of currently open grove/horticrafting station.
+* OCR Support for all in-game languages (looking for translators for UI).
+* Works on both Windows and Linux.
+* Does not require AutoHotkey.
+* Automatic scaling detection.
+* Remembers custom pricing.
+
 ## Installation
 
 ### Windows
@@ -48,12 +57,11 @@ cd ~/ && rm -rf /tmp/opencv
 
 ## List of things that could be done
 
-* UI Localization
 * Manual screenshot support
 * Display current value of an Exalted Orb
 * Manually modifiable craft list
 * Configurable ignore-list of crafts
-* Configurable chat message
+* Configurable channel message
 * macOS Release
 * AppImage
 * deb package

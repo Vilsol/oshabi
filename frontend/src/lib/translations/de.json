@@ -1,0 +1,52 @@
+{
+  "toggle": {
+    "settings": "Einstellungen",
+    "listings": "Einträge"
+  },
+  "home": {
+    "scan": "Scannen",
+    "clear": "Zurücksetzen",
+    "copy": "Kopieren",
+    "table": {
+      "count": "Anzahl",
+      "name": "Name",
+      "market": "Marktpreis",
+      "price": "Preis"
+    },
+    "scanMessage": "<span class='scan-message'>Scannen</span>&nbsp;drücken, um einträge hinzuzufügen"
+  },
+  "settings": {
+    "language": "Sprache",
+    "display": "Anzeige",
+    "calibrate": "Kalibrieren",
+    "canStream": " Streaming möglich",
+    "characterName": "Charactername",
+    "league": "Liga",
+    "leagues": {
+      "standard": "Standard",
+      "softcore": "Softcore",
+      "hardcore": "Hardcore"
+    },
+    "shortcut": "Verknüpfung",
+    "changeShortcut": "Verknüpfung ändern"
+  },
+  "loading": "Lädt...",
+  "colorMapping": {
+    "red": "roten;rot",
+    "blue": "blauen;blau",
+    "green": "grünen;grün",
+    "physical": "physischen;physische",
+    "caster": "Zauber",
+    "fire": "Feuer",
+    "cold": "Kälte",
+    "lightning": "Blitz",
+    "attack": "Angriffs",
+    "life": "Lebens",
+    "speed": "Geschwindigkeits",
+    "defence": "Defensiv",
+    "chaos": "Chaos",
+    "unique": "einzigartigen;einzigartige",
+    "critical": "kritischen",
+    "magicItem": "magischen Gegenstand"
+  }
+}

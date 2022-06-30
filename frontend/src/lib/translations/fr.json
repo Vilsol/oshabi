@@ -1,0 +1,20 @@
+{
+  "colorMapping": {
+    "red": "Rouge",
+    "blue": "Bleu",
+    "green": "Vert",
+    "physical": "mods physiques;mod physique;physique",
+    "caster": "mod de lanceur de sorts;Lanceur de sorts",
+    "fire": "mod de Résistance au feu;Résistance au feu;mods de feu;mod de feu;feu",
+    "cold": "mod de Résistance au froid;Résistance au froid;mods de froid;mod de froid;froid",
+    "lightning": "mod de Résistance à la foudre;Résistance à la foudre;mods de foudre;mod de foudre;foudre",
+    "attack": "mods d'attaque;mod d'attaque;Attaque",
+    "life": "mods de Vie;mod de Vie;Vie",
+    "speed": "mods de Vitesse;mod de Vitesse;Vitesse",
+    "defence": "mods de défense;mod de défense;défense",
+    "chaos": "mods de chaos;mod de chaos;chaos",
+    "unique": "unique",
+    "critical": "mods de critique;mod de critique;critique",
+    "magicItem": "Objet magique"
+  }
+}

@@ -19,13 +19,14 @@ import (
 	"github.com/kbinani/screenshot"
 	"github.com/olekukonko/tablewriter"
 	"github.com/pkg/errors"
+	"github.com/wailsapp/wails/v2/pkg/runtime"
+
 	"github.com/vilsol/oshabi/app"
 	"github.com/vilsol/oshabi/config"
 	"github.com/vilsol/oshabi/cv"
 	"github.com/vilsol/oshabi/data"
 	"github.com/vilsol/oshabi/pricing"
 	"github.com/vilsol/oshabi/types"
-	"github.com/wailsapp/wails/v2/pkg/runtime"
 )
 
 type App struct {
@@ -90,7 +91,7 @@ func (a *App) startup(ctx context.Context) {
 	})
 }
 
-func (a App) domReady(_ context.Context) {
+func (a *App) domReady(_ context.Context) {
 }
 
 func (a *App) shutdown(_ context.Context) {
@@ -166,7 +167,7 @@ func (a *App) GetConfig() ConvertedConfig {
 		if msg, ok := configMessages[strType]; ok {
 			messages[strType] = msg
 		} else {
-			messages[strType] = craft.Message
+			messages[strType] = craft.Translations[config.Get().Language]
 		}
 
 		if p, ok := configPrices[strType]; ok {
