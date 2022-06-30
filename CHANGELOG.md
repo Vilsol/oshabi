@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.25](https://github.com/Vilsol/oshabi/compare/v0.0.24...v0.0.25) (2022-06-30)
+
+
+### Bug Fixes
+
+* add missing translation ([77a186a](https://github.com/Vilsol/oshabi/commit/77a186a1b6db3f2ade9e83c4f39b1e65644cc3e8))
+
 ## [0.0.24](https://github.com/Vilsol/oshabi/compare/v0.0.23...v0.0.24) (2022-06-30)
 
 
