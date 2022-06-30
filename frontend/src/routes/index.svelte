@@ -268,19 +268,19 @@
                 <input
                   type="text"
                   value={listing.count}
-                  class="w-6/12"
+                  class="w-6/12 min-w-[35px]"
                   on:blur={(event) =>
                     handle(SetListingCount(listing.type, listing.level, parseInt(event.target.value)))}
                 />
                 <button
                   on:click={() => handle(SetListingCount(listing.type, listing.level, listing.count + 1))}
-                  class="bg-green-700 py-0 w-3/12"
+                  class="bg-green-700 p-0 w-3/12 text-center min-w-[35px]"
                 >
                   +
                 </button>
                 <button
                   on:click={() => handle(SetListingCount(listing.type, listing.level, listing.count - 1))}
-                  class="bg-red-700 py-0 w-3/12"
+                  class="bg-red-700 p-0 w-3/12 text-center min-w-[35px]"
                 >
                   -
                 </button>

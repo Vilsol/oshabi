@@ -166,7 +166,13 @@ func (a *App) GetConfig() ConvertedConfig {
 		strType := string(craft.Type)
 		if msg, ok := configMessages[strType]; ok {
 			messages[strType] = msg
-		} else {
+		} else if craft.Short != nil {
+			if short, ok := craft.Short[config.Get().Language]; ok {
+				messages[strType] = short
+			}
+		}
+
+		if _, ok := messages[strType]; !ok {
 			messages[strType] = craft.Translations[config.Get().Language]
 		}
 

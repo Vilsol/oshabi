@@ -14,6 +14,9 @@
       "rus": "Попытаться пробудить камень поддержки 20 уровня с 5% шансом на успех, если это возможно. В случае неудачи камень разрушается",
       "spa": "Intenta despertar una gema de asistencia de nivel 20 que se pueda despertar con un 5% de probabilidad. Si no se despierta, se destruirá",
       "tha": "พยายามใส่ จุติ ให้กับ หินสกิลเสริมเลเวล 20 ที่สามารถจุติได้ โดยมีโอกาสสำเร็จ 5% ซึ่งถ้าไม่สำเร็จไอเทมจะถูกทำลาย"
+    },
+    "short": {
+      "eng": "Awaken Level 20 Support Gem"
     }
   },
   "AugmentAttack": {
@@ -31,6 +34,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством атак",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de ataque",
       "tha": "เพิ่มม็อด โจมตี 1 อย่าง ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Attack"
     }
   },
   "AugmentAttackLucky": {
@@ -48,6 +54,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством атак, числовые значения которого удачливы",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de ataque que tiene valores afortunados",
       "tha": "เพิ่มม็อด โจมตี 1 อย่าง ซึ่งโชคดีในการสุ่มค่าตัวเลขของม็อด ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Attack Lucky"
     }
   },
   "AugmentCaster": {
@@ -65,6 +74,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством чар",
       "spa": "Mejora un objeto mágico o raro no influenciado con un nuevo modificador de lanzador de hechizos",
       "tha": "เพิ่มม็อด นักเวท 1 อย่าง ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Caster"
     }
   },
   "AugmentCasterLucky": {
@@ -82,6 +94,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством чар, числовые значения которого удачливы",
       "spa": "Mejora un objeto mágico o raro no influenciado con un nuevo modificador de lanzador de hechizos que tiene valores afortunados",
       "tha": "เพิ่มม็อด นักเวท 1 อย่าง ซึ่งโชคดีในการสุ่มค่าตัวเลขของม็อด ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Caster Lucky"
     }
   },
   "AugmentChaos": {
@@ -99,6 +114,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством хаоса",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de caos",
       "tha": "เพิ่มม็อด เคออส 1 อย่าง ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Chaos"
     }
   },
   "AugmentChaosLucky": {
@@ -116,6 +134,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством хаоса, числовые значения которого удачливы",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de caos que tiene valores afortunados",
       "tha": "เพิ่มม็อด เคออส 1 อย่าง ซึ่งโชคดีในการสุ่มค่าตัวเลขของม็อด ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Chaos Lucky"
     }
   },
   "AugmentCold": {
@@ -133,6 +154,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством холода",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de hielo",
       "tha": "เพิ่มม็อด น้ำแข็ง 1 อย่าง ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Cold"
     }
   },
   "AugmentColdLucky": {
@@ -150,6 +174,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством холода, числовые значения которого удачливы",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de hielo que tiene valores afortunados",
       "tha": "เพิ่มม็อด น้ำแข็ง 1 อย่าง ซึ่งโชคดีในการสุ่มค่าตัวเลขของม็อด ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Cold Lucky"
     }
   },
   "AugmentCritical": {
@@ -167,6 +194,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством критического удара",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de crítico",
       "tha": "เพิ่มม็อด คริติคอล 1 อย่าง ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Critical"
     }
   },
   "AugmentCriticalLucky": {
@@ -184,6 +214,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством критического удара, числовые значения которого удачливы",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de crítico que tiene valores afortunados",
       "tha": "เพิ่มม็อด คริติคอล 1 อย่าง ซึ่งโชคดีในการสุ่มค่าตัวเลขของม็อด ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Critical Lucky"
     }
   },
   "AugmentDefence": {
@@ -201,6 +234,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством защиты",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de defensa",
       "tha": "เพิ่มม็อด ป้องกัน 1 อย่าง ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Defence"
     }
   },
   "AugmentDefenceLucky": {
@@ -218,6 +254,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством защиты, числовые значения которого удачливы",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de defensa que tiene valores afortunados",
       "tha": "เพิ่มม็อด ป้องกัน 1 อย่าง ซึ่งโชคดีในการสุ่มค่าตัวเลขของม็อด ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Defence Lucky"
     }
   },
   "AugmentFire": {
@@ -235,6 +274,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством огня",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de fuego",
       "tha": "เพิ่มม็อด ไฟ 1 อย่าง ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Fire"
     }
   },
   "AugmentFireLucky": {
@@ -252,6 +294,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством огня, числовые значения которого удачливы",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de fuego que tiene valores afortunados",
       "tha": "เพิ่มม็อด ไฟ 1 อย่าง ซึ่งโชคดีในการสุ่มค่าตัวเลขของม็อด ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Fire Lucky"
     }
   },
   "AugmentInfluence": {
@@ -269,6 +314,9 @@
       "rus": "Усилить волшебный или редкий предмет новым свойством влияния",
       "spa": "Mejora un objeto mágico o raro agregándole un nuevo modificador de influencia",
       "tha": "ลบม็อด อิทธิพล 1 อย่างแบบสุ่ม ออกจากไอเทม"
+    },
+    "short": {
+      "eng": "Augment Influence"
     }
   },
   "AugmentInfluenceLucky": {
@@ -283,6 +331,9 @@
       "por": "Amplia um item Mágico ou Raro com um novo modificador Influenciado com valores Sortudos",
       "rus": "Усилить волшебный или редкий предмет новым свойством влияния, числовые значения которого удачливы",
       "spa": "Mejora un objeto mágico o raro agregándole un nuevo modificador de influencia que tiene valores afortunados"
+    },
+    "short": {
+      "eng": "Augment Influence Lucky"
     }
   },
   "AugmentLife": {
@@ -300,6 +351,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством здоровья",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de vida",
       "tha": "เพิ่มม็อด พลังชีวิต 1 อย่าง ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Life"
     }
   },
   "AugmentLifeLucky": {
@@ -317,6 +371,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством здоровья, числовые значения которого удачливы",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de vida que tiene valores afortunados",
       "tha": "เพิ่มม็อด พลังชีวิต 1 อย่าง ซึ่งโชคดีในการสุ่มค่าตัวเลขของม็อด ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Life Lucky"
     }
   },
   "AugmentLightning": {
@@ -334,6 +391,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством молнии",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de rayo",
       "tha": "เพิ่มม็อด สายฟ้า 1 อย่าง ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Lightning"
     }
   },
   "AugmentLightningLucky": {
@@ -351,6 +411,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством молнии, числовые значения которого удачливы",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de rayo que tiene valores afortunados",
       "tha": "เพิ่มม็อด สายฟ้า 1 อย่าง ซึ่งโชคดีในการสุ่มค่าตัวเลขของม็อด ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Lightning Lucky"
     }
   },
   "AugmentLucky": {
@@ -368,6 +431,9 @@
       "rus": "Усилить редкий волшебный или редкий предмет без влияния новым свойством, значение нового свойства при этом удачливо",
       "spa": "Mejora un objeto raro no influenciado agregándole un nuevo modificador que tiene valores de modificador afortunados",
       "tha": "สุ่มค่าตัวเลขของม็อด พรีฟิกซ์ ทุกอย่างบน ไอเทมเมจิก หรือ ไอเทมแรร์ โดยจะโชคดีในการสุ่มค่าตัวเลขของม็อด"
+    },
+    "short": {
+      "eng": "Augment Non-Influence Lucky"
     }
   },
   "AugmentPhysical": {
@@ -385,6 +451,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым физическим свойством",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador físico",
       "tha": "เพิ่มม็อด กายภาพ 1 อย่าง ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Physical"
     }
   },
   "AugmentPhysicalLucky": {
@@ -402,6 +471,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым физическим свойством, числовые значения которого удачливы",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador físico que tiene valores afortunados",
       "tha": "เพิ่มม็อด กายภาพ 1 อย่าง ซึ่งโชคดีในการสุ่มค่าตัวเลขของม็อด ให้กับไอเทมระดับ เมจิก หรือ แรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Physical Lucky"
     }
   },
   "AugmentSpeed": {
@@ -419,6 +491,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством скорости",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de velocidad",
       "tha": "เพิ่มม็อด ความเร็ว 1 อย่าง ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Speed"
     }
   },
   "AugmentSpeedLucky": {
@@ -436,6 +511,9 @@
       "rus": "Усилить волшебный или редкий предмет без влияния новым свойством скорости, числовые значения которого удачливы",
       "spa": "Mejora un objeto mágico o raro no influenciado agregándole un nuevo modificador de velocidad que tiene valores afortunados",
       "tha": "เพิ่มม็อด ความเร็ว 1 อย่าง ซึ่งโชคดีในการสุ่มค่าตัวเลขของม็อด ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Augment Speed Lucky"
     }
   },
   "ChangeBreach": {
@@ -453,6 +531,9 @@
       "rus": "Обменять стопку осколков Разлома или обычный, заряженный, обогащённый или очищенный камень Разлома на осколки или камень Разлома другого типа",
       "spa": "Transforma una pila de Astillas de fisura o una Piedra de fisura normal, cargada, enriquecida o pura en unas Astillas o en una Piedra de fisura de otro tipo",
       "tha": "เปลี่ยน ชิ้นส่วนเหนือกาลเวลา 1 กอง หรือ ตราสัญลักษณ์เหนือกาลเวลา 1 ชิ้น ให้เป็น ชิ้นส่วน หรือ สัญลักษณ์ ชนิดอื่น"
+    },
+    "short": {
+      "eng": "Change a stack of Breach Splinters"
     }
   },
   "ChangeCatalysts": {
@@ -470,6 +551,9 @@
       "rus": "Обменять стопку катализаторов на стопку катализаторов другого типа",
       "spa": "Transforma una pila de catalizadores en un tipo diferente de catalizadores",
       "tha": "เปลี่ยน ตัวเร่งปฏิกิริยา 1 กองให้เป็น ตัวเร่งปฏิกิริยา ชนิดอื่น"
+    },
+    "short": {
+      "eng": "Change a stack of Catalysts"
     }
   },
   "ChangeDelirium": {
@@ -487,6 +571,9 @@
       "rus": "Обменять стопку сфер Делириума на стопку сфер Делириума другого типа",
       "spa": "Transforma una pila de Orbes de delirio en un tipo diferente de Orbes de delirio",
       "tha": "เปลี่ยน ลูกแก้วเดลิเรียม 1 กองให้เป็น ลูกแก้วเดลิเรียม ชนิดอื่น"
+    },
+    "short": {
+      "eng": "Change a stack of Delirium Orbs"
     }
   },
   "ChangeDivToDiv": {
@@ -504,6 +591,9 @@
       "rus": "Обменять гадальную карту на другую случайную гадальную карту",
       "spa": "Transforma una carta de adivinación en otra carta de adivinación aleatoria",
       "tha": "เปลี่ยน ไพ่พยากรณ์ ให้เป็น ไพ่พยากรณ์ ใบอื่นแบบสุ่ม"
+    },
+    "short": {
+      "eng": "Change a Divination Card"
     }
   },
   "ChangeEssences": {
@@ -521,6 +611,9 @@
       "rus": "Обменять стопку Сущностей на стопку Сущностей другого типа того же уровня",
       "spa": "Transforma una pila de esencias en un tipo diferente del mismo grado",
       "tha": "เปลี่ยน เอสเซนส์ 1 กองให้เป็น เอสเซนส์ ชนิดอื่นในระดับเดียวกัน"
+    },
+    "short": {
+      "eng": "Change a stack of Essences"
     }
   },
   "ChangeFossils": {
@@ -538,6 +631,9 @@
       "rus": "Обменять стопку ископаемых на стопку ископаемых другого типа. Размер новой стопки может быть меньше",
       "spa": "Transforma una pila de fósiles en un tipo diferente de fósil. El nuevo tipo de fósil puede tener un tamaño de pila más pequeño.",
       "tha": "เปลี่ยน ฟอสซิล 1 กองให้เป็น ฟอสซิล ชนิดอื่น โดยที่ ฟอสซิล ชนิดใหม่อาจมีขนาดกองน้อยลง"
+    },
+    "short": {
+      "eng": "Change a stack of Fossils"
     }
   },
   "ChangeFragmentConqueror": {
@@ -555,6 +651,9 @@
       "rus": "Обменять фрагмент Завоевателя на другой случайный фрагмент Завоевателя того же типа",
       "spa": "Transforma un Fragmento de Conquistador en otro Fragmento de Conquistador aleatorio del mismo tipo",
       "tha": "เปลี่ยน ชิ้นส่วนผู้พิชิต ให้เป็น ชิ้นส่วนผู้พิชิต ชนิดเดียวกันชิ้นอื่นแบบสุ่ม"
+    },
+    "short": {
+      "eng": "Change a Conqueror Fragment"
     }
   },
   "ChangeFragmentElder": {
@@ -572,6 +671,9 @@
       "rus": "Обменять фрагмент Древнего на другой случайный фрагмент Древнего того же типа",
       "spa": "Transforma un Fragmento del Antiguo en otro Fragmento del Antiguo del mismo tipo",
       "tha": "เปลี่ยน ชิ้นส่วนเอลเดอร์ ให้เป็น ชิ้นส่วนเอลเดอร์ ชนิดเดียวกันชื้นอื่นแบบสุ่ม"
+    },
+    "short": {
+      "eng": "Change an Elder Fragment"
     }
   },
   "ChangeFragmentSacrificeMortal": {
@@ -589,6 +691,9 @@
       "rus": "Обменять Смертный фрагмент или фрагмент жертвы на другой случайный фрагмент того же типа",
       "spa": "Transforma un Fragmento mortal o de sacrificio en otro Fragmento aleatorio de ese tipo",
       "tha": "เปลี่ยน ชิ้นส่วนสังเวย หรือ ชิ้นส่วนเยี่ยงมนุษย์ ให้เป็น ชิ้นส่วน ชนิดเดียวกันชิ้นอื่นแบบสุ่ม"
+    },
+    "short": {
+      "eng": "Change a Sacrifice or Mortal Fragment"
     }
   },
   "ChangeFragmentShaper": {
@@ -606,6 +711,9 @@
       "rus": "Обменять фрагмент Создателя на другой случайный фрагмент Создателя",
       "spa": "Transforma un Fragmento del Creador en otro Fragmento del Creador aleatorio",
       "tha": "เปลี่ยน ชิ้นส่วนเชปเปอร์ ให้เป็น ชิ้นส่วนเชปเปอร์ ชิ้นอื่นแบบสุ่ม"
+    },
+    "short": {
+      "eng": "Change a Shaper Fragment"
     }
   },
   "ChangeGemToGem": {
@@ -623,6 +731,9 @@
       "rus": "Обменять камень умения на другой камень умения с таким же качеством и количеством опыта, если это возможно",
       "spa": "Transforma una gema en otra gema, y traslada su experiencia y calidad si es posible",
       "tha": "เปลี่ยน หินสกิล ให้กลายเป็นหินสกิลอื่น โดยเก็บค่าประสบการณ์และค่าคุณภาพของหินสกิลไว้เท่าที่เป็นไปได้"
+    },
+    "short": {
+      "eng": "Change a Gem into another Gem"
     }
   },
   "ChangeMapSameTier": {
@@ -640,6 +751,9 @@
       "rus": "Обменять карту на другую карту того же уровня. Предпочтение отдаётся картам, которые вы ещё не завершили",
       "spa": "Transforma un mapa en otro del mismo grado y prioriza los mapas que no hayas completado",
       "tha": "เปลี่ยน แผนที่ ให้เป็นแผนที่อื่นในระดับเดียวกัน โดยจะเน้น แผนที่ ที่คุณยังไม่ผ่าน"
+    },
+    "short": {
+      "eng": "Change a Map"
     }
   },
   "ChangeOfferingToDedication": {
@@ -657,6 +771,9 @@
       "rus": "Обменять Подношение богине на Посвящение богине",
       "spa": "Transforma una Ofrenda a la Diosa en una Consagración a la Diosa",
       "tha": "เปลี่ยน เครื่องเซ่นไหว้แด่เทพี ให้เป็น เครื่องอุทิศแด่เทพี"
+    },
+    "short": {
+      "eng": "Change an Offering to a Dedication"
     }
   },
   "ChangeOfferingToGift": {
@@ -674,6 +791,9 @@
       "rus": "Обменять Подношение богине на Дар богине",
       "spa": "Transforma una Ofrenda a la Diosa en un Regalo a la Diosa",
       "tha": "เปลี่ยน เครื่องเซ่นไหว้แด่เทพี ให้เป็น ของขวัญแด่เทพี"
+    },
+    "short": {
+      "eng": "Change an Offering to a Gift"
     }
   },
   "ChangeOfferingToTribute": {
@@ -691,6 +811,9 @@
       "rus": "Обменять Подношение богине на Дань богине",
       "spa": "Transforma una Ofrenda a la Diosa en un Tributo a la Diosa",
       "tha": "เปลี่ยน เครื่องเซ่นไหว้แด่เทพี ให้เป็น เครื่องบรรณาการแด่เทพี"
+    },
+    "short": {
+      "eng": "Change an Offering to a Tribute"
     }
   },
   "ChangeOils": {
@@ -708,6 +831,9 @@
       "rus": "Обменять стопку масел на стопку масел другого цвета",
       "spa": "Transforma una pila de aceites en un color diferente de aceite",
       "tha": "เปลี่ยน น้ำมัน 1 กองให้เป็น น้ำมัน สีอื่น"
+    },
+    "short": {
+      "eng": "Change a stack of Oils"
     }
   },
   "ChangeResistColdToFire": {
@@ -725,6 +851,9 @@
       "rus": "Заменить свойство, дарующее сопротивление холоду, на свойство того же уровня, дарующее сопротивление огню",
       "spa": "Transforma un mod. que otorga resistencia al hielo en un mod. de grado similar que otorga resistencia al fuego",
       "tha": "เปลี่ยนม็อด ค่าต้านทาน น้ำแข็ง 1 อย่าง ให้กลายเป็นม็อด ค่าต้านทาน ไฟ ที่มีระดับทัดเทียมกัน"
+    },
+    "short": {
+      "eng": "Cold to Fire Resist"
     }
   },
   "ChangeResistColdToLightning": {
@@ -742,6 +871,9 @@
       "rus": "Заменить свойство, дарующее сопротивление холоду, на свойство того же уровня, дарующее сопротивление молнии",
       "spa": "Transforma un mod. que otorga resistencia al hielo en un mod. de grado similar que otorga resistencia al rayo",
       "tha": "เปลี่ยนม็อด ค่าต้านทาน น้ำแข็ง 1 อย่าง ให้กลายเป็นม็อด ค่าต้านทาน สายฟ้า ที่มีระดับทัดเทียมกัน"
+    },
+    "short": {
+      "eng": "Cold to Lightning Resist"
     }
   },
   "ChangeResistFireToCold": {
@@ -759,6 +891,9 @@
       "rus": "Заменить свойство, дарующее сопротивление огню, на свойство того же уровня, дарующее сопротивление холоду",
       "spa": "Transforma un mod. que otorga resistencia al fuego en un mod. de grado similar que otorga resistencia al hielo",
       "tha": "เปลี่ยนม็อด ค่าต้านทาน ไฟ 1 อย่าง ให้กลายเป็นม็อด ค่าต้านทาน น้ำแข็ง ที่มีระดับทัดเทียมกัน"
+    },
+    "short": {
+      "eng": "Fire to Cold Resist"
     }
   },
   "ChangeResistFireToLightning": {
@@ -776,6 +911,9 @@
       "rus": "Заменить свойство, дарующее сопротивление огню, на свойство того же уровня, дарующее сопротивление молнии",
       "spa": "Transforma un mod. que otorga resistencia al fuego en un mod. de grado similar que otorga resistencia al rayo",
       "tha": "เปลี่ยนม็อด ค่าต้านทาน ไฟ 1 อย่าง ให้กลายเป็นม็อด ค่าต้านทาน สายฟ้า ที่มีระดับทัดเทียมกัน"
+    },
+    "short": {
+      "eng": "Fire to Lightning Resist"
     }
   },
   "ChangeResistLightningToCold": {
@@ -793,6 +931,9 @@
       "rus": "Заменить свойство, дарующее сопротивление молнии, на свойство того же уровня, дарующее сопротивление холоду",
       "spa": "Transforma un mod. que otorga resistencia al rayo en un mod. de grado similar que otorga resistencia al hielo",
       "tha": "เปลี่ยนม็อด ค่าต้านทาน สายฟ้า 1 อย่าง ให้กลายเป็นม็อด ค่าต้านทาน น้ำแข็ง ที่มีระดับทัดเทียมกัน"
+    },
+    "short": {
+      "eng": "Lightning to Cold Resist"
     }
   },
   "ChangeResistLightningToFire": {
@@ -810,6 +951,9 @@
       "rus": "Заменить свойство, дарующее сопротивление молнии, на свойство того же уровня, дарующее сопротивление огню",
       "spa": "Transforma un mod. que otorga resistencia al rayo en un mod. de grado similar que otorga resistencia al fuego",
       "tha": "เปลี่ยนม็อด ค่าต้านทาน สายฟ้า 1 อย่าง ให้กลายเป็นม็อด ค่าต้านทาน ไฟ ที่มีระดับทัดเทียมกัน"
+    },
+    "short": {
+      "eng": "Lightning to Fire Resist"
     }
   },
   "ChangeScarabSameRarity": {
@@ -827,6 +971,9 @@
       "rus": "Обменять скарабея на другого скарабея той же редкости",
       "spa": "Transforma un escarabajo en otro escarabajo de la misma rareza",
       "tha": "เปลี่ยน ซแคแร็บ 1 ตัว ให้เป็น ซแคแร็บ ตัวอื่นในระดับเดียวกัน"
+    },
+    "short": {
+      "eng": "Change a Scarab"
     }
   },
   "ChangeTimeless": {
@@ -844,6 +991,9 @@
       "rus": "Обменять стопку вневременных осколков или вневременной знак на стопку осколков или знаков другого типа",
       "spa": "Transforma una pila de Fragmentos atemporales o un Emblema atemporal en unos Fragmentos o en un Emblema de otro tipo",
       "tha": "เปลี่ยน ไอเทมยูนิคสมุดรวมสัตว์ หรือไอเทมที่มี จิตวิญญาณ ให้เป็น เหยื่อ ชนิดเดียวกัน"
+    },
+    "short": {
+      "eng": "Change a stack of Timeless Splinters"
     }
   },
   "ChangeUniqueArmour": {
@@ -861,6 +1011,9 @@
       "rus": "Превратить уникальный предмет в случайный уникальный доспех",
       "spa": "Transforma un objeto único en una armadura única aleatoria",
       "tha": "เปลี่ยน ยูนิค ให้เป็น เกราะยูนิค แบบสุ่ม"
+    },
+    "short": {
+      "eng": "Change a Unique into a random Unique Armour"
     }
   },
   "ChangeUniqueArmourToArmour": {
@@ -878,6 +1031,9 @@
       "rus": "Превратить уникальный доспех в другой уникальный доспех того же типа",
       "spa": "Transforma una armadura única en otra armadura única del mismo tipo",
       "tha": "เปลี่ยน เกราะยูนิค ให้เป็น เกราะยูนิค ชนิดเดียวกันชิ้นอื่น"
+    },
+    "short": {
+      "eng": "Change a Unique Armour into another Unique Armour"
     }
   },
   "ChangeUniqueBestiary": {
@@ -895,6 +1051,9 @@
       "rus": "Обменять уникальный предмет Бестиария или предмет с духом на приманки того же семейства",
       "spa": "Transforma un objeto único o un objeto único con un aspecto de Bestiary en Señuelos de la misma familia de bestias",
       "tha": "เปลี่ยน ไอเทมยูนิค ฮาร์บินเจอร์ หรือ ชิ้นส่วนยูนิค ให้เป็น แผนที่ Beachhead แบบสุ่ม"
+    },
+    "short": {
+      "eng": "Change a Unique Bestiary item"
     }
   },
   "ChangeUniqueHarbinger": {
@@ -912,6 +1071,9 @@
       "rus": "Обменять уникальный предмет Предвестников или его часть на случайную карту Плацдарм",
       "spa": "Transforma un único o una pieza única de Harbinger en un mapa aleatorio de La Cabecera de la Playa",
       "tha": "สุ่มชนิด อิทธิพล ให้กับ อาวุธ หรือ ซองธนู ระดับ ธรรมดา เมจิก หรือ แรร์ ที่มี อิทธิพล รวมถึงสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่"
+    },
+    "short": {
+      "eng": "Change a Harbinger Unique"
     }
   },
   "ChangeUniqueJewelToJewel": {
@@ -929,6 +1091,9 @@
       "rus": "Превратить уникальный самоцвет в другой уникальный самоцвет",
       "spa": "Transforma una joya única en otra joya única",
       "tha": "เปลี่ยน จิวเวลยูนิค ให้เป็น จิวเวลยูนิค เม็ดอื่น"
+    },
+    "short": {
+      "eng": "Change a Unique Jewel into another Unique Jewel"
     }
   },
   "ChangeUniqueJewellery": {
@@ -946,6 +1111,9 @@
       "rus": "Превратить уникальный предмет в случайный амулет, кольцо или пояс",
       "spa": "Transforma un objeto único en un anillo, un amuleto o un cinturón únicos aleatorios",
       "tha": "เปลี่ยน ยูนิค ให้เป็น แหวน, สร้อย, เข็มขัด ยูนิคแบบสุ่ม"
+    },
+    "short": {
+      "eng": "Change a Unique into random Jewellery"
     }
   },
   "ChangeUniqueJewelleryToJewellery": {
@@ -963,6 +1131,9 @@
       "rus": "Превратить уникальное кольцо, амулет или пояс в другой уникальный предмет того же типа",
       "spa": "Transforma un anillo, amuleto o cinturón únicos en otro objeto único del mismo tipo",
       "tha": "เปลี่ยน แหวน, สร้อย, เข็มขัด ยูนิค ให้เป็น ไอเทมยูนิค ชนิดเดียวกันชิ้นอื่น"
+    },
+    "short": {
+      "eng": "Change a Unique Jewellery into another of that type"
     }
   },
   "ChangeUniqueToUnique": {
@@ -980,6 +1151,9 @@
       "rus": "Превратить уникальный предмет в другой случайный уникальный предмет",
       "spa": "Transforma un objeto único en otro objeto único aleatorio",
       "tha": "เปลี่ยน ไอเทมยูนิค ให้เป็น ไอเทมยูนิค ชิ้นอื่นแบบสุ่ม"
+    },
+    "short": {
+      "eng": "Change a Unique item into another random Unique"
     }
   },
   "ChangeUniqueToWeaponQuiver": {
@@ -1014,6 +1188,9 @@
       "rus": "Превратить уникальное оружие в другое уникальное оружие того же типа",
       "spa": "Transforma un arma única en otra arma única del mismo tipo",
       "tha": "เปลี่ยน อาวุธยูนิค ให้เป็น อาวุธยูนิค ชนิดเดียวกันชิ้นอื่น"
+    },
+    "short": {
+      "eng": "Change a Unique Weapon into another"
     }
   },
   "Corrupt10": {
@@ -1031,6 +1208,9 @@
       "rus": "Осквернить предмет 10 раз или до появления осквернённого собственного свойства",
       "spa": "Corrompe un objeto 10 veces o hasta que consiga un modificador implícito corrupto",
       "tha": "ใส่ มลทิน ให้ไอเทม 10 ครั้ง หรือจนกว่ามันจะได้ ม็อดแฝงมลทิน"
+    },
+    "short": {
+      "eng": "Corrupt an item 10 times"
     }
   },
   "EnchantArmourColdResist": {
@@ -1048,6 +1228,9 @@
       "rus": "Зачаровать нательный доспех. Качество не повышает защиту, но дарует 1% к сопротивлению холоду за 2% качества",
       "spa": "Encanta una armadura. La calidad no aumenta su defensa, otorga un 1% de resistencia al hielo por cada 2% de calidad",
       "tha": "เพิ่มเอนแชนท์ ให้ เสื้อเกราะ: ค่าคุณภาพจะไม่เพิ่มค่าป้องกันของเสื้อเกราะ, มอบม็อด ค่าต้านทาน สายฟ้า 1% ต่อค่าคุณภาพ 2%"
+    },
+    "short": {
+      "eng": "Enchant Body, Cold Resist"
     }
   },
   "EnchantArmourDexterity": {
@@ -1065,6 +1248,9 @@
       "rus": "Зачаровать нательный доспех. Качество не повышает защиту, но дарует +1 к ловкости за 2% качества",
       "spa": "Encanta una armadura. La calidad no aumenta su defensa, otorga +1 a la destreza por cada 2% de calidad",
       "tha": "เพิ่มเอนแชนท์ ให้ เสื้อเกราะ: ค่าคุณภาพจะไม่เพิ่มค่าป้องกันของเสื้อเกราะ, มอบม็อด Intelligence +1 ต่อค่าคุณภาพ 2%"
+    },
+    "short": {
+      "eng": "Enchant Body, Dexterity"
     }
   },
   "EnchantArmourFireResist": {
@@ -1082,6 +1268,9 @@
       "rus": "Зачаровать нательный доспех. Качество не повышает защиту, но дарует 1% к сопротивлению огню за 2% качества",
       "spa": "Encanta una armadura. La calidad no aumenta su defensa, otorga un 1% de resistencia al fuego por cada 2% de calidad",
       "tha": "เพิ่มเอนแชนท์ ให้ เสื้อเกราะ: ค่าคุณภาพจะไม่เพิ่มค่าป้องกันของเสื้อเกราะ, มอบม็อด ค่าต้านทาน น้ำแข็ง 1% ต่อค่าคุณภาพ 2%"
+    },
+    "short": {
+      "eng": "Enchant Body, Fire Resist"
     }
   },
   "EnchantArmourIntelligence": {
@@ -1099,6 +1288,9 @@
       "rus": "Зачаровать нательный доспех. Качество не повышает защиту, но дарует +1 к интеллекту за 2% качества",
       "spa": "Encanta una armadura. La calidad no aumenta su defensa, otorga +1 a la inteligencia por cada 2% de calidad",
       "tha": "เพิ่มเอนแชนท์ ให้ เสื้อเกราะ: ค่าคุณภาพจะไม่เพิ่มค่าป้องกันของเสื้อเกราะ, มอบม็อด ค่าต้านทาน ไฟ 1% ต่อค่าคุณภาพ 2%"
+    },
+    "short": {
+      "eng": "Enchant Body, Intelligence"
     }
   },
   "EnchantArmourLife": {
@@ -1116,6 +1308,9 @@
       "rus": "Зачаровать нательный доспех. Качество не повышает защиту, но дарует +1 к максимуму здоровья за 2% качества",
       "spa": "Encanta una armadura. La calidad no aumenta su defensa, otorga +1 a la vida máxima por cada 2% de calidad",
       "tha": "เพิ่มเอนแชนท์ ให้ เสื้อเกราะ: ค่าคุณภาพจะไม่เพิ่มค่าป้องกันของเสื้อเกราะ, มอบม็อด ค่า มานาสูงสุด +1 ต่อค่าคุณภาพ 2%"
+    },
+    "short": {
+      "eng": "Enchant Body, Maximum Life"
     }
   },
   "EnchantArmourLightningResist": {
@@ -1133,6 +1328,9 @@
       "rus": "Зачаровать нательный доспех. Качество не повышает защиту, но дарует 1% к сопротивлению молнии за 2% качества",
       "spa": "Encanta una armadura. La calidad no aumenta su defensa, otorga un 1% de resistencia al rayo por cada 2% de calidad",
       "tha": "ลบม็อดที่ไม่ใช่ อิทธิพล 1 อย่างแบบสุ่ม ออกจากไอเทม จากนั้นเพิ่มม็อด อิทธิพล ลงไป 1 อย่าง"
+    },
+    "short": {
+      "eng": "Enchant Body, Lightning Resist"
     }
   },
   "EnchantArmourMana": {
@@ -1150,6 +1348,9 @@
       "rus": "Зачаровать нательный доспех. Качество не повышает защиту, но дарует +1 к максимуму маны за 2% качества",
       "spa": "Encanta una armadura. La calidad no aumenta su defensa, otorga +1 al maná máximo por cada 2% de calidad",
       "tha": "เพิ่มเอนแชนท์ ให้ เสื้อเกราะ: ค่าคุณภาพจะไม่เพิ่มค่าป้องกันของเสื้อเกราะ, มอบม็อด Strength +1 ต่อค่าคุณภาพ 2%"
+    },
+    "short": {
+      "eng": "Enchant Body, Maximum Mana"
     }
   },
   "EnchantArmourStrength": {
@@ -1167,6 +1368,9 @@
       "rus": "Зачаровать нательный доспех. Качество не повышает защиту, но дарует +1 к силе за 2% качества",
       "spa": "Encanta una armadura. La calidad no aumenta su defensa, otorga +1 a la fuerza por cada 2% de calidad",
       "tha": "เพิ่มเอนแชนท์ ให้ เสื้อเกราะ: ค่าคุณภาพจะไม่เพิ่มค่าป้องกันของเสื้อเกราะ, มอบม็อด Dexterity +1 ต่อค่าคุณภาพ 2%"
+    },
+    "short": {
+      "eng": "Enchant Body, Strength"
     }
   },
   "EnchantFlaskDuration": {
@@ -1184,6 +1388,9 @@
       "rus": "Зачаровать флакон свойством, дарующим увеличение длительности. Значение этого свойства будет уменьшаться при каждом использовании",
       "spa": "Encanta un frasco con un mod. que otorga duración aumentada. La magnitud de este efecto disminuye con cada uso",
       "tha": "เพิ่มเอนแชนท์ ให้ ขวดยา: เพิ่มระยะเวลาส่งผล แต่ค่าตัวเลขของม็อดนี้จะลดลงทุกครั้งที่ใช้งาน"
+    },
+    "short": {
+      "eng": "Enchant Flask: inc. Duration"
     }
   },
   "EnchantFlaskEffect": {
@@ -1201,6 +1408,9 @@
       "rus": "Зачаровать флакон свойством, дарующим усиление эффекта. Значение этого свойства будет уменьшаться при каждом использовании",
       "spa": "Encanta un frasco con un mod. que otorga efecto aumentado. La magnitud de este efecto disminuye con cada uso",
       "tha": "เพิ่มเอนแชนท์ ให้ ขวดยา: เพิ่มผลของยา แต่ค่าตัวเลขของม็อดนี้จะลดลงทุกครั้งที่ใช้งาน"
+    },
+    "short": {
+      "eng": "Enchant Flask: inc. Effect"
     }
   },
   "EnchantFlaskMaxCharges": {
@@ -1218,6 +1428,9 @@
       "rus": "Зачаровать флакон свойством, дарующим увеличение максимального количества зарядов. Значение этого свойства будет уменьшаться при каждом использовании",
       "spa": "Encanta un frasco con un mod. que otorga cargas máximas aumentadas. La magnitud de este efecto disminuye con cada uso",
       "tha": "เพิ่มเอนแชนท์ ให้ ขวดยา: เพิ่มจำนวนชาร์จสูงสุด แต่ค่าตัวเลขของม็อดนี้จะลดลงทุกครั้งที่ใช้งาน"
+    },
+    "short": {
+      "eng": "Enchant Flask: inc. Maximum Charges"
     }
   },
   "EnchantFlaskReducedCharges": {
@@ -1235,6 +1448,9 @@
       "rus": "Зачаровать флакон свойством, дарующим уменьшение количества используемых зарядов. Значение этого свойства будет уменьшаться при каждом использовании",
       "spa": "Encanta un frasco con un mod. que otorga cargas usadas reducidas. La magnitud de este efecto disminuye con cada uso",
       "tha": "เพิ่มเอนแชนท์ ให้ ขวดยา: ลดการใช้งานชาร์จ แต่ค่าตัวเลขของม็อดนี้จะลดลงทุกครั้งที่ใช้งาน"
+    },
+    "short": {
+      "eng": "Enchant Flask: reduced Charges used"
     }
   },
   "EnchantMapRandomMod": {
@@ -1252,6 +1468,9 @@
       "rus": "Зачаровать неуникальную карту свойством \"Имеет случайное дополнительное свойство Кирака\"",
       "spa": "Encanta un mapa que no sea único con \"Tiene un modificador aleatorio adicional de la mesa de fabricación de Kirac\"",
       "tha": "เพิ่มเอนแชนท์ ให้ แผนที่ ที่ไม่ใช่ระดับ ยูนิค: มอบม็อด \"แผนที่ มีม็อดเพิ่มเติมจากโต๊ะคราฟท์ของคิรัค 1 อย่าง แบบสุ่ม\""
+    },
+    "short": {
+      "eng": "Enchant Map, Kirac's Crafting Bench"
     }
   },
   "EnchantMapSextant": {
@@ -1269,6 +1488,9 @@
       "rus": "Зачаровать неуникальную карту свойством \"Карта не тратит заряды секстантов\"",
       "spa": "Encanta un mapa que no sea único con \"El mapa no consume usos de sextantes\"",
       "tha": "เพิ่มเอนแชนท์ ให้ แผนที่ ที่ไม่ใช่ระดับ ยูนิค: "
+    },
+    "short": {
+      "eng": "Enchant Map, Doesn't Consume Sextant"
     }
   },
   "EnchantMapSpirits": {
@@ -1286,6 +1508,9 @@
       "rus": "Зачаровать неуникальную карту свойством \"Босс карты окружен страдающими духами\"",
       "spa": "Encanta un mapa que no sea único con \"El jefe de mapa está rodeado por Espíritus atormentados\"",
       "tha": "เพิ่มเอนแชนท์ ให้ แผนที่ ที่ไม่ใช่ระดับ ยูนิค: มอบม็อด \"บอสประจำแผนที่ รายล้อมไปด้วย วิญญาณที่ถูกทรมาน\""
+    },
+    "short": {
+      "eng": "Enchant Map, boss is surrounded by Tormented Spirits"
     }
   },
   "EnchantMapVaal": {
@@ -1303,6 +1528,9 @@
       "rus": "Зачаровать неуникальную карту свойством \"Карта имеет побочную область ваал\"",
       "spa": "Encanta un mapa que no sea único con \"El mapa tiene un Área secundaria vaal\"",
       "tha": "เพิ่มเอนแชนท์ ให้ แผนที่ ที่ไม่ใช่ระดับ ยูนิค: มอบม็อด \"แผนที่ มี ด่านย่อยวาล์ 1 แห่ง\""
+    },
+    "short": {
+      "eng": "Enchant Map, Vaal Side Area"
     }
   },
   "EnchantWeaponAccuracy": {
@@ -1320,6 +1548,9 @@
       "rus": "Зачаровать оружие. Качество не повышает его физический урон, но дарует 1% увеличение меткости за 2% качества",
       "spa": "Encanta un arma. La calidad no aumenta su daño físico, otorga precisión aumentada un 1% por cada 2% de calidad",
       "tha": "เพิ่มเอนแชนท์ ให้ อาวุธ: ค่าคุณภาพจะไม่เพิ่มความเสียหายกายภาพของอาวุธ, มอบม็อด เพิ่มความแม่นยำ 1% ต่อค่าคุณภาพ 2%"
+    },
+    "short": {
+      "eng": "Enchant Weapon, Accuracy"
     }
   },
   "EnchantWeaponAoE": {
@@ -1337,6 +1568,9 @@
       "rus": "Зачаровать оружие. Качество не повышает его физический урон, но дарует 1% увеличение области действия за 4% качества",
       "spa": "Encanta un arma. La calidad no aumenta su daño físico, otorga área de efecto aumentada un 1% por cada 4% de calidad",
       "tha": "เพิ่มเอนแชนท์ ให้ อาวุธ: ค่าคุณภาพจะไม่เพิ่มความเสียหายกายภาพของอาวุธ, มอบม็อด เพิ่มพื้นที่ส่งผล 1% ต่อค่าคุณภาพ 4%"
+    },
+    "short": {
+      "eng": "Enchant Weapon, Area of Effect"
     }
   },
   "EnchantWeaponAttackSpeed": {
@@ -1354,6 +1588,9 @@
       "rus": "Зачаровать оружие. Качество не повышает его физический урон, но дарует 1% повышение скорости атаки за 8% качества",
       "spa": "Encanta un arma. La calidad no aumenta su daño físico, tiene velocidad de ataque aumentada un 1% por cada 8% de calidad",
       "tha": "เพิ่มเอนแชนท์ ให้ อาวุธ: ค่าคุณภาพจะไม่เพิ่มความเสียหายกายภาพของอาวุธ, เพิ่มความเร็วในการโจมตี 1% ต่อค่าคุณภาพ 8%"
+    },
+    "short": {
+      "eng": "Enchant Weapon, Attack Speed"
     }
   },
   "EnchantWeaponCritical": {
@@ -1371,6 +1608,9 @@
       "rus": "Зачаровать оружие. Качество не повышает его физический урон, но дарует 1% повышение шанса критического удара за 4% качества",
       "spa": "Encanta un arma. La calidad no aumenta su daño físico, tiene una probabilidad de golpe crítico aumentada un 1% por cada 4% de calidad",
       "tha": "เพิ่มเอนแชนท์ ให้ อาวุธ: ค่าคุณภาพจะไม่เพิ่มความเสียหายกายภาพของอาวุธ, เพิ่มโอกาสคริติคอล 1% ต่อค่าคุณภาพ 4%"
+    },
+    "short": {
+      "eng": "Enchant Weapon, Critical Strike Chance"
     }
   },
   "EnchantWeaponElementalDamage": {
@@ -1388,6 +1628,9 @@
       "rus": "Зачаровать оружие. Качество не повышает его физический урон, но дарует 1% увеличение урона от стихий за 2% качества",
       "spa": "Encanta un arma. La calidad no aumenta su daño físico, otorga daño elemental aumentado un 1% por cada 2% de calidad",
       "tha": "เพิ่มเอนแชนท์ ให้ อาวุธ: ค่าคุณภาพจะไม่เพิ่มความเสียหายกายภาพของอาวุธ, มอบม็อด เพิ่มความเสียหาย ธาตุ 1% ต่อค่าคุณภาพ 2%"
+    },
+    "short": {
+      "eng": "Enchant Weapon, Elemental Damage"
     }
   },
   "EnchantWeaponRange": {
@@ -1405,6 +1648,9 @@
       "rus": "Зачаровать оружие ближнего боя. Качество не повышает его физический урон, но дарует +1 к дальности оружия за 10% качества",
       "spa": "Encanta un arma cuerpo a cuerpo. La calidad no aumenta su daño físico, tiene +1 al rango de arma por cada 10% de calidad",
       "tha": "เพิ่มเอนแชนท์ ให้ อาวุธประชิด: ค่าคุณภาพจะไม่เพิ่มความเสียหายกายภาพของอาวุธ, ระยะอาวุธ +1 ต่อค่าคุณภาพ 10%"
+    },
+    "short": {
+      "eng": "Enchant Weapon, Weapon Range"
     }
   },
   "Exchange10AlchemyToChisels": {
@@ -1915,6 +2161,9 @@
       "rus": "Перековать связи между гнёздами на предмете, соединив пять гнёзд на предмете",
       "spa": "Reforja los vínculos entre los engarces de un objeto y vincula cinco engarces",
       "tha": "สุ่ม เชื่อมรู บนไอเทมขึ้นมาใหม่ให้ได้ 5 เชื่อม"
+    },
+    "short": {
+      "eng": "Five Links"
     }
   },
   "FiveSockets": {
@@ -1932,6 +2181,9 @@
       "rus": "Установить количество гнёзд в предмете равным пяти",
       "spa": "Configura un objeto para que tenga cinco engarces",
       "tha": "ทำให้ไอเทมมี 5 รู"
+    },
+    "short": {
+      "eng": "Five Sockets"
     }
   },
   "FourLinks": {
@@ -1949,6 +2201,9 @@
       "rus": "Перековать связи между гнёздами на предмете, соединив четыре гнезда на предмете",
       "spa": "Reforja los vínculos entre los engarces de un objeto y vincula cuatro engarces",
       "tha": "สุ่ม เชื่อมรู บนไอเทมขึ้นมาใหม่ให้ได้ 4 เชื่อม"
+    },
+    "short": {
+      "eng": "Four Links"
     }
   },
   "FourSockets": {
@@ -1966,6 +2221,9 @@
       "rus": "Установить количество гнёзд в предмете равным четырём",
       "spa": "Configura un objeto para que tenga cuatro engarces",
       "tha": "ทำให้ไอเทมมี 4 รู"
+    },
+    "short": {
+      "eng": "Four Sockets"
     }
   },
   "FractureRandom": {
@@ -1983,6 +2241,9 @@
       "rus": "Расколоть случайное свойство на предмете с минимум 5 свойствами, закрепив его на своем месте. Нельзя использовать на предметах с влиянием, синтезированных или расколотых предметах",
       "spa": "Fractura un mod. aleatorio de un objeto que tenga al menos 5 mods. y lo bloquea en su lugar. Esto no se puede usar en objetos influenciados, sintetizados ni fracturados.",
       "tha": "ใส่ความ แตกร้าว ให้กับม็อดเดิม 1 อย่างแบบสุ่ม บนไอเทมที่มีม็อดอย่างน้อย 5 อย่าง เพื่อไม่ให้ม็อดนั้นเปลี่ยนแปลงได้อีก ไม่สามารถใช้กับ ไอเทมที่มีอิทธิพล ไอเทมสังเคราะห์ หรือ ไอเทมแตกร้าว ได้"
+    },
+    "short": {
+      "eng": "Fracture 1/5"
     }
   },
   "FractureRandomPrefix": {
@@ -2000,6 +2261,9 @@
       "rus": "Расколоть случайный префикс на предмете с минимум 3 префиксами. Нельзя использовать на предметах с влиянием, синтезированных или расколотых предметах",
       "spa": "Fractura un prefijo aleatorio de un objeto que tenga al menos 3 prefijos. Esto no se puede usar en objetos influenciados, sintetizados ni fracturados.",
       "tha": "ใส่ความ แตกร้าว ให้กับม็อด พรีฟิกซ์ 1 อย่างแบบสุ่ม บนไอเทมที่มีม็อด พรีฟิกซ์ อย่างน้อย 3 อย่าง เพื่อไม่ให้ม็อดนั้นเปลี่ยนแปลงได้อีก ไม่สามารถใช้กับไอเทมที่มีอิทธิพล ไอเทมสังเคราะห์ หรือ ไอเทมแตกร้าว ได้"
+    },
+    "short": {
+      "eng": "Fracture 1/3 Prefix"
     }
   },
   "FractureRandomSuffix": {
@@ -2017,6 +2281,9 @@
       "rus": "Расколоть случайный суффикс на предмете с минимум 3 суффиксами. Нельзя использовать на предметах с влиянием, синтезированных или расколотых предметах",
       "spa": "Fractura un sufijo aleatorio de un objeto que tenga al menos 3 sufijos. Esto no se puede usar en objetos influenciados, sintetizados ni fracturados.",
       "tha": "ใส่ความ แตกร้าว ให้กับม็อด ซัฟฟิกซ์ 1 อย่างแบบสุ่ม บนไอเทมที่มีม็อด ซัฟฟิกซ์ อย่างน้อย 3 อย่าง เพื่อไม่ให้ม็อดนั้นเปลี่ยนแปลงได้อีก ไม่สามารถใช้กับ ไอเทมที่มีอิทธิพล ไอเทมสังเคราะห์ หรือ ไอเทมแตกร้าว ได้"
+    },
+    "short": {
+      "eng": "Fracture 1/3 Suffix"
     }
   },
   "QualityFlask": {
@@ -2034,6 +2301,9 @@
       "rus": "Повысить качество флакона минимум на 10%. Имеет большее влияние на менее редких флаконах. Наивысшее качество 20%",
       "spa": "Mejora la calidad de un frasco al menos un 10%. Tiene mayor efecto en los frascos de rareza más baja. La calidad máxima es 20%",
       "tha": "เพิ่ม ค่าคุณภาพ ของ ขวดยา ขึ้นเป็นอย่างน้อย 10% จะมีผลมากยิ่งขึ้นเมื่อใช้กับขวดยาที่มีระดับความหายากต่ำ ค่าคุณภาพสูงสุดคือ 20%"
+    },
+    "short": {
+      "eng": "Improves the Quality of a Flask"
     }
   },
   "QualityGem": {
@@ -2051,6 +2321,9 @@
       "rus": "Повысить качество камня умений минимум на 10%. Наивысшее качество 20%",
       "spa": "Mejora la calidad de una gema al menos un 10%. La calidad máxima es 20%",
       "tha": "เพิ่ม ค่าคุณภาพ ของ หินสกิล ขึ้นเป็นอย่างน้อย 10% ค่าคุณภาพสูงสุดคือ 20%"
+    },
+    "short": {
+      "eng": "Improves the Quality of a Gem"
     }
   },
   "RandomiseInfluenceArmour": {
@@ -2068,6 +2341,9 @@
       "rus": "Случайным образом изменить тип влияния на обычной, волшебной или редкой части доспеха, а также перековать предмет, наделив его новыми случайными свойствами",
       "spa": "Aleatoriza los tipos de influencia de una pieza de armadura influenciada normal, mágica o rara y reforja el objeto con nuevos modificadores aleatorios",
       "tha": "สุ่มชนิด อิทธิพล ให้กับ เครื่องประดับ ระดับ ธรรมดา เมจิก หรือ แรร์ ที่มี อิทธิพล รวมถึงสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่"
+    },
+    "short": {
+      "eng": "Randomise Influence Armour"
     }
   },
   "RandomiseInfluenceJewellery": {
@@ -2085,6 +2361,9 @@
       "rus": "Случайным образом изменить тип влияния на обычной волшебной или редкой бижутерии, а также перековать предмет, наделив его новыми случайными свойствами",
       "spa": "Aleatoriza los tipos de influencia de una pieza de joyería influenciada normal, mágica o rara y reforja el objeto con nuevos modificadores aleatorios",
       "tha": "เพิ่มเอนแชนท์ ให้ เสื้อเกราะ: ค่าคุณภาพจะไม่เพิ่มค่าป้องกันของเสื้อเกราะ, มอบม็อด ค่า พลังชีวิตสูงสุด +1 ต่อค่าคุณภาพ 2%"
+    },
+    "short": {
+      "eng": "Randomise Influence Jewellery"
     }
   },
   "RandomiseInfluenceWeapon": {
@@ -2102,6 +2381,9 @@
       "rus": "Случайным образом изменить тип влияния на обычном, волшебном или редком оружии или колчане, а также перековать предмет, наделив его новыми случайными свойствами",
       "spa": "Aleatoriza los tipos de influencia de un arma o carcaj influenciados normales, mágicos o raros y reforja el objeto con nuevos modificadores aleatorios",
       "tha": "สุ่มชนิด อิทธิพล ให้กับ เกราะ ระดับ ธรรมดา เมจิก หรือ แรร์ ที่มี อิทธิพล รวมถึงสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่"
+    },
+    "short": {
+      "eng": "Randomise Influence Weapon"
     }
   },
   "RandomiseNumericInfluence": {
@@ -2119,6 +2401,9 @@
       "rus": "Случайным образом изменить числовые значения случайных свойств влияния на волшебном или редком предмете",
       "spa": "Aleatoriza los valores numéricos de los modificadores de influencia aleatorios de un objeto mágico o raro",
       "tha": "ลบม็อด อิทธิพล 1 อย่างแบบสุ่ม ออกจากไอเทม จากนั้นเพิ่มม็อด อิทธิพล ลงไป 1 อย่าง"
+    },
+    "short": {
+      "eng": "Randomise values of Influence mods"
     }
   },
   "ReforgeAttack": {
@@ -2136,6 +2421,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство атак",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de ataque",
       "tha": "สุ่มม็อด โจมตี ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์"
+    },
+    "short": {
+      "eng": "Reforge Attack"
     }
   },
   "ReforgeAttackMoreCommon": {
@@ -2153,6 +2441,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство атак. Шанс появления свойств атак увеличен.",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de ataque. Los mods. de ataque son más comunes",
       "tha": "สุ่มม็อด โจมตี 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์ ซึ่งม็อด โจมตี นั้นจะพบได้ง่ายขึ้นมาก"
+    },
+    "short": {
+      "eng": "Reforge Attack More Common"
     }
   },
   "ReforgeCaster": {
@@ -2170,6 +2461,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство чар",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de lanzador de hechizos",
       "tha": "สุ่มม็อด นักเวท 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดบนไอเทมใหม่หมดทุกม็อดและเปลี่ยนให้เป็น ไอเทมแรร์"
+    },
+    "short": {
+      "eng": "Reforge Caster"
     }
   },
   "ReforgeCasterMoreCommon": {
@@ -2187,6 +2481,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство чар. Шанс появления свойств чар увеличен",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de lanzador de hechizos . Los mods. de lanzador de hechizos son más comunes",
       "tha": "สุ่มม็อด นักเวท 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนไอเทมให้เป็น ไอเทมแรร์ ซึ่งม็อด นักเวท นั้นจะพบได้ง่ายขึ้นมาก"
+    },
+    "short": {
+      "eng": "Reforge Caster More Common"
     }
   },
   "ReforgeChaos": {
@@ -2204,6 +2501,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство хаоса",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de caos",
       "tha": "สุ่มม็อด เคออส 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์"
+    },
+    "short": {
+      "eng": "Reforge Chaos"
     }
   },
   "ReforgeChaosMoreCommon": {
@@ -2221,6 +2521,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство хаоса. Шанс появления свойств хаоса увеличен",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de caos. Los mods. de caos son más comunes",
       "tha": "สุ่มม็อด เคออส 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์ ซึ่งม็อด เคออส นั้นจะพบได้ง่ายขึ้นมาก"
+    },
+    "short": {
+      "eng": "Reforge Chaos More Common"
     }
   },
   "ReforgeCold": {
@@ -2238,6 +2541,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство холода",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de hielo",
       "tha": "สุ่มม็อด น้ำแข็ง 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์"
+    },
+    "short": {
+      "eng": "Reforge Cold"
     }
   },
   "ReforgeColdMoreCommon": {
@@ -2255,6 +2561,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство холода. Шанс появления свойств холода увеличен",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de hielo. Los mods. de hielo son más comunes",
       "tha": "สุ่มม็อด น้ำแข็ง 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์ ซึ่งม็อด น้ำแข็ง นั้นจะพบได้ง่ายขึ้นมาก"
+    },
+    "short": {
+      "eng": "Reforge Cold More Common"
     }
   },
   "ReforgeColors10": {
@@ -2272,6 +2581,9 @@
       "rus": "Перековать цвета гнёзд на предмете 10 раз. Итоговым становится результат с наибольшим количеством менее свойственных цветов гнёзд",
       "spa": "Reforja el color de los engarces de un objeto 10 veces y se queda con el resultado que tenga un mayor número de engarces con colores poco comunes",
       "tha": "สุ่ม เปลี่ยนสีรู บนไอเทมขึ้นมาใหม่ 10 ครั้ง และใช้ผลลัพธ์ที่ให้ จำนวนรูสีที่ออกยาก มากที่สุด"
+    },
+    "short": {
+      "eng": "Reforge colors 10x"
     }
   },
   "ReforgeCritical": {
@@ -2289,6 +2601,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство критического удара",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de crítico",
       "tha": "สุ่มม็อด คริติคอล 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์"
+    },
+    "short": {
+      "eng": "Reforge Critical"
     }
   },
   "ReforgeCriticalMoreCommon": {
@@ -2306,6 +2621,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство критического удара. Шанс появления свойств критического удара увеличен",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de crítico. Los mods. de crítico son más comunes",
       "tha": "สุ่มม็อด คริติคอล 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์ ซึ่งม็อด คริติคอล นั้นจะพบได้ง่ายขึ้นมาก"
+    },
+    "short": {
+      "eng": "Reforge Critical More Common"
     }
   },
   "ReforgeDefence": {
@@ -2323,6 +2641,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство защиты",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de defensa",
       "tha": "สุ่มม็อด ป้องกัน 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์"
+    },
+    "short": {
+      "eng": "Reforge Defence"
     }
   },
   "ReforgeDefenceMoreCommon": {
@@ -2340,6 +2661,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство защиты. Шанс появления свойств защиты увеличен",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de defensa. Los mods. de defensa son más comunes",
       "tha": "สุ่มม็อด ป้องกัน 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์ ซึ่งม็อด ป้องกัน นั้นจะพบได้ง่ายขึ้นมาก"
+    },
+    "short": {
+      "eng": "Reforge Defence More Common"
     }
   },
   "ReforgeFire": {
@@ -2357,6 +2681,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство огня",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de fuego",
       "tha": "สุ่มม็อด ไฟ 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์"
+    },
+    "short": {
+      "eng": "Reforge Fire"
     }
   },
   "ReforgeFireMoreCommon": {
@@ -2374,6 +2701,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство огня. Шанс появления свойств огня увеличен",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de fuego. Los mods. de fuego son más comunes",
       "tha": "สุ่มม็อด ไฟ 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์ ซึ่งม็อด ไฟ นั้นจะพบได้ง่ายขึ้นมาก"
+    },
+    "short": {
+      "eng": "Reforge Fire More Common"
     }
   },
   "ReforgeInfluence": {
@@ -2391,6 +2721,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство влияния. Шанс появления свойств влияния увеличен",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de influencia. Los mods. de influencia son más comunes",
       "tha": "เพิ่มม็อด {อิทธิพล} หนึ่งม็อดซึ่งโชคดีในการสุ่มค่าตัวเลขของม็อด ให้กับไอเทมระดับ เมจิก หรือ แรร์"
+    },
+    "short": {
+      "eng": "Reforge Influence More Common"
     }
   },
   "ReforgeKeepPrefixes": {
@@ -2408,6 +2741,9 @@
       "rus": "Перековать редкий предмет, сохранив все префиксы",
       "spa": "Reforja un objeto raro manteniendo todos los prefijos",
       "tha": "สุ่มม็อด ของ ไอเทมแรร์ ขึ้นมาใหม่ โดยเก็บม็อด พรีฟิกซ์ เอาไว้ทั้งหมด"
+    },
+    "short": {
+      "eng": "Reforge keep Prefix"
     }
   },
   "ReforgeKeepPrefixesLucky": {
@@ -2425,6 +2761,9 @@
       "rus": "Перековать редкий предмет, сохранив все префиксы. Значения новых свойств при этом удачливы",
       "spa": "Reforja un objeto raro con valores de modificadores afortunados manteniendo todos los prefijos",
       "tha": "สุ่มม็อด ของ ไอเทมแรร์ ใหม่โดยเก็บม็อด ซัฟฟิกซ์ เอาไว้ทั้งหมด และม็อดที่สุ่มมาใหม่นั้นจะโชคดีในการสุ่มค่าตัวเลขของม็อด"
+    },
+    "short": {
+      "eng": "Reforge keep Prefix Lucky"
     }
   },
   "ReforgeKeepSuffixes": {
@@ -2442,6 +2781,9 @@
       "rus": "Перековать редкий предмет, сохранив все суффиксы",
       "spa": "Reforja un objeto raro manteniendo todos los sufijos",
       "tha": "สุ่มม็อด ของ ไอเทมแรร์ ขึ้นมาใหม่ โดยเก็บม็อด ซัฟฟิกซ์ เอาไว้ทั้งหมด"
+    },
+    "short": {
+      "eng": "Reforge keep Suffix"
     }
   },
   "ReforgeKeepSuffixesLucky": {
@@ -2459,6 +2801,9 @@
       "rus": "Перековать редкий предмет, сохранив все суффиксы. Значения новых свойств при этом удачливы",
       "spa": "Reforjaun objeto raro con valores de modificadores afortunados manteniendo todos los sufijos",
       "tha": "สุ่มค่าตัวเลขของม็อด พรีฟิกซ์ ซัฟฟิกซ์ และ ม็อดแฝง ทุกอย่างบน ไอเทมเมจิก หรือ ไอเทมแรร์ โดยจะโชคดีในการสุ่มค่าตัวเลขของม็อด"
+    },
+    "short": {
+      "eng": "Reforge keep Suffix Lucky"
     }
   },
   "ReforgeLessLikely": {
@@ -2476,6 +2821,9 @@
       "rus": "Перековать редкий предмет, при этом шанс появления свойств тех же типов значительно уменьшен",
       "spa": "Reforja un objeto raro siendo mucho menos probable que reciba los mismos tipos de modificadores",
       "tha": "สุ่มม็อด ของ ไอเทมแรร์ ขึ้นมาใหม่ โดยม็อดที่สุ่มมาใหม่นั้นจะมีโอกาสเป็นชนิดเดียวกัน น้อยลง"
+    },
+    "short": {
+      "eng": "Reforge Rare Less Likely"
     }
   },
   "ReforgeLife": {
@@ -2493,6 +2841,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство здоровья",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de vida",
       "tha": "สุ่มม็อด พลังชีวิต 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์"
+    },
+    "short": {
+      "eng": "Reforge Life"
     }
   },
   "ReforgeLifeMoreCommon": {
@@ -2510,6 +2861,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство здоровья. Шанс появления свойств здоровья увеличен",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de vida. Los mods. de vida son más comunes",
       "tha": "สุ่มม็อด พลังชีวิต 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์ ซึ่งม็อด พลังชีวิต นั้นจะพบได้ง่ายขึ้นมาก"
+    },
+    "short": {
+      "eng": "Reforge Life More Common"
     }
   },
   "ReforgeLightning": {
@@ -2527,6 +2881,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство молнии",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de rayo",
       "tha": "สุ่มม็อด สายฟ้า 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์"
+    },
+    "short": {
+      "eng": "Reforge Lightning"
     }
   },
   "ReforgeLightningMoreCommon": {
@@ -2544,6 +2901,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство молнии. Шанс появления свойств молнии увеличен",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de rayo. Los mods. de rayo son más comunes",
       "tha": "สุ่มม็อด สายฟ้า 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์ ซึ่งม็อด สายฟ้า นั้นจะพบได้ง่ายขึ้นมาก"
+    },
+    "short": {
+      "eng": "Reforge Lightning More Common"
     }
   },
   "ReforgeLinks10": {
@@ -2561,6 +2921,9 @@
       "rus": "Перековать количество связей между гнёздами на предмете 10 раз. Итоговым становится результат с наибольшим количеством связей между гнёздами",
       "spa": "Reforja los vínculos entre los engarces de un objeto 10 veces y se queda con el resultado que tenga un mayor número de vínculos entre engarces",
       "tha": "สุ่ม เชื่อมรู บนไอเทมขึ้นมาใหม่ 10 ครั้ง และใช้ผลลัพธ์ที่ให้ จำนวนเชื่อม มากที่สุด"
+    },
+    "short": {
+      "eng": "Reforge links 10x"
     }
   },
   "ReforgeMoreLikely": {
@@ -2578,6 +2941,9 @@
       "rus": "Перековать редкий предмет, при этом шанс появления свойств тех же типов значительно увеличен",
       "spa": "Reforja un objeto raro siendo mucho más probable que reciba los mismos tipos de modificadores",
       "tha": "สุ่มม็อด ของ ไอเทมแรร์ ขึ้นมาใหม่ โดยม็อดที่สุ่มมาใหม่นั้นจะมีโอกาสเป็นชนิดเดียวกัน มากขึ้น"
+    },
+    "short": {
+      "eng": "Reforge Rare More Likely"
     }
   },
   "ReforgeNonBlueToBlue": {
@@ -2595,6 +2961,9 @@
       "rus": "Перековать цвет не-синего гнезда на предмете, превращая его в синий",
       "spa": "Reforja el color de un engarce que no sea azul de un objeto y lo vuelve azul",
       "tha": "สุ่มเปลี่ยนสีรู บนไอเทม 1 รู ที่ไม่ใช่ สีฟ้า ให้กลายเป็น สีฟ้า"
+    },
+    "short": {
+      "eng": "Non-Blue into Blue Socket"
     }
   },
   "ReforgeNonGreenToGreen": {
@@ -2612,6 +2981,9 @@
       "rus": "Перековать цвет не-зелёного гнезда на предмете, превращая его в зелёный",
       "spa": "Reforja el color de un engarce que no sea verde de un objeto y lo vuelve verde",
       "tha": "สุ่มเปลี่ยนสีรู บนไอเทม 1 รู ที่ไม่ใช่ สีเขียว ให้กลายเป็น สีเขียว"
+    },
+    "short": {
+      "eng": "Non-Green into Green Socket"
     }
   },
   "ReforgeNonRedToRed": {
@@ -2629,6 +3001,9 @@
       "rus": "Перековать цвет не-красного гнезда на предмете, превращая его в красный",
       "spa": "Reforja el color de un engarce que no sea rojo de un objeto y lo vuelve rojo",
       "tha": "สุ่มเปลี่ยนสีรู บนไอเทม 1 รู ที่ไม่ใช่ สีแดง ให้กลายเป็น สีแดง"
+    },
+    "short": {
+      "eng": "Non-Red into Red Socket"
     }
   },
   "ReforgePhysical": {
@@ -2646,6 +3021,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая физическое свойство",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. físico",
       "tha": "สุ่มม็อด กายภาพ 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์"
+    },
+    "short": {
+      "eng": "Reforge Physical"
     }
   },
   "ReforgePhysicalMoreCommon": {
@@ -2663,6 +3041,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая физическое свойство. Шанс появления физических свойств увеличен",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. físico. Los mods. físicos son más comunes",
       "tha": "สุ่มม็อด กายภาพ 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์ ซึ่งม็อด กายภาพ นั้นจะพบได้ง่ายขึ้นมาก"
+    },
+    "short": {
+      "eng": "Reforge Physical More Common"
     }
   },
   "ReforgeRare10": {
@@ -2680,6 +3061,9 @@
       "rus": "Перековать редкий предмет 10 раз, наделив его новыми случайными свойствами. Итоговым становится результат с наивысшим средним уровнем свойств",
       "spa": "Reforja un objeto raro con nuevos mods. aleatorios 10 veces y se queda con el resultado que tenga la media más alta de niveles de mods.",
       "tha": "สุ่มม็อดทุกอย่างบน ไอเทมแรร์ ขึ้นมาใหม่ 10 ครั้ง และใช้ผลลัพธ์ที่ให้เลเวลม็อดเฉลี่ยสูงที่สุด"
+    },
+    "short": {
+      "eng": "Reforge a Rare 10x"
     }
   },
   "ReforgeSockets10": {
@@ -2697,6 +3081,9 @@
       "rus": "Перековать количество гнёзд на предмете 10 раз. Итоговым становится результат с наибольшим количеством гнёзд",
       "spa": "Reforja el número de engarces de un objeto 10 veces y se queda con el resultado que tenga un mayor número de engarces",
       "tha": "สุ่ม เจาะรู บนไอเทมขึ้นมาใหม่ 10 ครั้ง และใช้ผลลัพธ์ที่ให้ จำนวนรู มากที่สุด"
+    },
+    "short": {
+      "eng": "Reforge sockets 10x"
     }
   },
   "ReforgeSpeed": {
@@ -2714,6 +3101,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство скорости",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de velocidad",
       "tha": "สุ่มม็อด ความเร็ว 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์"
+    },
+    "short": {
+      "eng": "Reforge Speed"
     }
   },
   "ReforgeSpeedMoreCommon": {
@@ -2731,6 +3121,9 @@
       "rus": "Перековать обычный, волшебный или редкий предмет в редкий предмет со случайными свойствами, включая свойство скорости. Шанс появления свойств скорости увеличен",
       "spa": "Reforja un objeto normal, mágico o raro en un objeto raro con mods. aleatorios que incluyen un mod. de velocidad. Los mods. de velocidad son más comunes",
       "tha": "สุ่มม็อด ชนิด ความเร็ว 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์ ซึ่งม็อด ความเร็ว นั้นจะพบได้ง่ายขึ้นมาก"
+    },
+    "short": {
+      "eng": "Reforge Speed More Common"
     }
   },
   "ReforgeWhite": {
@@ -2748,6 +3141,9 @@
       "rus": "Перековать цвет случайного гнезда на предмете, превращая его в белый",
       "spa": "Reforja el color de un engarce aleatorio de un objeto y lo vuelve blanco",
       "tha": "สุ่มเปลี่ยนสีรู บนไอเทม 1 รู ให้กลายเป็น สีขาว"
+    },
+    "short": {
+      "eng": "Reforge into White Socket"
     }
   },
   "RemoveAddInfluence": {
@@ -2765,6 +3161,9 @@
       "rus": "Убрать случайное свойство влияния с предмета и добавить новое свойство влияния",
       "spa": "Elimina un modificador de influencia aleatorio de un objeto y agrega un nuevo modificador de influencia",
       "tha": "สุ่มม็อด อิทธิพล 1 อย่าง ลงในไอเทมระดับ ธรรมดา, เมจิก หรือ แรร์ โดยจะสุ่มม็อดทุกอย่างบนไอเทมขึ้นมาใหม่และเปลี่ยนให้เป็น ไอเทมแรร์ ซึ่งม็อด อิทธิพล นั้นจะพบได้ง่ายขึ้นมาก"
+    },
+    "short": {
+      "eng": "Remove Influence Add Influence"
     }
   },
   "RemoveAddNonAttack": {
@@ -2782,6 +3181,9 @@
       "rus": "Убрать случайное свойство не-атак с предмета без влияния и добавить новое свойство атак",
       "spa": "Elimina un modificador aleatorio que no sea de ataque de un objeto no influenciado y agrega un nuevo modificador de ataque",
       "tha": "ลบม็อดที่ไม่ใช่ โจมตี 1 อย่างแบบสุ่ม ออกจากไอเทมที่ไม่มี อิทธิพล จากนั้นเพิ่มม็อด โจมตี ลงไป 1 อย่าง"
+    },
+    "short": {
+      "eng": "Remove Non-Attack Add Attack"
     }
   },
   "RemoveAddNonCaster": {
@@ -2799,6 +3201,9 @@
       "rus": "Убрать случайное свойство не-чар с предмета без влияния и добавить новое свойство чар",
       "spa": "Elimina un mod. aleatorio que no sea de lanzador de hechizos de un objeto sin influencia y agrega un nuevo mod. de lanzador de hechizos",
       "tha": "ลบม็อดที่ไม่ใช่ นักเวท 1 อย่างแบบสุ่ม ออกจากไอเทมที่ไม่มี อิทธิพล จากนั้นเพิ่มม็อด นักเวท ลงไป 1 อย่าง"
+    },
+    "short": {
+      "eng": "Remove Non-Caster Add Caster"
     }
   },
   "RemoveAddNonChaos": {
@@ -2816,6 +3221,9 @@
       "rus": "Убрать случайное свойство не-хаоса с предмета без влияния и добавить новое свойство хаоса",
       "spa": "Elimina un modificador aleatorio que no sea de caos de un objeto no influenciado y agrega un nuevo modificador de caos",
       "tha": "ลบม็อดที่ไม่ใช่ เคออส 1 อย่างแบบสุ่ม ออกจากไอเทมที่ไม่มี อิทธิพล จากนั้นเพิ่มม็อด เคออส ลงไป 1 อย่าง"
+    },
+    "short": {
+      "eng": "Remove Non-Chaos Add Chaos"
     }
   },
   "RemoveAddNonCold": {
@@ -2833,6 +3241,9 @@
       "rus": "Убрать случайное свойство не-холода с предмета без влияния и добавить новое свойство холода",
       "spa": "Elimina un modificador aleatorio que no sea de hielo de un objeto no influenciado y agrega un nuevo modificador de hielo",
       "tha": "ลบม็อดที่ไม่ใช่ น้ำแข็ง 1 อย่างแบบสุ่ม ออกจากไอเทมที่ไม่มี อิทธิพล จากนั้นเพิ่มม็อด น้ำแข็ง ลงไป 1 อย่าง"
+    },
+    "short": {
+      "eng": "Remove Non-Cold Add Cold"
     }
   },
   "RemoveAddNonCritical": {
@@ -2850,6 +3261,9 @@
       "rus": "Убрать случайное свойство не-критического удара с предмета без влияния и добавить новое свойство критического удара",
       "spa": "Elimina un modificador aleatorio que no sea de crítico de un objeto no influenciado y agrega un nuevo modificador de crítico",
       "tha": "ลบม็อดที่ไม่ใช่ คริติคอล 1 อย่างแบบสุ่ม ออกจากไอเทมที่ไม่มี อิทธิพล จากนั้นเพิ่มม็อด คริติคอล ลงไป 1 อย่าง"
+    },
+    "short": {
+      "eng": "Remove Non-Critical Add Critical"
     }
   },
   "RemoveAddNonDefence": {
@@ -2867,6 +3281,9 @@
       "rus": "Убрать случайное свойство не-защиты с предмета без влияния и добавить новое свойство защиты",
       "spa": "Elimina un modificador aleatorio que no sea de defensa de un objeto no influenciado y agrega un nuevo modificador de defensa",
       "tha": "ลบม็อดที่ไม่ใช่ ป้องกัน 1 อย่างแบบสุ่ม ออกจากไอเทมที่ไม่มี อิทธิพล จากนั้นเพิ่มม็อด ป้องกัน ลงไป 1 อย่าง"
+    },
+    "short": {
+      "eng": "Remove Non-Defence Add Defence"
     }
   },
   "RemoveAddNonFire": {
@@ -2884,6 +3301,9 @@
       "rus": "Убрать случайное свойство не-огня с предмета без влияния и добавить новое свойство огня",
       "spa": "Elimina un modificador aleatorio que no sea de fuego de un objeto no influenciado y agrega un nuevo modificador de fuego",
       "tha": "ลบม็อดที่ไม่ใช่ ไฟ 1 อย่างแบบสุ่ม ออกจากไอเทมที่ไม่มี อิทธิพล จากนั้นเพิ่มม็อด ไฟ ลงไป 1 อย่าง"
+    },
+    "short": {
+      "eng": "Remove Non-Fire Add Fire"
     }
   },
   "RemoveAddNonInfluence": {
@@ -2901,6 +3321,9 @@
       "rus": "Убрать свойство не-влияния с предмета и добавить новое свойство влияния",
       "spa": "Elimina un modificador aleatorio que no sea de influencia de un objeto y agrega un nuevo modificador de influencia",
       "tha": "เพิ่มม็อด อิทธิพล 1 อย่าง ให้กับ ไอเทมเมจิก หรือ ไอเทมแรร์"
+    },
+    "short": {
+      "eng": "Remove Non-Influence Add Influence"
     }
   },
   "RemoveAddNonLife": {
@@ -2918,6 +3341,9 @@
       "rus": "Убрать случайное свойство не-здоровья с предмета без влияния и добавить новое свойство здоровья",
       "spa": "Elimina un modificador aleatorio que no sea de vida de un objeto no influenciado y agrega un nuevo modificador de vida",
       "tha": "ลบม็อดที่ไม่ใช่ พลังชีวิต 1 อย่างแบบสุ่ม ออกจากไอเทมที่ไม่มี อิทธิพล จากนั้นเพิ่มม็อด พลังชีวิต ลงไป 1 อย่าง"
+    },
+    "short": {
+      "eng": "Remove Non-Life Add Life"
     }
   },
   "RemoveAddNonLightning": {
@@ -2935,6 +3361,9 @@
       "rus": "Убрать случайное свойство не-молнии с предмета без влияния и добавить новое свойство молнии",
       "spa": "Elimina un modificador aleatorio que no sea de rayo de un objeto no influenciado y agrega un nuevo modificador de rayo",
       "tha": "ลบม็อดที่ไม่ใช่ สายฟ้า 1 อย่างแบบสุ่ม ออกจากไอเทมที่ไม่มี อิทธิพล จากนั้นเพิ่มม็อด สายฟ้า ลงไป 1 อย่าง"
+    },
+    "short": {
+      "eng": "Remove Non-Lightning Add Lightning"
     }
   },
   "RemoveAddNonPhysical": {
@@ -2952,6 +3381,9 @@
       "rus": "Убрать случайное не-физическое свойство с предмета без влияния и добавить новое физическое свойство",
       "spa": "Elimina un modificador aleatorio que no sea físico de un objeto no influenciado y agrega un nuevo modificador físico",
       "tha": "ลบม็อดที่ไม่ใช่ กายภาพ 1 อย่างแบบสุ่ม ออกจากไอเทมที่ไม่มี อิทธิพล จากนั้นเพิ่มม็อด กายภาพ ลงไป 1 อย่าง"
+    },
+    "short": {
+      "eng": "Remove Non-Physical Add Physical"
     }
   },
   "RemoveAddNonSpeed": {
@@ -2969,6 +3401,9 @@
       "rus": "Убрать случайное свойство не-скорости с предмета без влияния и добавить новое свойство скорости",
       "spa": "Elimina un modificador aleatorio que no sea de velocidad de un objeto no influenciado y agrega un nuevo modificador de velocidad",
       "tha": "ลบม็อดที่{ไม่ใช่ ความเร็ว} 1 อย่างแบบสุ่ม ออกจากไอเทมที่ไม่มี อิทธิพล จากนั้นเพิ่มม็อด ความเร็ว ลงไป 1 อย่าง"
+    },
+    "short": {
+      "eng": "Remove Non-Speed Add Speed"
     }
   },
   "RemoveInfluence": {
@@ -2986,6 +3421,9 @@
       "rus": "Убрать случайное свойство влияния с предмета",
       "spa": "Elimina un modificador de influencia aleatorio de un objeto",
       "tha": "สุ่มค่าตัวเลขของม็อด อิทธิพล แบบสุ่ม ของ ไอเทมเมจิก หรือ ไอเทมแรร์"
+    },
+    "short": {
+      "eng": "Remove Influence"
     }
   },
   "RerollPrefixLucky": {
@@ -3003,6 +3441,9 @@
       "rus": "Изменить значения префиксов на волшебном или редком предмете, выбор новых значений при этом удачлив",
       "spa": "Aleatoriza los valores de los mods. de prefijo en un objeto mágico o raro, con valores de mod. afortunados",
       "tha": "สุ่มค่าตัวเลขของม็อด ซัฟฟิกซ์ ทุกอย่างบน ไอเทมเมจิก หรือ ไอเทมแรร์ โดยจะโชคดีในการสุ่มค่าตัวเลขของม็อด"
+    },
+    "short": {
+      "eng": "Reroll Prefix Lucky"
     }
   },
   "RerollPrefixSuffixImplicitLucky": {
@@ -3020,6 +3461,9 @@
       "rus": "Изменить значения префиксов, суффиксов и собственных свойств редкого предмета, выбор новых значений при этом удачлив",
       "spa": "Aleatoriza los valores de los mods. implícitos, de prefijo y de sufijo de un objeto raro, con valores de mod. afortunados",
       "tha": "เพิ่มม็อด 1 อย่าง ซึ่งโชคดีในการสุ่มค่าตัวเลขของม็อด ให้กับ ไอเทมแรร์ ที่ไม่มี อิทธิพล"
+    },
+    "short": {
+      "eng": "Reroll All Lucky"
     }
   },
   "RerollSuffixLucky": {
@@ -3037,6 +3481,9 @@
       "rus": "Изменить значения суффиксов на волшебном или редком предмете, выбор новых значений при этом удачлив",
       "spa": "Aleatoriza los valores de los mods. de sufijo en un objeto mágico o raro, con valores de mod. afortunados",
       "tha": "เปลี่ยน ชิ้นส่วนบรีช 1 กอง หรือ หินบรีช ธรรมดา, เพิ่มพลัง, อาบพลัง หรือ บริสุทธิ์ 1 ก้อน ให้เป็น ชิ้นส่วน หรือ หินบรีช ชนิดอื่น"
+    },
+    "short": {
+      "eng": "Reroll Suffix Lucky"
     }
   },
   "SacrificeCorruptedExp20": {
@@ -3054,6 +3501,9 @@
       "rus": "Пожертвовать осквернённый камень и получить 20% от опыта камня в виде линзы награнения",
       "spa": "Sacrifica una gema corrupta para obtener un 20% de la experiencia total de la gema almacenada en forma de una Lente del facetador",
       "tha": "สังเวย หินสกิล ที่มีมลทิน เพื่อนำ 20% ของค่าประสบการณ์ที่หินสกิลเม็ดนั้นมีมาเก็บไว้ใน Facetor's Lens"
+    },
+    "short": {
+      "eng": "Sacrifice Gem, 20% XP As Facetor Lens"
     }
   },
   "SacrificeCorruptedExp30": {
@@ -3071,6 +3521,9 @@
       "rus": "Пожертвовать осквернённый камень и получить 30% от опыта камня в виде линзы награнения",
       "spa": "Sacrifica una gema corrupta para obtener un 30% de la experiencia total de la gema almacenada en forma de una Lente del facetador",
       "tha": "สังเวย หินสกิล ที่มีมลทิน เพื่อนำ 30% ของค่าประสบการณ์ที่หินสกิลเม็ดนั้นมีมาเก็บไว้ใน Facetor's Lens"
+    },
+    "short": {
+      "eng": "Sacrifice Gem, 30% XP as Facetor Lens"
     }
   },
   "SacrificeCorruptedExp40": {
@@ -3088,6 +3541,9 @@
       "rus": "Пожертвовать осквернённый камень и получить 40% от опыта камня в виде линзы награнения",
       "spa": "Sacrifica una gema corrupta para obtener un 40% de la experiencia total de la gema almacenada en forma de una Lente del facetador",
       "tha": "สังเวย หินสกิล ที่มีมลทิน เพื่อนำ 40% ของค่าประสบการณ์ที่หินสกิลเม็ดนั้นมีมาเก็บไว้ใน Facetor's Lens"
+    },
+    "short": {
+      "eng": "Sacrifice Gem, 40% XP as Facetor Lens"
     }
   },
   "SacrificeCorruptedExp50": {
@@ -3105,12 +3561,15 @@
       "rus": "Пожертвовать осквернённый камень и получить 50% от опыта камня в виде линзы награнения",
       "spa": "Sacrifica una gema corrupta para obtener un 50% de la experiencia total de la gema almacenada en forma de una Lente del facetador",
       "tha": "สังเวย หินสกิล ที่มีมลทิน เพื่อนำ 50% ของค่าประสบการณ์ที่หินสกิลเม็ดนั้นมีมาเก็บไว้ใน Facetor's Lens"
+    },
+    "short": {
+      "eng": "Sacrifice Gem, 50% XP As Facetor Lens"
     }
   },
   "SacrificeCorruptedQuality20": {
     "type": "SacrificeCorruptedQuality20",
     "message": "Sacrifice Gem, 20% quality as GCP",
-    "pricing": "",
+    "pricing": "Sacrifice Gem, 20% quality as GCP",
     "translations": {
       "chi_sim": "献祭腐化的技能石，获得其 30% 品质的宝石匠的允诺",
       "deu": "Opfert eine verderbte Gemme und erhaltet 20% der Qualität der Gemme als Prismen des Gemmenschneiders",
@@ -3122,6 +3581,9 @@
       "rus": "Пожертвовать осквернённый камень и получить 20% от качества камня в виде призм камнереза",
       "spa": "Sacrifica una gema corrupta para obtener un 20% de la calidad de la gema en forma de Prismas del tallador de gemas",
       "tha": "สังเวย หินสกิล ที่มีมลทิน เพื่อนำ 20% ของค่าคุณภาพที่หินสกิลเม็ดนั้นมีมาเปลี่ยนเป็น Gemcutter's Prism"
+    },
+    "short": {
+      "eng": "Sacrifice Gem, 20% quality as GCP"
     }
   },
   "SacrificeCorruptedQuality30": {
@@ -3139,6 +3601,9 @@
       "rus": "Пожертвовать осквернённый камень и получить 30% от качества камня в виде призм камнереза",
       "spa": "Sacrifica una gema corrupta para obtener un 30% de la calidad de la gema en forma de Prismas del tallador de gemas",
       "tha": "สังเวย หินสกิล ที่มีมลทิน เพื่อนำ 30% ของค่าคุณภาพที่หินสกิลเม็ดนั้นมีมาเปลี่ยนเป็น Gemcutter's Prism"
+    },
+    "short": {
+      "eng": "Sacrifice Gem, 30% quality as GCP"
     }
   },
   "SacrificeCorruptedQuality40": {
@@ -3156,6 +3621,9 @@
       "rus": "Пожертвовать осквернённый камень и получить 40% от качества камня в виде призм камнереза",
       "spa": "Sacrifica una gema corrupta para obtener un 40% de la calidad de la gema en forma de Prismas del tallador de gemas",
       "tha": "สังเวย หินสกิล ที่มีมลทิน เพื่อนำ 40% ของค่าคุณภาพที่หินสกิลเม็ดนั้นมีมาเปลี่ยนเป็น Gemcutter's Prism"
+    },
+    "short": {
+      "eng": "Sacrifice Gem, 40% quality as GCP"
     }
   },
   "SacrificeCorruptedQuality50": {
@@ -3173,6 +3641,9 @@
       "rus": "Пожертвовать осквернённый камень и получить 50% от качества камня в виде призм камнереза",
       "spa": "Sacrifica una gema corrupta para obtener un 50% de la calidad de la gema en forma de Prismas del tallador de gemas",
       "tha": "สังเวย หินสกิล ที่มีมลทิน เพื่อนำ 50% ของค่าคุณภาพที่หินสกิลเม็ดนั้นมีมาเปลี่ยนเป็น Gemcutter's Prism"
+    },
+    "short": {
+      "eng": "Sacrifice Gem, 50% quality as GCP"
     }
   },
   "SacrificeDivGamble": {
@@ -3190,6 +3661,9 @@
       "rus": "Потратить до половины колоды гадальных карт, чтобы получить ту же самую карту в количестве от 0 до удвоенного числа потраченных карт",
       "spa": "Sacrifica hasta la mitad de una pila de cartas de adivinación para recibir entre 0 y el doble de esa cantidad de la misma carta",
       "tha": "สังเวย ไพ่พยากรณ์ จำนวนแบบสุ่มแต่ไม่เกินครึ่งกองเพื่อสร้าง ไพ่พยากรณ์ใบเดิม สุ่มจำนวนที่ได้รับตั้งแต่ 0 ใบไปจนถึงสองเท่าของจำนวนที่สังเวย"
+    },
+    "short": {
+      "eng": "Sacrifice Divination Card 0-2x"
     }
   },
   "SacrificeDivStack": {
@@ -3207,6 +3681,9 @@
       "rus": "Обменять колоду гадальных карт на такое же количество случайных гадальных карт",
       "spa": "Sacrifica una pila de cartas de adivinación para obtener la misma cantidad de cartas de adivinación diferentes",
       "tha": "สังเวย ไพ่พยากรณ์ 1 กองเพื่อสร้าง ไพ่พยากรณ์ใบอื่น ตามจำนวนที่สังเวยไป"
+    },
+    "short": {
+      "eng": "Sacrifice Div cards for different ones"
     }
   },
   "SacrificeForAmulet": {
@@ -3224,6 +3701,9 @@
       "rus": "Пожертвовать оружием или доспехом и создать амулет с похожими свойствами",
       "spa": "Sacrifica un arma o una armadura para crear un amuleto que tenga modificadores similares",
       "tha": "สังเวย อาวุธ หรือ เกราะ จากนั้นสร้าง สร้อย ที่มีม็อดคล้ายกันขึ้นมา 1 เส้น"
+    },
+    "short": {
+      "eng": "Sacrifice Weapon/Armour to Amulet"
     }
   },
   "SacrificeForBelt": {
@@ -3241,6 +3721,9 @@
       "rus": "Пожертвовать оружием или доспехом и создать пояс с похожими свойствами",
       "spa": "Sacrifica un arma o una armadura para crear un cinturón que tenga modificadores similares",
       "tha": "สังเวย อาวุธ หรือ เกราะ จากนั้นสร้าง เข็มขัด ที่มีม็อดคล้ายกันขึ้นมา 1 เส้น"
+    },
+    "short": {
+      "eng": "Sacrifice Weapon/Armour to Belt"
     }
   },
   "SacrificeForJewel": {
@@ -3258,6 +3741,9 @@
       "rus": "Пожертвовать оружием или доспехом и создать самоцвет с похожими свойствами",
       "spa": "Sacrifica un arma o una armadura para crear una joya que tenga modificadores similares",
       "tha": "สังเวย อาวุธ หรือ เกราะ จากนั้นสร้าง จิวเวล ที่มีม็อดคล้ายกันขึ้นมา 1 เม็ด"
+    },
+    "short": {
+      "eng": "Sacrifice Weapon/Armour to Jewel"
     }
   },
   "SacrificeForRing": {
@@ -3275,6 +3761,9 @@
       "rus": "Пожертвовать оружием или доспехом и создать кольцо с похожими свойствами",
       "spa": "Sacrifica un arma o una armadura para crear un anillo que tenga modificadores similares",
       "tha": "สังเวย อาวุธ หรือ เกราะ จากนั้นสร้าง แหวน ที่มีม็อดคล้ายกันขึ้นมา 1 วง"
+    },
+    "short": {
+      "eng": "Sacrifice Weapon/Armour to Ring"
     }
   },
   "SacrificeMap1All": {
@@ -3292,6 +3781,9 @@
       "rus": "Обменять карту на 1 задание от каждого мастера, цвет которых зависит от цвета карты",
       "spa": "Sacrifica un mapa para obtener 1 misión de Atlas de cada maestro basada en su color",
       "tha": "สังเวย แผนที่ จากนั้น จะได้รับ ภารกิจสมุดแผนที่ ของทุกมาสเตอร์คนละ 1 ภารกิจ ตามสีของมัน"
+    },
+    "short": {
+      "eng": "Sacrifice map for 1 Atlas mission"
     }
   },
   "SacrificeMap1Ambush": {
@@ -3309,6 +3801,9 @@
       "rus": "Расходует карту. Добавляет однократное усиленное свойство Засады на вашу Машину картоходца",
       "spa": "Sacrifica un mapa. Agrega una fabricación gratis de Ambush infundida a tu artefacto de mapas",
       "tha": "สังเวย แผนที่ จากนั้น เพิ่มตัวเลือกเครื่องเปิดแผนที่ กล่องนิรภัยอาบพลัง ฟรี 1 ครั้ง"
+    },
+    "short": {
+      "eng": "Sacrifice map for Ambush craft"
     }
   },
   "SacrificeMap1Anarchy": {
@@ -3326,6 +3821,9 @@
       "rus": "Расходует карту. Добавляет однократное усиленное свойство Анархии на вашу Машину картоходца",
       "spa": "Sacrifica un mapa. Agrega una fabricación gratis de Anarchy infundida a tu artefacto de mapas",
       "tha": "สังเวย แผนที่ จากนั้น เพิ่มตัวเลือกเครื่องเปิดแผนที่ เอ็กไซล์อันธพาลอาบพลัง ฟรี 1 ครั้ง"
+    },
+    "short": {
+      "eng": "Sacrifice map for Anarchy craft"
     }
   },
   "SacrificeMap1Bloodlines": {
@@ -3343,6 +3841,9 @@
       "rus": "Расходует карту. Добавляет однократное усиленное свойство Родословных на вашу Машину картоходца",
       "spa": "Sacrifica un mapa. Agrega una fabricación gratis de Bloodlines infundida a tu artefacto de mapas",
       "tha": "สังเวย แผนที่ จากนั้น เพิ่มตัวเลือกเครื่องเปิดแผนที่ สายเลือดอาบพลัง ฟรี 1 ครั้ง"
+    },
+    "short": {
+      "eng": "Sacrifice map for Bloodlines craft"
     }
   },
   "SacrificeMap1Craft": {
@@ -3360,6 +3861,9 @@
       "rus": "Расходует карту. Добавляет однократную ремесленную опцию на вашу Машину картоходца",
       "spa": "Sacrifica un mapa. Agrega una fabricación gratis a tu artefacto de mapas",
       "tha": "สังเวย แผนที่ จากนั้น เพิ่มตัวเลือกเครื่องเปิดแผนที่ฟรี 1 ครั้ง"
+    },
+    "short": {
+      "eng": "Sacrifice map for random craft"
     }
   },
   "SacrificeMap1Domination": {
@@ -3377,6 +3881,9 @@
       "rus": "Расходует карту. Добавляет однократное усиленное свойство Господства на вашу Машину картоходца",
       "spa": "Sacrifica un mapa. Agrega una fabricación gratis de Domination infundida a tu artefacto de mapas",
       "tha": "สังเวย แผนที่ จากนั้น เพิ่มตัวเลือกเครื่องเปิดแผนที่ แท่นบูชาอาบพลัง ฟรี 1 ครั้ง"
+    },
+    "short": {
+      "eng": "Sacrifice map for Domination craft"
     }
   },
   "SacrificeMap1Harbinger": {
@@ -3394,6 +3901,9 @@
       "rus": "Расходует карту. Добавляет однократное усиленное свойство Предвестника на вашу Машину картоходца",
       "spa": "Sacrifica un mapa. Agrega una fabricación gratis de Harbinger infundida a tu artefacto de mapas",
       "tha": "สังเวย แผนที่ จากนั้น เพิ่มตัวเลือกเครื่องเปิดแผนที่ ฮาร์บินเจอร์อาบพลัง ฟรี 1 ครั้ง"
+    },
+    "short": {
+      "eng": "Sacrifice map for Harbinger craft"
     }
   },
   "SacrificeMap1Nemesis": {
@@ -3411,6 +3921,9 @@
       "rus": "Расходует карту. Добавляет однократное усиленное свойство Немезиды на вашу Машину картоходца",
       "spa": "Sacrifica un mapa. Agrega una fabricación gratis de Nemesis infundida a tu artefacto de mapas",
       "tha": "สังเวย แผนที่ จากนั้น เพิ่มตัวเลือกเครื่องเปิดแผนที่ เนเมซิสอาบพลัง ฟรี 1 ครั้ง"
+    },
+    "short": {
+      "eng": "Sacrifice map for Nemesis craft"
     }
   },
   "SacrificeMap1Rampage": {
@@ -3428,6 +3941,9 @@
       "rus": "Расходует карту. Добавляет однократное усиленное свойство Буйства на вашу Машину картоходца",
       "spa": "Sacrifica un mapa. Agrega una fabricación gratis de Rampage infundida a tu artefacto de mapas",
       "tha": "สังเวย แผนที่ จากนั้น เพิ่มตัวเลือกเครื่องเปิดแผนที่ แรมเพจอาบพลัง ฟรี 1 ครั้ง"
+    },
+    "short": {
+      "eng": "Sacrifice map for Rampage craft"
     }
   },
   "SacrificeMap3Alva": {
@@ -3445,6 +3961,9 @@
       "rus": "Обменять карту на 3 задания Альвы, цвет которых зависит от цвета карты",
       "spa": "Sacrifica un mapa para obtener 3 misiones de Atlas de Alva basadas en su color",
       "tha": "สังเวย แผนที่ จากนั้น จะได้รับ ภารกิจสมุดแผนที่ของ อัลวา จำนวน 3 ภารกิจ ตามสีของมัน"
+    },
+    "short": {
+      "eng": "Sacrifice map for 3 Alva missions"
     }
   },
   "SacrificeMap3Einhar": {
@@ -3462,6 +3981,9 @@
       "rus": "Обменять карту на 3 задания Эйнара, цвет которых зависит от цвета карты",
       "spa": "Sacrifica un mapa para obtener 3 misiones de Atlas de Einhar basadas en su color",
       "tha": "สังเวย แผนที่ จากนั้น จะได้รับ ภารกิจสมุดแผนที่ของ ไอนาร์ จำนวน 3 ภารกิจ ตามสีของมัน"
+    },
+    "short": {
+      "eng": "Sacrifice map for 3 Einhar missions"
     }
   },
   "SacrificeMap3Jun": {
@@ -3479,6 +4001,9 @@
       "rus": "Обменять карту на 3 задания Джун, цвет которых зависит от цвета карты",
       "spa": "Sacrifica un mapa para obtener 3 misiones de Atlas de Jun basadas en su color",
       "tha": "สังเวย แผนที่ จากนั้น จะได้รับ ภารกิจสมุดแผนที่ของ จุน จำนวน 3 ภารกิจ ตามสีของมัน"
+    },
+    "short": {
+      "eng": "Sacrifice map for 3 Jun missions"
     }
   },
   "SacrificeMap3Kirac": {
@@ -3496,6 +4021,9 @@
       "rus": "Обменять карту на 3 задания Кирака, цвет которых зависит от цвета карты",
       "spa": "Sacrifica un mapa para obtener 3 misiones de Atlas de Kirac basadas en su color",
       "tha": "สังเวย แผนที่ จากนั้น จะได้รับ ภารกิจสมุดแผนที่ของ คิรัค จำนวน 3 ภารกิจ ตามสีของมัน"
+    },
+    "short": {
+      "eng": "Sacrifice map for 3 Kirac missions"
     }
   },
   "SacrificeMap3Niko": {
@@ -3513,6 +4041,9 @@
       "rus": "Обменять карту на 3 задания Нико, цвет которых зависит от цвета карты",
       "spa": "Sacrifica un mapa para obtener 3 misiones de Atlas de Niko basadas en su color",
       "tha": "สังเวย แผนที่ จากนั้น จะได้รับ ภารกิจสมุดแผนที่ของ นิโค้ จำนวน 3 ภารกิจ ตามสีของมัน"
+    },
+    "short": {
+      "eng": "Sacrifice map for 3 Niko missions"
     }
   },
   "SacrificeMapConqueror": {
@@ -3530,6 +4061,9 @@
       "rus": "Обменять карту 14 уровня или выше на случайную карту, захваченную Завоевателем.",
       "spa": "Sacrifica un mapa de grado 14 o superior para crear un mapa aleatorio ocupado por un Conquistador",
       "tha": "สังเวย แผนที่ระดับ 14 หรือสูงกว่า จากนั้นสร้าง แผนที่ ที่ถูกครอบครองโดย ผู้พิชิต 1 ชิ้นแบบสุ่ม"
+    },
+    "short": {
+      "eng": "Sacrifice map for Conqueror map"
     }
   },
   "SacrificeMapCorrupted": {
@@ -3547,6 +4081,9 @@
       "rus": "Обменять осквернённую карту на новую осквернённую карту того же уровня и редкости",
       "spa": "Sacrifica un mapa corrupto. Crea un nuevo mapa corrupto del mismo grado y rareza.",
       "tha": "สังเวย แผนที่ ที่มีมลทิน จากนั้น สร้าง แผนที่ ที่มีมลทิน ขึ้นมาใหม่ที่มีระดับแผนที่และความหายากเท่ากัน"
+    },
+    "short": {
+      "eng": "Sacrifice Corrupted Map"
     }
   },
   "SacrificeMapCurrency": {
@@ -3564,6 +4101,9 @@
       "rus": "Обменять карту на случайную валюту карт в зависимости от уровня карты",
       "spa": "Sacrifica un mapa para crear objetos monetarios de mapa aleatorios basados en el grado del mapa",
       "tha": "สังเวย แผนที่ จากนั้นสร้าง เงินตราแผนที่ แบบสุ่ม ตามระดับของแผนที่"
+    },
+    "short": {
+      "eng": "Sacrifice map for random Currency"
     }
   },
   "SacrificeMapElder": {
@@ -3581,6 +4121,9 @@
       "rus": "Обменять карту 14 уровня или выше на случайную карту, захваченную хранителем Древнего.",
       "spa": "Sacrifica un mapa de grado 14 o superior para crear un mapa aleatorio ocupado por un Guardián del Antiguo",
       "tha": "สังเวย แผนที่ระดับ 14 หรือสูงกว่า จากนั้นสร้าง แผนที่ ที่ถูกครอบครองโดย องครักษ์เอลเดอร์ 1 ชิ้นแบบสุ่ม"
+    },
+    "short": {
+      "eng": "Sacrifice map for Elder map"
     }
   },
   "SacrificeMapRedFragments": {
@@ -3598,6 +4141,9 @@
       "rus": "Обменять красную карту на случайные фрагменты карт в зависимости от уровня карты",
       "spa": "Sacrifica un mapa rojo para crear fragmentos de mapa aleatorios basados en el grado del mapa",
       "tha": "สังเวย แผนที่แดง จากนั้นสร้าง ชิ้นส่วนแผนที่ แบบสุ่ม ตามระดับของแผนที่"
+    },
+    "short": {
+      "eng": "Sacrifice Red map for Fragments"
     }
   },
   "SacrificeMapScarab": {
@@ -3615,6 +4161,9 @@
       "rus": "Обменять карту на случайного скарабея в зависимости от уровня карты",
       "spa": "Sacrifica un mapa para crear un escarabajo aleatorio basado en su color",
       "tha": "สังเวย แผนที่ จากนั้น สร้าง ซแคแร็บ 1 ตัวแบบสุ่ม ตามระดับสีของแผนที่"
+    },
+    "short": {
+      "eng": "Sacrifice map for random Scarab"
     }
   },
   "SacrificeMapShaper": {
@@ -3632,6 +4181,9 @@
       "rus": "Обменять карту 14 уровня или выше на случайную карту с хранителем Создателя",
       "spa": "Sacrifica un mapa de grado 14 o superior para crear un mapa aleatorio ocupado por un Guardián del Creador",
       "tha": "สังเวย แผนที่ระดับ 14 หรือสูงกว่า จากนั้นสร้าง แผนที่ ที่ถูกครอบครองโดย องครักษ์เชปเปอร์ 1 ชิ้นแบบสุ่ม"
+    },
+    "short": {
+      "eng": "Sacrifice map for Shaper map"
     }
   },
   "SacrificeMapSynthesis": {
@@ -3649,6 +4201,9 @@
       "rus": "Обменять карту 14 уровня или выше на случайную уникальную карту Синтеза",
       "spa": "Sacrifica un mapa de grado 14 o superior para crear un mapa único de Synthesis aleatorio",
       "tha": "สังเวย แผนที่ระดับ 14 หรือสูงกว่า จากนั้นสร้าง แผนที่ยูนิคสังเคราะห์ 1 ชิ้นแบบสุ่ม"
+    },
+    "short": {
+      "eng": "Sacrifice map for Synthesis map"
     }
   },
   "SacrificeMapTierLower": {
@@ -3666,6 +4221,9 @@
       "rus": "Обменять карту на несколько карт более низкого уровня",
       "spa": "Sacrifica un mapa para obtener varios mapas de un grado menor",
       "tha": "สังเวย แผนที่ จากนั้น สร้าง แผนที่ หลายชิ้นที่มี ระดับต่ำลงมา 1 ระดับ"
+    },
+    "short": {
+      "eng": "Sacrifice Map for multiple lower tier"
     }
   },
   "SacrificeMapWhiteYellowFragments": {
@@ -3683,6 +4241,9 @@
       "rus": "Обменять белую или жёлтую карту на случайные фрагменты карт в зависимости от уровня карты",
       "spa": "Sacrifica un mapa blanco o amarillo para crear fragmentos de mapa aleatorios basados en el grado del mapa",
       "tha": "สังเวย แผนที่ขาว หรือ แผนที่เหลือง จากนั้นสร้าง ชิ้นส่วนแผนที่ แบบสุ่ม ตามระดับของแผนที่"
+    },
+    "short": {
+      "eng": "Sacrifice White/Yellow map for Fragments"
     }
   },
   "SetImplicitAbyssTimeless": {
@@ -3700,6 +4261,9 @@
       "rus": "Добавить новое собственное свойство на самоцвет Бездны или вневременной самоцвет",
       "spa": "Coloca un nuevo modificador implícito en una joya abisal o en una joya atemporal",
       "tha": "เปลี่ยน ม็อดแฝง ของ จิวเวลอะบิส หรือ จิวเวลเหนือกาลเวลา ใหม่"
+    },
+    "short": {
+      "eng": "Set Implicit, Abyss/Timeless Jewel"
     }
   },
   "SetImplicitCluster": {
@@ -3717,6 +4281,9 @@
       "rus": "Добавить новое собственное свойство на кластерный самоцвет",
       "spa": "Coloca un nuevo modificador implícito en una joya ramificadora",
       "tha": "เปลี่ยน ม็อดแฝง ของ คลัสเตอร์จิวเวล ใหม่"
+    },
+    "short": {
+      "eng": "Set Implicit, Cluster Jewel"
     }
   },
   "SetImplicitCobaltCrimsonViridianPrismatic": {
@@ -3734,6 +4301,9 @@
       "rus": "Добавить новое собственное свойство на кобальтовый, багровый, радужный или бирюзовый самоцвет",
       "spa": "Coloca un nuevo modificador implícito en una joya viridiana, prismática, carmesí or de cobalto",
       "tha": "เปลี่ยน ม็อดแฝง ของ จิวเวล Cobalt, Crimson, Viridian หรือ Prismatic ใหม่"
+    },
+    "short": {
+      "eng": "Set Implicit, Basic Jewel"
     }
   },
   "SixLinks": {
@@ -3751,6 +4321,9 @@
       "rus": "Перековать связи между гнёздами на предмете, соединив шесть гнёзд на предмете",
       "spa": "Reforja los vínculos entre los engarces de un objeto y vincula seis engarces",
       "tha": "สุ่ม เชื่อมรู บนไอเทมขึ้นมาใหม่ให้ได้ 6 เชื่อม"
+    },
+    "short": {
+      "eng": "Six Links"
     }
   },
   "SixSockets": {
@@ -3768,6 +4341,9 @@
       "rus": "Установить количество гнёзд в предмете равным шести",
       "spa": "Configura un objeto para que tenga seis engarces",
       "tha": "ทำให้ไอเทมมี 6 รู"
+    },
+    "short": {
+      "eng": "Six Sockets"
     }
   },
   "SplitScarab": {
@@ -3785,6 +4361,9 @@
       "rus": "Разделить скарабея на двух скарабеев меньшей редкости",
       "spa": "Divide un escarabajo para obtener dos escarabajos de rareza más baja",
       "tha": "แยก ซแคแร็บ ให้กลายเป็น ซแคแร็บ ระดับต่ำลงมา 2 ตัว"
+    },
+    "short": {
+      "eng": "Split a Scarab"
     }
   },
   "SynthesiseItem": {
@@ -3802,6 +4381,9 @@
       "rus": "Синтезировать предмет, наделив его случайными собственными свойствами Синтеза. Нельзя использовать на уникальных, синтезированных, расколотых предметах и на предметах с влиянием",
       "spa": "Sintetiza un objeto y le da implícitos sintetizados aleatorios. Esto no se puede usar en objetos únicos, influenciados, sintetizados ni fracturados",
       "tha": "สังเคราะห์ ไอเทม 1 ชิ้น ให้มีม็อดแฝงสังเคราะห์แบบสุ่ม ไม่สามารถคราฟท์กับ ไอเทมยูนิค, ไอเทมที่มีอิทธิพล, ไอเทมสังเคราะห์, ไอเทมแตกร้าว ได้"
+    },
+    "short": {
+      "eng": "Synthesise an item"
     }
   },
   "ThreeLinks": {
@@ -3819,6 +4401,9 @@
       "rus": "Перековать связи между гнёздами на предмете, соединив три гнезда на предмете",
       "spa": "Reforja los vínculos entre los engarces de un objeto y vincula tres engarces",
       "tha": "สุ่ม เชื่อมรู บนไอเทมขึ้นมาใหม่ให้ได้ 3 เชื่อม"
+    },
+    "short": {
+      "eng": "Three Links"
     }
   },
   "ThreeRandomRGB": {
@@ -3836,6 +4421,9 @@
       "rus": "Перековать цвета трех случайных гнёзд на предмете, превращая их в красный, зелёный и синий",
       "spa": "Reforja el color de tres engarces aleatorios de un objeto, uno se vuelve rojo, otro verde y el otro azul",
       "tha": "สุ่มเปลี่ยนสีรู บนไอเทม 3 รู ให้กลายเป็น สีแดง, สีเขียว และ สีฟ้า"
+    },
+    "short": {
+      "eng": "Reforge into Red, Blue and Green"
     }
   },
   "ThreeSockets": {
@@ -3853,6 +4441,9 @@
       "rus": "Установить количество гнёзд в предмете равным трём",
       "spa": "Configura un objeto para que tenga tres engarces",
       "tha": "ทำให้ไอเทมมี 3 รู"
+    },
+    "short": {
+      "eng": "Three Sockets"
     }
   },
   "TwoRandomBlueGreen": {
@@ -3870,6 +4461,9 @@
       "rus": "Перековать цвета двух случайных гнёзд на предмете, превращая их в синий и зелёный",
       "spa": "Reforja el color de dos engarces aleatorios de un objeto, uno se vuelve azul y el otro verde",
       "tha": "สุ่มเปลี่ยนสีรู บนไอเทม 2 รู ให้กลายเป็น สีฟ้า และ สีเขียว"
+    },
+    "short": {
+      "eng": "Reforge into Blue and Green"
     }
   },
   "TwoRandomRedBlue": {
@@ -3887,6 +4481,9 @@
       "rus": "Перековать цвета двух случайных гнёзд на предмете, превращая их в красный и синий",
       "spa": "Reforja el color de dos engarces aleatorios de un objeto, uno se vuelve rojo y el otro azul",
       "tha": "สุ่มเปลี่ยนสีรู บนไอเทม 2 รู ให้กลายเป็นสี แดง และ ฟ้า"
+    },
+    "short": {
+      "eng": "Reforge into Red and Blue"
     }
   },
   "TwoRandomRedGreen": {
@@ -3904,6 +4501,9 @@
       "rus": "Перековать цвета двух случайных гнёзд на предмете, превращая их в красный и зелёный",
       "spa": "Reforja el color de dos engarces aleatorios de un objeto, uno se vuelve rojo y el otro verde",
       "tha": "สุ่มเปลี่ยนสีรู บนไอเทม 2 รู ให้กลายเป็น สีแดงและสีเขียว"
+    },
+    "short": {
+      "eng": "Reforge into Red and Green"
     }
   },
   "UpgradeEngineers": {
@@ -3921,6 +4521,9 @@
       "rus": "Улучшить сферу инженера до заряженной сферы инженера",
       "spa": "Mejora un Orbe del ingeniero a un Orbe del ingeniero infundido",
       "tha": "อัพเกรด Engineer's Orb 1 เม็ด ให้กลายเป็น Infused Engineer's Orb"
+    },
+    "short": {
+      "eng": "Upgrade Engineer's Orb"
     }
   },
   "UpgradeEssenceTier": {
@@ -3938,6 +4541,9 @@
       "rus": "Повысить уровень Cущности",
       "spa": "Mejora el grado de una esencia",
       "tha": "อัพเกรด ระดับของ เอสเซนส์ 1 ชิ้น"
+    },
+    "short": {
+      "eng": "Upgrade Essence"
     }
   },
   "UpgradeMagicFourMod": {
@@ -3955,6 +4561,9 @@
       "rus": "Улучшить волшебный предмет до редкого, добавив четыре случайных свойства",
       "spa": "Mejora un objeto de mágico a raro y le agrega cuatro modificadores aleatorios",
       "tha": "อัพเกรด ไอเทมเมจิก ให้เป็น ไอเทมแรร์ โดยเพิ่มม็อดแบบสุ่ม 4 อย่าง"
+    },
+    "short": {
+      "eng": "Upgrade Magic to Rare 4 Mod"
     }
   },
   "UpgradeMagicFourModHigh": {
@@ -3972,6 +4581,9 @@
       "rus": "Улучшить волшебный предмет до редкого, добавив четыре случайных свойства высокого уровня",
       "spa": "Mejora un objeto de mágico a raro y le agrega cuatro modificadores aleatorios de grado alto",
       "tha": "สุ่มม็อด ของ ไอเทมแรร์ ใหม่โดยเก็บม็อด พรีฟิกซ์ เอาไว้ทั้งหมด และม็อดที่สุ่มมาใหม่นั้นจะโชคดีในการสุ่มค่าตัวเลขของม็อด"
+    },
+    "short": {
+      "eng": "Upgrade Magic to Rare 4 High Tier Mod"
     }
   },
   "UpgradeMagicThreeMod": {
@@ -3989,6 +4601,9 @@
       "rus": "Улучшить волшебный предмет до редкого, добавив три случайных свойства",
       "spa": "Mejora un objeto de mágico a raro y le agrega tres modificadores aleatorios",
       "tha": "อัพเกรด ไอเทมเมจิก ให้เป็น ไอเทมแรร์ โดยเพิ่มม็อดแบบสุ่ม 3 อย่าง"
+    },
+    "short": {
+      "eng": "Upgrade Magic to Rare 3 Mod"
     }
   },
   "UpgradeMagicThreeModHigh": {
@@ -4006,6 +4621,9 @@
       "rus": "Улучшить волшебный предмет до редкого, добавив три случайных свойства высокого уровня",
       "spa": "Mejora un objeto de mágico a raro y le agrega tres modificadores aleatorios de grado alto",
       "tha": "อัพเกรด ไอเทมธรรมดา ให้เป็น ไอเทมเมจิก โดยเพิ่ม ม็อดระดับสูงแบบสุ่ม 4 อย่าง"
+    },
+    "short": {
+      "eng": "Upgrade Magic to Rare 3 High Tier Mod"
     }
   },
   "UpgradeMagicTwoMod": {
@@ -4023,6 +4641,9 @@
       "rus": "Улучшить волшебный предмет до редкого, добавив два случайных свойства",
       "spa": "Mejora un objeto de mágico a raro y le agrega dos modificadores aleatorios",
       "tha": "อัพเกรด ไอเทมเมจิก ให้เป็น ไอเทมแรร์ โดยเพิ่มม็อดแบบสุ่ม 2 อย่าง"
+    },
+    "short": {
+      "eng": "Upgrade Magic to Rare 2 Mod"
     }
   },
   "UpgradeMagicTwoModHigh": {
@@ -4040,6 +4661,9 @@
       "rus": "Улучшить волшебный предмет до редкого, добавив два случайных свойства высокого уровня",
       "spa": "Mejora un objeto de mágico a raro y le agrega dos modificadores aleatorios de grado alto",
       "tha": "อัพเกรด ไอเทมธรรมดา ให้เป็น ไอเทมเมจิก โดยเพิ่ม ม็อดระดับสูงแบบสุ่ม 3 อย่าง"
+    },
+    "short": {
+      "eng": "Upgrade Magic to Rare 2 High Tier Mod"
     }
   },
   "UpgradeNormalOneModHigh": {
@@ -4057,6 +4681,9 @@
       "rus": "Улучшить обычный предмет до волшебного, добавив одно случайное свойство высокого уровня",
       "spa": "Mejora un objeto de normal a mágico y le agrega un modificador aleatorio de grado alto",
       "tha": "อัพเกรด ไอเทมธรรมดา ให้เป็น ไอเทมเมจิก โดยเพิ่ม ม็อดระดับสูงแบบสุ่ม 1 อย่าง"
+    },
+    "short": {
+      "eng": "Upgrade Normal to Magic 1 High Tier Mod"
     }
   },
   "UpgradeNormalTwoModHigh": {
@@ -4074,6 +4701,9 @@
       "rus": "Улучшить обычный предмет до волшебного, добавив два случайных свойства высокого уровня",
       "spa": "Mejora un objeto de normal a mágico y le agrega dos modificadores aleatorios de grado alto",
       "tha": "อัพเกรด ไอเทมธรรมดา ให้เป็น ไอเทมเมจิก โดยเพิ่ม ม็อดระดับสูงแบบสุ่ม 2 อย่าง"
+    },
+    "short": {
+      "eng": "Upgrade Normal to Magic 2 High Tier Mod"
     }
   },
   "UpgradeOilTier": {
@@ -4091,6 +4721,9 @@
       "rus": "Превратить масло в масло более высокого уровня",
       "spa": "Mejora un aceite a un aceite de un grado más alto",
       "tha": "อัพเกรด น้ำมัน 1 หลอด ให้กลายเป็น น้ำมัน ระดับสูงขึ้น 1 ระดับ"
+    },
+    "short": {
+      "eng": "Upgrade Oil"
     }
   },
   "UpgradeRare10": {
@@ -4108,6 +4741,9 @@
       "rus": "Улучшить обычный предмет до случайной редкости 10 раз. Итоговым становится результат с наилучшим качеством",
       "spa": "Mejora un objeto normal a una rareza aleatoria 10 veces y se queda con el resultado que tenga mayor rareza",
       "tha": "สุ่มอัพเกรด ไอเทมธรรมดา 10 ครั้ง และใช้ผลลัพธ์ที่ให้ระดับที่หายากที่สุด"
+    },
+    "short": {
+      "eng": "Upgrade Rarity 10x"
     }
   },
   "UpgradeScarab": {
@@ -4125,6 +4761,9 @@
       "rus": "Попытаться улучшить скарабея, у скарабея при этом есть шанс стать крылатым",
       "spa": "Intenta mejorar un escarabajo, con una probabilidad de que se convierta en alado",
       "tha": "พยายาม อัพเกรด ซแคแร็บ 1 ตัว ให้มีระดับสูงขึ้น และมีโอกาสเล็กน้อยที่จะกลายเป็นระดับ ติดปีก"
+    },
+    "short": {
+      "eng": "Attempt to upgrade a Scarab"
     }
   }
 }

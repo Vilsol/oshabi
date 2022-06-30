@@ -362,6 +362,7 @@ type HarvestCraft struct {
 	Message      string                     `json:"message"`
 	Pricing      string                     `json:"pricing"`
 	Translations map[config.Language]string `json:"translations"`
+	Short        map[config.Language]string `json:"short"`
 }
 
 var reversePricing = make(map[string]HarvestCraft)
