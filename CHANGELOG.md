@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.24](https://github.com/Vilsol/oshabi/compare/v0.0.23...v0.0.24) (2022-06-30)
+
+
+### Bug Fixes
+
+* add short messages ([036e76a](https://github.com/Vilsol/oshabi/commit/036e76a7e71261c52663d4673bba1989286956cb))
+* minor styling changes ([036e76a](https://github.com/Vilsol/oshabi/commit/036e76a7e71261c52663d4673bba1989286956cb))
+* russian translation thanks to @Stregon ([0d01882](https://github.com/Vilsol/oshabi/commit/0d01882f8d6d94eeaeeadd53e26c65f7544250cf))
+
 ## [0.0.23](https://github.com/Vilsol/oshabi/compare/v0.0.22...v0.0.23) (2022-06-30)
 
 
