@@ -359,7 +359,7 @@
               type="text"
               value={config.name}
               id="name"
-              placeholder="Character Name"
+              placeholder={$t('settings.characterName')}
               class="text-lg p-3 rounded"
               on:blur={(event) => handle(SetName(event.target.value))}
             />
