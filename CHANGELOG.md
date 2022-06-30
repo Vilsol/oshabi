@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.23](https://github.com/Vilsol/oshabi/compare/v0.0.22...v0.0.23) (2022-06-30)
+
+
+### Bug Fixes
+
+* add localization support ([e4e0ac5](https://github.com/Vilsol/oshabi/commit/e4e0ac5be2ca9fcae0804924ed45926fe239111e))
+
 ## [0.0.22](https://github.com/Vilsol/oshabi/compare/v0.0.21...v0.0.22) (2022-06-29)
 
 
