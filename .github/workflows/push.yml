@@ -196,7 +196,8 @@ jobs:
           path: build/bin/oshabi-amd64-installer.exe
 
   darwin:
-    name: Build (  darwin)
+    name: Build (Darwin)
+    if: github.repository == 'disabled/disabled' # Remove this line to re-enable build
     runs-on: macos-12
     needs:
       - lint
