@@ -1,4 +1,36 @@
 {
+  "toggle": {
+    "settings": "Настройки",
+    "listings": "Список крафтов"
+  },
+  "home": {
+    "scan": "Сканировать",
+    "clear": "Очистить",
+    "copy": "Скопировать в буфер обмена",
+    "table": {
+      "count": "Количество",
+      "name": "Имя",
+      "market": "Цена TFT",
+      "price": "Цена"
+    },
+    "scanMessage": "Нажмите&nbsp;<span class='scan-message'>Сканировать</span>&nbsp;чтобы добавить крафты в список"
+  },
+  "settings": {
+    "language": "Язык",
+    "display": "Монитор",
+    "calibrate": "Калибровать",
+    "canStream": "Могу стримить",
+    "characterName": "Имя персонажа",
+    "league": "Лига",
+    "leagues": {
+      "standard": "Standard",
+      "softcore": "Softcore",
+      "hardcore": "Hardcore"
+    },
+    "shortcut": "Горячая клавиша",
+    "changeShortcut": "Изменить горячую клавишу"
+  },
+  "loading": "Загрузка...",
   "colorMapping": {
     "red": "красный",
     "blue": "синий",
