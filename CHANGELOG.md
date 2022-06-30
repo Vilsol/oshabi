@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.26](https://github.com/Vilsol/oshabi/compare/v0.0.25...v0.0.26) (2022-06-30)
+
+
+### Bug Fixes
+
+* install shortcuts on all users for nsis installer ([c584806](https://github.com/Vilsol/oshabi/commit/c584806905805a8bbd9bd5f72bfa37c91bcf0433))
+
 ## [0.0.25](https://github.com/Vilsol/oshabi/compare/v0.0.24...v0.0.25) (2022-06-30)
 
 
