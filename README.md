@@ -1,6 +1,6 @@
 # oshabi [![push](https://github.com/Vilsol/oshabi/actions/workflows/push.yml/badge.svg)](https://github.com/Vilsol/oshabi/actions/workflows/push.yaml) ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/vilsol/oshabi) ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/vilsol/oshabi) [![GitHub license](https://img.shields.io/github/license/Vilsol/oshabi)](https://github.com/Vilsol/oshabi/blob/master/LICENSE) ![GitHub all releases](https://img.shields.io/github/downloads/vilsol/oshabi/total)
 
-![screenshot of oshabi home view](./.github/screenshots/home.png)
+![screenshot of oshabi home view](.github/images/home.png)
 
 A scanner for Path of Exile harvest horticrafting stations and sacred grove.
 
@@ -54,6 +54,16 @@ sudo make install
 sudo ldconfig
 cd ~/ && rm -rf /tmp/opencv
 ```
+
+## Usage
+
+When calibrating, make sure that the bottom left and top right of your PoE window are not obstructed:
+
+![](.github/images/oshabi-calibration.jpg)
+
+Here is a video showcasing the tool:
+
+[![](.github/images/oshabi-youtube.jpg)](https://youtu.be/xZBicEgSh58)
 
 ## List of things that could be done
 
