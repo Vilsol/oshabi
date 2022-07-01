@@ -63,7 +63,7 @@ When calibrating, make sure that the bottom left and top right of your PoE windo
 
 Here is a video showcasing the tool:
 
-[![](.github/images/oshabi-youtube.jpg)](https://youtu.be/xZBicEgSh58)
+<a href="https://youtu.be/xZBicEgSh58" target="_blank" rel="noopener">![](.github/images/oshabi-youtube.jpg)</a>
 
 ## List of things that could be done
 
