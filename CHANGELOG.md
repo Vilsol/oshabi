@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.27](https://github.com/Vilsol/oshabi/compare/v0.0.26...v0.0.27) (2022-07-01)
+
+
+### Bug Fixes
+
+* remove text from detection images ([f35dccd](https://github.com/Vilsol/oshabi/commit/f35dccda78b0e5827345f4d8bf1a79f31b1b0709))
+
 ## [0.0.26](https://github.com/Vilsol/oshabi/compare/v0.0.25...v0.0.26) (2022-06-30)
 
 
