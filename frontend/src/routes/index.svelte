@@ -38,6 +38,8 @@
 
   let eventsInitialized = false;
 
+  let calibration = '';
+
   onMount(() => {
     initEvents();
     loadListings();
@@ -80,6 +82,10 @@
         type: 'warning',
         removeAfter: 5000
       });
+    });
+
+    EventsOn('calibration', (data) => {
+      calibration = data;
     });
   };
 
@@ -334,9 +340,9 @@
               disabled={calibrating}
             >
               {#if calibrating}
-                <Icon icon="eos-icons:loading" class="inline-block" />
+                <Icon icon="eos-icons:loading" class="inline-block" />&nbsp;&nbsp;{calibration}
               {:else}
-                {$t('settings.calibrate')}
+                {$t('settings.calibrate')} ({config.scaling})
               {/if}
             </button>
           </div>

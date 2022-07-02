@@ -1,16 +1,23 @@
 package cv
 
 import (
+	"context"
 	"image"
 	"math"
 	"runtime"
 
 	"github.com/disintegration/imaging"
 	"github.com/pkg/errors"
+	"github.com/rs/zerolog/log"
+	"gocv.io/x/gocv"
+
 	"github.com/vilsol/oshabi/config"
 	"github.com/vilsol/oshabi/data"
-	"gocv.io/x/gocv"
 )
+
+type ScalingKey struct{}
+
+type ScalingFunc func(progress int, total int)
 
 const (
 	minSearch   = 0.25
@@ -19,11 +26,11 @@ const (
 	searchLoops = 4
 )
 
-func CalculateScaling(img image.Image) (float64, error) {
+func CalculateScaling(ctx context.Context, img image.Image) (float64, error) {
 	bottomLeftCrop := imaging.Crop(img, image.Rect(0, img.Bounds().Dy()/2, img.Bounds().Dx()/2, img.Bounds().Dy()))
 	topRightCrop := imaging.Crop(img, image.Rect(img.Bounds().Dx()/2, 0, img.Bounds().Dx(), img.Bounds().Dy()/2))
 
-	menuButtonScaling, menuButtonValue, _, err := ScaleAndFind(bottomLeftCrop, data.MenuButton)
+	menuButtonScaling, menuButtonValue, _, err := ScaleAndFind(ctx, bottomLeftCrop, data.MenuButton, 0)
 	if err != nil {
 		return 0, errors.New("failed finding menu button")
 	}
@@ -32,7 +39,7 @@ func CalculateScaling(img image.Image) (float64, error) {
 		return 0, errors.New("could not find menu button on bottom left of screen")
 	}
 
-	topRightXScaling, topRightXValue, _, err := ScaleAndFind(topRightCrop, data.Inventory)
+	topRightXScaling, topRightXValue, _, err := ScaleAndFind(ctx, topRightCrop, data.Inventory, searchLoops)
 	if err != nil {
 		return 0, errors.New("failed finding inventory label")
 	}
@@ -48,7 +55,11 @@ func CalculateScaling(img image.Image) (float64, error) {
 	avg := (menuButtonScaling + topRightXScaling) / 2
 
 	// Round to the nearest search step size
-	return math.Round(avg/searchStep) * searchStep, nil
+	scaling := math.Round(avg/searchStep) * searchStep
+
+	log.Debug().Float64("scaling", scaling).Msg("scaling calibrated")
+
+	return scaling, nil
 }
 
 type jobTuple struct {
@@ -76,7 +87,15 @@ func finder(jobs <-chan jobTuple, results chan<- resultTuple) {
 	}
 }
 
-func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, image.Point, error) {
+func publishEvent(ctx context.Context, progress int, total int) {
+	f := ctx.Value(ScalingKey{})
+	if f == nil {
+		return
+	}
+	f.(ScalingFunc)(progress, total)
+}
+
+func ScaleAndFind(ctx context.Context, static image.Image, dynamic image.Image, progressOffset int) (float64, float32, image.Point, error) {
 	min := minSearch
 	max := maxSearch
 	stepSize := searchStep * (math.Pow10(searchLoops - 1))
@@ -85,6 +104,8 @@ func ScaleAndFind(static image.Image, dynamic image.Image) (float64, float32, im
 	lastValue := float32(0)
 	lastLocation := image.Point{}
 	for i := 0; i < searchLoops; i++ {
+		publishEvent(ctx, i+progressOffset, searchLoops*2)
+
 		newScale, newValue, newLocation, err := scaleFind(static, dynamic, min, max, stepSize)
 		if err != nil {
 			return 0, 0, image.Point{}, err

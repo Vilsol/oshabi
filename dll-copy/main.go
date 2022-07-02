@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 	"os/exec"
-	"path"
+	"path/filepath"
 	"regexp"
 	"strings"
 
@@ -32,7 +32,7 @@ func main() {
 		panic(err)
 	}
 
-	outputDir := path.Join(wd, "out")
+	outputDir := filepath.Join(wd, "out")
 
 	err = os.MkdirAll(outputDir, 0777)
 	if err != nil && !os.IsExist(err) {
@@ -43,13 +43,13 @@ func main() {
 	for _, match := range matches {
 		println("Found match:", string(match[0]))
 		for _, p := range pathSplit {
-			src := path.Join(p, string(match[1]))
+			src := filepath.Join(p, string(match[1]))
 
 			if _, err := os.Stat(src); err != nil {
 				continue
 			}
 
-			dst := path.Join(outputDir, string(match[1]))
+			dst := filepath.Join(outputDir, string(match[1]))
 			println("Copying", src, "=>", dst)
 			if _, err := copyFile(src, dst); err != nil {
 				panic(err)

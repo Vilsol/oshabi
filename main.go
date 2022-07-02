@@ -3,7 +3,6 @@ package main
 import (
 	"embed"
 	"os"
-	"path"
 	"path/filepath"
 	"time"
 
@@ -60,7 +59,7 @@ func main() {
 		panic(err)
 	}
 
-	appLogPath := path.Join(configDir, "oshabi", "log.log")
+	appLogPath := filepath.Join(configDir, "oshabi", "log.log")
 	if err := os.MkdirAll(filepath.Dir(appLogPath), 0777); err != nil {
 		if !os.IsExist(err) {
 			panic(err)

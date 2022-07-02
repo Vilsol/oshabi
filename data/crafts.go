@@ -4,6 +4,8 @@ import (
 	"math"
 	"strings"
 
+	"github.com/rs/zerolog/log"
+
 	"github.com/vilsol/oshabi/config"
 	"github.com/vilsol/oshabi/types"
 
@@ -40,18 +42,18 @@ const (
 
 	// Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a * modifier. * modifiers are more common
 
-	HarvestReforgeCasterMoreLikely    = types.HarvestType("ReforgeCasterMoreLikely")
-	HarvestReforgePhysicalMoreLikely  = types.HarvestType("ReforgePhysicalMoreLikely")
-	HarvestReforgeFireMoreLikely      = types.HarvestType("ReforgeFireMoreLikely")
-	HarvestReforgeAttackMoreLikely    = types.HarvestType("ReforgeAttackMoreLikely")
-	HarvestReforgeLifeMoreLikely      = types.HarvestType("ReforgeLifeMoreLikely")
-	HarvestReforgeColdMoreLikely      = types.HarvestType("ReforgeColdMoreLikely")
-	HarvestReforgeSpeedMoreLikely     = types.HarvestType("ReforgeSpeedMoreLikely")
-	HarvestReforgeDefenceMoreLikely   = types.HarvestType("ReforgeDefenceMoreLikely")
-	HarvestReforgeLightningMoreLikely = types.HarvestType("ReforgeLightningMoreLikely")
-	HarvestReforgeChaosMoreLikely     = types.HarvestType("ReforgeChaosMoreLikely")
-	HarvestReforgeCriticalMoreLikely  = types.HarvestType("ReforgeCriticalMoreLikely")
-	HarvestReforgeInfluenceMoreLikely = types.HarvestType("ReforgeInfluenceMoreLikely")
+	HarvestReforgeCasterMoreCommon    = types.HarvestType("ReforgeCasterMoreCommon")
+	HarvestReforgePhysicalMoreCommon  = types.HarvestType("ReforgePhysicalMoreCommon")
+	HarvestReforgeFireMoreCommon      = types.HarvestType("ReforgeFireMoreCommon")
+	HarvestReforgeAttackMoreCommon    = types.HarvestType("ReforgeAttackMoreCommon")
+	HarvestReforgeLifeMoreCommon      = types.HarvestType("ReforgeLifeMoreCommon")
+	HarvestReforgeColdMoreCommon      = types.HarvestType("ReforgeColdMoreCommon")
+	HarvestReforgeSpeedMoreCommon     = types.HarvestType("ReforgeSpeedMoreCommon")
+	HarvestReforgeDefenceMoreCommon   = types.HarvestType("ReforgeDefenceMoreCommon")
+	HarvestReforgeLightningMoreCommon = types.HarvestType("ReforgeLightningMoreCommon")
+	HarvestReforgeChaosMoreCommon     = types.HarvestType("ReforgeChaosMoreCommon")
+	HarvestReforgeCriticalMoreCommon  = types.HarvestType("ReforgeCriticalMoreCommon")
+	HarvestReforgeInfluenceMoreCommon = types.HarvestType("ReforgeInfluenceMoreCommon")
 
 	// Remove a random non-* modifier from a * item and add a new * modifier
 
@@ -399,6 +401,8 @@ func FindCraft(text string) types.HarvestType {
 			closestDistance = dist
 		}
 	}
+
+	log.Debug().Str("text", text).Str("craft", string(closestString)).Msg("matched craft")
 
 	return closestString
 }

@@ -5,6 +5,7 @@
     "pricing": "Awaken Level 20 Support Gem",
     "translations": {
       "chi_sim": "将地图变为另一张位阶相同，但尚未完成的权重优先地图",
+      "chi_tra": "5% 機率覺醒等級 20 可覺醒的輔助寶石。若覺醒失敗則物品被摧毀",
       "deu": "Versucht mit einer Chance von 5%, eine Stufe-20-Unterstützungsgemme in ihre erweckte Version zu verwandeln. Wird die Gemme nicht auf diese Weise verwandelt, wird sie zerstört.",
       "eng": "Attempt to Awaken a level 20 Support Gem that can be Awakened with a 5% chance. If it does not Awaken, it is destroyed.",
       "fra": "Tente d'éveiller une Gemme de soutien de niv. 20. Cette action a 5% de chances de réussir, mais détruira la Gemme si elle échoue",
@@ -25,6 +26,7 @@
     "pricing": "Augment Attack",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个攻击词缀。攻击词缀更常见",
+      "chi_tra": "新增 1 個新攻擊詞綴至非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Angriffsmodifikator",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Attack modifier",
       "fra": "Améliore un Objet magique ou rare non Influencé en lui donnant un nouveau mod d'attaque",
@@ -45,6 +47,7 @@
     "pricing": "Augment Attack Lucky",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个生命词缀",
+      "chi_tra": "新增 1 個幸運數值的新攻擊詞綴至非勢力魔力或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Angriffsmodifikator mit günstigen Werten",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Attack modifier with Lucky values",
       "fra": "Améliore un Objet magique ou rare non Influencé en lui ajoutant un nouveau mod d'attaque dont les valeurs sont en votre Faveur",
@@ -65,6 +68,7 @@
     "pricing": "Augment Caster",
     "translations": {
       "chi_sim": "用一个新施法词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "新增 1 個新法術詞綴至 1 件非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Zaubermodifikator",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Caster modifier",
       "fra": "Améliore un Objet magique ou rare non Influencé en lui donnant un nouveau mod de lanceur de sorts",
@@ -85,6 +89,7 @@
     "pricing": "Augment Caster Lucky",
     "translations": {
       "chi_sim": "用一个带有幸运数值的新施法词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "新增 1 個幸運數值的新法術詞綴至 1 件非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Zaubermodifikator mit günstigen Werten",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Caster modifier with Lucky values",
       "fra": "Améliore un Objet magique ou rare non Influencé en lui ajoutant un nouveau mod de lanceur de sorts dont les valeurs sont en votre Faveur",
@@ -105,6 +110,7 @@
     "pricing": "Augment Chaos",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个混沌词缀。混沌词缀更常见",
+      "chi_tra": "新增 1 個新混沌詞綴至非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Chaosmodifikator",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Chaos modifier",
       "fra": "Améliore un objet magique ou rare non Influencé en lui donnant un nouveau mod de chaos",
@@ -125,6 +131,7 @@
     "pricing": "Augment Chaos Lucky",
     "translations": {
       "chi_sim": "将传奇物品变为另一个随机传奇物品",
+      "chi_tra": "新增 1 個幸運數值的新混沌詞綴至非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Chaosmodifikator mit günstigen Werten",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Chaos modifier with Lucky values",
       "fra": "Améliore un objet magique ou rare non Influencé en lui ajoutant un nouveau mod de chaos dont les valeurs sont en votre Faveur",
@@ -145,6 +152,7 @@
     "pricing": "Augment Cold",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个冰霜词缀。冰霜词缀更常见",
+      "chi_tra": "新增 1 個新冰冷詞綴至非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Kältemodifikator",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Cold modifier",
       "fra": "Améliore un Objet magique ou rare non Influencé en lui donnant un nouveau mod de froid",
@@ -165,6 +173,7 @@
     "pricing": "Augment Cold Lucky",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个速度词缀",
+      "chi_tra": "新增 1 個幸運數值的新冰冷詞綴至非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Kältemodifikator mit günstigen Werten",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Cold modifier with Lucky values",
       "fra": "Améliore un Objet magique ou rare non Influencé en lui ajoutant un nouveau mod de froid dont les valeurs sont en votre Faveur",
@@ -185,6 +194,7 @@
     "pricing": "Augment Critical",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个暴击词缀。暴击词缀更常见",
+      "chi_tra": "新增 1 個新暴擊詞綴至非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen kritischen Modifikator",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Critical modifier",
       "fra": "Améliore un objet magique ou rare non Influencé en lui donnant un nouveau mod de critique",
@@ -205,6 +215,7 @@
     "pricing": "Augment Critical Lucky",
     "translations": {
       "chi_sim": "将魔法物品升级为稀有物品，增加两个随机词缀",
+      "chi_tra": "新增 1 個有幸運數值的新暴擊詞綴至非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen kritischen Modifikator mit günstigen Werten",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Critical modifier with lucky values",
       "fra": "Améliore un objet magique ou rare non Influencé en lui ajoutant un nouveau mod de critique dont les valeurs sont en votre Faveur",
@@ -225,6 +236,7 @@
     "pricing": "Augment Defence",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个防御词缀。防御词缀更常见",
+      "chi_tra": "新增 1 個新防禦詞綴至非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Defensivmodifikator",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Defence modifier",
       "fra": "Améliore un objet magique ou rare non Influencé en lui donnant un nouveau mod de défense",
@@ -245,6 +257,7 @@
     "pricing": "Augment Defence Lucky",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个闪电词缀",
+      "chi_tra": "新增 1 個幸運數值的新防禦詞綴至非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Defensivmodifikator mit günstigen Werten",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Defence modifier with Lucky values",
       "fra": "Améliore un objet magique ou rare non Influencé en lui ajoutant un nouveau mod de défense dont les valeurs sont en votre Faveur",
@@ -265,6 +278,7 @@
     "pricing": "Augment Fire",
     "translations": {
       "chi_sim": "用一个新火焰词缀增幅一个非影响效果魔法物品或稀有物品",
+      "chi_tra": "新增 1 個新火焰詞綴 1 件非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Feuermodifikator",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Fire modifier",
       "fra": "Améliore un Objet magique ou rare non Influencé en lui donnant un nouveau mod de feu",
@@ -285,6 +299,7 @@
     "pricing": "Augment Fire Lucky",
     "translations": {
       "chi_sim": "用一个带有幸运数值的新火焰词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "新增 1 個幸運數值的新火焰詞綴至 1 件非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Feuermodifikator mit günstigen Werten",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Fire modifier with Lucky values",
       "fra": "Améliore un Objet magique ou rare non Influencé en lui ajoutant un nouveau mod de feu dont les valeurs sont en votre Faveur",
@@ -305,6 +320,7 @@
     "pricing": "Augment Influence",
     "translations": {
       "chi_sim": "给物品移除一个随机影响效果词缀",
+      "chi_tra": "新增 1 個新勢力詞綴至魔法或稀有物品",
       "deu": "Ergänzt einen magischen oder seltenen Gegenstand durch einen neuen Einfluss-Modifikator",
       "eng": "Augment a Magic or Rare item with a new Influence modifier",
       "fra": "Améliore un objet magique ou rare en lui ajoutant un nouveau mod d'influence",
@@ -324,6 +340,7 @@
     "message": "Augment Influence Lucky",
     "pricing": "Augment Influence Lucky",
     "translations": {
+      "chi_tra": "新增 1 個幸運數值的新勢力詞綴至魔法或稀有物品",
       "deu": "Ergänzt einen magischen oder seltenen Gegenstand durch einen neuen Einfluss-Modifikator mit günstigen Werten",
       "eng": "Augment a Magic or Rare item with a new Influence modifier with Lucky values",
       "fra": "Améliore un objet magique ou rare en lui ajoutant un nouveau mod d'influence dont les valeurs sont en votre Faveur",
@@ -342,6 +359,7 @@
     "pricing": "Augment Life",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个生命词缀。生命词缀更常见",
+      "chi_tra": "新增 1 個新生命詞綴至非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Lebensmodifikator",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Life modifier",
       "fra": "Améliore un Objet magique ou rare non Influencé en lui donnant un nouveau mod de Vie",
@@ -362,6 +380,7 @@
     "pricing": "Augment Life Lucky",
     "translations": {
       "chi_sim": "使物品变为三个插槽",
+      "chi_tra": "新增 1 個幸運數值的新生命詞綴至非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Lebensmodifikator mit günstigen Werten",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Life modifier with Lucky values",
       "fra": "Améliore un Objet magique ou rare non Influencé en lui ajoutant un nouveau mod de Vie dont les valeurs sont en votre Faveur",
@@ -382,6 +401,7 @@
     "pricing": "Augment Lightning",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个闪电词缀。闪电词缀更常见",
+      "chi_tra": "新增 1 個新閃電詞綴至非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Blitzmodifikator",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Lightning modifier",
       "fra": "Améliore un objet magique ou rare non Influencé en lui donnant un nouveau mod de foudre",
@@ -402,6 +422,7 @@
     "pricing": "Augment Lightning Lucky",
     "translations": {
       "chi_sim": "重铸一个物品上插槽间的连接，连接三个插槽",
+      "chi_tra": "新增 1 個幸運數值的新閃電詞綴至非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Blitzmodifikator mit günstigen Werten",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Lightning modifier with Lucky values",
       "fra": "Améliore un objet magique ou rare non Influencé en lui ajoutant un nouveau mod de foudre dont les valeurs sont en votre Faveur",
@@ -422,6 +443,7 @@
     "pricing": "Augment Non-Influence Lucky",
     "translations": {
       "chi_sim": "重置具有幸运词缀数值的魔法物品或稀有物品的前缀数值",
+      "chi_tra": "新增 1 個幸運數值的新詞綴至 1 件稀有非勢力物品",
       "deu": "Ergänzt einen nicht beeinflussten seltenen Gegenstand durch einen neuen Modifikator, mit günstigem Modifikatorenwert",
       "eng": "Augment a non-Influenced Rare item with a new modifier, with Lucky modifier values",
       "fra": "Améliore un Objet rare non Influencé en lui donnant un nouveau mod dont la valeur numérique est en votre Faveur",
@@ -442,6 +464,7 @@
     "pricing": "Augment Physical",
     "translations": {
       "chi_sim": "用一个新物理词缀增幅一个非影响效果魔法物品或稀有物品",
+      "chi_tra": "新增 1 個新物理詞綴至 1 件非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen physischen Modifikator",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Physical modifier",
       "fra": "Améliore un Objet magique ou rare non Influencé en lui donnant un nouveau mod physique",
@@ -462,6 +485,7 @@
     "pricing": "Augment Physical Lucky",
     "translations": {
       "chi_sim": "用一个带有幸运数值的新物理词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "新增 1 個幸運數值的新物理詞綴至 1 件非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen physischen Modifikator mit günstigen Werten",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Physical modifier with Lucky values",
       "fra": "Améliore un Objet magique ou rare non Influencé en lui ajoutant un nouveau mod physique dont les valeurs sont en votre Faveur",
@@ -482,6 +506,7 @@
     "pricing": "Augment Speed",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个速度词缀。速度词缀更常见",
+      "chi_tra": "新增 1 個新速度詞綴至非勢力魔法或稀有物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Geschwindigkeitsmodifikator",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Speed modifier",
       "fra": "Améliore un objet magique ou rare non Influencé en lui donnant un nouveau mod de Vitesse",
@@ -502,6 +527,7 @@
     "pricing": "Augment Speed Lucky",
     "translations": {
       "chi_sim": "将技能石变为另一个技能石，尽可能保留经验和品质",
+      "chi_tra": "新增 1 個幸運數值的新速度詞綴至非勢力物品",
       "deu": "Ergänzt einen nicht beeinflussten magischen oder seltenen Gegenstand durch einen neuen Geschwindigkeitsmodifikator mit günstigen Werten",
       "eng": "Augment a non-Influenced Magic or Rare item with a new Speed modifier with Lucky values",
       "fra": "Améliore un objet magique ou rare non Influencé en lui ajoutant un nouveau mod de Vitesse dont les valeurs sont en votre Faveur",
@@ -522,6 +548,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一叠永恒裂片或永恒印记变为另一种类型的裂片或印记",
+      "chi_tra": "把 1 疊裂痕裂片或 1 顆普通、充能、富裕或純淨裂痕石改變為其他種類的裂片或裂痕石",
       "deu": "Verwandelt einen Stapel Riss-Splitter oder einen normalen, geladenen, angereicherten oder puren Riss-Stein in einen anderen Stapel oder Riss-Stein",
       "eng": "Change a stack of Breach Splinters or a normal, Charged, Enriched or Pure Breachstone into Splinters or a Breachstone of another type",
       "fra": "Convertit un ensemble d'Esquilles de Brèche ou une Pierre de Brèche normale, chargée, enrichie ou pure en un autre du même type",
@@ -542,6 +569,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一叠 催化剂变为另一种不同种类的催化剂",
+      "chi_tra": "把 1 疊催化劑改變為不同類型的催化劑",
       "deu": "Verwandelt einen Stapel Katalysatoren in einen anderen zufälligen Stapel Katalysatoren",
       "eng": "Change a stack of Catalysts into a different type of Catalyst",
       "fra": "Convertit un ensemble de Catalyseurs en un autre type de Catalyseurs",
@@ -562,6 +590,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一叠雾魇宝珠变为不同种类的雾魇宝珠",
+      "chi_tra": "把 1 疊譫妄玉改變為不同類型的譫妄玉",
       "deu": "Verwandelt einen Stapel Delirium-Sphären in einen anderen zufälligen Stapel Delirium-Sphären",
       "eng": "Change a stack of Delirium Orbs into a different type of Delirium Orb",
       "fra": "Convertit un ensemble d'Orbes de Délire en un autre type d'Orbes de Délire",
@@ -582,6 +611,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭最多半叠命运卡，相同命运卡的数量可能为 0，也可能翻倍",
+      "chi_tra": "把 1 張命運卡改變為其他隨機的命運卡",
       "deu": "Verwandelt eine Weissagungskarte in eine zufällige andere Weissagungskarte",
       "eng": "Change a Divination Card into another random Divination Card",
       "fra": "Convertit une Carte divinatoire en une autre au hasard",
@@ -602,6 +632,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一叠精华变为另一种不同种类但位阶相同的精华",
+      "chi_tra": "把 1 疊精髓改變為不同類型的精髓",
       "deu": "Verwandelt einen Stapel Essenzen in einen anderen zufälligen Stapel Essenzen desselben Levels",
       "eng": "Change a stack of Essences into a different type of the same tier",
       "fra": "Convertit un ensemble d'Essences en un autre type d'Essences",
@@ -622,6 +653,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一叠 化石变为另一种不同种类的化石。新化石的数量会变少。",
+      "chi_tra": "把 1 疊化石改變為不同類型的化石",
       "deu": "Verwandelt einen Stapel Fossilien in einen anderen zufälligen Stapel Fossilien. Der neue Fossiltyp kann eine kleinere Stapelgröße haben.",
       "eng": "Change a stack of Fossils into a different type of Fossil. The new Fossil type may have a smaller stack size.",
       "fra": "Convertit un ensemble de Fossiles en un autre type de Fossiles. L'ensemble obtenu peut contenir moins de Fossiles",
@@ -642,6 +674,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个暴击词缀",
+      "chi_tra": "把 1 個征服者碎片改變為 1 個隨機征服者碎片",
       "deu": "Verwandelt ein Eroberer-Fragment in ein anderes zufälliges Eroberer-Fragment desselben Typs",
       "eng": "Change a Conqueror Fragment into another random Conqueror Fragment of that type",
       "fra": "Convertit un Fragment de Conquérant en un autre Fragment du même type",
@@ -662,6 +695,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一个征服者碎片变为另一件同类型的随机碎片",
+      "chi_tra": "把 1 個異界尊師碎片改變為 1 個隨機異界尊師碎片",
       "deu": "Verwandelt ein Ältesten-Fragment in ein anderes zufälliges Ältesten-Fragment desselben Typs",
       "eng": "Change an Elder Fragment into another random Elder Fragment of that type",
       "fra": "Convertit un Fragment de l'Ancien en un autre Fragment du même type",
@@ -682,6 +716,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一个塑界者碎片变成另一个随机塑界者碎片",
+      "chi_tra": "把 1 個奉獻或凡人碎片改變為 1 個隨機該種類的碎片",
       "deu": "Verwandelt ein Opfergabe- oder ein Tödliches Fragment in ein anderes zufälliges Fragment desselben Typs",
       "eng": "Change a Sacrifice or Mortal Fragment into another random Fragment of that type",
       "fra": "Convertit un Fragment du sacrifice ou un Fragment mortel en un autre Fragment du même type",
@@ -702,6 +737,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一个裂界者碎片变为另一件同类型的随机裂界者碎片",
+      "chi_tra": "把 1 個塑界者碎片改變為 1 個隨機塑界者碎片",
       "deu": "Verwandelt ein Schöpfer-Fragment in ein anderes zufälliges Schöpfer-Fragment",
       "eng": "Change a Shaper Fragment into another random Shaper Fragment",
       "fra": "Convertit un Fragment du Façonneur en un autre Fragment du même type",
@@ -722,6 +758,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭 腐化的技能石，获得其 20% 品质的宝石匠的允诺",
+      "chi_tra": "把 1 顆寶石改變為其他寶石，盡可能保留經驗值和品質",
       "deu": "Verwandelt eine Gemme in eine andere Gemme und überträgt die Erfahrung und Qualität, falls möglich",
       "eng": "Change a Gem into another Gem, carrying over experience and quality if possible",
       "fra": "Transforme une Gemme en une autre en conservant son expérience et sa qualité si possible",
@@ -742,6 +779,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图，将它分裂成数张低一阶的地图",
+      "chi_tra": "改變 1 張地圖至其他相同階級的地圖，盡可能是你尚未完成的",
       "deu": "Verwandelt eine Karte in eine andere desselben Levels, die, falls möglich, noch nicht abgeschlossen wurde",
       "eng": "Change a Map into another of the same tier, prioritising Maps that you have not yet completed",
       "fra": "Convertit une Carte en une autre du même palier, en donnant la priorité à celles que vous n'avez pas encore terminées",
@@ -762,6 +800,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用一个随机忆境基底合成物品。不能用于传奇物品、影响效果物品、虚空忆境物品、分裂过的物品",
+      "chi_tra": "把 1 個女神祭品改變為女神奉獻",
       "deu": "Verwandelt eine Opfergabe an die Göttin in eine Hingabe an die Göttin",
       "eng": "Change an Offering to the Goddess into a Dedication to the Goddess",
       "fra": "Élève une Offrande à la déesse en Dévouement à la déesse",
@@ -782,6 +821,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一个女神祭品变为女神祭献",
+      "chi_tra": "把 1 個女神祭品改變為女神之贈",
       "deu": "Verwandelt eine Opfergabe an die Göttin in ein Geschenk an die Göttin",
       "eng": "Change an Offering to the Goddess into a Gift to the Goddess",
       "fra": "Élève une Offrande à la déesse en Présent à la déesse",
@@ -802,6 +842,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一个女神祭品变为女神之礼",
+      "chi_tra": "把 1 個女神祭品改變為女神獻禮",
       "deu": "Verwandelt eine Opfergabe an die Göttin in ein Tribut an die Göttin",
       "eng": "Change an Offering to the Goddess into a Tribute to the Goddess",
       "fra": "Élève une Offrande à la déesse en Tribut à la déesse",
@@ -822,6 +863,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一叠圣油变为另一种颜色的圣油",
+      "chi_tra": "把 1 疊油瓶改變為其他顏色的油瓶",
       "deu": "Verwandelt einen Stapel Öle in einen Stapel Öle einer anderen Farbe",
       "eng": "Change a stack of Oils into a different colour of Oil",
       "fra": "Convertit un ensemble d'Huiles en un autre type d'Huiles",
@@ -842,6 +884,7 @@
     "pricing": "Cold to Fire Resist",
     "translations": {
       "chi_sim": "将一个提供冰霜抗性的词缀变为近似位阶，但提供火焰抗性的词缀",
+      "chi_tra": "把冰冷抗性詞綴改變為相似階級的火焰抗性詞綴",
       "deu": "Verändert einen Kältewiderstand-Modifikator in einen ähnlich hohen Modifikator, der Feuerwiderstand gewährt",
       "eng": "Change a modifier that grants Cold Resistance into a similar-tier modifier that grants Fire Resistance",
       "fra": "Transforme un mod de Résistance au froid en un mod de palier similaire qui donne de la Résistance au feu",
@@ -862,6 +905,7 @@
     "pricing": "Cold to Lightning Resist",
     "translations": {
       "chi_sim": "将一个提供冰霜抗性的词缀变为近似位阶，但提供闪电抗性的词缀",
+      "chi_tra": "把冰冷抗性詞綴改變為相似階級的閃電抗性詞綴",
       "deu": "Verändert einen Kältewiderstand-Modifikator in einen ähnlich hohen Modifikator, der Blitzwiderstand gewährt",
       "eng": "Change a modifier that grants Cold Resistance into a similar-tier modifier that grants Lightning Resistance",
       "fra": "Transforme un mod de Résistance au froid en un mod de palier similaire qui donne de la Résistance à la foudre",
@@ -882,6 +926,7 @@
     "pricing": "Fire to Cold Resist",
     "translations": {
       "chi_sim": "将一个提供火焰抗性的词缀变为近似位阶，但提供冰霜抗性的词缀",
+      "chi_tra": "把火焰抗性詞綴改變為相似階級的冰冷抗性詞綴",
       "deu": "Verändert einen Feuerwiderstand-Modifikator in einen ähnlich hohen Modifikator, der Kältewiderstand gewährt",
       "eng": "Change a modifier that grants Fire Resistance into a similar-tier modifier that grants Cold Resistance",
       "fra": "Transforme un mod de Résistance au feu en un mod de palier similaire qui donne de la Résistance au froid",
@@ -902,6 +947,7 @@
     "pricing": "Fire to Lightning Resist",
     "translations": {
       "chi_sim": "将一个提供火焰抗性的词缀变为近似位阶，但提供闪电抗性的词缀",
+      "chi_tra": "把火焰抗性詞綴改變為相似階級的閃電抗性詞綴",
       "deu": "Verändert einen Feuerwiderstand-Modifikator in einen ähnlich hohen Modifikator, der Blitzwiderstand gewährt",
       "eng": "Change a modifier that grants Fire Resistance into a similar-tier modifier that grants Lightning Resistance",
       "fra": "Transforme un mod de Résistance au feu en un mod de palier similaire qui donne de la Résistance à la foudre",
@@ -922,6 +968,7 @@
     "pricing": "Lightning to Cold Resist",
     "translations": {
       "chi_sim": "将一个提供闪电抗性的词缀变为近似位阶，但提供冰霜抗性的词缀",
+      "chi_tra": "把閃電抗性詞綴改變為相似階級的冰冷抗性詞綴",
       "deu": "Verändert einen Blitzwiderstand-Modifikator in einen ähnlich hohen Modifikator, der Kältewiderstand gewährt",
       "eng": "Change a modifier that grants Lightning Resistance into a similar-tier modifier that grants Cold Resistance",
       "fra": "Transforme un mod de Résistance à la foudre en un mod de palier similaire qui donne de la Résistance au froid",
@@ -942,6 +989,7 @@
     "pricing": "Lightning to Fire Resist",
     "translations": {
       "chi_sim": "将一个提供闪电抗性的词缀变为近似位阶，但提供火焰抗性的词缀",
+      "chi_tra": "把閃電抗性詞綴改變為相似階級的火焰抗性詞綴",
       "deu": "Verändert einen Blitzwiderstand-Modifikator in einen ähnlich hohen Modifikator, der Feuerwiderstand gewährt",
       "eng": "Change a modifier that grants Lightning Resistance into a similar-tier modifier that grants Fire Resistance",
       "fra": "Transforme un mod de Résistance à la foudre en un mod de palier similaire qui donne de la Résistance au feu",
@@ -962,6 +1010,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "尝试升级一个圣甲虫，使其有一定几率变成有翼的圣甲虫",
+      "chi_tra": "把 1 個聖甲蟲改變為其他稀有度相同的聖甲蟲",
       "deu": "Verwandelt einen Skarabäus in einen anderen Skarabäus desselben Seltenheitsgrads",
       "eng": "Change a Scarab to another Scarab of the same rarity",
       "fra": "Convertit un Scarabée contre un autre de la même rareté",
@@ -982,6 +1031,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将传奇猎魔物品或势类物品变为相同族群的诱饵",
+      "chi_tra": "把 1 疊永恆裂片或永恆徽印變為其他種類的裂片或徽印",
       "deu": "Verwandelt einen Stapel Immerwährende Splitter oder ein Immerwährendes Emblem in einen anderen Stapel oder Emblem",
       "eng": "Change a stack of Timeless Splinters or a Timeless Emblem into Splinters or an Emblem of another type",
       "fra": "Convertit un ensemble d'Esquilles intemporelles ou un Emblème intemporel en d'autres du même type",
@@ -1002,6 +1052,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将传奇物品变成一件随机传奇戒指、护身符或腰带",
+      "chi_tra": "把 1 件傳奇物品改變為其他隨機傳奇護甲",
       "deu": "Verwandelt einen einzigartigen Gegenstand in eine zufällige einzigartige Rüstung",
       "eng": "Change a Unique into a random Unique Armour",
       "fra": "Transforme un Objet unique en une Pièce d'armure unique prise au hasard",
@@ -1022,6 +1073,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将传奇戒指、护身符、腰带变成另一件同类型传奇物品",
+      "chi_tra": "把 1 件傳奇護甲改變為其他同類型的傳奇護甲",
       "deu": "Verwandelt eine einzigartige Rüstung in eine andere einzigartige Rüstung desselben Typs",
       "eng": "Change a Unique Armour into another Unique Armour of that type",
       "fra": "Transforme une Pièce d'armure unique en une autre du même type",
@@ -1042,6 +1094,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一个先驱者传奇物品或传奇碎片变为一个随机降临之地地图",
+      "chi_tra": "把 1 件獸獵傳奇或有祝福的物品改變為同種族的誘餌",
       "deu": "Verwandelt einen einzigartigen Bestiary-Gegenstand oder einen Gegenstand mit einem Aspekt in Köder dieser Bestienfamilie",
       "eng": "Change a Unique Bestiary item or item with an Aspect into Lures of the same beast family",
       "fra": "Convertit un Objet unique de Bestiary ou un objet doté d'un Aspect en Appâts appartenant à la même espèce de Bête",
@@ -1062,6 +1115,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "随机改变有影响效果的普通、魔法、稀有武器或箭袋的影响效果类型，同时给它重铸一个新随机词缀",
+      "chi_tra": "把 1 件神諭傳奇或傳奇碎片改變為 1 張隨機神諭之殿地圖",
       "deu": "Verwandelt einen einzigartigen Vorboten-Gegenstand oder -Bruchstück in eine zufällige Brückenkopf-Karte",
       "eng": "Change a Harbinger Unique or Unique Piece into a random Beachhead Map",
       "fra": "Convertit un Objet unique de Précurseur ou un Morceau d'unique de Précurseur en une Carte La Tête de pont tirée au hasard",
@@ -1082,6 +1136,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一个 命运卡变为另一个随机命运卡",
+      "chi_tra": "把 1 件傳奇珠寶改變為其他傳奇珠寶",
       "deu": "Verwandelt ein einzigartiges Juwel in ein zufälliges anderes einzigartiges Juwel",
       "eng": "Change a Unique Jewel into another Unique Jewel",
       "fra": "Transforme un Joyau unique en un autre",
@@ -1102,6 +1157,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将传奇武器变成另一件同类型传奇武器",
+      "chi_tra": "把 1 件傳奇物品改變為其他隨機傳奇戒指、項鍊或腰帶",
       "deu": "Verwandelt einen einzigartigen Gegenstand in einen zufälligen einzigartigen Ring, Amulett oder Gürtel",
       "eng": "Change a Unique into a random Unique Ring, Amulet or Belt",
       "fra": "Transforme un Objet unique en une Bague, Amulette ou Ceinture unique prise au hasard",
@@ -1122,6 +1178,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将传奇珠宝变成为另一种传奇珠宝。",
+      "chi_tra": "把 1 件傳奇戒指、項鍊或腰帶改變為其他同類型的傳奇物品",
       "deu": "Verwandelt einen einzigartigen Ring, Amulett oder Gürtel in einen anderen einzigartigen Gegenstand desselben Typs",
       "eng": "Change a Unique Ring, Amulet or Belt into another Unique item of that type",
       "fra": "Transforme une Bague, Amulette ou Ceinture unique en une autre du même type",
@@ -1142,6 +1199,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将传奇物品变成一件随机传奇武器或箭袋",
+      "chi_tra": "把 1 件傳奇物品改變為其他隨機傳奇物品",
       "deu": "Verwandelt einen einzigartigen Gegenstand in einen anderen zufälligen einzigartigen Gegenstand",
       "eng": "Change a Unique item into another random Unique item",
       "fra": "Transforme un Objet unique en un autre pris au hasard",
@@ -1162,6 +1220,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将传奇物品变成一件随机传奇护甲",
+      "chi_tra": "把 1 件傳奇物品改變為其他隨機傳奇武器或箭袋",
       "deu": "Verwandelt einen einzigartigen Gegenstand in eine zufällige einzigartige Waffe oder Köcher",
       "eng": "Change a Unique into a random Unique Weapon or Quiver",
       "fra": "Transforme un Objet unique en une Arme ou un Carquois unique pris au hasard",
@@ -1171,7 +1230,8 @@
       "rus": "Превратить уникальный предмет в случайное уникальное оружие",
       "spa": "Transforma un objeto único en un arma o en un carcaj únicos aleatorios",
       "tha": "เปลี่ยน ยูนิค ให้เป็น อาวุธหรือซองธนูยูนิค แบบสุ่ม"
-    }
+    },
+    "short": null
   },
   "ChangeUniqueWeaponToWeapon": {
     "type": "ChangeUniqueWeaponToWeapon",
@@ -1179,6 +1239,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将传奇护甲护甲变成另一件同类型传奇护甲",
+      "chi_tra": "把 1 件傳奇武器改變為其他同類型的傳奇武器",
       "deu": "Verwandelt eine einzigartige Waffe in eine andere einzigartige Waffe desselben Typs",
       "eng": "Change a Unique Weapon into another Unique Weapon of that weapon type",
       "fra": "Transforme une Arme unique en une autre du même type",
@@ -1199,6 +1260,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "腐化物品 10 次，或直到获得一个腐化的基底词缀",
+      "chi_tra": "汙染 1 件物品 10 次或直到出現 1 個已汙染物定詞綴",
       "deu": "Verderbt einen Gegenstand 10 Mal oder bis der implizite Modifikator verderbt ist",
       "eng": "Corrupt an item 10 times, or until getting a corrupted implicit modifier",
       "fra": "Corrompt un objet dix fois, ou jusqu'à obtenir un Implicite de corruption",
@@ -1219,6 +1281,7 @@
     "pricing": "Enchant Body, Cold Resist",
     "translations": {
       "chi_sim": "附魔身体装备。使品质不提高防御属性，改为每 2% 品质提供 1% 闪电抗性",
+      "chi_tra": "附魔 1 件胸甲。品質不會增加防禦，每 2% 品質增加 1% 冰冷抗性",
       "deu": "Verzaubert eine Körperrüstung. Qualität erhöht nicht die Verteidigungswerte. Die Körperrüstung erhält 1% Kältewiderstand pro 2% Qualität",
       "eng": "Enchant Body Armour. Quality does not increase its Defences, grants 1% Cold Resistance per 2% quality",
       "fra": "Enchante une Armure. Sa qualité ne lui donne plus de Défenses, mais +1% Résistance au froid tous les 2% de qualité",
@@ -1239,6 +1302,7 @@
     "pricing": "Enchant Body, Dexterity",
     "translations": {
       "chi_sim": "附魔身体装备。使品质不提高防御属性，改为每 2% 品质 +1 智慧",
+      "chi_tra": "附魔 1 件胸甲。品質不會增加防禦，每 2% 品質 +1 敏捷",
       "deu": "Verzaubert eine Körperrüstung. Qualität erhöht nicht die Verteidigungswerte. Die Körperrüstung erhält +1 Geschick pro 2% Qualität",
       "eng": "Enchant Body Armour. Quality does not increase its Defences, grants +1 Dexterity per 2% quality",
       "fra": "Enchante une Armure. Sa qualité ne lui donne plus de Défenses, mais +1 Dextérité tous les 2% de qualité",
@@ -1259,6 +1323,7 @@
     "pricing": "Enchant Body, Fire Resist",
     "translations": {
       "chi_sim": "附魔身体装备。使品质不提高防御属性，改为每 2% 品质提供 1% 冰霜抗性",
+      "chi_tra": "附魔 1 件胸甲。品質不會增加防禦，每 2% 品質增加 1% 火焰抗性",
       "deu": "Verzaubert eine Körperrüstung. Qualität erhöht nicht die Verteidigungswerte. Die Körperrüstung erhält 1% Feuerwiderstand pro 2% Qualität",
       "eng": "Enchant Body Armour. Quality does not increase its Defences, grants 1% Fire Resistance per 2% quality",
       "fra": "Enchante une Armure. Sa qualité ne lui donne plus de Défenses, mais +1% Résistance au feu tous les 2% de qualité",
@@ -1279,6 +1344,7 @@
     "pricing": "Enchant Body, Intelligence",
     "translations": {
       "chi_sim": "附魔身体装备。使品质不提高防御属性，改为每 2% 品质提供 1% 火焰抗性",
+      "chi_tra": "附魔 1 件胸甲。品質不會增加防禦，每 2% 品質 +1 智慧",
       "deu": "Verzaubert eine Körperrüstung. Qualität erhöht nicht die Verteidigungswerte. Die Körperrüstung erhält +1 Intelligenz pro 2% Qualität",
       "eng": "Enchant Body Armour. Quality does not increase its Defences, grants +1 Intelligence per 2% quality",
       "fra": "Enchante une Armure. Sa qualité ne lui donne plus de Défenses, mais +1 Intelligence tous les 2% de qualité",
@@ -1299,6 +1365,7 @@
     "pricing": "Enchant Body, Maximum Life",
     "translations": {
       "chi_sim": "附魔身体装备。使品质不提高防御属性，改为每 2% 品质 +1 魔力上限",
+      "chi_tra": "附魔 1 件胸甲。品質不會增加防禦，每 2% 品質 +1 最大生命",
       "deu": "Verzaubert eine Körperrüstung. Qualität erhöht nicht die Verteidigungswerte. Die Körperrüstung erhält +1 maximales Leben pro 2% Qualität",
       "eng": "Enchant Body Armour. Quality does not increase its Defences, grants +1 Maximum Life per 2% quality",
       "fra": "Enchante une Armure. Sa qualité ne lui donne plus de Défenses, mais +1 Vie maximale tous les 2% de qualité",
@@ -1319,6 +1386,7 @@
     "pricing": "Enchant Body, Lightning Resist",
     "translations": {
       "chi_sim": "给物品移除一个随机非影响效果词缀，再给它添加一个新影响效果词缀",
+      "chi_tra": "附魔 1 件胸甲。品質不會增加防禦，每 2% 品質增加 1% 閃電抗性",
       "deu": "Verzaubert eine Körperrüstung. Qualität erhöht nicht die Verteidigungswerte. Die Körperrüstung erhält 1% Blitzwiderstand pro 2% Qualität",
       "eng": "Enchant Body Armour. Quality does not increase its Defences, grants 1% Lightning Resistance per 2% quality",
       "fra": "Enchante une Armure. Sa qualité ne lui donne plus de Défenses, mais +1% Résistance à la foudre tous les 2% de qualité",
@@ -1339,6 +1407,7 @@
     "pricing": "Enchant Body, Maximum Mana",
     "translations": {
       "chi_sim": "附魔身体装备。使品质不提高防御属性，改为每 2% 品质 +1 力量",
+      "chi_tra": "附魔 1 件胸甲。品質不會增加防禦，每 2% 品質 +1 最大魔力",
       "deu": "Verzaubert eine Körperrüstung. Qualität erhöht nicht die Verteidigungswerte. Die Körperrüstung erhält +1 maximales Mana pro 2% Qualität",
       "eng": "Enchant Body Armour. Quality does not increase its Defences, grants +1 Maximum Mana per 2% quality",
       "fra": "Enchante une Armure. Sa qualité ne lui donne plus de Défenses, mais +1 Mana maximal tous les 2% de qualité",
@@ -1359,6 +1428,7 @@
     "pricing": "Enchant Body, Strength",
     "translations": {
       "chi_sim": "附魔身体装备。使品质不提高防御属性，改为每 2% 品质 +1 敏捷",
+      "chi_tra": "附魔 1 件胸甲。品質不會增加防禦，每 2% 品質 +1 力量",
       "deu": "Verzaubert eine Körperrüstung. Qualität erhöht nicht die Verteidigungswerte. Die Körperrüstung erhält +1 Stärke pro 2% Qualität",
       "eng": "Enchant Body Armour. Quality does not increase its Defences, grants +1 Strength per 2% quality",
       "fra": "Enchante une Armure. Sa qualité ne lui donne plus de Défenses, mais +1 Force tous les 2% de qualité",
@@ -1379,6 +1449,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用一个提高效果的词缀附魔药剂。该效果随使用次数减弱",
+      "chi_tra": "附魔增加持續時間詞綴至 1 瓶藥劑。每次使用會消耗此效果大小",
       "deu": "Verzaubert ein Fläschchen mit einem Modifikator, der seine Dauer verlängert. Dieser Effekt verringert sich mit jeder Nutzung",
       "eng": "Enchant a Flask with a modifier that grants increased Duration. The magnitude of this effect decreases with each use",
       "fra": "Enchante un Flacon avec un mod qui augmente sa Durée. Ce bonus diminue à chaque gorgée",
@@ -1399,6 +1470,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用一个增加最大使用次数的词缀附魔药剂。该效果随使用次数减弱",
+      "chi_tra": "附魔增加效果詞綴至 1 瓶藥劑。每次使用會消耗此效果大小",
       "deu": "Verzaubert ein Fläschchen mit einem Modifikator, der seine Wirkung erhöht. Dieser Effekt verringert sich mit jeder Nutzung",
       "eng": "Enchant a Flask with a modifier that grants increased Effect. The magnitude of this effect decreases with each use",
       "fra": "Enchante un Flacon avec un mod qui augmente son Effet. Ce bonus diminue à chaque gorgée",
@@ -1419,6 +1491,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用一个减少使用次数的词缀附魔药剂。该效果随使用次数减弱",
+      "chi_tra": "附魔增加最大充能詞綴至 1 瓶藥劑。每次使用會消耗此效果大小",
       "deu": "Verzaubert ein Fläschchen mit einem Modifikator, der seine maximalen Füllungen erhöht. Dieser Effekt verringert sich mit jeder Nutzung",
       "eng": "Enchant a Flask with a modifier that grants increased Maximum Charges. The magnitude of this effect decreases with each use",
       "fra": "Enchante un Flacon avec un mod qui augmente son maximum de Charges. Ce bonus diminue à chaque gorgée",
@@ -1439,6 +1512,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "给非传奇地图附魔：“从奇拉克工艺工作台得到的地图额外有一个随机词缀”",
+      "chi_tra": "附魔減少使用充能詞綴至 1 瓶藥劑。每次使用會消耗此效果大小",
       "deu": "Verzaubert ein Fläschchen mit einem Modifikator, der den Verbrauch seiner Füllungen verringert. Dieser Effekt verringert sich mit jeder Nutzung",
       "eng": "Enchant a Flask with a modifier that grants reduced Charges used. The magnitude of this effect decreases with each use",
       "fra": "Enchante un Flacon avec un mod qui réduit sa consommation de Charges. Ce bonus diminue à chaque gorgée",
@@ -1459,6 +1533,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "给非传奇地图附魔：地图不消耗六分仪使用次数",
+      "chi_tra": "附魔「有 1 個額外來自基拉克工藝台的隨機詞綴」至 1 張非傳奇地圖",
       "deu": "Verzaubert eine Karte (einzigartige ausgenommen) mit \"Hat einen zusätzlichen zufälligen Modifikator von Kiracs Werkbank\"",
       "eng": "Enchant a non-Unique Map with \"Map has an additional random Modifier from Kirac's Crafting Bench\"",
       "fra": "Enchante une Carte non unique en lui donnant « Dispose d'un mod supplémentaire de Kirac pris au hasard »",
@@ -1479,6 +1554,7 @@
     "pricing": "Enchant Map, Doesn't Consume Sextant",
     "translations": {
       "chi_sim": "给非传奇地图附魔：地图具有腐化区域",
+      "chi_tra": "附魔「地圖不消耗六分儀充能」至 1 張非傳奇地圖",
       "deu": "Verzaubert eine Karte (einzigartige ausgenommen) mit \"Karte verbraucht keine Sextanten\"",
       "eng": "Enchant a non-Unique Map with \"Map doesn't consume Sextant charges\"",
       "fra": "Enchante une Carte non unique en lui donnant « La Carte ne consomme pas d'utilisations de Sextant »",
@@ -1499,6 +1575,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 10 个 混沌石交换一个崇高石",
+      "chi_tra": "附魔「地圖頭目被罪魂包圍」至 1 張非傳奇地圖",
       "deu": "Verzaubert eine Karte (einzigartige ausgenommen) mit \"Kartenboss ist von gequälten Seelen umgeben\"",
       "eng": "Enchant a non-Unique Map with \"Map boss is surrounded by Tormented Spirits\"",
       "fra": "Enchante une Carte non unique en lui donnant « Le boss de la Carte est accompagné d'Esprits tourmentés »",
@@ -1519,6 +1596,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "给非传奇地图附魔：地图首领被罪魂环绕",
+      "chi_tra": "附魔「地圖有瓦爾地區」至 1 張非傳奇地圖",
       "deu": "Verzaubert eine Karte (einzigartige ausgenommen) mit \"Karte hat ein Vaal-Nebengebiet\"",
       "eng": "Enchant a non-Unique Map with \"Map has a Vaal Side Area\"",
       "fra": "Enchante une Carte non unique en lui donnant « La Carte contient une Zone annexe vaal »",
@@ -1539,6 +1617,7 @@
     "pricing": "Enchant Weapon, Accuracy",
     "translations": {
       "chi_sim": "附魔武器。使品质不提高物理伤害，改为每 8% 品质使攻击速度加快 1%",
+      "chi_tra": "附魔 1 件武器。品質不會增加物理傷害，每 2% 品質增加 1% 命中",
       "deu": "Verzaubert eine Waffe. Qualität erhöht nicht den physischen Schaden. Die Waffe hat 1% erhöhte Genauigkeit pro 2% Qualität",
       "eng": "Enchant a Weapon. Quality does not increase its Physical Damage, grants 1% increased Accuracy per 2% Quality",
       "fra": "Enchante une Arme. Sa qualité ne lui donne plus de Dégâts physiques, mais 1% d'Augmentation de Précision tous les 2% de qualité",
@@ -1559,6 +1638,7 @@
     "pricing": "Enchant Weapon, Area of Effect",
     "translations": {
       "chi_sim": "分裂物品上一个随机词缀，将其锁定。该物品至少要有 5 个词缀才可分裂，无法用于有影响效果的物品、虚空忆境物品，或者分裂过的物品",
+      "chi_tra": "附魔 1 件武器。品質不會增加物理傷害，每 4% 品質增加 1% 範圍效果",
       "deu": "Verzaubert eine Waffe. Qualität erhöht nicht den physischen Schaden. Die Waffe hat 1% vergrößerten Wirkungsbereich pro 4% Qualität",
       "eng": "Enchant a Weapon. Quality does not increase its Physical Damage, grants 1% increased Area of Effect per 4% Quality",
       "fra": "Enchante une Arme. Sa qualité ne lui donne plus de Dégâts physiques, mais 1% d'Augmentation de Zone d'effet tous les 4% de qualité",
@@ -1579,6 +1659,7 @@
     "pricing": "Enchant Weapon, Attack Speed",
     "translations": {
       "chi_sim": "附魔近战武器。使品质不提高物理伤害，改为每 10% 品质 +1 武器范围",
+      "chi_tra": "附魔 1 件武器。品質不會增加物理傷害，每 8% 品質增加 1% 攻擊速度",
       "deu": "Verzaubert eine Waffe. Qualität erhöht nicht den physischen Schaden. Die Waffe hat 1% erhöhte Angriffsgeschwindigkeit pro 8% Qualität",
       "eng": "Enchant a Weapon. Quality does not increase its Physical Damage, has 1% increased Attack Speed per 8% Quality",
       "fra": "Enchante une Arme. Sa qualité ne lui donne plus de Dégâts physiques, mais 1% d'Augmentation de Vitesse d'attaque tous les 8% de qualité",
@@ -1599,6 +1680,7 @@
     "pricing": "Enchant Weapon, Critical Strike Chance",
     "translations": {
       "chi_sim": "附魔武器。使品质不提高物理伤害，改为每 2% 品质使命中值提高 1%",
+      "chi_tra": "附魔 1 件武器。品質不會增加物理傷害，每 4% 品質增加 1% 暴擊率",
       "deu": "Verzaubert eine Waffe. Qualität erhöht nicht den physischen Schaden. Die Waffe hat 1% erhöhte kritische Trefferchance pro 4% Qualität",
       "eng": "Enchant a Weapon. Quality does not increase its Physical Damage, has 1% increased Critical Strike Chance per 4% Quality",
       "fra": "Enchante une Arme. Sa qualité ne lui donne plus de Dégâts physiques, mais 1% d'Augmentation de Chances de crit. tous les 4% de qualité",
@@ -1619,6 +1701,7 @@
     "pricing": "Enchant Weapon, Elemental Damage",
     "translations": {
       "chi_sim": "附魔武器。使品质不提高物理伤害，改为每 4% 品质使效果区域扩大 1%",
+      "chi_tra": "附魔 1 件武器。品質不會增加物理傷害，每 2% 品質增加 1% 元素傷害",
       "deu": "Verzaubert eine Waffe. Qualität erhöht nicht den physischen Schaden. Die Waffe hat 1% erhöhten Elementarschaden pro 2% Qualität",
       "eng": "Enchant a Weapon. Quality does not increase its Physical Damage, grants 1% increased Elemental Damage per 2% Quality",
       "fra": "Enchante une Arme. Sa qualité ne lui donne plus de Dégâts physiques, mais 1% d'Augmentation de Dégâts élémentaires tous les 2% de qualité",
@@ -1639,6 +1722,7 @@
     "pricing": "Enchant Weapon, Weapon Range",
     "translations": {
       "chi_sim": "附魔武器。使品质不提高物理伤害，改为每 2% 品质使元素伤害提高 1%",
+      "chi_tra": "附魔 1 件近戰武器。品質不會增加物理傷害，每 10% 品質 +1 武器範圍",
       "deu": "Verzaubert eine Nahkampfwaffe. Qualität erhöht nicht den physischen Schaden. Die Waffe hat +1 Waffenreichweite pro 10% Qualität",
       "eng": "Enchant a Melee Weapon. Quality does not increase its Physical Damage, has +1 Weapon Range per 10% Quality",
       "fra": "Enchante une Arme de mêlée. Sa qualité ne lui donne plus de Dégâts physiques, mais +1 d'Allonge tous les 10% de qualité",
@@ -1659,6 +1743,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 10 个 幻色石交换 20 个宝石匠的允诺",
+      "chi_tra": "把 10 顆點金石交換為 20 顆製圖釘",
       "deu": "Tauscht 10 Sphären der Alchemie für 20 Meißel des Kartographen ein",
       "eng": "Exchange 10 Orbs of Alchemy for 20 Cartographer's Chisels",
       "fra": "Convertit 10 Orbes d'alchimie en 20 Burins de cartographe",
@@ -1668,7 +1753,8 @@
       "rus": "Обменять 10 сфер алхимии на 20 резцов картографа",
       "spa": "Intercambia 10 Orbes de alquimia por 20 Cinceles del cartógrafo",
       "tha": "แลก Orb of Alchemy 10 ชิ้นเป็น Cartographer's Chisel 20 ชิ้น"
-    }
+    },
+    "short": null
   },
   "Exchange10AlterationToChaos": {
     "type": "Exchange10AlterationToChaos",
@@ -1676,6 +1762,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 10 个 瓦尔宝珠交换 20 个后悔石",
+      "chi_tra": "把 10 顆改造石交換為 10 顆混沌石",
       "deu": "Tauscht 10 Veränderungssphären für 10 Chaossphären ein",
       "eng": "Exchange 10 Orbs of Alteration for 10 Chaos Orbs",
       "fra": "Convertit 10 Orbes d'altération en 10 Orbes du chaos",
@@ -1685,7 +1772,8 @@
       "rus": "Обменять 10 сфер перемен на 10 сфер хаоса",
       "spa": "Intercambia 10 Orbes de alteración por 10 Orbes de caos",
       "tha": "แลก Orb of Alteration 10 ชิ้นเป็น Chaos Orb 10 ชิ้น"
-    }
+    },
+    "short": null
   },
   "Exchange10AugmentationToRegal": {
     "type": "Exchange10AugmentationToRegal",
@@ -1693,6 +1781,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 10 个 知识卷轴交换 20 个机会石",
+      "chi_tra": "把 10 顆增幅石交換為 10 顆富豪石",
       "deu": "Tauscht 10 Aufwertungssphären für 10 Hoheitliche Sphären ein",
       "eng": "Exchange 10 Orbs of Augmentation for 10 Regal Orbs",
       "fra": "Convertit 10 Orbes d'augmentation en 10 Orbes royaux",
@@ -1702,7 +1791,8 @@
       "rus": "Обменять 10 сфер усиления на 10 сфер царей",
       "spa": "Intercambia 10 Orbes de aumento por 10 Orbes regios",
       "tha": "แลก Orb of Augmentation 10 ชิ้นเป็น Regal Orb 10 ชิ้น"
-    }
+    },
+    "short": null
   },
   "Exchange10BlessedToAlteration": {
     "type": "Exchange10BlessedToAlteration",
@@ -1710,6 +1800,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 10 个 点金石交换 20 个制图钉",
+      "chi_tra": "把 10 顆祝福石交換為 20 顆改造石",
       "deu": "Tauscht 10 Gesegnete Sphären für 20 Veränderungssphären ein",
       "eng": "Exchange 10 Blessed Orbs for 20 Orbs of Alteration",
       "fra": "Convertit 10 Orbes bénis en 20 Orbes d'altération",
@@ -1719,7 +1810,8 @@
       "rus": "Обменять 10 благодатных сфер на 20 сфер перемен",
       "spa": "Intercambia 10 Orbes benditos por 20 Orbes de alteración",
       "tha": "แลก Blessed Orb 10 ชิ้นเป็น Orb of Alteration 20 ชิ้น"
-    }
+    },
+    "short": null
   },
   "Exchange10ChaosToExalted": {
     "type": "Exchange10ChaosToExalted",
@@ -1727,6 +1819,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 10 个 蜕变石交换 10 个点金石",
+      "chi_tra": "把 10 顆混沌石交換為 1 顆崇高石",
       "deu": "Tauscht 10 Chaossphären für eine Erhabene Sphäre ein",
       "eng": "Exchange 10 Chaos Orbs for an Exalted Orb",
       "fra": "Convertit 10 Orbes du chaos en 1 Orbe exalté",
@@ -1736,7 +1829,8 @@
       "rus": "Обменять 10 сфер хаоса на сферу возвышения",
       "spa": "Intercambia 10 Orbes de caos por un Orbe exaltado",
       "tha": "แลก Chaos Orb 10 ชิ้นเป็น Exalted Orb 1 ชิ้น"
-    }
+    },
+    "short": null
   },
   "Exchange10ChiselsToVaal": {
     "type": "Exchange10ChiselsToVaal",
@@ -1744,6 +1838,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "升级一个精华的位阶",
+      "chi_tra": "把 10 顆製圖釘珠交換為 10 顆瓦爾寶珠",
       "deu": "Tauscht 10 Meißel des Kartographen für 10 Vaalsphären ein",
       "eng": "Exchange 10 Cartographer's Chisels for 10 Vaal Orbs",
       "fra": "Convertit 10 Burins de cartographe en 10 Orbes vaal",
@@ -1753,7 +1848,8 @@
       "rus": "Обменять 10 резцов картографа на 10 сфер ваал",
       "spa": "Intercambia 10 Cinceles del cartógrafo por 10 Orbes vaal",
       "tha": "แลก Cartographer's Chisel 10 ชิ้นเป็น Vaal Orb 10 ชิ้น"
-    }
+    },
+    "short": null
   },
   "Exchange10ChromaticToGCP": {
     "type": "Exchange10ChromaticToGCP",
@@ -1761,6 +1857,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 10 个 工匠石交换 20 个链结石",
+      "chi_tra": "把 10 顆幻色石交換為 20 顆寶石匠的稜鏡",
       "deu": "Tauscht 10 Färbungssphären für 20 Prismen des Gemmenschneiders ein",
       "eng": "Exchange 10 Chromatic Orbs for 20 Gemcutter's Prisms",
       "fra": "Convertit 10 Orbes chromatiques en 20 Prismes de lapidaire",
@@ -1770,7 +1867,8 @@
       "rus": "Обменять 10 цветных сфер на 20 призм камнереза",
       "spa": "Intercambia 10 Orbes cromáticos por 20 Prismas del tallador de gemas",
       "tha": "แลก Chromatic Orb 10 ชิ้นเป็น Gemcutter's Prism 20 ชิ้น"
-    }
+    },
+    "short": null
   },
   "Exchange10JewellerToFusing": {
     "type": "Exchange10JewellerToFusing",
@@ -1778,6 +1876,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 10 个 增幅石 交换 10 个富豪石",
+      "chi_tra": "把 10 顆工匠石交換為 20 顆鏈結石",
       "deu": "Tauscht 10 Sphären des Goldschmieds für 20 Verbindungssphären ein",
       "eng": "Exchange 10 Jeweller's Orbs for 20 Orbs of Fusing",
       "fra": "Convertit 10 Orbes de joaillier en 20 Orbes de fusion",
@@ -1787,7 +1886,8 @@
       "rus": "Обменять 10 сфер златокузнеца на 20 сфер соединения",
       "spa": "Intercambia 10 Orbes del joyero por 20 Orbes de fusión",
       "tha": "แลก Jeweller's Orb 10 ชิ้นเป็น Orb of Fusing 20 ชิ้น"
-    }
+    },
+    "short": null
   },
   "Exchange10PrimeToAwakened": {
     "type": "Exchange10PrimeToAwakened",
@@ -1795,6 +1895,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 10 个 重铸石交换 10 个剥离石",
+      "chi_tra": "把 10 顆製圖六分儀．精華交換為 10 顆製圖六分儀．覺醒",
       "deu": "Tauscht 10 Außergewöhnliche Sextanten für 10 Erweckte Sextanten ein",
       "eng": "Exchange 10 Prime Sextants for 10 Awakened Sextants",
       "fra": "Convertit 10 Sextants prodigieux en 10 Sextants éveillés",
@@ -1804,7 +1905,8 @@
       "rus": "Обменять 10 превосходных секстантов на 10 пробуждённых секстантов",
       "spa": "Intercambia 10 Sextantes primarios por 10 Sextantes despertados",
       "tha": "แลก เครื่องวัดแดดชั้นสูง 10 ชิ้นเป็น เครื่องวัดแดดจุติ 10 ชิ้น"
-    }
+    },
+    "short": null
   },
   "Exchange10ScouringToAnnulment": {
     "type": "Exchange10ScouringToAnnulment",
@@ -1812,6 +1914,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 10 个 改造石交换 10 个混沌石",
+      "chi_tra": "把 10 顆重鑄石交換為 10 顆無效石",
       "deu": "Tauscht 10 Sphären der Läuterung für 10 Sphären der Annullierung ein",
       "eng": "Exchange 10 Orbs of Scouring for 10 Orbs of Annulment",
       "fra": "Convertit 10 Orbes de suppression en 10 Orbes d'annulation",
@@ -1821,7 +1924,8 @@
       "rus": "Обменять 10 сфер очищения на 10 сфер отмены",
       "spa": "Intercambia 10 Orbes de purga por 10 Orbes de anulación",
       "tha": "แลก Orb of Scouring 10 ชิ้นเป็น Orb of Annulment 10 ชิ้น"
-    }
+    },
+    "short": null
   },
   "Exchange10SextantsToPrime": {
     "type": "Exchange10SextantsToPrime",
@@ -1829,6 +1933,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 10 个 原始六分仪交换 10 个觉醒六分仪",
+      "chi_tra": "把 10 顆製圖六分儀．簡易交換為 10 顆製圖六分儀．精華",
       "deu": "Tauscht 10 Einfache Sextanten für 10 Außergewöhnliche Sextanten ein",
       "eng": "Exchange 10 Simple Sextants for 10 Prime Sextants",
       "fra": "Convertit 10 Sextants simples en 10 Sextants prodigieux",
@@ -1838,7 +1943,8 @@
       "rus": "Обменять 10 простых секстантов на 10 превосходных секстантов",
       "spa": "Intercambia 10 Sextantes sencillos por 10 Sextantes primarios",
       "tha": "แลก เครื่องวัดแดดเรียบง่าย 10 ชิ้นเป็น เครื่องวัดแดดชั้นสูง 10 ชิ้น"
-    }
+    },
+    "short": null
   },
   "Exchange10TransmutationToAlchemy": {
     "type": "Exchange10TransmutationToAlchemy",
@@ -1846,6 +1952,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 10 个 祝福石交换 20 个改造石",
+      "chi_tra": "把 10 顆蛻變石交換為 10 顆點金石",
       "deu": "Tauscht 10 Umwandlungssphären für 10 Sphären der Alchemie ein",
       "eng": "Exchange 10 Orbs of Transmutation for 10 Orbs of Alchemy",
       "fra": "Convertit 10 Orbes de transmutation en 10 Orbes d'alchimie",
@@ -1855,7 +1962,8 @@
       "rus": "Обменять 10 сфер превращения на 10 сфер алхимии",
       "spa": "Intercambia 10 Orbes de transmutación por 10 Orbes de alquimia",
       "tha": "แลก Orb of Transmutation 10 ชิ้นเป็น Orb of Alchemy 10 ชิ้น"
-    }
+    },
+    "short": null
   },
   "Exchange10VaalToRegret": {
     "type": "Exchange10VaalToRegret",
@@ -1863,6 +1971,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 10 个 制图钉交换 10 个瓦尔宝珠",
+      "chi_tra": "把 10 顆瓦爾寶珠交換為 20 顆後悔石",
       "deu": "Tauscht 10 Vaalsphären für 20 Sphären der Reue ein",
       "eng": "Exchange 10 Vaal Orbs for 20 Orbs of Regret",
       "fra": "Convertit 10 Orbes vaal en 20 Orbes de regret",
@@ -1872,7 +1981,8 @@
       "rus": "Обменять 10 сфер ваал на 20 сфер раскаяния",
       "spa": "Intercambia 10 Orbes vaal por 20 Orbes de arrepentimiento",
       "tha": "แลก Vaal Orb 10 ชิ้นเป็น Orb of Regret 20 ชิ้น"
-    }
+    },
+    "short": null
   },
   "Exchange10WisdomToChance": {
     "type": "Exchange10WisdomToChance",
@@ -1880,6 +1990,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 10 个 简易六分仪交换 10 个原始六分仪",
+      "chi_tra": "把 10 張知識卷軸交換為 20 顆機會石",
       "deu": "Tauscht 10 Identifikationsrollen für 20 Sphären der Möglichkeiten ein",
       "eng": "Exchange 10 Scrolls of Wisdom for 20 Orbs of Chance",
       "fra": "Convertit 10 Parchemins de sagesse en 20 Orbes de chance",
@@ -1889,7 +2000,8 @@
       "rus": "Обменять 10 свитков мудрости на 20 сфер удачи",
       "spa": "Intercambia 10 Pergaminos de sabiduría por 20 Orbes de azar",
       "tha": "แลก Scroll of Wisdom 10 ชิ้นเป็น Orb of Chance 20 ชิ้น"
-    }
+    },
+    "short": null
   },
   "ExchangeAlchemyToChisels": {
     "type": "ExchangeAlchemyToChisels",
@@ -1897,6 +2009,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 3 个点金石 交换 6 个制图钉",
+      "chi_tra": "把 3 顆點金石交換為 3 顆製圖釘",
       "deu": "Tauscht 3 Sphären der Alchemie für 6 Meißel des Kartographen ein",
       "eng": "Exchange 3 Orbs of Alchemy for 6 Cartographer's Chisels",
       "fra": "Convertit 3 Orbes d'alchimie en 6 Burins de cartographe",
@@ -1906,7 +2019,8 @@
       "rus": "Обменять 3 сферы алхимии на 6 резцов картографа",
       "spa": "Intercambia 3 Orbes de alquimia por 6 Cinceles del cartógrafo",
       "tha": "แลก Orb of Alchemy 3 ชิ้นเป็น Cartographer's Chisel 6 ชิ้น"
-    }
+    },
+    "short": null
   },
   "ExchangeAlterationToChaos": {
     "type": "ExchangeAlterationToChaos",
@@ -1914,6 +2028,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 3 个 改造石交换 3 个混沌石",
+      "chi_tra": "把 3 顆改造石交換為 3 顆混沌石",
       "deu": "Tauscht 3 Veränderungssphären für 3 Chaossphären ein",
       "eng": "Exchange 3 Orbs of Alteration for 3 Chaos Orbs",
       "fra": "Convertit 3 Orbes d'altération en 3 Orbes du chaos",
@@ -1923,7 +2038,8 @@
       "rus": "Обменять 3 сферы перемен на 3 сферы хаоса",
       "spa": "Intercambia 3 Orbes de alteración por 3 Orbes de caos",
       "tha": "แลก Orb of Alteration 3 ชิ้นเป็น Chaos Orb 3 ชิ้น"
-    }
+    },
+    "short": null
   },
   "ExchangeAugmentationToRegal": {
     "type": "ExchangeAugmentationToRegal",
@@ -1931,6 +2047,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 3 个 增幅石交换 3 个富豪石",
+      "chi_tra": "把 3 顆增幅石交換為 3 顆富豪石",
       "deu": "Tauscht 3 Aufwertungssphären für 3 Hoheitliche Sphären ein",
       "eng": "Exchange 3 Orbs of Augmentation for 3 Regal Orbs",
       "fra": "Convertit 3 Orbes d'augmentation en 3 Orbes royaux",
@@ -1940,7 +2057,8 @@
       "rus": "Обменять 3 сферы усиления на 3 сферы царей",
       "spa": "Intercambia 3 Orbes de aumento por 3 Orbes regios",
       "tha": "แลก Orb of Augmentation 3 ชิ้นเป็น Regal Orb 3 ชิ้น"
-    }
+    },
+    "short": null
   },
   "ExchangeBlessedToAlteration": {
     "type": "ExchangeBlessedToAlteration",
@@ -1948,6 +2066,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 3 个祝福石交换 6 个改造石",
+      "chi_tra": "把 3 顆祝福石交換為 3 顆改造石",
       "deu": "Tauscht 3 Gesegnete Sphären für 6 Veränderungssphären ein",
       "eng": "Exchange 3 Blessed Orbs for 6 Orbs of Alteration",
       "fra": "Convertit 3 Orbes bénis en 6 Orbes d'altération",
@@ -1957,7 +2076,8 @@
       "rus": "Обменять 3 благодатные сферы на 6 сфер перемен",
       "spa": "Intercambia 3 Orbes benditos por 6 Orbes de alteración",
       "tha": "แลก Blessed Orb 3 ชิ้นเป็น Orb of Alteration 6 ชิ้น"
-    }
+    },
+    "short": null
   },
   "ExchangeChaosToDivine": {
     "type": "ExchangeChaosToDivine",
@@ -1965,6 +2085,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 3 个混沌石交换一个神圣石",
+      "chi_tra": "把 3 顆混沌石交換為 1 顆神聖石",
       "deu": "Tauscht 3 Chaossphären für eine Göttliche Sphäre ein",
       "eng": "Exchange 3 Chaos Orbs for a Divine Orb",
       "fra": "Convertit 3 Orbes du chaos en 1 Orbe divin",
@@ -1974,7 +2095,8 @@
       "rus": "Обменять 3 сферы хаоса на божественную сферу",
       "spa": "Intercambia 3 Orbes de caos por un Orbe divino",
       "tha": "แลก Chaos Orb 3 ชิ้นเป็น Divine Orb 1 ชิ้น"
-    }
+    },
+    "short": null
   },
   "ExchangeChiselsToVaal": {
     "type": "ExchangeChiselsToVaal",
@@ -1982,6 +2104,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 3 个 制图钉交换 3 个瓦尔宝珠",
+      "chi_tra": "把 3 顆製圖釘珠交換為 3 顆瓦爾寶珠",
       "deu": "Tauscht 3 Meißel des Kartographen für 3 Vaalsphären ein",
       "eng": "Exchange 3 Cartographer's Chisels for 3 Vaal Orbs",
       "fra": "Convertit 3 Burins de cartographe en 3 Orbes vaal",
@@ -1991,7 +2114,8 @@
       "rus": "Обменять 3 резца картографа на 3 сферы ваал",
       "spa": "Intercambia 3 Cinceles del cartógrafo por 3 Orbes vaal",
       "tha": "แลก Cartographer's Chisel 3 ชิ้นเป็น Vaal Orb 3 ชิ้น"
-    }
+    },
+    "short": null
   },
   "ExchangeChromaticToGCP": {
     "type": "ExchangeChromaticToGCP",
@@ -1999,6 +2123,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 3 个 幻色石交换 6 个宝石匠的允诺",
+      "chi_tra": "把 3 顆幻色石交換為 6 顆寶石匠的稜鏡",
       "deu": "Tauscht 3 Färbungssphären für 6 Prismen des Gemmenschneiders ein",
       "eng": "Exchange 3 Chromatic Orbs for 6 Gemcutter's Prisms",
       "fra": "Convertit 3 Orbes chromatiques en 6 Prismes de lapidaire",
@@ -2008,7 +2133,8 @@
       "rus": "Обменять 3 цветные сферы на 6 призм камнереза",
       "spa": "Intercambia 3 Orbes cromáticos por 6 Prismas del tallador de gemas",
       "tha": "แลก Chromatic Orb 3 ชิ้นเป็น Gemcutter's Prism 6 ชิ้น"
-    }
+    },
+    "short": null
   },
   "ExchangeJewellerToFusing": {
     "type": "ExchangeJewellerToFusing",
@@ -2016,6 +2142,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 3 个 工匠石交换交换 6 个链结石",
+      "chi_tra": "把 3 顆工匠石交換為 6 顆鏈結石",
       "deu": "Tauscht 3 Sphären des Goldschmieds für 6 Verbindungssphären ein",
       "eng": "Exchange 3 Jeweller's Orbs for 6 Orbs of Fusing",
       "fra": "Convertit 3 Orbes de joaillier en 6 Orbes de fusion",
@@ -2025,7 +2152,8 @@
       "rus": "Обменять 3 сферы златокузнеца на 6 сфер соединения",
       "spa": "Intercambia 3 Orbes del joyero por 6 Orbes de fusión",
       "tha": "แลก Jeweller's Orb 3 ชิ้นเป็น Orb of Fusing 6 ชิ้น"
-    }
+    },
+    "short": null
   },
   "ExchangePrimeToAwakened": {
     "type": "ExchangePrimeToAwakened",
@@ -2033,6 +2161,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 3 个 原始六分仪交换 3 个觉醒六分仪",
+      "chi_tra": "把 3 顆製圖六分儀．精華交換為 3 顆製圖六分儀．覺醒",
       "deu": "Tauscht 3 Außergewöhnliche Sextanten für 3 Erweckte Sextanten ein",
       "eng": "Exchange 3 Prime Sextants for 3 Awakened Sextants",
       "fra": "Convertit 3 Sextants prodigieux en 3  Sextants éveillés",
@@ -2042,7 +2171,8 @@
       "rus": "Обменять 3 превосходных секстанта на 3 пробуждённых секстанта",
       "spa": "Intercambia 3 Sextantes primarios por 3 Sextantes despertados",
       "tha": "แลก เครื่องวัดแดดชั้นสูง 3 ชิ้นเป็น เครื่องวัดแดดจุติ 3 ชิ้น"
-    }
+    },
+    "short": null
   },
   "ExchangeResonatorFossil": {
     "type": "ExchangeResonatorFossil",
@@ -2050,6 +2180,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一个圣油升级成更高阶圣油",
+      "chi_tra": "把 1 個鑄新儀交換成 1 個化石，反之亦然。放入稀有的物品可以換到更為稀有的成品",
       "deu": "Tauscht einen Resonator für ein Fossil aus oder andersherum. Seltene Ergebnisse sind wahrscheinlicher, wenn seltene Gegenstände verwendet werden",
       "eng": "Exchange a Resonator for a Fossil or vice versa. Rare outcomes are more likely with rare inputs",
       "fra": "Transforme un Résonateur en Fossile, ou vice-versa. Plus l'objet utilisé est rare, plus le résultat peut être rare",
@@ -2059,7 +2190,8 @@
       "rus": "Обменять резонатор на ископаемое или наоборот. Чем ценнее изначальный предмет, тем ценнее может быть конечный предмет",
       "spa": "Intercambia un Resonador por un Fósil, o viceversa. Los resultados raros son más probables si aportas objetos raros",
       "tha": "แลก ตัวสั่นพ้อง 1 ชิ้นเป็น ฟอสซิล 1 ชิ้น หรือจะแลกสลับกันก็ได้ ระดับความหายากของไอเทมที่นำมาแลกจะเพิ่มโอกาสได้ไอเทมที่หายากมากขึ้น"
-    }
+    },
+    "short": null
   },
   "ExchangeScouringToAnnulment": {
     "type": "ExchangeScouringToAnnulment",
@@ -2067,6 +2199,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 3 个 重铸石交换 3 个剥离石",
+      "chi_tra": "把 3 顆重鑄石交換為 3 顆無效石",
       "deu": "Tauscht 3 Sphären der Läuterung für 3 Sphären der Annullierung ein",
       "eng": "Exchange 3 Orbs of Scouring for 3 Orbs of Annulment",
       "fra": "Convertit  3 Orbes de suppression en 3 Orbes d'annulation",
@@ -2076,7 +2209,8 @@
       "rus": "Обменять 3 сферы очищения на 3 сферы отмены",
       "spa": "Intercambia 3 Orbes de purga por 3 Orbes de anulación",
       "tha": "แลก Orb of Scouring 3 ชิ้นเป็น Orb of Annulment 3 ชิ้น"
-    }
+    },
+    "short": null
   },
   "ExchangeSextantsToPrime": {
     "type": "ExchangeSextantsToPrime",
@@ -2084,6 +2218,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 3 个 简易六分仪交换 3 个原始六分仪",
+      "chi_tra": "把 3 顆製圖六分儀．簡易交換為 3 顆製圖六分儀．精華",
       "deu": "Tauscht 3 Einfache Sextanten für 3 Außergewöhnliche Sextanten ein",
       "eng": "Exchange 3 Simple Sextants for 3 Prime Sextants",
       "fra": "Convertit 3 Sextants simples en 3 Sextants prodigieux",
@@ -2093,7 +2228,8 @@
       "rus": "Обменять 3 простых секстанта на 3 превосходных секстанта",
       "spa": "Intercambia 3 Sextantes sencillos por 3 Sextantes primarios",
       "tha": "แลก เครื่องวัดแดดเรียบง่าย 3 ชิ้นเป็น เครื่องวัดแดดชั้นสูง 3 ชิ้น"
-    }
+    },
+    "short": null
   },
   "ExchangeTransmutationToAlchemy": {
     "type": "ExchangeTransmutationToAlchemy",
@@ -2101,6 +2237,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 3 个蜕变石交换 3 个点金石",
+      "chi_tra": "把 3 顆蛻變石交換為 3 顆點金石",
       "deu": "Tauscht 3 Umwandlungssphären für 3 Sphären der Alchemie ein",
       "eng": "Exchange 3 Orbs of Transmutation for 3 Orbs of Alchemy",
       "fra": "Convertit 3 Orbes de transmutation en 3 Orbes d'alchimie",
@@ -2110,7 +2247,8 @@
       "rus": "Обменять 3 сферы превращения на 3 сферы алхимии",
       "spa": "Intercambia 3 Orbes de transmutación por 3 Orbes de alquimia",
       "tha": "แลก Orb of Transmutation 3 ชิ้นเป็น Orb of Alchemy 3 ชิ้น"
-    }
+    },
+    "short": null
   },
   "ExchangeVaalToRegret": {
     "type": "ExchangeVaalToRegret",
@@ -2118,6 +2256,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 3 个 瓦尔宝珠交换 6 个后悔石",
+      "chi_tra": "把 3 顆瓦爾寶珠交換為 6 顆後悔石",
       "deu": "Tauscht 3 Vaalsphären für 6 Sphären der Reue ein",
       "eng": "Exchange 3 Vaal Orbs for 6 Orbs of Regret",
       "fra": "Convertit 3 Orbes vaal en 6 Orbes de regret",
@@ -2127,7 +2266,8 @@
       "rus": "Обменять 3 сферы ваал на 6 сфер раскаяния",
       "spa": "Intercambia 3 Orbes vaal por 6 Orbes de arrepentimiento",
       "tha": "แลก Vaal Orb 3 ชิ้นเป็น Orb of Regret 6 ชิ้น"
-    }
+    },
+    "short": null
   },
   "ExchangeWisdomToChance": {
     "type": "ExchangeWisdomToChance",
@@ -2135,6 +2275,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用 3 个 知识卷轴交换 6 个机会石",
+      "chi_tra": "把 3 張知識卷軸交換為 6 顆機會石",
       "deu": "Tauscht 3 Identifikationsrollen für 6 Sphären der Möglichkeiten ein",
       "eng": "Exchange 3 Scrolls of Wisdom for 6 Orbs of Chance",
       "fra": "Convertit 3 Parchemins de sagesse en 6 Orbes de chance",
@@ -2144,7 +2285,8 @@
       "rus": "Обменять 3 свитка мудрости на 6 сфер удачи",
       "spa": "Intercambia 3 Pergaminos de sabiduría por 6 Orbes de azar",
       "tha": "แลก Scroll of Wisdom 3 ชิ้นเป็น Orb of Chance 6 ชิ้น"
-    }
+    },
+    "short": null
   },
   "FiveLinks": {
     "type": "FiveLinks",
@@ -2152,6 +2294,7 @@
     "pricing": "Five Links",
     "translations": {
       "chi_sim": "重铸一个物品上插槽间的连接，连接六个插槽",
+      "chi_tra": "重鑄 1 件物品上相連的插槽，並相連 5 個插槽",
       "deu": "Verändert die Verbindungen eines Gegenstands und verbindet fünf Fassungen",
       "eng": "Reforge the links between sockets on an item, linking five sockets",
       "fra": "Relie entre elles cinq châsses au total sur un objet",
@@ -2172,6 +2315,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "使物品变为六个插槽",
+      "chi_tra": "把 1 件物品改為 5 個插槽",
       "deu": "Stattet einen Gegenstand mit fünf Fassungen aus",
       "eng": "Set an item to five sockets",
       "fra": "Dote un objet de cinq châsses",
@@ -2192,6 +2336,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "重铸一个物品上插槽间的连接，连接五个插槽",
+      "chi_tra": "重鑄 1 件物品上相連的插槽，並相連 4 個插槽",
       "deu": "Verändert die Verbindungen eines Gegenstands und verbindet vier Fassungen",
       "eng": "Reforge the links between sockets on an item, linking four sockets",
       "fra": "Relie entre elles quatre châsses au total sur un objet",
@@ -2212,6 +2357,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "使物品变为五个插槽",
+      "chi_tra": "把 1 件物品改為 4 個插槽",
       "deu": "Stattet einen Gegenstand mit vier Fassungen aus",
       "eng": "Set an item to four sockets",
       "fra": "Dote un objet de quatre châsses",
@@ -2232,6 +2378,7 @@
     "pricing": "Fracture 1/5",
     "translations": {
       "chi_sim": "分裂物品的一个随机后缀。该物品至少要有 3 个后缀才可分裂。无法用于有影响效果的物品、虚空忆境物品，或者分裂过的物品",
+      "chi_tra": "使用至少 5 個詞綴來破裂物品上 1 個隨機詞綴，並使它鎖定位置。不能使用於勢力、追憶或破裂之物",
       "deu": "Verwandelt auf einem Gegenstand mit mind. 5 Mod. einen zufälligen Mod. in einen unveränderbaren brüchigen Mod. Dies kann nicht auf beeinflusste, synthetisierte oder brüchige Gegenstände angewendet werden.",
       "eng": "Fracture a random modifier on an item with at least 5 modifiers, locking it in place. This can't be used on Influenced, Synthesised, or Fractured items",
       "fra": "Fissure et verrouille un mod au hasard sur un objet doté d'au moins 5 mods. Ne fonctionne pas sur les Objets influencés, synthétisés ou fissurés.",
@@ -2252,6 +2399,7 @@
     "pricing": "Fracture 1/3 Prefix",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个攻击词缀",
+      "chi_tra": "使用至少 3 個前綴來破裂物品上 1 個前綴。不能使用於勢力、追憶或破裂之物",
       "deu": "Verwandelt ein Präfix auf einem Gegenstand mit mind. 3 Präfixen in einen brüchigen Mod. Dies kann nicht auf beeinflusste, synthetisierte oder brüchige Gegenstände angewendet werden.",
       "eng": "Fracture a random Prefix on an item with at least 3 Prefixes. This can't be used on Influenced, Synthesised, or Fractured items.",
       "fra": "Fissure un Préfixe pris au hasard sur un objet doté d'au moins 3 Préfixes. Ne fonctionne pas sur les Objets influencés, synthétisés ou fissurés.",
@@ -2272,6 +2420,7 @@
     "pricing": "Fracture 1/3 Suffix",
     "translations": {
       "chi_sim": "分裂物品的一个随机前缀。该物品至少要有 3 个前缀才可分裂。无法用于有影响效果的物品、虚空忆境物品，或者分裂过的物品",
+      "chi_tra": "使用至少 3 個後綴來破裂物品上 1 個後綴。不能使用於勢力、追憶或破裂之物",
       "deu": "Verwandelt ein Suffix auf einem Gegenstand mit mind. 3 Suffixen in einen brüchigen Mod. Dies kann nicht auf beeinflusste, synthetisierte oder brüchige Gegenstände angewendet werden.",
       "eng": "Fracture a random Suffix on an item with at least 3 Suffixes. This can't be used on Influenced, Synthesised, or Fractured items",
       "fra": "Fissure un Suffixe pris au hasard sur un objet doté d'au moins 3 Suffixes. Ne fonctionne pas sur les Objets influencés, synthétisés ou fissurés.",
@@ -2292,6 +2441,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "使药剂品质提升至少 10%。对低品质药剂效果更佳。最大能提高到 20%",
+      "chi_tra": "優化藥劑至少 10% 的品質。稀有度越低的藥劑效果越好。品質最大為 20%",
       "deu": "Verbessert die Qualität eines Fläschchens um mindestens 10%. Hat auf weniger seltene Fläschchen einen größeren Effekt. Die maximale Qualität ist 20%",
       "eng": "Improves the Quality of a Flask by at least 10%. Has greater effect on lower rarity flasks. The maximum quality is 20%",
       "fra": "Améliore la qualité d'un Flacon de 10% ou plus. Produit un meilleur résultat sur les Flacons de rareté inférieure. La qualité maximale est de 20%",
@@ -2312,6 +2462,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "使技能石品质提升至少 10%。最大能提高到 20%",
+      "chi_tra": "優化寶石至少 10% 的品質。品質最大為 20%",
       "deu": "Verbessert die Qualität einer Gemme um mindestens 10%. Die maximale Qualität ist 20%",
       "eng": "Improves the Quality of a Gem by at least 10%. The maximum quality is 20%",
       "fra": "Améliore la qualité d'une Gemme de 10% ou plus. La qualité maximale est de 20%",
@@ -2332,6 +2483,7 @@
     "pricing": "Randomise Influence Armour",
     "translations": {
       "chi_sim": "随机改变有影响效果的普通、魔法、稀有饰品的影响效果类型，同时给它重铸一个新随机词缀",
+      "chi_tra": "新增隨機勢力至 1 件勢力的普通、魔法或稀有護甲，同時重鑄物品帶有新的隨機詞綴",
       "deu": "Verändert zufällig die Einflusstypen auf einer beeinflussten normalen, magischen oder seltenen Rüstung und verändert diese mit neuen zufälligen Modifikatoren",
       "eng": "Randomise the Influence types on an Influenced Normal, Magic or Rare Armour, as well as reforging the item with new random modifiers",
       "fra": "Tire au hasard les types d'Influence d'une armure Influencée normale, magique ou rare et reforge l'objet avec de nouveaux mods aléatoires",
@@ -2352,6 +2504,7 @@
     "pricing": "Randomise Influence Jewellery",
     "translations": {
       "chi_sim": "附魔身体装备。使品质不提高防御属性，改为每 2% 品质 +1 生命上限",
+      "chi_tra": "新增隨機勢力至 1 件勢力的普通、魔法或稀有飾品，同時重鑄物品帶有新的隨機詞綴",
       "deu": "Verändert zufällig die Einflusstypen auf beeinflusstem normalem, magischem oder seltenem Schmuck und verändert diesen mit neuen zufälligen Modifikatoren",
       "eng": "Randomise the Influence types on an Influenced Normal, Magic or Rare Jewellery, as well as reforging the item with new random modifiers",
       "fra": "Tire au hasard les types d'Influence d'un accessoire Influencé normal, magique ou rare et reforge l'objet avec de nouveaux mods aléatoires",
@@ -2372,6 +2525,7 @@
     "pricing": "Randomise Influence Weapon",
     "translations": {
       "chi_sim": "随机改变有影响效果的普通、魔法、稀有护甲的影响效果类型，同时给它重铸一个新随机词缀",
+      "chi_tra": "新增隨機勢力至 1 件勢力的普通、魔法或稀有武器或箭袋，同時重鑄物品帶有新的隨機詞綴",
       "deu": "Verändert zufällig die Einflusstypen auf einer beeinflussten normalen, magischen oder seltenen Waffe oder einem Köcher und verändert diese mit neuen zufälligen Modifikatoren",
       "eng": "Randomise the Influence types on an Influenced Normal, Magic or Rare Weapon or Quiver, as well as reforging the item with new random modifiers",
       "fra": "Tire au hasard les types d'Influence d'une arme ou d'un carquois Influencé normal, magique ou rare et reforge l'objet avec de nouveaux mods aléatoires",
@@ -2392,6 +2546,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "给物品移除一个随机影响效果词缀，再给它添加一个新影响效果词缀",
+      "chi_tra": "隨機更改魔法或稀有物品上隨機勢力詞綴的數值",
       "deu": "Verändert zufällig die numerischen Werte der zufälligen Eigenschaften von Einfluss-Modifikatoren eines magischen oder seltenen Gegenstands",
       "eng": "Randomise the numeric values of the random Influence modifiers on a Magic or Rare item",
       "fra": "Tire au hasard les valeurs numériques des mods d'influence d'un Objet magique ou rare",
@@ -2412,6 +2567,7 @@
     "pricing": "Reforge Attack",
     "translations": {
       "chi_sim": "给非影响效果物品移除一个随机非攻击词缀，再给它添加一个新攻击词缀",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個攻擊詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Angriffsmodifikators",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including an Attack modifier",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod d'attaque",
@@ -2432,6 +2588,7 @@
     "pricing": "Reforge Attack More Common",
     "translations": {
       "chi_sim": "用一个带有幸运数值的新攻击词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個攻擊詞綴。更容易出現攻擊詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Angriffsmodifikators. Angriffsmodifikatoren kommen häufiger vor.",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including an Attack modifier. Attack modifiers are more common",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod d'attaque. L'objet a plus de chances de recevoir des mods d'attaque",
@@ -2452,6 +2609,7 @@
     "pricing": "Reforge Caster",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个施法词缀",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個法術詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Zaubermodifikators",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Caster modifier",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de lanceur de sorts",
@@ -2472,6 +2630,7 @@
     "pricing": "Reforge Caster More Common",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个施法词缀。施法词缀更常见",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個法術詞綴。更容易出現法術詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Zaubermodifikators. Zaubermodifikatoren kommen häufiger vor.",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Caster modifier. Caster modifiers are more common",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de lanceur de sorts. L'objet a plus de chances de recevoir des mods de lanceur de sorts",
@@ -2492,6 +2651,7 @@
     "pricing": "Reforge Chaos",
     "translations": {
       "chi_sim": "给非影响效果物品移除一个随机非混沌词缀，再给它添加一个新混沌词缀",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個混沌詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Chaosmodifikators",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Chaos modifier",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de chaos",
@@ -2512,6 +2672,7 @@
     "pricing": "Reforge Chaos More Common",
     "translations": {
       "chi_sim": "用一个带有幸运数值的混沌词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個混沌詞綴。更容易出現混沌詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Chaosmodifikators. Chaosmodifikatoren kommen häufiger vor.",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Chaos modifier. Chaos modifiers are more common",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de chaos. L'objet a plus de chances de recevoir des mods de chaos",
@@ -2532,6 +2693,7 @@
     "pricing": "Reforge Cold",
     "translations": {
       "chi_sim": "给非影响效果物品移除一个随机非冰霜词缀，再给它添加一个新冰霜词缀",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個冰冷詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Kältemodifikators",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Cold modifier",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de froid",
@@ -2552,6 +2714,7 @@
     "pricing": "Reforge Cold More Common",
     "translations": {
       "chi_sim": "用一个带有幸运数值的新冰霜词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有至稀有物品，並有新的隨機詞綴，包含 1 個冰冷詞綴。更容易出現冰冷詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Kältemodifikators. Kältemodifikatoren kommen häufiger vor.",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Cold modifier. Cold modifiers are more common",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de froid. L'objet a plus de chances de recevoir des mods de froid",
@@ -2572,6 +2735,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "重铸物品上的插槽颜色 10 次，最终取不常见的插槽颜色最多的那次结果",
+      "chi_tra": "重鑄 1 件物品上插槽的顏色  10 次。使用最多較不常見的顏色的結果",
       "deu": "Verändert die Farben der Fassungen eines Gegenstands 10 Mal und verwendet das Ergebnis mit der höchsten Anzahl an unüblichen Fassungsfarben",
       "eng": "Reforge the colours of sockets on an item 10 times, using the outcome with the greatest number of less-common socket colours",
       "fra": "Recolore dix fois les châsses d'un objet dix fois et conserve le résultat comportant le plus grand nombre de couleurs atypiques",
@@ -2592,6 +2756,7 @@
     "pricing": "Reforge Critical",
     "translations": {
       "chi_sim": "给非影响效果物品移除一个随机非暴击词缀，再给它添加一个新暴击词缀",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個暴擊詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines kritischen Modifikators",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Critical modifier",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de critique",
@@ -2612,6 +2777,7 @@
     "pricing": "Reforge Critical More Common",
     "translations": {
       "chi_sim": "用一个带有幸运数值的暴击词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有稀有物品，並有新的隨機詞綴，包含 1 個暴擊詞綴。更容易出現暴擊詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines kritischen Modifikators. Kritische Modifikatoren kommen häufiger vor.",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Critical modifier. Critical modifiers are more common",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de critique. L'objet a plus de chances de recevoir des mods de critique",
@@ -2632,6 +2798,7 @@
     "pricing": "Reforge Defence",
     "translations": {
       "chi_sim": "给非影响效果物品移除一个随机非防御词缀，再给它添加一个新防御词缀",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個防禦詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Defensivmodifikators",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Defence modifier",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de défense",
@@ -2652,6 +2819,7 @@
     "pricing": "Reforge Defence More Common",
     "translations": {
       "chi_sim": "用一个带有幸运数值的防御词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個防禦詞綴。更容易出現防禦詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Defensivmodifikators. Defensivmodifikatoren kommen häufiger vor.",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Defence modifier. Defence modifiers are more common",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de défense. L'objet a plus de chances de recevoir des mods de défense",
@@ -2672,6 +2840,7 @@
     "pricing": "Reforge Fire",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个火焰词缀",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個火焰詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Feuermodifikators",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Fire modifier",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de feu",
@@ -2692,6 +2861,7 @@
     "pricing": "Reforge Fire More Common",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个火焰词缀。火焰词缀更常见",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個火焰詞綴。更容易出現火焰詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Feuermodifikators. Feuermodifikatoren kommen häufiger vor.",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Fire modifier. Fire modifiers are more common",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de feu. L'objet a plus de chances de recevoir des mods de feu",
@@ -2712,6 +2882,7 @@
     "pricing": "Reforge Influence More Common",
     "translations": {
       "chi_sim": "用一个带有幸运数值的新影响效果词缀增幅魔法物品或稀有物品",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個勢力詞綴。更容易出現勢力詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Einfluss-Modifikators. Einfluss-Modifikatoren kommen häufiger vor.",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including an Influence modifier. Influence modifiers are more common",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod d'influence. L'objet a plus de chances de recevoir des mods d'influence",
@@ -2732,6 +2903,7 @@
     "pricing": "Reforge keep Prefix",
     "translations": {
       "chi_sim": "重铸一个稀有物品，保留所有后缀",
+      "chi_tra": "重鑄 1 件稀有物品，並保留所有前綴",
       "deu": "Verändert einen seltenen Gegenstand, während alle Präfixe beibehalten werden",
       "eng": "Reforge a Rare item, keeping all Prefixes",
       "fra": "Remodèle un Objet rare en conservant tous ses Préfixes",
@@ -2752,6 +2924,7 @@
     "pricing": "Reforge keep Prefix Lucky",
     "translations": {
       "chi_sim": "重铸具有幸运词缀数值的稀有物品，保留所有后缀",
+      "chi_tra": "重鑄 1 件稀有物品上的詞綴，詞綴數值很幸運，保留所有前綴",
       "deu": "Verändert einen seltenen Gegenstand mit neuen, günstigen Modifikatoren, während alle Präfixe beibehalten werden",
       "eng": "Reforge a Rare item with Lucky modifier values, keeping all Prefixes",
       "fra": "Remodèle un Objet rare en lui donnant des valeurs en votre Faveur. Ses Préfixes sont conservés",
@@ -2772,6 +2945,7 @@
     "pricing": "Reforge keep Suffix",
     "translations": {
       "chi_sim": "重铸一个稀有物品，大概率不会得到相同类型词缀",
+      "chi_tra": "重鑄 1 件稀有物品，並保留所有後綴",
       "deu": "Verändert einen seltenen Gegenstand, während alle Suffixe beibehalten werden",
       "eng": "Reforge a Rare item, keeping all Suffixes",
       "fra": "Remodèle un Objet rare en conservant tous ses Suffixes",
@@ -2792,6 +2966,7 @@
     "pricing": "Reforge keep Suffix Lucky",
     "translations": {
       "chi_sim": "重置具有幸运词缀数值的稀有物品的前缀、后缀、基底词缀的数值",
+      "chi_tra": "重鑄 1 件稀有物品上的詞綴，詞綴數值很幸運，保留所有後綴",
       "deu": "Verändert einen seltenen Gegenstand mit neuen, günstigen Modifikatoren, während alle Suffixe beibehalten werden",
       "eng": "Reforge a Rare item with Lucky modifier values, keeping all Suffixes",
       "fra": "Remodèle un Objet rare en lui donnant des valeurs en votre Faveur. Ses Suffixes sont conservés",
@@ -2812,6 +2987,7 @@
     "pricing": "Reforge Rare Less Likely",
     "translations": {
       "chi_sim": "重铸一个稀有物品，大概率会得到相同类型词缀",
+      "chi_tra": "重鑄 1 件稀有物品，更低機率獲得相同類型的詞綴",
       "deu": "Verändert einen seltenen Gegenstand, wobei die Chance verringert ist, dieselben Modifikatortypen zu erhalten",
       "eng": "Reforge a Rare item, being much less likely to receive the same modifier types",
       "fra": "Remodèle un Objet rare. Cet objet a très peu de chances de recevoir des mods du même type",
@@ -2832,6 +3008,7 @@
     "pricing": "Reforge Life",
     "translations": {
       "chi_sim": "给非影响效果物品移除一个随机非生命词缀，再给它添加一个新生命词缀",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個生命詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Lebensmodifikators",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Life modifier",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de Vie",
@@ -2852,6 +3029,7 @@
     "pricing": "Reforge Life More Common",
     "translations": {
       "chi_sim": "用一个带有幸运数值的生命词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有稀有物品，並有新的隨機詞綴，包含 1 個生命詞綴。更容易出現生命詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Lebensmodifikators. Lebensmodifikatoren kommen häufiger vor.",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Life modifier. Life modifiers are more common",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de Vie. L'objet a plus de chances de recevoir des mods de Vie",
@@ -2872,6 +3050,7 @@
     "pricing": "Reforge Lightning",
     "translations": {
       "chi_sim": "给非影响效果物品移除一个随机非闪电词缀，再给它添加一个新闪电词缀",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個閃電詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Blitzmodifikators",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Lightning modifier",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de foudre",
@@ -2892,6 +3071,7 @@
     "pricing": "Reforge Lightning More Common",
     "translations": {
       "chi_sim": "用一个带有幸运数值的闪电词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有至稀有物品，並有新的隨機詞綴，包含 1 個閃電詞綴。更容易出現閃電詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Blitzmodifikators. Blitzmodifikatoren kommen häufiger vor.",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Lightning modifier. Lightning modifiers are more common",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de foudre. L'objet a plus de chances de recevoir des mods de foudre",
@@ -2912,6 +3092,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "重铸物品上插槽间的连接 10 次，最终取连接插槽数最多的那次结果",
+      "chi_tra": "重鑄 1 件物品上相連的插槽 10 次。使用最多相連插槽數量的結果",
       "deu": "Verändert die Anzahl der verbundenen Fassungen eines Gegenstands 10 Mal und verwendet das Ergebnis mit der höchsten Anzahl an verbundenen Fassungen",
       "eng": "Reforge the links between sockets on an item 10 times, using the outcome with the greatest number of linked sockets",
       "fra": "Remodèle dix fois les liaisons entre les châsses d'un objet et conserve le résultat le plus élevé",
@@ -2932,6 +3113,7 @@
     "pricing": "Reforge Rare More Likely",
     "translations": {
       "chi_sim": "献祭地图，根据地图颜色换取 3 个阿尔瓦异界图鉴任务",
+      "chi_tra": "重鑄 1 件稀有物品，更高機率獲得相同類型的詞綴",
       "deu": "Verändert einen seltenen Gegenstand, wobei die Chance erhöht ist, dieselben Modifikatortypen zu erhalten",
       "eng": "Reforge a Rare item, being much more likely to receive the same modifier types",
       "fra": "Remodèle un Objet rare. Cet objet a de grandes chances de recevoir des mods du même type",
@@ -2952,6 +3134,7 @@
     "pricing": "Non-Blue into Blue Socket",
     "translations": {
       "chi_sim": "将物品上一个非蓝色插槽重铸为蓝色",
+      "chi_tra": "重鑄物品上的 1 個非藍色插槽的顏色變成藍色",
       "deu": "Verändert die Farbe einer nicht blauen Fassung eines Gegenstands zu blau",
       "eng": "Reforge the colour of a non-Blue socket on an item, turning it Blue",
       "fra": "Recolore en Bleu une châsse qui n'est pas déjà de cette couleur sur un objet",
@@ -2972,6 +3155,7 @@
     "pricing": "Non-Green into Green Socket",
     "translations": {
       "chi_sim": "将物品上一个非绿色插槽重铸为绿色",
+      "chi_tra": "重鑄物品上的 1 個非綠色插槽的顏色變成綠色",
       "deu": "Verändert die Farbe einer nicht grünen Fassung eines Gegenstands zu grün",
       "eng": "Reforge the colour of a non-Green socket on an item, turning it Green",
       "fra": "Recolore en Vert une châsse qui n'est pas déjà de cette couleur sur un objet",
@@ -2992,6 +3176,7 @@
     "pricing": "Non-Red into Red Socket",
     "translations": {
       "chi_sim": "将物品上一个非红色插槽重铸为红色",
+      "chi_tra": "重鑄物品上的 1 個非紅色插槽的顏色變成紅色",
       "deu": "Verändert die Farbe einer nicht roten Fassung eines Gegenstands zu rot",
       "eng": "Reforge the colour of a non-Red socket on an item, turning it Red",
       "fra": "Recolore en Rouge une châsse qui n'est pas déjà de cette couleur sur un objet",
@@ -3012,6 +3197,7 @@
     "pricing": "Reforge Physical",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个物理词缀",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個物理詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines physischen Modifikators",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Physical modifier",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod physique",
@@ -3032,6 +3218,7 @@
     "pricing": "Reforge Physical More Common",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个物理词缀。物理词缀更常见",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個物理詞綴。更容易出現物理詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines physischen Modifikators. Physische Modifikatoren kommen häufiger vor.",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Physical modifier. Physical modifiers are more common",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod physique. L'objet a plus de chances de recevoir des mods physiques",
@@ -3052,6 +3239,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用新随机词缀重铸稀有物品 10 次。最终取平均词缀等级最高的那次结果",
+      "chi_tra": "重鑄 1 件稀有物品，並有新的隨機詞綴 10 次。使用平均詞綴等級最高的結果",
       "deu": "Verändert einen seltenen Gegenstand 10 Mal mit neuen zufälligen Modifikatoren und verwendet das Ergebnis mit dem höchsten durchschnittlichen Modifikatorenlevel",
       "eng": "Reforge a Rare item with new random modifiers 10 times, using the outcome with the highest average modifier level",
       "fra": "Tire dix fois au hasard de nouveaux mods sur un Objet rare, puis conserve le résultat ayant le niveau de mods le plus élevé",
@@ -3072,6 +3260,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "重铸物品上的插槽数 10 次，最终取插槽数最多的那次结果",
+      "chi_tra": "重鑄 1 件物品上的插槽數量 10 次，使用最多插槽數量的結果",
       "deu": "Verändert die Anzahl der Fassungen eines Gegenstands 10 Mal und verwendet das Ergebnis mit der höchsten Anzahl an Fassungen",
       "eng": "Reforge the number of sockets on an item 10 times, using the outcome with the greatest number of sockets",
       "fra": "Remodèle dix fois le nombre de châsses d'un objet et conserve le résultat le plus élevé",
@@ -3092,6 +3281,7 @@
     "pricing": "Reforge Speed",
     "translations": {
       "chi_sim": "给非影响效果物品移除一个随机非速度词缀，再给它添加一个新速度词缀",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個速度詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Geschwindigkeitsmodifikators",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Speed modifier",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de Vitesse",
@@ -3112,6 +3302,7 @@
     "pricing": "Reforge Speed More Common",
     "translations": {
       "chi_sim": "用一个带有幸运数值的新速度词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "重鑄 1 件普通、魔法或稀有物品至稀有物品，並有新的隨機詞綴，包含 1 個速度詞綴。更容易出現速度詞綴",
       "deu": "Verändert einen normalen, magischen oder seltenen Gegenstand zu einem seltenen Gegenstand mit zufälligen Modifikatoren, einschließlich eines Geschwindigkeitsmodifikators. Geschwindigkeitsmodifikatoren kommen häufiger vor.",
       "eng": "Reforge a Normal, Magic or Rare item as a Rare item with random modifiers, including a Speed modifier. Speed modifiers are more common",
       "fra": "Remodèle un Objet rare en lui donnant de nouveaux mods pris au hasard, dont un mod de Vitesse. L'objet a plus de chances de recevoir des mods de Vitesse",
@@ -3132,6 +3323,7 @@
     "pricing": "Reforge into White Socket",
     "translations": {
       "chi_sim": "将物品上一个随机插槽颜色重铸为白色",
+      "chi_tra": "重鑄物品上的 1 個隨機插槽顏色變成白色",
       "deu": "Verändert die Farbe einer zufälligen Fassung eines Gegenstands zu weiß",
       "eng": "Reforge the colour of a random socket on an item, turning it White",
       "fra": "Recolore en Blanc une châsse prise au hasard sur un objet",
@@ -3152,6 +3344,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个影响效果词缀。影响效果词缀更常见",
+      "chi_tra": "從物品上移除 1 個勢力詞綴，並新增 1 個勢力詞綴",
       "deu": "Entfernt einen Einfluss-Modifikator von einem Gegenstand und fügt einen neuen Einfluss-Modifikator hinzu",
       "eng": "Remove a random Influence modifier from an item and add a new Influence modifier",
       "fra": "Retire un mod d'influence pris au hasard sur un objet et lui ajoute un nouveau mod d'influence",
@@ -3172,6 +3365,7 @@
     "pricing": "Remove Non-Attack Add Attack",
     "translations": {
       "chi_sim": "用一个新攻击词缀增幅一个非影响效果魔法物品或稀有物品",
+      "chi_tra": "從非勢力物品上移除 1 個非攻擊詞綴，並新增 1 個攻擊詞綴",
       "deu": "Entfernt einen Nicht-Angriffsmodifikator von einem nicht beeinflussten Gegenstand und fügt einen neuen Angriffsmodifikator hinzu",
       "eng": "Remove a random non-Attack modifier from a non-Influenced item and add a new Attack modifier",
       "fra": "Retire un mod pris au hasard (autre qu'un mod d'attaque) sur un objet non Influencé et lui ajoute un nouveau mod d'attaque",
@@ -3192,6 +3386,7 @@
     "pricing": "Remove Non-Caster Add Caster",
     "translations": {
       "chi_sim": "给非影响效果物品移除一个随机非施法词缀，再给它添加一个新施法词缀",
+      "chi_tra": "從非勢力物品上移除 1 個非法術詞綴，並新增 1 個法術詞綴",
       "deu": "Entfernt einen Nicht-Zaubermodifikator von einem nicht beeinflussten Gegenstand und fügt einen neuen Zaubermodifikator hinzu",
       "eng": "Remove a random non-Caster modifier from a non-Influenced item and add a new Caster modifier",
       "fra": "Retire un mod pris au hasard (autre qu'un mod de lanceur de sorts) sur un objet non Influencé et lui ajoute un nouveau mod de lanceur de sorts",
@@ -3212,6 +3407,7 @@
     "pricing": "Remove Non-Chaos Add Chaos",
     "translations": {
       "chi_sim": "用一个混沌词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "從非勢力物品上移除 1 個非混沌詞綴，並新增 1 個混沌詞綴",
       "deu": "Entfernt einen Nicht-Chaosmodifikator von einem nicht beeinflussten Gegenstand und fügt einen neuen Chaosmodifikator hinzu",
       "eng": "Remove a random non-Chaos modifier from a non-Influenced item and add a new Chaos modifier",
       "fra": "Retire un mod pris au hasard (autre qu'un mod de chaos) sur un objet non Influencé et lui ajoute un nouveau mod de chaos",
@@ -3232,6 +3428,7 @@
     "pricing": "Remove Non-Cold Add Cold",
     "translations": {
       "chi_sim": "用一个新冰霜词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "從非勢力物品上移除 1 個非冰冷詞綴，並新增 1 個冰冷詞綴",
       "deu": "Entfernt einen Nicht-Kältemodifikator von einem nicht beeinflussten Gegenstand und fügt einen neuen Kältemodifikator hinzu",
       "eng": "Remove a random non-Cold modifier from a non-Influenced item and add a new Cold modifier",
       "fra": "Retire un mod pris au hasard (autre qu'un mod de froid) sur un objet non Influencé et lui ajoute un nouveau mod de froid",
@@ -3252,6 +3449,7 @@
     "pricing": "Remove Non-Critical Add Critical",
     "translations": {
       "chi_sim": "用一个暴击词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "從非勢力物品上移除 1 個非暴擊詞綴，並新增 1 個暴擊詞綴",
       "deu": "Entfernt einen nicht-kritischen Modifikator von einem nicht beeinflussten Gegenstand und fügt einen neuen kritischen Modifikator hinzu",
       "eng": "Remove a random non-Critical modifier from a non-Influenced item and add a new Critical modifier",
       "fra": "Retire un mod pris au hasard (autre qu'un mod de critique) sur un objet non Influencé et lui ajoute un nouveau mod de critique",
@@ -3272,6 +3470,7 @@
     "pricing": "Remove Non-Defence Add Defence",
     "translations": {
       "chi_sim": "用一个防御词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "從非勢力物品上移除 1 個非防禦詞綴，並新增 1 個防禦詞綴",
       "deu": "Entfernt einen Nicht-Defensivmodifikator von einem nicht beeinflussten Gegenstand und fügt einen neuen Defensivmodifikator hinzu",
       "eng": "Remove a random non-Defence modifier from a non-Influenced item and add a new Defence modifier",
       "fra": "Retire un mod pris au hasard (autre qu'un mod de défense) sur un objet non Influencé et lui ajoute un nouveau mod de défense",
@@ -3292,6 +3491,7 @@
     "pricing": "Remove Non-Fire Add Fire",
     "translations": {
       "chi_sim": "给非影响效果物品移除一个随机非火焰词缀，再给它添加一个新火焰词缀",
+      "chi_tra": "從非勢力物品上移除 1 個非火焰詞綴，並新增 1 個火焰詞綴",
       "deu": "Entfernt einen Nicht-Feuermodifikator von einem nicht beeinflussten Gegenstand und fügt einen neuen Feuermodifikator hinzu",
       "eng": "Remove a random non-Fire modifier from a non-Influenced item and add a new Fire modifier",
       "fra": "Retire un mod pris au hasard (autre qu'un mod de feu) sur un objet non Influencé et lui ajoute un nouveau mod de feu",
@@ -3312,6 +3512,7 @@
     "pricing": "Remove Non-Influence Add Influence",
     "translations": {
       "chi_sim": "用一个新影响效果词缀增幅魔法物品或稀有物品",
+      "chi_tra": "從物品上移除 1 個非勢力詞綴，並新增 1 個勢力詞綴",
       "deu": "Entfernt einen Nicht-Einfluss-Modifikator von einem Gegenstand und fügt einen neuen Einfluss-Modifikator hinzu",
       "eng": "Remove a random non-Influence modifier from an item and add a new Influence modifier",
       "fra": "Retire un mod (autre qu'un mod d'influence) d'un objet et lui ajoute un nouveau mod d'influence",
@@ -3332,6 +3533,7 @@
     "pricing": "Remove Non-Life Add Life",
     "translations": {
       "chi_sim": "用一个生命词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "從非勢力物品上移除 1 個非生命詞綴，並新增 1 個生命詞綴",
       "deu": "Entfernt einen Nicht-Lebensmodifikator von einem nicht beeinflussten Gegenstand und fügt einen neuen Lebensmodifikator hinzu",
       "eng": "Remove a random non-Life modifier from a non-Influenced item and add a new Life modifier",
       "fra": "Retire un mod pris au hasard (autre qu'un mod de Vie) sur un objet non Influencé et lui ajoute un nouveau mod de Vie",
@@ -3352,6 +3554,7 @@
     "pricing": "Remove Non-Lightning Add Lightning",
     "translations": {
       "chi_sim": "用一个闪电词缀增幅非影响效果魔法物品或稀有物品",
+      "chi_tra": "從非勢力物品上移除 1 個非閃電詞綴，並新增 1 個閃電詞綴",
       "deu": "Entfernt einen Nicht-Blitzmodifikator von einem nicht beeinflussten Gegenstand und fügt einen neuen Blitzmodifikator hinzu",
       "eng": "Remove a random non-Lightning modifier from a non-Influenced item and add a new Lightning modifier",
       "fra": "Retire un mod pris au hasard (autre qu'un mod de foudre) sur un objet non Influencé et lui ajoute un nouveau mod de foudre",
@@ -3372,6 +3575,7 @@
     "pricing": "Remove Non-Physical Add Physical",
     "translations": {
       "chi_sim": "给非影响效果物品移除一个随机非物理词缀，再给它添加一个新物理词缀",
+      "chi_tra": "從非勢力物品上移除 1 個非物理詞綴，並新增 1 個物理詞綴",
       "deu": "Entfernt einen nicht-physischen Modifikator von einem nicht beeinflussten Gegenstand und fügt einen neuen physischen Modifikator hinzu",
       "eng": "Remove a random non-Physical modifier from a non-Influenced item and add a new Physical modifier",
       "fra": "Retire un mod pris au hasard (autre qu'un mod physique) sur un objet non Influencé et lui ajoute un nouveau mod physique",
@@ -3392,6 +3596,7 @@
     "pricing": "Remove Non-Speed Add Speed",
     "translations": {
       "chi_sim": "用一个新速度词缀增幅一个非影响效果魔法物品或稀有物品",
+      "chi_tra": "從非勢力物品上移除 1 個非速度詞綴，並新增 1 個速度詞綴",
       "deu": "Entfernt einen Nicht-Geschwindigkeitsmodifikator von einem nicht beeinflussten Gegenstand und fügt einen neuen Geschwindigkeitsmodifikator hinzu",
       "eng": "Remove a random non-Speed modifier from a non-Influenced item and add a new Speed modifier",
       "fra": "Retire un mod pris au hasard (autre qu'un mod de Vitesse) sur un objet non Influencé et lui ajoute un nouveau mod de Vitesse",
@@ -3412,6 +3617,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "随机改变魔法物品或稀有物品上随机影响效果词缀的属性数值",
+      "chi_tra": "從物品上移除 1 個隨機勢力詞綴",
       "deu": "Entfernt einen Einfluss-Modifikator von einem Gegenstand",
       "eng": "Remove a random Influence modifier from an item",
       "fra": "Retire un mod d'influence pris au hasard sur un objet",
@@ -3432,6 +3638,7 @@
     "pricing": "Reroll Prefix Lucky",
     "translations": {
       "chi_sim": "重置具有幸运词缀数值的魔法物品或稀有物品的后缀数值",
+      "chi_tra": "重骰 1 見魔法或稀有物品上前綴的數值，詞綴數值很幸運",
       "deu": "Verändert die Werte der Präfix-Modifikatoren eines magischen oder seltenen Gegenstands, mit günstigen Modifikatorenwerten",
       "eng": "Reroll the values of Prefix modifiers on a Magic or Rare item, with Lucky modifier values",
       "fra": "Tire au hasard la valeur des Préfixes d'un Objet magique ou rare. Ces valeurs sont en votre Faveur",
@@ -3452,6 +3659,7 @@
     "pricing": "Reroll All Lucky",
     "translations": {
       "chi_sim": "用一个新词缀增幅非影响效果稀有物品，使其具有幸运词缀",
+      "chi_tra": "重骰 1 件稀有物品上的前綴、後綴和固定詞綴數值，數值很幸運",
       "deu": "Verändert die Werte der Präfix-, Suffix- und impliziten Modifikatoren eines seltenen Gegenstands, mit günstigen Modifikatorenwerten",
       "eng": "Reroll the values of Prefix, Suffix and Implicit modifiers on a Rare item, with Lucky modifier values",
       "fra": "Tire au hasard les valeurs numériques des Préfixes, Suffixes et de l'Implicite d'un Objet rare. Ces valeurs sont en votre Faveur",
@@ -3472,6 +3680,7 @@
     "pricing": "Reroll Suffix Lucky",
     "translations": {
       "chi_sim": "将一叠裂隙碎片或普通的、充能的、强化的、纯粹的裂隙石变为另一种类型的裂片或裂隙石",
+      "chi_tra": "重骰 1 見魔法或稀有物品上後綴的數值，詞綴數值很幸運",
       "deu": "Verändert die Werte der Suffix-Modifikatoren eines magischen oder seltenen Gegenstands, mit günstigen Modifikatorenwerten",
       "eng": "Reroll the values of Suffix modifiers on a Magic or Rare item, with Lucky modifier values",
       "fra": "Tire au hasard la valeur des Suffixes d'un Objet magique ou rare. Ces valeurs sont en votre Faveur",
@@ -3492,6 +3701,7 @@
     "pricing": "Sacrifice Gem, 20% XP As Facetor Lens",
     "translations": {
       "chi_sim": "献祭 腐化的技能石，获得其总存量经验 30% 的费斯特的透镜",
+      "chi_tra": "獻祭 1 顆已汙染的寶石，獲得 1 顆儲存寶石 20% 經驗的費斯特之鏡",
       "deu": "Opfert eine verderbte Gemme und erhaltet 20% der Erfahrung der Gemme gespeichert als Linse des Facettenschleifers",
       "eng": "Sacrifice a Corrupted Gem to gain 20% of the gem's total experience stored as a Facetor's Lens",
       "fra": "Sacrifie une Gemme corrompue et vous donne 20% de son expérience sous forme de Lentille de ciseleur",
@@ -3512,6 +3722,7 @@
     "pricing": "Sacrifice Gem, 30% XP As Facetor Lens",
     "translations": {
       "chi_sim": "献祭 腐化的技能石，获得其总存量经验 40% 的费斯特的透镜",
+      "chi_tra": "獻祭 1 顆已汙染的寶石，獲得 1 顆儲存寶石 30% 經驗的費斯特之鏡",
       "deu": "Opfert eine verderbte Gemme und erhaltet 30% der Erfahrung der Gemme gespeichert als Linse des Facettenschleifers",
       "eng": "Sacrifice a Corrupted Gem to gain 30% of the gem's total experience stored as a Facetor's Lens",
       "fra": "Sacrifie une Gemme corrompue et vous donne 30% de son expérience sous forme de Lentille de ciseleur",
@@ -3532,6 +3743,7 @@
     "pricing": "Sacrifice Gem, 40% XP As Facetor Lens",
     "translations": {
       "chi_sim": "献祭 腐化的技能石，获其总存量经验 50% 的费斯特的透镜",
+      "chi_tra": "獻祭 1 顆已汙染的寶石，獲得 1 顆儲存寶石 40% 經驗的費斯特之鏡",
       "deu": "Opfert eine verderbte Gemme und erhaltet 40% der Erfahrung der Gemme gespeichert als Linse des Facettenschleifers",
       "eng": "Sacrifice a Corrupted Gem to gain 40% of the gem's total experience stored as a Facetor's Lens",
       "fra": "Sacrifie une Gemme corrompue et vous donne 40% de son expérience sous forme de Lentille de ciseleur",
@@ -3552,6 +3764,7 @@
     "pricing": "Sacrifice Gem, 50% XP As Facetor Lens",
     "translations": {
       "chi_sim": "将可以强化的 20 级辅助宝石变为 强化辅助宝石，其概率为 5%。如强化未能成功，则将其摧毁",
+      "chi_tra": "獻祭 1 顆已汙染的寶石，獲得 1 顆儲存寶石 50% 經驗的費斯特之鏡",
       "deu": "Opfert eine verderbte Gemme und erhaltet 50% der Erfahrung der Gemme gespeichert als Linse des Facettenschleifers",
       "eng": "Sacrifice a Corrupted Gem to gain 50% of the gem's total experience stored as a Facetor's Lens",
       "fra": "Sacrifie une Gemme corrompue et vous donne 50% de son expérience sous forme de Lentille de ciseleur",
@@ -3572,6 +3785,7 @@
     "pricing": "Sacrifice Gem, 20% quality as GCP",
     "translations": {
       "chi_sim": "献祭腐化的技能石，获得其 30% 品质的宝石匠的允诺",
+      "chi_tra": "獻祭 1 顆已汙染的寶石，獲得寶石品質 20% 的寶石匠的稜鏡",
       "deu": "Opfert eine verderbte Gemme und erhaltet 20% der Qualität der Gemme als Prismen des Gemmenschneiders",
       "eng": "Sacrifice a Corrupted Gem to gain 20% of the gem's quality as Gemcutter's Prisms",
       "fra": "Sacrifie une Gemme corrompue et vous donne 20% de sa qualité sous forme de Prismes de lapidaire",
@@ -3592,6 +3806,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭 腐化的技能石，获得其 40% 品质的宝石匠的允诺",
+      "chi_tra": "獻祭 1 顆已汙染的寶石，獲得寶石品質 30% 的寶石匠的稜鏡",
       "deu": "Opfert eine verderbte Gemme und erhaltet 30% der Qualität der Gemme als Prismen des Gemmenschneiders",
       "eng": "Sacrifice a Corrupted Gem to gain 30% of the gem's quality as Gemcutter's Prisms",
       "fra": "Sacrifie une Gemme corrompue et vous donne 30% de sa qualité sous forme de Prismes de lapidaire",
@@ -3612,6 +3827,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭 腐化的技能石，获得其 50% 品质的宝石匠的允诺",
+      "chi_tra": "獻祭 1 顆已汙染的寶石，獲得寶石品質 40% 的寶石匠的稜鏡",
       "deu": "Opfert eine verderbte Gemme und erhaltet 40% der Qualität der Gemme als Prismen des Gemmenschneiders",
       "eng": "Sacrifice a Corrupted Gem to gain 40% of the gem's quality as Gemcutter's Prisms",
       "fra": "Sacrifie une Gemme corrompue et vous donne 40% de sa qualité sous forme de Prismes de lapidaire",
@@ -3632,6 +3848,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭 腐化的技能石，获得其总存量经验 20% 的费斯特的透镜",
+      "chi_tra": "獻祭 1 顆已汙染的寶石，獲得寶石品質 50% 的寶石匠的稜鏡",
       "deu": "Opfert eine verderbte Gemme und erhaltet 50% der Qualität der Gemme als Prismen des Gemmenschneiders",
       "eng": "Sacrifice a Corrupted Gem to gain 50% of the gem's quality as Gemcutter's Prisms",
       "fra": "Sacrifie une Gemme corrompue et vous donne 50% de sa qualité sous forme de Prismes de lapidaire",
@@ -3652,6 +3869,7 @@
     "pricing": "Sacrifice Divination Card 0-2x",
     "translations": {
       "chi_sim": "献祭一叠命运卡，换取另一叠数量相同的不同命运卡",
+      "chi_tra": "獻祭至多一半疊層的命運卡，獲得數量將介於 0 到 2 倍獻祭卡片的數量",
       "deu": "Opfert bis zur Hälfte eines Stapels Weissagungskarten und erhaltet zwischen 0 und doppelt so viele Weissagungskarten",
       "eng": "Sacrifice up to half a stack of Divination Cards to receive between 0 and twice that amount of the same Card",
       "fra": "Sacrifie jusqu'à la moitié d'un ensemble de Cartes divinatoires et vous donne entre zéro et le double d'exemplaires de la Carte div. sacrifiée",
@@ -3672,6 +3890,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一个祭品或凡人碎片变为另一件同类型的随机碎片",
+      "chi_tra": "獻祭 1 疊命運卡，獲得對等數量不同的命運卡",
       "deu": "Opfert einen Stapel Weissagungskarten für dieselbe Anzahl anderer Weissagungskarten",
       "eng": "Sacrifice a stack of Divination Cards for that many different Divination Cards",
       "fra": "Sacrifie un ensemble de Cartes divinatoires et vous donne autant de Cartes divinatoires différentes",
@@ -3692,6 +3911,7 @@
     "pricing": "Sacrifice Weapon/Armour to Amulet",
     "translations": {
       "chi_sim": "献祭一件武器或护甲，产生一件有类似词缀的 珠宝",
+      "chi_tra": "獻祭 1 件武器或護甲，製造 1 件有類似詞綴的項鍊",
       "deu": "Opfert eine Waffe oder eine Rüstung für ein Amulett mit gleichartigen Modifikatoren",
       "eng": "Sacrifice a Weapon or Armour to create an Amulet with similar modifiers",
       "fra": "Sacrifie une Arme ou une Pièce d'armure et crée une Amulette dotée de mods similaires",
@@ -3712,6 +3932,7 @@
     "pricing": "Sacrifice Weapon/Armour to Belt",
     "translations": {
       "chi_sim": "献祭一件武器或护甲，产生一件有类似词缀的 戒指",
+      "chi_tra": "獻祭 1 件武器或護甲，製造 1 件有類似詞綴的腰帶",
       "deu": "Opfert eine Waffe oder eine Rüstung für einen Gürtel mit gleichartigen Modifikatoren",
       "eng": "Sacrifice a Weapon or Armour to create a Belt with similar modifiers",
       "fra": "Sacrifie une Arme ou une Pièce d'armure et crée une Ceinture dotée de mods similaires",
@@ -3732,6 +3953,7 @@
     "pricing": "Sacrifice Weapon/Armour to Jewel",
     "translations": {
       "chi_sim": "献祭 白色或 黄色地图，产生对应位阶的随机地图碎片",
+      "chi_tra": "獻祭 1 件武器或護甲，製造 1 件有類似詞綴的珠寶",
       "deu": "Opfert eine Waffe oder eine Rüstung für ein Juwel mit gleichartigen Modifikatoren",
       "eng": "Sacrifice a Weapon or Armour to create a Jewel with similar modifiers",
       "fra": "Sacrifie une Arme ou une Pièce d'armure et crée un Joyau doté de mods similaires",
@@ -3752,6 +3974,7 @@
     "pricing": "Sacrifice Weapon/Armour to Ring",
     "translations": {
       "chi_sim": "献祭一件武器或护甲，产生一件有类似词缀的 护身符",
+      "chi_tra": "獻祭 1 件武器或護甲，製造 1 件有類似詞綴的戒指",
       "deu": "Opfert eine Waffe oder eine Rüstung für einen Ring mit gleichartigen Modifikatoren",
       "eng": "Sacrifice a Weapon or Armour to create a Ring with similar modifiers",
       "fra": "Sacrifie une Arme ou une Pièce d'armure et crée une Bague dotée de mods similaires",
@@ -3772,6 +3995,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭一件武器或护甲，产生一件有类似词缀的 腰带",
+      "chi_tra": "獻祭 1 張地圖，根據地圖階級獲得 1 個各大師輿圖任務",
       "deu": "Opfert eine Karte und erhaltet, basierend auf ihrer Farbe, jeweils 1 Mission jedes Meisters",
       "eng": "Sacrifice a Map to gain 1 Atlas Mission for each Master based on its colour",
       "fra": "Sacrifie une Carte et, en fonction de sa couleur, vous donne 1 Mission de l'Atlas avec chacun des Maîtres",
@@ -3792,6 +4016,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图。给你的地图装置免费添加一个灌注的先驱者",
+      "chi_tra": "獻祭 1 張地圖。附加 1 個免費充能的伏擊至你的地圖裝置",
       "deu": "Opfert eine Karte und erhaltet eine verstärkte Ambush-Anfertigungsoption für den Kartenapparat",
       "eng": "Sacrifice a Map. Add a free Infused Ambush craft to your Map device",
       "fra": "Sacrifie une Carte. Ajoute une utilisation gratuite de l'option Ambush infusée dans votre Dispositif cartographique",
@@ -3812,6 +4037,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图。给你的地图装置免费添加一个灌注的混乱",
+      "chi_tra": "獻祭 1 張地圖。附加 1 個免費充能的混亂至你的地圖裝置",
       "deu": "Opfert eine Karte und erhaltet eine verstärkte Anarchy-Anfertigungsoption für den Kartenapparat",
       "eng": "Sacrifice a Map. Add a free Infused Anarchy craft to your Map device",
       "fra": "Sacrifie une Carte. Ajoute une utilisation gratuite de l'option Anarchy infusée dans votre Dispositif cartographique",
@@ -3832,6 +4058,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图。给你的地图装置免费添加一个灌注的暴走",
+      "chi_tra": "獻祭 1 張地圖。附加 1 個免費充能的血族至你的地圖裝置",
       "deu": "Opfert eine Karte und erhaltet eine verstärkte Bloodlines-Anfertigungsoption für den Kartenapparat",
       "eng": "Sacrifice a Map. Add a free Infused Bloodlines craft to your Map device",
       "fra": "Sacrifie une Carte. Ajoute une utilisation gratuite de l'option Bloodlines infusée dans votre Dispositif cartographique",
@@ -3852,6 +4079,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图。给你的地图装置添加一个免费工艺选项",
+      "chi_tra": "獻祭 1 張地圖。附加 1 個免費工藝至你的地圖裝置",
       "deu": "Opfert eine Karte und erhaltet eine Anfertigungsoption für den Kartenapparat",
       "eng": "Sacrifice a Map. Add a free craft to your Map device",
       "fra": "Sacrifie une Carte et vous permet d'utiliser gratuitement une option de votre Dispositif cartographique",
@@ -3872,6 +4100,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图。给你的地图装置免费添加一个灌注的支配",
+      "chi_tra": "獻祭 1 張地圖。附加 1 個免費充能的支配至你的地圖裝置",
       "deu": "Opfert eine Karte und erhaltet eine verstärkte Domination-Anfertigungsoption für den Kartenapparat",
       "eng": "Sacrifice a Map. Add a free Infused Domination craft to your Map device",
       "fra": "Sacrifie une Carte. Ajoute une utilisation gratuite de l'option Domination infusée dans votre Dispositif cartographique",
@@ -3892,6 +4121,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "重铸一个稀有物品，保留所有前缀",
+      "chi_tra": "獻祭 1 張地圖。附加 1 個免費充能的神諭至你的地圖裝置",
       "deu": "Opfert eine Karte und erhaltet eine verstärkte Harbinger-Anfertigungsoption für den Kartenapparat",
       "eng": "Sacrifice a Map. Add a free Infused Harbinger craft to your Map device",
       "fra": "Sacrifie une Carte. Ajoute une utilisation gratuite de l'option Harbinger infusée dans votre Dispositif cartographique",
@@ -3912,6 +4142,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图。给你的地图装置免费添加一个灌注的复仇",
+      "chi_tra": "獻祭 1 張地圖。附加 1 個免費充能的復仇至你的地圖裝置",
       "deu": "Opfert eine Karte und erhaltet eine verstärkte Nemesis-Anfertigungsoption für den Kartenapparat",
       "eng": "Sacrifice a Map. Add a free Infused Nemesis craft to your Map device",
       "fra": "Sacrifie une Carte. Ajoute une utilisation gratuite de l'option Nemesis infusée dans votre Dispositif cartographique",
@@ -3932,6 +4163,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图。给你的地图装置免费添加一个灌注的强袭",
+      "chi_tra": "獻祭 1 張地圖。附加 1 個免費充能的暴怒至你的地圖裝置",
       "deu": "Opfert eine Karte und erhaltet eine verstärkte Rampage-Anfertigungsoption für den Kartenapparat",
       "eng": "Sacrifice a Map. Add a free Infused Rampage craft to your Map device",
       "fra": "Sacrifie une Carte. Ajoute une utilisation gratuite de l'option Rampage infusée dans votre Dispositif cartographique",
@@ -3952,6 +4184,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图，根据地图颜色换取 3 个{尼克异界图鉴任务",
+      "chi_tra": "獻祭 1 張地圖，根據地圖階級獲得 3 個艾瓦輿圖任務",
       "deu": "Opfert eine Karte und erhaltet, basierend auf ihrer Farbe, 3 Alva-Missionen",
       "eng": "Sacrifice a Map to gain 3 Alva Atlas Missions based on its colour",
       "fra": "Sacrifie une Carte et vous donne 3 Missions de l'Atlas avec Alva",
@@ -3972,6 +4205,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图，根据地图颜色换取 3 个琼的异界图鉴任务",
+      "chi_tra": "獻祭 1 張地圖，根據地圖階級獲得 3 個埃哈輿圖任務",
       "deu": "Opfert eine Karte und erhaltet, basierend auf ihrer Farbe, 3 Einhar-Missionen",
       "eng": "Sacrifice a Map to gain 3 Einhar Atlas Missions based on its colour",
       "fra": "Sacrifie une Carte et vous donne 3 Missions de l'Atlas avec Einhar",
@@ -3992,6 +4226,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图，根据地图颜色换取 3 个{奇拉克异界图鉴任务",
+      "chi_tra": "獻祭 1 張地圖，根據地圖階級獲得 3 個瓊恩輿圖任務",
       "deu": "Opfert eine Karte und erhaltet, basierend auf ihrer Farbe, 3 Jun-Missionen",
       "eng": "Sacrifice a Map to gain 3 Jun Atlas Missions based on its colour",
       "fra": "Sacrifie une Carte et vous donne 3 Missions de l'Atlas avec Jun",
@@ -4012,6 +4247,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图，根据地图颜色换取每位大师的异界图鉴任务各 1 个",
+      "chi_tra": "獻祭 1 張地圖，根據地圖階級獲得 3 個基拉克輿圖任務",
       "deu": "Opfert eine Karte und erhaltet, basierend auf ihrer Farbe, 3 Kirac-Missionen",
       "eng": "Sacrifice a Map to gain 3 Kirac Atlas Missions based on its colour",
       "fra": "Sacrifie une Carte et vous donne 3 Missions de l'Atlas avec Kirac",
@@ -4032,6 +4268,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图，根据地图颜色换取 3 个伊恩哈尔异界图鉴任务",
+      "chi_tra": "獻祭 1 張地圖，根據地圖階級獲得 3 個尼科輿圖任務",
       "deu": "Opfert eine Karte und erhaltet, basierend auf ihrer Farbe, 3 Niko-Missionen",
       "eng": "Sacrifice a Map to gain 3 Niko Atlas Missions based on its colour",
       "fra": "Sacrifie une Carte et vous donne 3 Missions de l'Atlas avec Niko",
@@ -4052,6 +4289,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "附魔武器。使品质不提高物理伤害，改为每 4% 品质使暴击率提高 1%",
+      "chi_tra": "獻祭 1 張階級 14 以上的地圖，獲得 1 張隨機征服者佔據的地圖",
       "deu": "Opfert eine Karte mit mindestens Level 14 für eine zufällige Karte, die von einem Eroberer besetzt ist",
       "eng": "Sacrifice a Tier 14 Map or higher to create a random Conqueror-occupied Map",
       "fra": "Sacrifie une Carte de palier 14 ou plus et crée au hasard une Carte occupée par un Conquérant",
@@ -4072,6 +4310,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "给一个钴蓝、赤红、棱光、翠绿、三相珠宝设置一个新基底词缀",
+      "chi_tra": "獻祭 1 張已汙染的地圖。製造 1 張新同階級和同稀有度已汙染的地圖",
       "deu": "Opfert eine verderbte Karte und erhaltet dafür eine neue verderbte Karte desselben Levels und Seltenheitsgrads.",
       "eng": "Sacrifice a Corrupted Map. Create a new Corrupted Map of the same tier and rarity.",
       "fra": "Sacrifie une Carte corrompue et crée une nouvelle Carte corrompue de même palier et rareté",
@@ -4092,6 +4331,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图，产生一个对应颜色的随机圣甲虫",
+      "chi_tra": "獻祭 1 張地圖，根據它的階級獲得隨機地圖通貨",
       "deu": "Opfert eine Karte für zufällige Kartenwährung, basierend auf dem Kartenlevel",
       "eng": "Sacrifice a Map to create random Map currency based on its tier",
       "fra": "Sacrifie une Carte et crée des Objets monétaires de Carte pris au hasard en fonction de son palier",
@@ -4112,6 +4352,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭至少 14 阶的地图，产生一张被随机塑界守卫占据的地图",
+      "chi_tra": "獻祭 1 張階級 14 以上的地圖，獲得 1 張隨機被異界尊師守護者佔領的地圖",
       "deu": "Opfert eine Karte mit mindestens Level 14 für eine zufällige Karte, die von einem Wächter des Schöpfers besetzt ist",
       "eng": "Sacrifice a Tier 14 Map or higher to create a random Elder Guardian-occupied Map",
       "fra": "Sacrifie une Carte de palier 14 ou plus et crée au hasard une Carte occupée par un Gardien de l'Ancien",
@@ -4132,6 +4373,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭地图，产生对应位阶的随机地图通货物品",
+      "chi_tra": "獻祭 1 張紅色地圖，根據它的階級獲得隨機地圖碎片",
       "deu": "Opfert eine rote Karte für zufällige Kartenfragmente, basierend auf dem Kartenlevel",
       "eng": "Sacrifice a Red Map to create random Map Fragments based on its tier",
       "fra": "Sacrifie une Carte rouge et crée des Fragments pris au hasard en fonction de son palier",
@@ -4152,6 +4394,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭至少 14 阶的地图，产生一张被随机裂界守卫占据的地图",
+      "chi_tra": "獻祭 1 張地圖，根據它的階級獲得隨機 1 個聖甲蟲",
       "deu": "Opfert eine Karte für einen zufälligen Skarabäus, basierend auf der Farbe",
       "eng": "Sacrifice a Map to create a random Scarab based on its colour",
       "fra": "Sacrifie une Carte et crée un Scarabée pris au hasard en fonction de sa couleur",
@@ -4172,6 +4415,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭至少 14 阶的地图，产生一张随机传奇虚空忆境地图",
+      "chi_tra": "獻祭 1 張階級 14 以上的地圖，獲得 1 張隨機被塑界者守護者佔領的地圖",
       "deu": "Opfert eine Karte mit mindestens Level 14 für eine zufällige Karte, die von einem Wächter des Ältesten besetzt ist",
       "eng": "Sacrifice a Tier 14 Map or higher to create a random Shaper Guardian-occupied Map",
       "fra": "Sacrifie une Carte de palier 14 ou plus et crée au hasard une Carte occupée par un Gardien du Façonneur",
@@ -4192,6 +4436,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭至少 14 阶的地图，产生一张被随机征服者占据的地图",
+      "chi_tra": "獻祭 1 張階級 14 以上的地圖，獲得 1 張隨機傳奇追憶地圖",
       "deu": "Opfert eine Karte mit mindestens Level 14 für eine zufällige einzigartige synthetisierte Karte",
       "eng": "Sacrifice a Tier 14 Map or higher to create a random Unique Synthesis Map",
       "fra": "Sacrifie une Carte de palier 14 ou plus et crée au hasard une Carte unique de synthèse",
@@ -4212,6 +4457,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭一张腐化的地图，生成一张相同位阶的新地图。",
+      "chi_tra": "獻祭 1 張地圖至低 1 階多張地圖",
       "deu": "Opfert eine Karte und erhaltet dafür mehrere Karten des nächstniedrigeren Levels",
       "eng": "Sacrifice a Map for multiple Maps one tier lower",
       "fra": "Sacrifie une Carte et vous donne plusieurs Cartes d'un palier en dessous",
@@ -4232,6 +4478,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "献祭 红色地图，产生对应位阶的随机地图碎片",
+      "chi_tra": "獻祭 1 張白或黃色地圖，根據它的階級獲得隨機地圖碎片",
       "deu": "Opfert eine weiße oder gelbe Karte für zufällige Kartenfragmente, basierend auf dem Kartenlevel",
       "eng": "Sacrifice a White or Yellow Map to create random Map Fragments based on its tier",
       "fra": "Sacrifie une Carte blanche ou jaune et crée des Fragments pris au hasard en fonction de son palier",
@@ -4252,6 +4499,7 @@
     "pricing": "Set Implicit, Abyss/Timeless Jewel",
     "translations": {
       "chi_sim": "给一个星团珠宝设置一个基底词缀",
+      "chi_tra": "新增 1 個固定詞綴至深淵或永恆珠寶",
       "deu": "Stattet ein Abgrund-Juwel oder ein Immerwährendes Juwel mit einem neuen impliziten Modifikator aus",
       "eng": "Set a new Implicit modifier on an Abyss Jewel or Timeless Jewel",
       "fra": "Applique un nouvel Implicite sur un Joyau abyssal ou un Joyau intemporel",
@@ -4272,6 +4520,7 @@
     "pricing": "Set Implicit, Cluster Jewel",
     "translations": {
       "chi_sim": "用一个延长持续时间的词缀附魔药剂。该效果随使用次数减弱",
+      "chi_tra": "新增 1 個固定詞綴至星團珠寶",
       "deu": "Stattet ein Cluster-Juwel mit einem neuen impliziten Modifikator aus",
       "eng": "Set a new Implicit modifier on a Cluster Jewel",
       "fra": "Applique un nouvel Implicite sur un Joyau de ramification",
@@ -4292,6 +4541,7 @@
     "pricing": "Set Implicit, Basic Jewel",
     "translations": {
       "chi_sim": "给一个深渊珠宝或永恒珠宝设置一个基底词缀",
+      "chi_tra": "新增 1 個固定詞綴至鈷藍、翠綠、赤紅或三相珠寶",
       "deu": "Stattet ein Kobaltblaues, Blutrotes, Viridiangrünes oder Prismatisches Juwel mit einem neuen impliziten Modifikator aus",
       "eng": "Set a new Implicit modifier on a Cobalt, Crimson, Viridian or Prismatic Jewel",
       "fra": "Applique un nouvel Implicite sur un Joyau pourpre, viridien, cobalt ou prismatique",
@@ -4312,6 +4562,7 @@
     "pricing": "Six Links",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个混沌词缀",
+      "chi_tra": "重鑄 1 件物品上相連的插槽，並相連 6 個插槽",
       "deu": "Verändert die Verbindungen eines Gegenstands und verbindet sechs Fassungen",
       "eng": "Reforge the links between sockets on an item, linking six sockets",
       "fra": "Relie entre elles six châsses au total sur un objet",
@@ -4332,6 +4583,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个冰霜词缀",
+      "chi_tra": "把 1 件物品改為 6 個插槽",
       "deu": "Stattet einen Gegenstand mit sechs Fassungen aus",
       "eng": "Set an item to six sockets",
       "fra": "Dote un objet de six châsses",
@@ -4352,6 +4604,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一个女神祭品变为女神贡品",
+      "chi_tra": "把 1 個聖甲蟲分裂成 2 個稀有度較低的聖甲蟲",
       "deu": "Teilt einen Skarabäus in zwei Skarabäen eines niedrigeren Seltenheitsgrads",
       "eng": "Split a Scarab into two Scarabs of lower rarity",
       "fra": "Scinde un Scarabée en deux exemplaires de rareté inférieure",
@@ -4372,6 +4625,7 @@
     "pricing": "Synthesise an item",
     "translations": {
       "chi_sim": "将普通物品、魔法物品或稀有物品重铸成有随机词缀的稀有物品，其中包括一个防御词缀",
+      "chi_tra": "追憶 1 件物品，給予隨機追憶固定詞綴。不能使用於傳奇、勢力、追憶或破裂之物",
       "deu": "Synthetisiert einen Gegenstand und erhaltet zufällige implizite Modifikatoren. Der Gegenstand kann nicht einzigartig, beeinflusst, brüchig oder synthetisiert sein.",
       "eng": "Synthesise an item, giving random Synthesised implicits. Cannot be used on Unique, Influenced, Synthesised or Fractured items",
       "fra": "Synthétise un objet (sauf Flacons, Objets uniques, influencés, synthétisés ou fissurés) et lui donne des Implicites synthétisés tirés au hasard.",
@@ -4392,6 +4646,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "重铸一个物品上插槽间的连接，连接四个插槽",
+      "chi_tra": "重鑄 1 件物品上相連的插槽，並相連 3 個插槽",
       "deu": "Verändert die Verbindungen eines Gegenstands und verbindet drei Fassungen",
       "eng": "Reforge the links between sockets on an item, linking three sockets",
       "fra": "Relie entre elles trois châsses au total sur un objet",
@@ -4412,6 +4667,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将物品上三个随机插槽颜色重铸为红色、蓝色和绿色",
+      "chi_tra": "重鑄物品上的3 個隨機插槽顏色變成紅色、藍色和綠色",
       "deu": "Verändert die Farbe drei zufälliger Fassungen eines Gegenstands zu rot, blau und grün",
       "eng": "Reforge the colour of three random sockets on an item, turning them Red, Blue and Green",
       "fra": "Recolore en Rouge, Vert et Bleu trois châsses prises au hasard sur un objet",
@@ -4432,6 +4688,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "使物品变为四个插槽",
+      "chi_tra": "把 1 件物品改為 3 個插槽",
       "deu": "Stattet einen Gegenstand mit drei Fassungen aus",
       "eng": "Set an item to three sockets",
       "fra": "Dote un objet de trois châsses",
@@ -4452,6 +4709,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将物品上两个随机插槽颜色重铸为蓝色和绿色",
+      "chi_tra": "重鑄物品上的 2 個隨機插槽顏色變成藍色和綠色",
       "deu": "Verändert die Farbe zwei zufälliger Fassungen eines Gegenstands zu blau und grün",
       "eng": "Reforge the colour of two random sockets on an item, turning them Blue and Green",
       "fra": "Recolore en Vert et en Bleu deux châsses prises au hasard sur un objet",
@@ -4472,6 +4730,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将物品上两个随机插槽颜色重铸为 红色 和 蓝色",
+      "chi_tra": "重鑄物品上的2 個隨機插槽顏色變成紅色和藍色",
       "deu": "Verändert die Farbe zwei zufälliger Fassungen eines Gegenstands zu rot und blau",
       "eng": "Reforge the colour of two random sockets on an item, turning them Red and Blue",
       "fra": "Recolore en Rouge et en Bleu deux châsses prises au hasard sur un objet",
@@ -4492,6 +4751,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将物品上两个随机插槽颜色重铸为红色和绿色",
+      "chi_tra": "重鑄物品上的2 個隨機插槽顏色變成紅色和綠色",
       "deu": "Verändert die Farbe zwei zufälliger Fassungen eines Gegenstands zu rot und grün",
       "eng": "Reforge the colour of two random sockets on an item, turning them Red and Green",
       "fra": "Recolore en Rouge et en Vert deux châsses prises au hasard sur un objet",
@@ -4512,6 +4772,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将圣甲虫变为另一个相同稀有度的圣甲虫",
+      "chi_tra": "升級 1 顆工程石至充能的工程石",
       "deu": "Verbessert eine Sphäre des Ingenieurs zu einer Verstärkten Sphäre des Ingenieurs",
       "eng": "Upgrade an Engineer's Orb to an Infused Engineer's Orb",
       "fra": "Améliore un Orbe d'ingénieur en Orbe d'ingénieur infusé",
@@ -4532,6 +4793,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "用共振器交换化石，反之亦然。稀有度越高，结果就越稀有",
+      "chi_tra": "升級 1 個精髓的階級",
       "deu": "Verbessert den Level einer Essenz",
       "eng": "Upgrade the tier of an Essence",
       "fra": "Améliore le palier d'une Essence",
@@ -4552,6 +4814,7 @@
     "pricing": "Upgrade Magic to Rare 4 Mod",
     "translations": {
       "chi_sim": "将普通物品升级为魔法物品，增加一个随机高阶词缀",
+      "chi_tra": "升級 1 件魔法物品至稀有物品，並新增 4 個隨機詞綴",
       "deu": "Verbessert einen magischen Gegenstand zu einem seltenen und fügt vier zufällige Modifikatoren hinzu",
       "eng": "Upgrade a Magic item to a Rare item, adding four random modifiers",
       "fra": "Améliore un Objet magique en rare en lui ajoutant quatre mods pris au hasard",
@@ -4572,6 +4835,7 @@
     "pricing": "Upgrade Magic to Rare 4 High Tier Mod",
     "translations": {
       "chi_sim": "重铸具有幸运词缀数值的稀有物品，保留所有前缀",
+      "chi_tra": "升級 1 件魔法物品至稀有物品，並新增 4 個隨機高階詞綴",
       "deu": "Verbessert einen magischen Gegenstand zu einem seltenen und fügt vier zufällige hochstufige Modifikatoren hinzu",
       "eng": "Upgrade a Magic item to a Rare item, adding four random high-tier modifiers",
       "fra": "Améliore un Objet magique en rare en lui ajoutant quatre mods de palier élevé pris au hasard",
@@ -4592,6 +4856,7 @@
     "pricing": "Upgrade Magic to Rare 3 Mod",
     "translations": {
       "chi_sim": "将魔法物品升级为稀有物品，增加四个随机词缀",
+      "chi_tra": "升級 1 件魔法物品至稀有物品，並新增 3 個隨機詞綴",
       "deu": "Verbessert einen magischen Gegenstand zu einem seltenen und fügt drei zufällige Modifikatoren hinzu",
       "eng": "Upgrade a Magic item to a Rare item, adding three random modifiers",
       "fra": "Améliore un Objet magique en rare en lui ajoutant trois mods pris au hasard",
@@ -4612,6 +4877,7 @@
     "pricing": "Upgrade Magic to Rare 3 High Tier Mod",
     "translations": {
       "chi_sim": "将魔法物品升级为稀有物品，增加四个随机高阶词缀",
+      "chi_tra": "升級 1 件魔法物品至稀有物品，並新增 3 個隨機高階詞綴",
       "deu": "Verbessert einen magischen Gegenstand zu einem seltenen und fügt drei zufällige hochstufige Modifikatoren hinzu",
       "eng": "Upgrade a Magic item to a Rare item, adding three random high-tier modifiers",
       "fra": "Améliore un Objet magique en rare en lui ajoutant trois mods de palier élevé pris au hasard",
@@ -4632,6 +4898,7 @@
     "pricing": "Upgrade Magic to Rare 2 Mod",
     "translations": {
       "chi_sim": "将魔法物品升级为稀有物品，增加三个随机词缀",
+      "chi_tra": "升級 1 件魔法物品至稀有物品，並新增 2 個隨機詞綴",
       "deu": "Verbessert einen magischen Gegenstand zu einem seltenen und fügt zwei zufällige Modifikatoren hinzu",
       "eng": "Upgrade a Magic item to a Rare item, adding two random modifiers",
       "fra": "Améliore un Objet magique en rare en lui ajoutant deux mods pris au hasard",
@@ -4652,6 +4919,7 @@
     "pricing": "Upgrade Magic to Rare 2 High Tier Mod",
     "translations": {
       "chi_sim": "将魔法物品升级为稀有物品，增加三个随机高阶词缀",
+      "chi_tra": "升級 1 件魔法物品至稀有物品，並新增 2 個隨機高階詞綴",
       "deu": "Verbessert einen magischen Gegenstand zu einem seltenen und fügt zwei zufällige hochstufige Modifikatoren hinzu",
       "eng": "Upgrade a Magic item to a Rare item, adding two random high-tier modifiers",
       "fra": "Améliore un Objet magique en rare en lui ajoutant deux mods de palier élevé pris au hasard",
@@ -4672,6 +4940,7 @@
     "pricing": "Upgrade Normal to Magic 1 High Tier Mod",
     "translations": {
       "chi_sim": "将普通物品升级为魔法物品，增加两个随机高阶词缀",
+      "chi_tra": "升級 1 件普通物品至魔法物品，並新增 1 個隨機高階詞綴",
       "deu": "Verbessert einen normalen Gegenstand zu einem magischen und fügt einen zufälligen hochstufigen Modifikator hinzu",
       "eng": "Upgrade a Normal item to a Magic item, adding one random high-tier modifier",
       "fra": "Améliore un Objet normal en magique en lui ajoutant un mod de palier élevé pris au hasard",
@@ -4692,6 +4961,7 @@
     "pricing": "Upgrade Normal to Magic 2 High Tier Mod",
     "translations": {
       "chi_sim": "将魔法物品升级为稀有物品，增加两个随机高阶词缀",
+      "chi_tra": "升級 1 件普通物品至魔法物品，並新增 2 個隨機高階詞綴",
       "deu": "Verbessert einen normalen Gegenstand zu einem magischen und fügt zwei zufällige hochstufige Modifikatoren hinzu",
       "eng": "Upgrade a Normal item to a Magic item, adding two random high-tier modifiers",
       "fra": "Améliore un Objet normal en magique en lui ajoutant deux mods de palier élevé pris au hasard",
@@ -4712,6 +4982,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将一个制箱岩升级升级成灌注的制箱岩",
+      "chi_tra": "升級 1 瓶油瓶至更高階的油瓶",
       "deu": "Verbessert ein Öl zu einem Öl mit nächsthöherem Level",
       "eng": "Upgrade an Oil into an Oil one tier higher",
       "fra": "Améliore une Huile en une autre d'un palier supérieur",
@@ -4732,6 +5003,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "给升级普通物品升级随机稀有度 10 次。最终取稀有度最高的那次结果",
+      "chi_tra": "升級 1 件普通物品至隨機稀有度 10 次。使用稀有度最高的結果",
       "deu": "Verbessert einen normalen Gegenstand 10 Mal zu einer zufälligen Seltenheit und verwendet das Ergebnis mit der höchsten Seltenheit",
       "eng": "Upgrades a Normal Item to a random rarity 10 times, using the outcome with the highest rarity",
       "fra": "Tire dix fois au hasard la rareté d'un Objet normal, puis conserve la rareté la plus élevée",
@@ -4752,6 +5024,7 @@
     "pricing": "",
     "translations": {
       "chi_sim": "将圣甲虫分裂成两个稀有度更低的圣甲虫",
+      "chi_tra": "嘗試升級 1 個聖甲蟲，有機率變成展翅階級",
       "deu": "Versucht einen Skarabäus aufzuwerten, mit einer Chance, dass dieser zu einem geflügelten Skarabäus wird",
       "eng": "Attempt to upgrade a Scarab, with a chance for it to become Winged",
       "fra": "Améliore un Scarabée et peut potentiellement le transformer en Scarabée ailé",

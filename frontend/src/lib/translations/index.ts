@@ -76,6 +76,7 @@ export const localeMapping = {
   deu: 'de',
   spa: 'es',
   chi_sim: 'zh',
+  chi_tra: 'zh',
   kor: 'ko',
   jpn: 'ja'
 };

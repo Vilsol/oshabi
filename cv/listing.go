@@ -4,31 +4,31 @@ import (
 	"image"
 	"image/color"
 	"image/draw"
+	"regexp"
 	"strconv"
 	"strings"
 
-	"github.com/vilsol/oshabi/types"
-
-	"github.com/kbinani/screenshot"
-	"github.com/vilsol/oshabi/config"
-
-	"github.com/otiai10/gosseract/v2"
-
 	"github.com/disintegration/imaging"
+	"github.com/kbinani/screenshot"
+	"github.com/otiai10/gosseract/v2"
 	"github.com/pkg/errors"
+	"github.com/rs/zerolog/log"
+
+	"github.com/vilsol/oshabi/config"
 	"github.com/vilsol/oshabi/data"
+	"github.com/vilsol/oshabi/types"
 )
 
 func OCRListing(img image.Image) (string, error) {
-	return ocr(img, "1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,.%' ", gosseract.PSM_AUTO)
+	return ocr(img, GetWhitelist(), gosseract.PSM_SINGLE_BLOCK, true, false)
 }
 
 func OCRListingCount(img image.Image) (string, error) {
-	return ocr(img, "1234567890", gosseract.PSM_SINGLE_CHAR)
+	return ocr(img, "1234567890", gosseract.PSM_SINGLE_CHAR, false, true)
 }
 
 func OCRListingLevel(img image.Image) (string, error) {
-	return ocr(img, "Levl1234567890 ", gosseract.PSM_SINGLE_LINE)
+	return ocr(img, "1234567890", gosseract.PSM_SINGLE_LINE, false, true)
 }
 
 type RawListing struct {
@@ -43,17 +43,19 @@ const (
 	infoListingHorizontalOffset = 55
 	infoListingVerticalOffset   = 170
 
-	listingTextOffset = 170
-	listingTextWidth  = 870
-	listingTextHeight = 165
+	listingTextOffset         = 170
+	listingTextWidth          = 870
+	listingTextHeight         = 175
+	listingTextVerticalOffset = -10
 
-	levelWidth  = 180
-	levelHeight = 48
+	levelWidth       = 180
+	levelHeight      = 53
+	levelNumberWidth = 65
 
 	countWidth            = 38
-	countHeight           = 45
+	countHeight           = 60
 	countHorizontalOffset = 8
-	countVerticalOffset   = 5
+	countVerticalOffset   = -5
 
 	groveOffset = -32
 )
@@ -63,6 +65,7 @@ func FindInfoButton(img image.Image) (image.Point, error) {
 	if err != nil {
 		return image.Point{}, errors.Wrap(err, "failed to find info button")
 	}
+	log.Debug().Int("x", infoButtonLocation.X).Int("y", infoButtonLocation.Y).Msg("info button found")
 	return infoButtonLocation, err
 }
 
@@ -71,6 +74,7 @@ func IsInGrove(img image.Image) (bool, error) {
 	if err != nil {
 		return false, errors.Wrap(err, "failed to find horticrafting label")
 	}
+	log.Debug().Bool("grove", hortValue < 0.8).Msg("in grove or horticrafting")
 	return hortValue < 0.8, nil
 }
 
@@ -95,7 +99,7 @@ func ExtractToListings(img image.Image, offset int, limit int) ([]RawListing, er
 		}
 
 		listingLeft := infoButtonLocation.X + ScaleN(infoListingHorizontalOffset)
-		listingTop := infoButtonLocation.Y + pxOffset
+		listingTop := infoButtonLocation.Y + pxOffset + ScaleN(listingTextVerticalOffset)
 
 		listingTextLeft := listingLeft + ScaleN(listingTextOffset)
 		listingTextRight := listingTextLeft + ScaleN(listingTextWidth)
@@ -119,7 +123,7 @@ func ExtractToListings(img image.Image, offset int, limit int) ([]RawListing, er
 		))
 
 		level := imaging.Crop(img, image.Rect(
-			listingTextRight-ScaleN(levelWidth),
+			listingTextRight-ScaleN(levelNumberWidth),
 			listingTextBottom-ScaleN(levelHeight),
 			listingTextRight,
 			listingTextBottom,
@@ -174,6 +178,8 @@ func CanScrollDown(infoButtonLocation image.Point, inGrove bool, img image.Image
 	return cornerVal >= 0.7, nil
 }
 
+var levelRegex = regexp.MustCompile(`\w*(\d\s*\d)`)
+
 func ReadImage(img image.Image, offset int, limit int) ([]types.ParsedListing, error) {
 	listings, err := ExtractToListings(img, offset, limit)
 	if err != nil {
@@ -197,8 +203,18 @@ func ReadImage(img image.Image, offset int, limit int) ([]types.ParsedListing, e
 			return nil, err
 		}
 
-		splitLevel := strings.Split(level, " ")
-		levelInt, err := strconv.ParseInt(splitLevel[len(splitLevel)-1], 10, 32)
+		matches := levelRegex.FindAllStringSubmatch(level, -1)
+		if len(matches) == 0 {
+			continue
+		}
+
+		levelClean := strings.Replace(matches[0][1], " ", "", -1)
+
+		if levelClean[0] == '1' {
+			levelClean = "7" + levelClean[1:]
+		}
+
+		levelInt, err := strconv.ParseInt(levelClean, 10, 32)
 		if err != nil {
 			continue
 		}

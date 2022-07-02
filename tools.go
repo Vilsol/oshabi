@@ -5,15 +5,16 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/pkg/errors"
-	"github.com/vilsol/oshabi/config"
-	"github.com/vilsol/oshabi/data"
-	"github.com/vilsol/oshabi/types"
 	"net/http"
 	"os"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
+	"github.com/pkg/errors"
+
+	"github.com/vilsol/oshabi/config"
+	"github.com/vilsol/oshabi/data"
+	"github.com/vilsol/oshabi/types"
 )
 
 //go:generate go run tools.go
@@ -35,6 +36,7 @@ var languageMapping = map[config.Language]string{
 	config.LanguageChinese:    "cn",
 	config.LanguageKorean:     "kr",
 	config.LanguageJapanese:   "jp",
+	config.LanguageTaiwanese:  "tw",
 }
 
 const urlPattern = "https://poedb.tw/%s/Horticrafting"

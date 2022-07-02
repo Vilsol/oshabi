@@ -10,7 +10,7 @@ import (
 	"math"
 	"net/http"
 	"os"
-	"path"
+	"path/filepath"
 	"regexp"
 	"sort"
 	"strings"
@@ -38,7 +38,7 @@ func InitOCR() error {
 		return errors.Wrap(err, "failed to find cache directory")
 	}
 
-	fullCacheDir := path.Join(cacheDir, "oshabi")
+	fullCacheDir := filepath.Join(cacheDir, "oshabi")
 	if err := os.MkdirAll(fullCacheDir, 0777); err != nil {
 		if !os.IsExist(err) {
 			return errors.Wrap(err, "failed to create cache directory "+fullCacheDir)
@@ -54,7 +54,7 @@ func InitOCR() error {
 		return err
 	}
 
-	wordsPath := path.Join(fullCacheDir, string(language)+".words")
+	wordsPath := filepath.Join(fullCacheDir, string(language)+".words")
 	if err := client.SetVariable("user_words_file", wordsPath); err != nil {
 		return errors.Wrap(err, "failed to set tessdata prefix")
 	}
@@ -74,14 +74,14 @@ func verifyLanguage(language config.Language) error {
 		return errors.Wrap(err, "failed to find cache directory")
 	}
 
-	fullCacheDir := path.Join(cacheDir, "oshabi")
+	fullCacheDir := filepath.Join(cacheDir, "oshabi")
 	if err := os.MkdirAll(fullCacheDir, 0777); err != nil {
 		if !os.IsExist(err) {
 			return errors.Wrap(err, "failed to create cache directory "+fullCacheDir)
 		}
 	}
 
-	langPath := path.Join(fullCacheDir, string(language)+".traineddata")
+	langPath := filepath.Join(fullCacheDir, string(language)+".traineddata")
 	_, err = os.Stat(langPath)
 	if err != nil {
 		if !os.IsNotExist(err) {
@@ -110,7 +110,7 @@ func verifyLanguage(language config.Language) error {
 		}
 	}
 
-	wordsPath := path.Join(fullCacheDir, string(language)+".words")
+	wordsPath := filepath.Join(fullCacheDir, string(language)+".words")
 	_, err = os.Stat(wordsPath)
 	if err != nil {
 		if !os.IsNotExist(err) {
@@ -138,16 +138,38 @@ func verifyLanguage(language config.Language) error {
 		}
 	}
 
+	patternsPath := filepath.Join(fullCacheDir, "digits.patterns")
+	_, err = os.Stat(patternsPath)
+	if err != nil {
+		if !os.IsNotExist(err) {
+			return errors.Wrap(err, "failed to stat patterns file "+patternsPath)
+		}
+
+		//		if err := os.WriteFile(patternsPath, []byte("\\d\\d\n"), 0777); err != nil {
+		if err := os.WriteFile(patternsPath, []byte(`6\d
+7\d
+8\d
+`), 0777); err != nil {
+			return errors.Wrap(err, "failed to write digits pattern file")
+		}
+	}
+
 	return nil
 }
 
-func ocr(img image.Image, whitelist string, mode gosseract.PageSegMode) (string, error) {
-	if err := verifyLanguage(config.Get().Language); err != nil {
-		return "", err
+func ocr(img image.Image, whitelist string, mode gosseract.PageSegMode, crop bool, languageOverride bool) (string, error) {
+	if languageOverride {
+		if err := verifyLanguage(config.LanguageEnglish); err != nil {
+			return "", err
+		}
+	} else {
+		if err := verifyLanguage(config.Get().Language); err != nil {
+			return "", err
+		}
 	}
 
 	buff := new(bytes.Buffer)
-	if err := png.Encode(buff, PrepareForOCR(img, whitelist == GetWhitelist())); err != nil {
+	if err := png.Encode(buff, PrepareForOCR(img, crop)); err != nil {
 		return "", errors.Wrap(err, "failed to encode image to png")
 	}
 
@@ -163,57 +185,95 @@ func ocr(img image.Image, whitelist string, mode gosseract.PageSegMode) (string,
 		return "", errors.Wrap(err, "failed to update ocr buffer")
 	}
 
+	if (config.Get().Language == config.LanguageChinese ||
+		config.Get().Language == config.LanguageTaiwanese ||
+		config.Get().Language == config.LanguageJapanese) && crop {
+		if err := client.SetVariable("preserve_interword_spaces", "1"); err != nil {
+			return "", errors.Wrap(err, "failed to set preserve_interword_spaces")
+		}
+	} else {
+		if err := client.SetVariable("preserve_interword_spaces", "0"); err != nil {
+			return "", errors.Wrap(err, "failed to set preserve_interword_spaces")
+		}
+	}
+
+	if languageOverride {
+		if err := client.SetVariable("user_patterns_file", filepath.Join(client.TessdataPrefix, "digits.patterns")); err != nil {
+			return "", errors.Wrap(err, "failed to set user_patterns_file")
+		}
+	} else {
+		if err := client.SetVariable("user_patterns_file", ""); err != nil {
+			return "", errors.Wrap(err, "failed to set user_patterns_file")
+		}
+	}
+
 	text, err := client.Text()
 	if err != nil {
 		return "", errors.Wrap(err, "failed to ocr the image")
 	}
 
-	log.Debug().Str("text", text).Str("whitelist", whitelist).Msg("ocr")
+	log.Debug().Str("text", text).Str("lang", string(config.Get().Language)).Str("w", whitelist).Msg("ocr")
 
 	return text, nil
 }
 
-func PrepareForOCR(img image.Image, crop bool) image.Image {
-	src := img
+const targetPixelCount = float64(150000)
 
-	size := src.Bounds().Dx() * src.Bounds().Dy()
-	if size < 10000 {
-		scale := math.Max(2, (10000/float64(size))/4)
-		width := int(float64(src.Bounds().Dx()) * scale)
-		height := int(float64(src.Bounds().Dy()) * scale)
-		src = imaging.Resize(src, width, height, imaging.Linear)
+func PrepareForOCR(img image.Image, crop bool) image.Image {
+	out := imaging.Clone(img)
+
+	size := float64(out.Bounds().Dx() * out.Bounds().Dy())
+	if size < targetPixelCount {
+		scale := math.Min(10, math.Max(2, math.Sqrt(targetPixelCount/size)))
+		width := int(float64(out.Bounds().Dx()) * scale)
+		height := int(float64(out.Bounds().Dy()) * scale)
+		out = imaging.Resize(out, width, height, imaging.Linear)
 	}
 
-	out := imaging.Grayscale(src)
+	// Looks like on any of these languages, grayscale actually hurts
+	if !(config.Get().Language == config.LanguageKorean &&
+		config.Get().Language == config.LanguageChinese &&
+		config.Get().Language == config.LanguageJapanese &&
+		config.Get().Language == config.LanguageTaiwanese) || !crop {
+		out = imaging.Grayscale(out)
+	}
+
 	out = imaging.Invert(out)
 	out = imaging.AdjustContrast(out, 30)
 	out = imaging.Sharpen(out, 1)
 
-	if crop {
-		rightPixel := out.Bounds().Dx()
-		bottomPixel := 0
+	rightPixel := out.Bounds().Dx()
+	bottomPixel := 0
 
-		found := false
-		for x := out.Bounds().Dx() - 1; x > 0; x-- {
-			for y := out.Bounds().Dy() - 1; y > 0; y-- {
-				if out.NRGBAAt(x, y).R < 150 {
-					if !found {
-						rightPixel = x
-						found = true
-					}
-
-					if y > bottomPixel {
-						bottomPixel = y
-					}
-
-					out.Set(x, y, color.Black)
+	found := false
+	for x := out.Bounds().Dx() - 1; x > 0; x-- {
+		for y := out.Bounds().Dy() - 1; y > 0; y-- {
+			px := out.NRGBAAt(x, y)
+			if px.R < 150 || px.G < 150 || px.B < 150 {
+				if !found {
+					rightPixel = x
+					found = true
 				}
+
+				if y > bottomPixel {
+					bottomPixel = y
+				}
+
+				// This needs to be improved
+				out.SetNRGBA(x, y, color.NRGBA{
+					R: px.R / 2,
+					G: px.G / 2,
+					B: px.B / 2,
+					A: px.A,
+				})
 			}
 		}
+	}
 
-		rightPixel += ScaleN(15)
-		bottomPixel += ScaleN(10)
+	rightPixel += ScaleN(15)
+	bottomPixel += ScaleN(10)
 
+	if crop {
 		out = imaging.Crop(out, image.Rect(0, 0, rightPixel, bottomPixel))
 	}
 

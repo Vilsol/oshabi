@@ -8,10 +8,12 @@ import (
 	"github.com/go-vgo/robotgo"
 	"github.com/kbinani/screenshot"
 	"github.com/pkg/errors"
+	"github.com/rs/zerolog/log"
+	"github.com/wailsapp/wails/v2/pkg/runtime"
+
 	"github.com/vilsol/oshabi/config"
 	"github.com/vilsol/oshabi/cv"
 	"github.com/vilsol/oshabi/types"
-	"github.com/wailsapp/wails/v2/pkg/runtime"
 )
 
 func ReadFull(ctx context.Context) ([]types.ParsedListing, error) {
@@ -100,26 +102,41 @@ func ReadFull(ctx context.Context) ([]types.ParsedListing, error) {
 }
 
 func CaptureScreen() (image.Image, error) {
+	start := time.Now()
 	bounds := screenshot.GetDisplayBounds(config.Get().Display)
 	img, err := screenshot.CaptureRect(bounds)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed capturing screen")
 	}
+
+	log.Debug().
+		Int("width", img.Bounds().Dx()).
+		Int("height", img.Bounds().Dy()).
+		Dur("took", time.Since(start)).
+		Msg("captured screen")
+
 	return img, nil
 }
 
 func ScrollTop(infoButtonLocation image.Point) (bool, error) {
 	realX, realY := TranslateCoordinates(infoButtonLocation.X, infoButtonLocation.Y)
 
+	log.Debug().Int("x", realX).Int("y", realX).Msg("clicking on info")
+
 	robotgo.Move(realX, realY)
 	time.Sleep(time.Millisecond * 100)
 	robotgo.Click()
 	time.Sleep(time.Millisecond * 200)
-	robotgo.Move(realX+cv.ScaleN(100), realY+cv.ScaleN(250))
+
+	scrollX := realX + cv.ScaleN(100)
+	scrollY := realY + cv.ScaleN(250)
+	log.Debug().Int("x", scrollX).Int("y", scrollY).Msg("scrolling to top")
+
+	robotgo.Move(scrollX, scrollY)
 	time.Sleep(time.Millisecond * 100)
 	robotgo.Scroll(0, 20)
 	time.Sleep(time.Millisecond * 100)
-	robotgo.Move(realX+cv.ScaleN(100), realY)
+	robotgo.Move(scrollX, realY)
 	time.Sleep(time.Millisecond * 100)
 
 	return true, nil
@@ -128,15 +145,22 @@ func ScrollTop(infoButtonLocation image.Point) (bool, error) {
 func ScrollDown(infoButtonLocation image.Point) error {
 	realX, realY := TranslateCoordinates(infoButtonLocation.X, infoButtonLocation.Y)
 
+	log.Debug().Int("x", realX).Int("y", realX).Msg("clicking on info")
+
 	robotgo.Move(realX, realY)
 	time.Sleep(time.Millisecond * 100)
 	robotgo.Click()
 	time.Sleep(time.Millisecond * 100)
-	robotgo.Move(realX+cv.ScaleN(100), realY+cv.ScaleN(250))
+
+	scrollX := realX + cv.ScaleN(100)
+	scrollY := realY + cv.ScaleN(250)
+	log.Debug().Int("x", scrollX).Int("y", scrollY).Msg("scrolling down")
+
+	robotgo.Move(scrollX, scrollY)
 	time.Sleep(time.Millisecond * 100)
 	robotgo.Scroll(0, -1)
 	time.Sleep(time.Millisecond * 100)
-	robotgo.Move(realX+cv.ScaleN(100), realY)
+	robotgo.Move(scrollX, realY)
 	time.Sleep(time.Millisecond * 100)
 
 	return nil

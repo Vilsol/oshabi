@@ -4,11 +4,12 @@ import (
 	"context"
 	"encoding/json"
 	"os"
-	"path"
+	"path/filepath"
 
 	"github.com/pkg/errors"
-	"github.com/vilsol/oshabi/types"
 	"github.com/wailsapp/wails/v2/pkg/runtime"
+
+	"github.com/vilsol/oshabi/types"
 )
 
 type Language string
@@ -24,6 +25,7 @@ const (
 	LanguageChinese    = Language("chi_sim")
 	LanguageKorean     = Language("kor")
 	LanguageJapanese   = Language("jpn")
+	LanguageTaiwanese  = Language("chi_tra")
 )
 
 type League string
@@ -85,7 +87,7 @@ func Load() error {
 		return err
 	}
 
-	file, err := os.ReadFile(path.Join(dir, "config.json"))
+	file, err := os.ReadFile(filepath.Join(dir, "config.json"))
 	if err != nil {
 		if os.IsNotExist(err) {
 			return nil
@@ -111,7 +113,7 @@ func Save() error {
 		return err
 	}
 
-	err = os.WriteFile(path.Join(dir, "config.json"), b, 0777)
+	err = os.WriteFile(filepath.Join(dir, "config.json"), b, 0777)
 	if err != nil {
 		return errors.Wrap(err, "failed writing config.json")
 	}
@@ -125,7 +127,7 @@ func GetConfigDir() (string, error) {
 		return "", errors.Wrap(err, "failed to find user config directory")
 	}
 
-	finalDir := path.Join(configDir, "oshabi")
+	finalDir := filepath.Join(configDir, "oshabi")
 
 	if err := os.MkdirAll(finalDir, 0777); err != nil {
 		if !os.IsExist(err) {

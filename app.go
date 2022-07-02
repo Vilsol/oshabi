@@ -38,7 +38,11 @@ func NewApp() *App {
 }
 
 func (a *App) startup(ctx context.Context) {
-	a.ctx = ctx
+	var scalingEventF cv.ScalingFunc = func(progress int, total int) {
+		runtime.EventsEmit(ctx, "calibration", fmt.Sprintf("%d/%d", progress, total))
+	}
+
+	a.ctx = context.WithValue(ctx, cv.ScalingKey{}, scalingEventF)
 
 	if err := data.InitData(); err != nil {
 		panic(err)
@@ -103,7 +107,7 @@ func (a *App) Calibrate() error {
 		return err
 	}
 
-	scale, err := cv.CalculateScaling(img)
+	scale, err := cv.CalculateScaling(a.ctx, img)
 	if err != nil {
 		return err
 	}
@@ -334,6 +338,7 @@ func (a *App) GetLanguages() map[string]string {
 		string(config.LanguageChinese):    "简体中文",
 		string(config.LanguageKorean):     "한국어",
 		string(config.LanguageJapanese):   "日本語",
+		string(config.LanguageTaiwanese):  "正體中文",
 	}
 }
 
