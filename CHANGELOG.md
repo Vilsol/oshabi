@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.28](https://github.com/Vilsol/oshabi/compare/v0.0.27...v0.0.28) (2022-07-02)
+
+
+### Bug Fixes
+
+* adjust ocr, add chinese traditional, more logs ([545c19e](https://github.com/Vilsol/oshabi/commit/545c19e0dbdac6deb2b0dff7e84c901035e47a6e))
+
 ## [0.0.27](https://github.com/Vilsol/oshabi/compare/v0.0.26...v0.0.27) (2022-07-01)
 
 
